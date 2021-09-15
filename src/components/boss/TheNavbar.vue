@@ -25,8 +25,8 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
-          <!-- <img src="../../assets/menu.png" alt="" srcset="" /> -->
+          <!-- <span class="navbar-toggler-icon"></span> -->
+          <img src="../../assets/tree.png" alt="" srcset="" />
           <!-- //Your ICON -->
         </button>
         <div class="collapse navbar-collapse"   id="navbarNav">
