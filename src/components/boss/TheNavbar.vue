@@ -35,7 +35,7 @@
               <a class="nav-link " aria-current="page" href="#">{{link}}</a>
             </li>
             <li class="nav-item">
-              <button class="main-btn">Donate</button>
+              <p class="main-btn">Donate</p>
             </li>
           </ul>
         </div>
@@ -118,5 +118,12 @@ export default {
     box-shadow:  0 0.125rem  1.7rem 0 rgba(0, 0, 0, .5);
     transition: all .5s ease-in-out 0s;
 
+}
+.main-btn{
+border-radius: 12px;
+background: linear-gradient(145deg, #ffffff, #f83a00);
+box-shadow:  6px 6px 12px #a6a6a6,
+             -6px -6px 12px #ffffff;
+             cursor: pointer;
 }
 </style>
