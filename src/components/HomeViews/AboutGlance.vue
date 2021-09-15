@@ -7,7 +7,7 @@
                     <div class="text-content">
                          <h1>Charawan village is located in Bikapur Tehsil of Ayodhya district in Uttar Pradesh, India. It is situated 9km away from sub-district headquarter Bikapur.</h1>
                        <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum possimus nesciunt adipisci dicta eos. Temporibus, doloremque? Natus tempore sint magni! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, similique.</p> -->
-                       <button class="main-btn mt-4 fs-2">
+                       <button class="btn btn-info mt-4 ">
                            Know More..
                        </button>
                     </div>
@@ -29,10 +29,10 @@
 .story-section{
     width: 100%;
     height: 28.1rem;
-    background: url('https://i.ibb.co/tBt88YP/ch2.jpg') no-repeat center;
+    background: url('https://i.ibb.co/T2xCBD8/ch1.png') no-repeat center;
     background-size: cover;
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
+    /* -webkit-filter: grayscale(100%); 
+  filter: grayscale(100%); */
   text-shadow: 5px 3px 30px rgba(136, 142, 124, 1);
   
 

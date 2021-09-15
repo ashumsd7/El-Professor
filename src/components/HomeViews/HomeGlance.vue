@@ -29,6 +29,7 @@ export default {};
     background-size: cover;
     width: 100%;
     height: 25rem; */
+    height: 70vh;
 }
 .heading {
   color: gray;

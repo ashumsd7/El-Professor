@@ -3,6 +3,7 @@
    <home-glance></home-glance>
    <quick-links></quick-links>
    <about-glance></about-glance>
+   <authority-glance></authority-glance>
   </div>
 </template>
 
@@ -11,6 +12,7 @@
 import HomeGlance from '../components/HomeViews/HomeGlance'
 import QuickLinks from '../components/HomeViews/QuickLinks'
 import AboutGlance from '../components/HomeViews/AboutGlance'
+import AuthorityGlance from '../components/HomeViews/AuthorityGlance.vue'
 
 
 
@@ -21,7 +23,8 @@ export default {
   components: {
     HomeGlance,
     QuickLinks,
-    AboutGlance
+    AboutGlance,
+    AuthorityGlance
    
    
     
