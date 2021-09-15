@@ -55,8 +55,11 @@ export default {};
 .heading-declaration {
   font-size: 1.5rem;
   font-family: "Dancing Script", cursive;
+  color: brown;
 }
-.heading .heading-declaration span {
+
+.heading .heading-declaration  {
   font-family: "Maven Pro", sans-serif;
+  color: rgb(255, 56, 56);
 }
 </style>
