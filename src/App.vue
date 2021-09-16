@@ -4,6 +4,10 @@
   <div class="routers">
     <router-view/>
   </div>
+  <audio controls autoplay>
+  <source src="./assets/audio/nature.mp3" type="audio/mp3">
+Your browser does not support the audio element.
+</audio>
 </div>
 </template>
 <script>
@@ -11,7 +15,10 @@ import TheNavbar from './components/boss/TheNavbar.vue'
 export default {
   components:{
     TheNavbar
-  }
+  },
+  created() {
+    
+  },
 }
 </script>
 <style>
@@ -26,5 +33,8 @@ export default {
  top: 5rem;
  left: 0;
  width: 100%;
+}
+audio{
+  /* visibility: hidden; */
 }
 </style>
