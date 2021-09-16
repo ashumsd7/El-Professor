@@ -5,6 +5,7 @@
         navbar navbar-expand-lg bg-white
         position-fixed
         w-100
+        mt-0
         start-0
         navigation-wrap
       "
