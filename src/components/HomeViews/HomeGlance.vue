@@ -34,11 +34,11 @@ export default {};
     /* height: 50vh; */
 }
 .village-name{
-     background-color: rgb(0, 185, 15);
-     width: 50%;
-     margin: auto;
-     border-radius: 47% 53% 48% 52% / 35% 31% 69% 65% ;
-     animation: chnageBorder 8s linear 1s infinite alternate;
+     /* background-color: rgb(0, 185, 15); */
+     /* width: 50%; */
+     /* margin: auto; */
+     /* border-radius: 47% 53% 48% 52% / 35% 31% 69% 65% ; */
+     /* animation: chnageBorder 8s linear 1s infinite alternate; */
 }
 .donate-btn{
     /* border-radius: 47% 53% 48% 52% / 35% 31% 69% 65% ; */
