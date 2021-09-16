@@ -1,6 +1,7 @@
 <template>
   <div class="home">
    <home-glance></home-glance>
+   <counter></counter>
    <quick-links></quick-links>
    <about-glance></about-glance>
    <authority-glance></authority-glance>
@@ -13,6 +14,7 @@ import HomeGlance from '../components/HomeViews/HomeGlance'
 import QuickLinks from '../components/HomeViews/QuickLinks'
 import AboutGlance from '../components/HomeViews/AboutGlance'
 import AuthorityGlance from '../components/HomeViews/AuthorityGlance.vue'
+import Counter from '../components/HomeViews/Counter.vue'
 
 
 
@@ -24,10 +26,11 @@ export default {
     HomeGlance,
     QuickLinks,
     AboutGlance,
-    AuthorityGlance
+    AuthorityGlance,
    
    
     
+    Counter
   }
 }
 </script>

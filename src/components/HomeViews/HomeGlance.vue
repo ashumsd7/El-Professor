@@ -1,8 +1,8 @@
 <template>
   <div class="glance-container m-auto">
     <div class="container mt-5 text-center">
-      <p class="heading display-3">Welcome to
-          <span class="d-block d-md-inline">
+      <p class="heading display-3"><span class="welcome-text">Welcome to</span>
+          <span class="d-block ">
           <span class="display-1 "> C</span>
           <span class="display-1 "> H</span>
           <span class="display-1 "> A</span>
@@ -29,7 +29,7 @@ export default {};
     background-size: cover;
     width: 100%;
     height: 25rem; */
-    height: 70vh;
+    /* height: 50vh; */
 }
 .heading {
   color: gray;
@@ -45,6 +45,9 @@ export default {};
   margin-left: -10px;
 }  
 }
+span.welcome-text{
+    color: rgb(255, 71, 71);
+}
 .heading span:first-child {
   margin-left: 0px;
 }
@@ -55,11 +58,11 @@ export default {};
 .heading-declaration {
   font-size: 1.5rem;
   font-family: "Dancing Script", cursive;
-  color: brown;
+  color: rgb(0, 185, 15);
 }
 
 .heading .heading-declaration  {
   font-family: "Maven Pro", sans-serif;
-  color: rgb(255, 56, 56);
+  color: rgb(1, 131, 23);
 }
 </style>

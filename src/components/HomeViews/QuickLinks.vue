@@ -1,6 +1,6 @@
 <template>
-    <section id="quick-links ">
-        <div class="container-fluid">
+    <section id="quick-links  ">
+        <div class="container-fluid d-none d-lg-block">
             <div class="row justify-content-center mt-lg-5">
                 <div class="col-lg-3 col-md-4 col-4 quick-links m-lg-2 m-1 " v-for="link in links" :key="link.title">
                     <p class="fs-2 text-center w-auto">{{link.title}}</p>
