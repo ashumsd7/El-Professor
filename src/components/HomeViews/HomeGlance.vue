@@ -2,7 +2,7 @@
   <div class="glance-container m-auto">
     <div class="container mt-5 text-center">
       <p class="heading display-3"><span class="welcome-text">Welcome to</span>
-          <span class="d-block ">
+          <span class="d-block village-name ">
           <span class="display-1 "> C</span>
           <span class="display-1 "> H</span>
           <span class="display-1 "> A</span>
@@ -33,16 +33,24 @@ export default {};
     height: 25rem; */
     /* height: 50vh; */
 }
+.village-name{
+     background-color: rgb(0, 185, 15);
+     width: 50%;
+     margin: auto;
+     border-radius: 47% 53% 48% 52% / 35% 31% 69% 65% ;
+     animation: chnageBorder 8s linear 1s infinite alternate;
+}
 .donate-btn{
     /* border-radius: 47% 53% 48% 52% / 35% 31% 69% 65% ; */
+    border-radius: 20px;
     font-size: 1.1rem;
-    background-color: rgb(0, 185, 15);
+    background-color: rgb(255, 71, 71);
     color: white;
     font-weight: bold;
-    padding: 1rem;
+    padding: .4rem;
     outline: none;
     border: none;
-    animation: chnageBorder 8s linear 1s infinite alternate;
+    /* animation: chnageBorder 8s linear 1s infinite alternate; */
 
 }
 
@@ -71,7 +79,7 @@ export default {};
 }
 .heading span span {
   font-family: "Maven Pro", sans-serif;
-  color: black;
+  color: rgb(44, 43, 43);
   transition: all 0.3s;
   margin-left: -25px;
 }
@@ -87,7 +95,7 @@ span.welcome-text{
   margin-left: 0px;
 }
 .heading span:hover {
-  color: rgb(255, 62, 62);
+  color: rgb(255, 255, 255);
   cursor: pointer;
 }
 .heading-declaration {

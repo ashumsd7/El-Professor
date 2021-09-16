@@ -6,7 +6,7 @@
                   
 
                   
-                  <div v-for="item in counterData" :key="item.title" class="col-md-2 col-6 mb-lg-0 mb-md-0 mb-5">
+                  <div v-for="item in counterData" :id="item.title" :key="item.title" class="col-md-2 col-6 mb-lg-0 mb-md-0 mb-5">
                       <h2>
                           <span id="count1">
                               <img :src="require(`../../assets/icons/${item.img}.png`)" alt="" srcset="">

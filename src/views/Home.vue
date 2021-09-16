@@ -2,10 +2,15 @@
   <div class="home">
    <home-glance></home-glance>
   
+  
+
+
+
+  
    <counter></counter>
    <quick-links></quick-links>
    <about-glance></about-glance>
-    <explain-banner></explain-banner>
+    <explain-banner :key="i" v-for="i in 2"></explain-banner>
    <!-- <authority-glance></authority-glance> -->
   </div>
 </template>
@@ -17,6 +22,8 @@ import QuickLinks from '../components/HomeViews/QuickLinks'
 import AboutGlance from '../components/HomeViews/AboutGlance'
 import AuthorityGlance from '../components/HomeViews/AuthorityGlance.vue'
 import Counter from '../components/HomeViews/Counter.vue'
+
+
 import ExplainBanner from '../components/reusable/ExplainBanner.vue'
 
 

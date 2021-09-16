@@ -33,7 +33,7 @@
         <div class="collapse navbar-collapse"   id="navbarNav">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
             <li @click="handleLink"  class="nav-item" v-for="link in links" :key="link">
-              <a class="nav-link " aria-current="page" href="#">{{link}}</a>
+              <router-link class="nav-link " aria-current="page" :to='link.to'>{{link.title}}</router-link>
             </li>
             <li class="nav-item">
               <p class="main-btn">Donate</p>
@@ -49,7 +49,12 @@
 export default {
   data() {
     return {
-      links:['Home','About', 'History','Gallery', 'Cricket'],
+      links:[{title:'Home',to:'/'},
+       {title:'History',to:'/itihas'},
+       {title:'Gallery',to:'/gallery'},
+       {title:'Cricket',to:'/cricket'},
+       {title:'Elections',to:'/election'}
+     ],
       addNavShadow:false,
       
     }
