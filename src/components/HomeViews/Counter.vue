@@ -15,7 +15,7 @@
                       </h2>
                      <p><strong>{{item.title}}</strong></p> 
                   </div>
-                  <small class="text-start fw-bold mb-3 d-block text-muted">*Data as per 2011 census and expcted in 2021.</small>
+                  <small class="text-center text-danger fw-bold mb-3 d-block text-muted">*Data as per 2011 census and expcted in 2021.</small>
 
 
 

@@ -33,7 +33,7 @@
 .authority-img img{
     width: 190px;
     height: 180px;
-    border-radius: 50%;
+  border-radius: 30% 70% 67% 33% / 46% 41% 59% 54% ;
     
    
 

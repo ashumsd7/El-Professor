@@ -1,11 +1,12 @@
 <template>
   <div class="home">
    <home-glance></home-glance>
-   <explain-banner></explain-banner>
+  
    <counter></counter>
    <quick-links></quick-links>
    <about-glance></about-glance>
-   <authority-glance></authority-glance>
+    <explain-banner></explain-banner>
+   <!-- <authority-glance></authority-glance> -->
   </div>
 </template>
 

@@ -1,8 +1,8 @@
 <template>
 <section id="explainer">
-    <div class="container">
+    <div class="container mt-lg-5">
         <div class="row">
-            <div class="col-lg-4 col-12 mb-lg-2 img-conatiner text-center">
+            <div class="col-lg-4 col-12 mt-lg-2 img-conatiner text-center">
                  <img class="img-fluid" src="https://images.financialexpress.com/2020/09/kartik-kala-1.jpg" alt="">
                  <h4 class="position mt-2">Gram Pradhan</h4>
                <p class="name">Mr. Anil Kumar</p>

@@ -15,6 +15,8 @@
           </span> 
       </p>
       <p class="heading-declaration">This is the official website of village Charawan.</p>
+      <button class="donate-btn">Donate to Support</button>
+      
     </div>
   </div>
 </template>
@@ -30,6 +32,39 @@ export default {};
     width: 100%;
     height: 25rem; */
     /* height: 50vh; */
+}
+.donate-btn{
+    /* border-radius: 47% 53% 48% 52% / 35% 31% 69% 65% ; */
+    font-size: 1.1rem;
+    background-color: rgb(0, 185, 15);
+    color: white;
+    font-weight: bold;
+    padding: 1rem;
+    outline: none;
+    border: none;
+    animation: chnageBorder 8s linear 1s infinite alternate;
+
+}
+
+@keyframes chnageBorder {
+    0%{
+       border-radius: 47% 53% 48% 52% / 35% 31% 69% 65% ;
+    }
+    20%{
+        border-radius: 47% 53% 48% 52% / 70% 29% 71% 30% ;
+    }
+    40%{
+        border-radius: 69% 31% 26% 74% / 39% 29% 71% 61% ;
+    }
+    60%{
+        border-radius: 82% 18% 86% 14% / 39% 72% 28% 61% ;
+    }
+    80%{
+        border-radius: 88% 12% 29% 71% / 22% 72% 28% 78% ;
+    }
+    100%{
+        border-radius: 47% 53% 48% 52% / 70% 66% 34% 30% ;
+    }
 }
 .heading {
   color: gray;
