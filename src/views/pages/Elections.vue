@@ -6,12 +6,12 @@ l<template>
     <div class="container">
       <div class="row mt-lg-3 mt-2 ">
         <div class="col-lg-4 col-6">
-            <h4>        Select Year</h4>
+            <h4 class="text-danger">        Select Year 👉</h4>
         </div>
-        <div class="col-lg-4 col-6">
+        <div class="col-lg-4 col-6  ">
                 
-          <select
-            class="form-select"
+          <select 
+            class="form-select border-2 outline-none"
             bg-dark
             v-model="selectedYear"
             @change="changeData(selectedYear)"
@@ -119,6 +119,10 @@ font-family: 'Bitter', serif;
     color: rgb(32, 32, 32);
     font-weight: bold;
     margin-top: -15px;
+}
+select{
+    margin-left: -40px;
+    
 }
 
 @media (max-width:800px){

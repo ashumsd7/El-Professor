@@ -17,17 +17,17 @@ export default createStore({
             about:
               "        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, fugiat iusto mollitia illum reprehenderit at, voluptate totam voluptas molestiae ipsum ullam harum, nulla aliquid earum maiores? Excepturi quam, dolorum ab atque velit facere architecto accusamus, expedita molestiae eveniet error repudiandae in cupiditate repellat reiciendis tenetur. Rem molestias illum quod nobis atque corporis magnam? Expedita enim vero praesentium id fugiat eius natus odit, deserunt earum ipsa sint maxime et a alias ratione esse nihil deleniti repellat aut porro obcaecati odio. Quos, corrupti quidem consequatur, iure accusantium quae ratione quas ea ex excepturi consectetur molestias vero enim ipsam. Recusandae voluptate error ex!",
           },
-          {
-            type: "JILA PANCHAYAT",
-            winnerImg:
-              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9ZPryW2FN8JQZ1y8I0BaGzVJTi6evpNrkdZ17uaWiOjIsBLYnuUHv2KIt0eBeqgzHICQ&usqp=CAU",
-            img: "",
-            doanloadLink: null,
-            winner: "",
-            opponent: "",
-            about:
-              "        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, fugiat iusto mollitia illum reprehenderit at, voluptate totam voluptas molestiae ipsum ullam harum, nulla aliquid earum maiores? Excepturi quam, dolorum ab atque velit facere architecto accusamus, expedita molestiae eveniet error repudiandae in cupiditate repellat reiciendis tenetur. Rem molestias illum quod nobis atque corporis magnam? Expedita enim vero praesentium id fugiat eius natus odit, deserunt earum ipsa sint maxime et a alias ratione esse nihil deleniti repellat aut porro obcaecati odio. Quos, corrupti quidem consequatur, iure accusantium quae ratione quas ea ex excepturi consectetur molestias vero enim ipsam. Recusandae voluptate error ex!",
-          },
+          // {
+          //   type: "JILA PANCHAYAT",
+          //   winnerImg:
+          //     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9ZPryW2FN8JQZ1y8I0BaGzVJTi6evpNrkdZ17uaWiOjIsBLYnuUHv2KIt0eBeqgzHICQ&usqp=CAU",
+          //   img: "",
+          //   doanloadLink: null,
+          //   winner: "",
+          //   opponent: "",
+          //   about:
+          //     "        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, fugiat iusto mollitia illum reprehenderit at, voluptate totam voluptas molestiae ipsum ullam harum, nulla aliquid earum maiores? Excepturi quam, dolorum ab atque velit facere architecto accusamus, expedita molestiae eveniet error repudiandae in cupiditate repellat reiciendis tenetur. Rem molestias illum quod nobis atque corporis magnam? Expedita enim vero praesentium id fugiat eius natus odit, deserunt earum ipsa sint maxime et a alias ratione esse nihil deleniti repellat aut porro obcaecati odio. Quos, corrupti quidem consequatur, iure accusantium quae ratione quas ea ex excepturi consectetur molestias vero enim ipsam. Recusandae voluptate error ex!",
+          // },
           {
             type: "BDC",
             winnerImg:
@@ -56,18 +56,18 @@ export default createStore({
             about:
               "        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, fugiat iusto mollitia illum reprehenderit at, voluptate totam voluptas molestiae ipsum ullam harum, nulla aliquid earum maiores? Excepturi quam, dolorum ab atque velit facere architecto accusamus, expedita molestiae eveniet error repudiandae in cupiditate repellat reiciendis tenetur. Rem molestias illum quod nobis atque corporis magnam? Expedita enim vero praesentium id fugiat eius natus odit, deserunt earum ipsa sint maxime et a alias ratione esse nihil deleniti repellat aut porro obcaecati odio. Quos, corrupti quidem consequatur, iure accusantium quae ratione quas ea ex excepturi consectetur molestias vero enim ipsam. Recusandae voluptate error ex!",
           },
-          {
-            type: "JILA PANCHAYAT",
-            winnerImg:
-              "https://scontent.fknu1-1.fna.fbcdn.net/v/t1.6435-9/c0.165.1000.1000a/s526x395/125541679_1512777735587705_2288638359030641200_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=xSwVn-7LpagAX-PRP7A&_nc_ht=scontent.fknu1-1.fna&oh=e00f76f3ea227783093e3480cb9e92dd&oe=616A1A1D",
-            img: "https://i.ibb.co/c87Xhrj/Jilapanchayat2015.jpg",
-            doanloadLink:
-              "http://sec.up.nic.in/ElecLive/ResultSearchOnVacancy.aspx?VacancyId=0YotdBgCG0M=&PostId=XT+BdO0wBBo=&DistId=I3JyRKadE8w=",
-            winner: "कमला प्रसाद",
-            opponent: "vs राम सुफल",
-            about:
-              "        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, fugiat iusto mollitia illum reprehenderit at, voluptate totam voluptas molestiae ipsum ullam harum, nulla aliquid earum maiores? Excepturi quam, dolorum ab atque velit facere architecto accusamus, expedita molestiae eveniet error repudiandae in cupiditate repellat reiciendis tenetur. Rem molestias illum quod nobis atque corporis magnam? Expedita enim vero praesentium id fugiat eius natus odit, deserunt earum ipsa sint maxime et a alias ratione esse nihil deleniti repellat aut porro obcaecati odio. Quos, corrupti quidem consequatur, iure accusantium quae ratione quas ea ex excepturi consectetur molestias vero enim ipsam. Recusandae voluptate error ex!",
-          },
+          // {
+          //   type: "JILA PANCHAYAT",
+          //   winnerImg:
+          //     "https://scontent.fknu1-1.fna.fbcdn.net/v/t1.6435-9/c0.165.1000.1000a/s526x395/125541679_1512777735587705_2288638359030641200_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=xSwVn-7LpagAX-PRP7A&_nc_ht=scontent.fknu1-1.fna&oh=e00f76f3ea227783093e3480cb9e92dd&oe=616A1A1D",
+          //   img: "https://i.ibb.co/c87Xhrj/Jilapanchayat2015.jpg",
+          //   doanloadLink:
+          //     "http://sec.up.nic.in/ElecLive/ResultSearchOnVacancy.aspx?VacancyId=0YotdBgCG0M=&PostId=XT+BdO0wBBo=&DistId=I3JyRKadE8w=",
+          //   winner: "कमला प्रसाद",
+          //   opponent: "vs राम सुफल",
+          //   about:
+          //     "        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, fugiat iusto mollitia illum reprehenderit at, voluptate totam voluptas molestiae ipsum ullam harum, nulla aliquid earum maiores? Excepturi quam, dolorum ab atque velit facere architecto accusamus, expedita molestiae eveniet error repudiandae in cupiditate repellat reiciendis tenetur. Rem molestias illum quod nobis atque corporis magnam? Expedita enim vero praesentium id fugiat eius natus odit, deserunt earum ipsa sint maxime et a alias ratione esse nihil deleniti repellat aut porro obcaecati odio. Quos, corrupti quidem consequatur, iure accusantium quae ratione quas ea ex excepturi consectetur molestias vero enim ipsam. Recusandae voluptate error ex!",
+          // },
           {
             type: "BDC",
             winnerImg:
@@ -96,18 +96,18 @@ export default createStore({
             about:
               "        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, fugiat iusto mollitia illum reprehenderit at, voluptate totam voluptas molestiae ipsum ullam harum, nulla aliquid earum maiores? Excepturi quam, dolorum ab atque velit facere architecto accusamus, expedita molestiae eveniet error repudiandae in cupiditate repellat reiciendis tenetur. Rem molestias illum quod nobis atque corporis magnam? Expedita enim vero praesentium id fugiat eius natus odit, deserunt earum ipsa sint maxime et a alias ratione esse nihil deleniti repellat aut porro obcaecati odio. Quos, corrupti quidem consequatur, iure accusantium quae ratione quas ea ex excepturi consectetur molestias vero enim ipsam. Recusandae voluptate error ex!",
           },
-          {
-            type: "JILA PANCHAYAT (1404 code )",
-            winnerImg:
-              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9ZPryW2FN8JQZ1y8I0BaGzVJTi6evpNrkdZ17uaWiOjIsBLYnuUHv2KIt0eBeqgzHICQ&usqp=CAU",
-            img: "",
-            doanloadLink:
-              "http://sec.up.nic.in/site/fonts/zpm_result_2010.pdf ",
-            winner: "",
-            opponent: "",
-            about:
-              "        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, fugiat iusto mollitia illum reprehenderit at, voluptate totam voluptas molestiae ipsum ullam harum, nulla aliquid earum maiores? Excepturi quam, dolorum ab atque velit facere architecto accusamus, expedita molestiae eveniet error repudiandae in cupiditate repellat reiciendis tenetur. Rem molestias illum quod nobis atque corporis magnam? Expedita enim vero praesentium id fugiat eius natus odit, deserunt earum ipsa sint maxime et a alias ratione esse nihil deleniti repellat aut porro obcaecati odio. Quos, corrupti quidem consequatur, iure accusantium quae ratione quas ea ex excepturi consectetur molestias vero enim ipsam. Recusandae voluptate error ex!",
-          },
+          // {
+          //   type: "JILA PANCHAYAT (1404 code )",
+          //   winnerImg:
+          //     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9ZPryW2FN8JQZ1y8I0BaGzVJTi6evpNrkdZ17uaWiOjIsBLYnuUHv2KIt0eBeqgzHICQ&usqp=CAU",
+          //   img: "",
+          //   doanloadLink:
+          //     "http://sec.up.nic.in/site/fonts/zpm_result_2010.pdf ",
+          //   winner: "",
+          //   opponent: "",
+          //   about:
+          //     "        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, fugiat iusto mollitia illum reprehenderit at, voluptate totam voluptas molestiae ipsum ullam harum, nulla aliquid earum maiores? Excepturi quam, dolorum ab atque velit facere architecto accusamus, expedita molestiae eveniet error repudiandae in cupiditate repellat reiciendis tenetur. Rem molestias illum quod nobis atque corporis magnam? Expedita enim vero praesentium id fugiat eius natus odit, deserunt earum ipsa sint maxime et a alias ratione esse nihil deleniti repellat aut porro obcaecati odio. Quos, corrupti quidem consequatur, iure accusantium quae ratione quas ea ex excepturi consectetur molestias vero enim ipsam. Recusandae voluptate error ex!",
+          // },
           {
             type: "BDC",
             winnerImg:
