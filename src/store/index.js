@@ -89,7 +89,7 @@ export default createStore({
             type: "ग्राम पंचायत प्रधान (PRADHAN) ",
             winnerImg:
               "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9ZPryW2FN8JQZ1y8I0BaGzVJTi6evpNrkdZ17uaWiOjIsBLYnuUHv2KIt0eBeqgzHICQ&usqp=CAU",
-            img: "",
+            img: "https://i.ibb.co/ZmRW3RZ/2010-pradhan.jpg",
             doanloadLink: "http://sec.up.nic.in/site/fonts/gpp_1404.pdf",
             winner: "Rishikesh",
             opponent: "",

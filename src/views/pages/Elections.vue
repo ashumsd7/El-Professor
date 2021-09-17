@@ -47,7 +47,7 @@ l<template>
           
           
             <div class="text-center">
-               <a class="btn btn-primary mb-2" :disabled="item.downloadLink" :href="item.downloadLink">{{item.doanloadLink ? 'Download Data' : 'Image Data Not Found'}}</a>
+               <a class="btn btn-primary mb-2" :disabled="!item.downloadLink" :href="item.doanloadLink">{{item.doanloadLink ? 'Download Data' : 'Image Data Not Found'}}</a>
             </div>
             <img  :src="item.img" alt="" class="img-fluid" srcset="">
     </div>
