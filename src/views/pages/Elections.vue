@@ -12,40 +12,31 @@ l<template>
           <select
             class="form-select"
             bg-dark
+            v-model="selectedYear"
+            @change="changeData(selectedYear)"
             aria-label="Default select example"
           >
-            <option selected>Select Year</option>
-            <option value="1">2021</option>
-            <option value="2">2015</option>
-            <option value="3">2010</option>
+            
+            <option selected value="2021">2021</option>
+            <option value="2015">2015</option>
+            <option value="2010">2010</option>
           </select>
         </div>
       </div>
     </div>
 
-    <main-content
-      >Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt hic
-      eligendi deserunt fuga distinctio eius blanditiis sit ducimus.
-      Reprehenderit quaerat placeat earum. Porro accusamus voluptatibus laborum.
-      A illum et repellat dolores fuga natus aperiam repellendus omnis tenetur
-      earum nihil consectetur voluptatem reiciendis minus aspernatur, alias vel
-      dolorem labore ea. Vero eligendi enim illum accusantium consequuntur nam
-      officiis assumenda libero beatae cum! Est corporis vitae quis perspiciatis
-      aperiam saepe ex quod culpa pariatur consequatur soluta, mollitia nisi qui
-      adipisci architecto maxime dolorem eum quas sequi ipsa, molestias harum
-      rem. Expedita asperiores magnam in error perferendis. Inventore quod,
-      voluptas veritatis illo debitis cumque aliquam nam illum animi reiciendis
-      sequi omnis magni recusandae nulla, modi sunt excepturi dolore. Minima
-      quos quisquam omnis vel fugiat! Quae sit vero dolores repellendus, quod ab
-      impedit quisquam libero voluptatibus veritatis minima soluta molestias quo
-      laboriosam accusamus alias rerum dolore. Error est aut optio repellat
-      deserunt maxime vitae iusto facilis laborum provident delectus,
-      consequatur odio voluptatibus itaque asperiores nemo dolorum incidunt? A
-      distinctio placeat fugit pariatur laboriosam quae ex perspiciatis, quo
-      unde optio numquam officiis soluta minus nemo amet repellat cupiditate
-      quasi reiciendis. Minima odit quo incidunt sit eos, numquam necessitatibus
-    </main-content>
-    <sub-heading>Year 2015</sub-heading>
+
+<div v-for="item in showData[0].data" :key="item.type" class="row">
+    <div class="col-lg-12">
+        <sub-heading>{{selectedYear}} | {{item.type}}</sub-heading>
+
+            <main-content> {{item.about}} </main-content>
+
+            <img  :src="item.img" alt="" class="img-fluid" srcset="">
+    </div>
+</div>
+    
+   
   </section>
 </template>
 
@@ -58,16 +49,32 @@ export default {
         img: "https://images.livemint.com/img/2021/04/04/600x338/764754817dad452eadd18e908443f3ac-764754817dad452eadd18e908443f3ac-1_1617281784094_1617553913337.jpg",
         title: "History",
       },
+
+     selectedYear:2021,
+     showData:[]
     };
+  },
+  methods: {
+      changeData(year){
+      let filteredData=    this.getElectionData.filter((val,idx)=>{
+              return year== val.year
+          })
+          this.showData= filteredData
+          console.log(this.showData);
+      }
   },
   computed: {
     getElectionData() {
       return this.$store.getters.getElectionData;
     },
   },
+  created() {
+      this.changeData(2021)
+  },
 };
 </script>
 
 TopBanner
-<style lang="scss" scoped>
+<style scoped>
+img{width: 100%;}
 </style>

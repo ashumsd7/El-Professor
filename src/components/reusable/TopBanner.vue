@@ -1,5 +1,5 @@
 <template>
-<div class="container-fluid banner">
+<div class=" banner">
 <img :src="img" class="img-fluid" alt="" srcset="">
 </div>
 </template>

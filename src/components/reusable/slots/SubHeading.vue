@@ -1,14 +1,10 @@
 <template>
     <section id="main-heading">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12 ">
+
                     <h4 class="ms-lg-5 ms-md-3 ms-2 mt-4">
                         <slot></slot> :
                     </h4>
-                </div>
-            </div>
-        </div>
+
     </section>
 </template>
 

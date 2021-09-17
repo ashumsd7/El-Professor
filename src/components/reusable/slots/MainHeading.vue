@@ -1,14 +1,9 @@
 <template>
     <section id="main-heading">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12 ">
+        
                     <h2 class="ms-lg-4 ms-md-2 ms-1 mt-3">
                         <slot></slot> :
                     </h2>
-                </div>
-            </div>
-        </div>
     </section>
 </template>
 
