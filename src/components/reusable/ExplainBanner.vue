@@ -3,26 +3,14 @@
     <div class="container mt-lg-5">
         <div class="row">
             <div class="col-lg-4 col-12 mt-lg-2 img-conatiner text-center">
-                 <img class="img-fluid" src="https://images.financialexpress.com/2020/09/kartik-kala-1.jpg" alt="">
-                 <h4 class="position mt-2">Gram Pradhan</h4>
-               <p class="name">Mr. Anil Kumar</p>
-               <p class="timings text-muted">2012-2013</p>
+                 <img class="img-fluid" :src="winnerImg">
+               <h4 class="name mt-2">{{winner}}</h4>
+                 <p class="position ">{{position}}</p>
+               <p class="timings text-muted">2021</p>
             </div>
             <div class="col-lg-7 col-12 about">
                
-               <p class="about-text p-2">Lorem ipsum dolor sit amet consectetur, 
-                   adipisicing elit. Expedita, alias. Laboriosam quasi rem
-                    aliquam quod dicta quisquam, quos pariatur illo dolore
-                     repudiandae, placeat assumenda saepe officiis voluptatibus
-                      animi! Id voluptatum eius beatae nostrum, et fugiat ratione 
-                      deleniti provident minus omnis ipsam molestias odio minima cum
-                       maiores veritatis! Aperiam amet, exercitationem quia tempore 
-                       debitis obcaecati nulla magni consequuntur quas error illum 
-                       voluptates excepturi recusandae! Sit voluptatum vitae ut illum!
-                        Necessitatibus nihil porro iure. Accusantium architecto aliquam 
-                        nam voluptatem, qui pariatur odit accusamus expedita quae cum atque 
-                        ea ut molestias. Atque harum ipsum consequatur illum cupiditate?
-                    Nemo magni incidunt necessitatibus nostrum molestiae?</p>
+               <p class="about-text p-2">{{about}}</p>
 
             </div>
         </div>
@@ -32,7 +20,7 @@
 
 <script>
     export default {
-        
+        props:['winnerImg', 'about', 'position', 'winner']
     }
 </script>
 
@@ -70,5 +58,11 @@ font-family: 'Bitter', serif;
     color: rgb(32, 32, 32);
     font-weight: bold;
     margin-top: -15px;
+}
+@media (max-width:800px){
+    .img-conatiner img{
+    width: 300px;
+    height: 300px;
+}
 }
 </style>

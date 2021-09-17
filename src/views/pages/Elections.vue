@@ -32,7 +32,7 @@ l<template>
         <sub-heading>{{selectedYear}} | {{item.type}}</sub-heading>
              <div class="row mt-4">
             <div class="col-lg-4 col-12 mt-lg-2 img-conatiner text-center">
-                 <img class="img-fluid" :src="item.winnerImg">
+                 <img width="400" height="400" class="img-fluid" :src="item.winnerImg">
                <h4 class="name mt-2">{{item.winner}}</h4>
                  <p class="position ">{{item.type}}</p>
                  <p class="timings text-muted"> {{item.opponent}}</p>
@@ -98,10 +98,8 @@ TopBanner
 <style scoped>
 img{width: 100%;}
 .img-conatiner img{
-    border-radius: 50%;
-     box-shadow: 9px 14px 20px -6px rgba(87,92,86,0.75);
--webkit-box-shadow: 9px 14px 20px -6px rgba(87,92,86,0.75);
--moz-box-shadow: 9px 14px 20px -6px rgba(87,92,86,0.75);
+
+border-radius: 60% 40% 65% 35% / 53% 55% 45% 47% ;
 }
 
 .name{
