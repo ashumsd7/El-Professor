@@ -7,6 +7,7 @@ import "bootstrap";
 
 import TopBanner from './components/reusable/TopBanner'
 import MainHeading from './components/reusable/slots/MainHeading.vue'
+import SubHeading from './components/reusable/slots/SubHeading.vue'
 import MainContent from './components/reusable/slots/MainContent.vue'
 
 
@@ -14,6 +15,7 @@ import MainContent from './components/reusable/slots/MainContent.vue'
 const vm= createApp(App).use(store).use(router)
 vm.component('top-banner', TopBanner)
 vm.component('main-heading', MainHeading)
+vm.component('sub-heading', SubHeading)
 vm.component('main-content', MainContent)
 vm.mount('#app')
 
