@@ -223,7 +223,7 @@ export default createStore({
     ],
     charawanShops: [
       {
-        id:'kirana',
+        id:'generalStore',
         type: "General Store & Kirana Store",
         type2: "",
         data: [
@@ -231,7 +231,6 @@ export default createStore({
             name: "",
             since:'',
             info:'',
-
             img: "",
             timings: "",
             closedOn: "",
