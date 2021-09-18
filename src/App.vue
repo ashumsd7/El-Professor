@@ -22,6 +22,7 @@ export default {
 }
 </script>
 <style>
+/* @import '~bootstrap-icons/font/bootstrap-icons'; */
 @import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
@@ -34,7 +35,7 @@ export default {
  left: 0;
  width: 100%;
 }
-audio{
-  /* visibility: hidden; */
+a{
+  text-decoration: none;
 }
 </style>
