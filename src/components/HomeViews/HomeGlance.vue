@@ -15,8 +15,16 @@
           </span> 
       </p>
       <p class="heading-declaration">This is the official website of village Charawan.</p>
-      <button class="donate-btn">Donate to Support</button>
-      
+     <div class="row">
+        <form action="" @submit.prevent="searchItems">
+
+          
+
+        <input  v-model="searhedKey" class="form-control form-control-md d-inline" type="text" placeholder="Search in Charawan" aria-label=".form-control-md example">
+        <button type="submit"  class="btn btn-success search-btn d-block m-auto mt-2">Search</button>
+        </form>
+          </div>
+
     </div>
   </div>
 </template>
@@ -39,6 +47,10 @@ export default {};
      /* margin: auto; */
      /* border-radius: 47% 53% 48% 52% / 35% 31% 69% 65% ; */
      /* animation: chnageBorder 8s linear 1s infinite alternate; */
+}
+.form-control,.search-btn{
+  width:250px;
+  display: block;
 }
 .donate-btn{
     /* border-radius: 47% 53% 48% 52% / 35% 31% 69% 65% ; */

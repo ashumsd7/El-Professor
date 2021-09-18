@@ -221,6 +221,29 @@ export default createStore({
         ],
       },
     ],
+    charawanShops: [
+      {
+        id:'kirana',
+        type: "General Store & Kirana Store",
+        type2: "",
+        data: [
+          {
+            name: "",
+            since:'',
+            info:'',
+
+            img: "",
+            timings: "",
+            closedOn: "",
+            distance: "",
+            numbers: [""],
+            photosLink:[''],
+
+
+          },
+        ],
+      },
+    ],
   },
   mutations: {},
   actions: {},
@@ -231,6 +254,9 @@ export default createStore({
     },
     getDonationData(state) {
       return state.donationData;
+    },
+    getCharawanShops(State) {
+      return state.charawanShops;
     },
   },
 });

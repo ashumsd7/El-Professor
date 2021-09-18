@@ -53,6 +53,7 @@ export default {
   data() {
     return {
       links:[{title:'Home',to:'/'},
+      {title:'Find Shops',to:'/find'},
        {title:'History',to:'/itihas'},
        {title:'Gallery',to:'/gallery'},
        {title:'Cricket',to:'/cricket'},
