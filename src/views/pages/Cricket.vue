@@ -18,6 +18,7 @@
     <div class="container">
       <sub-heading>Criket Tournament 2021</sub-heading>
       <a href="#2018Cricket" class="text-center d-block">Take a look of 2018 Tournament</a>
+      <main-content> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa, nobis expedita nisi esse voluptates ipsam beatae necessitatibus sequi odit obcaecati est sunt aperiam provident ut ipsum repudiandae aspernatur nemo ab! </main-content>
       <div class="row">
         <div class="col-lg-6 mt-2">
           <!-- <img class="img-fluid m-auto"  src="https://i.ibb.co/ydLgGV3/2018banner-Cricket-new.jpg" alt="cricket banner 2018" srcset=""> -->
@@ -26,22 +27,24 @@
       </div>
       <div class="row mt-2">
         <sub-heading class="mb-4">Tournament Gallery</sub-heading>
-        <div v-for="url in videos2021" :key="url" class="col-lg-3 col-md-6">
+        <div v-for="url in videos2021" :key="url" class="col-lg-3 col-md-6 my-2 p-2">
           <iframe
             width="100%"
             height="200"
             :src="url"
             title="YouTube video player"
             frameborder="2"
+            allowfullscreen
                    ></iframe>
         </div>
       </div>
 
       <sub-heading id="2018Cricket">Criket Tournament 2018</sub-heading>
+        <main-content> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa, nobis expedita nisi esse voluptates ipsam beatae necessitatibus sequi odit obcaecati est sunt aperiam provident ut ipsum repudiandae aspernatur nemo ab! </main-content>
       <div class="row mt-2">
         <sub-heading class="mb-4">Tournament Gallery</sub-heading>
 
-         <div v-for="url in videos2018" :key="url" class="col-lg-3 col-md-6">
+         <div v-for="url in videos2018" :key="url" class="col-lg-3 col-md-6 my-2 p-2">
           <iframe
             width="100%"
             height="200"
@@ -83,5 +86,11 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
+iframe{
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.75);
+}
 </style>

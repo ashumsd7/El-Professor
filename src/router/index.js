@@ -3,6 +3,7 @@ import Home from '../views/Home.vue'
 import History from '../views/pages/History.vue'
 import Elections from '../views/pages/Elections.vue'
 import Cricket from '../views/pages/Cricket.vue'
+import Donate from '../views/pages/Donate.vue'
 
 const routes = [
   {
@@ -24,6 +25,11 @@ const routes = [
     path: '/cricket',
     name: 'Cricket',
     component: Cricket
+  },
+  {
+    path: '/donate',
+    name: 'Donate',
+    component: Donate
   },
   
 ]

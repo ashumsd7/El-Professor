@@ -36,7 +36,8 @@
               <router-link class="nav-link " aria-current="page" :to='link.to'>{{link.title}}</router-link>
             </li>
             <li class="nav-item">
-              <p class="main-btn">Donate</p>
+              <p class="main-btn"><router-link to="/donate">Donate</router-link></p>
+              
             </li>
           </ul>
         </div>
@@ -46,7 +47,9 @@
 </template>
 
 <script>
+import MainContent from '../reusable/slots/MainContent.vue';
 export default {
+  components: { MainContent },
   data() {
     return {
       links:[{title:'Home',to:'/'},
