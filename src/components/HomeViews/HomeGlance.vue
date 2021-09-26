@@ -14,14 +14,17 @@
 
           </span> 
       </p>
-      <p class="heading-declaration">This is the official website of village Charawan.</p>
+      <small class="heading-declaration">ये चरावां गांव की आधिकारिक वेबसाइट है </small>
      <div class="row">
         <form action="" @submit.prevent="searchItems">
 
           
 
-        <input  v-model="searhedKey" class="form-control form-control-md d-inline" type="text" placeholder="Search in Charawan" aria-label=".form-control-md example">
-        <button type="submit"  class="btn btn-success search-btn d-block m-auto mt-2">Search</button>
+        <!-- <input  v-model="searhedKey" class="form-control form-control-md d-inline" type="text" placeholder="Search in Charawan" aria-label=".form-control-md example"> -->
+        <!-- <button type="submit"  class="btn btn-success search-btn d-block m-auto mt-2">दुकानों के नंबर खोजें</button> -->
+        <button class="btn btn-success d-block  m-auto mt-2">
+        <img src="../../assets/searching.png" alt="" srcset="" class="me-1" /> <router-link class="text-decoration-none text-white"  to="/find">दुकानों के नंबर खोजें</router-link>
+      </button>
         </form>
           </div>
 
@@ -111,7 +114,7 @@ span.welcome-text{
   cursor: pointer;
 }
 .heading-declaration {
-  font-size: 1.5rem;
+  font-size: .8rem;
   font-family: "Dancing Script", cursive;
   color: rgb(0, 185, 15);
 }

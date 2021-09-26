@@ -36,7 +36,7 @@
               <router-link class="nav-link " aria-current="page" :to='link.to'>{{link.title}}</router-link>
             </li>
             <li class="nav-item">
-              <p class="main-btn"><router-link to="/donate">Donate</router-link></p>
+              <p class="main-btn"><router-link to="/donate">डोनेट</router-link></p>
               
             </li>
           </ul>
@@ -52,12 +52,12 @@ export default {
   components: { MainContent },
   data() {
     return {
-      links:[{title:'Home',to:'/'},
-      {title:'Find Shops',to:'/find'},
-       {title:'History',to:'/itihas'},
-       {title:'Gallery',to:'/gallery'},
-       {title:'Cricket',to:'/cricket'},
-       {title:'Elections',to:'/election'}
+      links:[{title:'होम ',to:'/'},
+      {title:' दुकान खोजें ',to:'/find'},
+       {title:'इतिहास',to:'/itihas'},
+       {title:' गैलरी',to:'/gallery'},
+       {title:' क्रिकेट ',to:'/cricket'},
+       {title:'इलेक्शन ',to:'/election'}
      ],
       addNavShadow:false,
       

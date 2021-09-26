@@ -472,7 +472,7 @@ export default {
           shopType:this.checkedTypes,
           mobileNumber:'tel:+91'+this.mobileNumber,
           mobileNumber2:'tel:+91'+this.mobileNumber2,
-          openTime:this.shopClosedAt,
+          openTime:this.shopOpenAt,
           closeTime:this.shopClosedAt,
           closedOn:this.closedOn,
           shopInfo:this.shopDetails,
