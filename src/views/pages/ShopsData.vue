@@ -1,7 +1,7 @@
 <template>
   <section id="shops-data">
     <top-banner
-      img="https://i.ibb.co/n1QPfzm/shop-banner.jpg"
+      img="https://www.lyra.com/in/wp-content/uploads/sites/8/2019/05/Digital-village-blog-image-1280x720.png"
       title="Shops List"
     ></top-banner>
     <main-heading>चरावां और आस पास की सभी दुकानें</main-heading>
@@ -9,7 +9,7 @@
 
     <div class="container">
       <label for="exampleFormControlInput1" class="form-label mt-2 fw-bold">
-        आप किस तरह की दुकान या सर्विस के बारे में जानना चाहते हैं ?
+        <!-- आप किस तरह की दुकान या सर्विस के बारे में जानना चाहते हैं ? -->
         <small class="fw-200 d-block">
           <!-- (आप एक से ज्यादा तरह की सर्विस पे क्लिक कर सकते हैं) -->
         </small>
@@ -56,8 +56,8 @@
             :key="data.shopName"
           >
             <h4 class="fw-bold">{{ data.shopName }}</h4>
-            <small class="d-block">मालिक :{{ data.owenerName }}</small>
-            <span class="d-block mb-2 fw-bold text-primary">
+            <small v-if="data.owenerName" class="d-block"><span class="text-muted">मालिक:</span> {{ data.owenerName }}</small>
+            <span class="d-block  fw-bold text-primary">
               {{ data.villageName }} ,{{ data.shopAddress }}</span
             >
                <span class="badge rounded-pill bg-white d-block"><span class="text-danger" v-for="day in data.closedOn" :key="day"> <small>{{day}} को बंद रहती है </small></span></span>
@@ -106,20 +106,9 @@
 <script>
 // import ShopFilter from "../../components/filter/ShopFilter.vue";
 import axios from "axios";
-import {
-  Facebook,
-  Twitter,
-  Telegram,
-  WhatsApp,
-} from "vue-socialmedia-share";
+
 export default {
-       components: {
-    Facebook,
-    Twitter,
-    Telegram,
-    WhatsApp,
     
-  },
   // components: { ShopFilter },
   created() {
     axios
@@ -210,6 +199,7 @@ export default {
   border-radius: 10px;
   background: #fcfbfb;
   /* min-width: 300px; */
+  border: .5px dotted rgb(88, 88, 88);
 
   box-shadow: 7px 7px 14px #bebebe, -7px -7px 14px #ffffff;
 }

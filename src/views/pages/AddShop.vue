@@ -1,7 +1,7 @@
 <template>
   <section id="addShop">
     <top-banner
-      img="https://i.ibb.co/yhBgbHn/cricket-banner.jpg"
+      img="http://digitalvillage.id/frontend/assets/images/gunung3.png"
       title="Cricket"
     ></top-banner>
     <main-heading>अपने आस पास की दुकानें जोड़े </main-heading>
@@ -26,7 +26,7 @@
             :value="check.value"
             v-model="checkedTypes"
           />
-          <small for="jack" class="text-muted">{{ check.title }}</small>
+          <small for="jack" class="text-muted ms-1">{{ check.title }}</small>
         </div>
         <br />
 
@@ -151,13 +151,14 @@
               readonly
               placeholder="जिस दिन बंद रहती है नीचे दिन पर टिक करें "
             />
+             <div class="" v-for="day in days" :key="day">
+          <input type="checkbox" :id="day" :value="day" v-model="closedOn" />
+          <small for="jack" class="text-muted ms-2">{{ day }}</small>
+        </div>
           </div>
         </div>
 
-        <div class="col-lg-2 col-4" v-for="day in days" :key="day">
-          <input type="checkbox" :id="day" :value="day" v-model="closedOn" />
-          <small for="jack" class="text-muted">{{ day }}</small>
-        </div>
+       
 
         <div class="col-lg-4">
           <div class="mb-3">

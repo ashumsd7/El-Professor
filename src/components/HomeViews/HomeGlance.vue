@@ -14,7 +14,7 @@
 
           </span> 
       </p>
-      <small class="heading-declaration">ये चरावां गांव की आधिकारिक वेबसाइट है </small>
+      <small class="heading-declaration">| चरावां में आपका स्वागत है | </small>
      <div class="row">
         <form action="" @submit.prevent="searchItems">
 

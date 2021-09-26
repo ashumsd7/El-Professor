@@ -4,17 +4,19 @@
   <div class="routers">
     <router-view/>
   </div>
-  <audio controls autoplay>
-  <source src="./assets/audio/nature.mp3" type="audio/mp3">
-Your browser does not support the audio element.
-</audio>
+  <the-footer></the-footer>
+  <!-- <audio controls autoplay>
+  <source src="./assets/audio/nature.mp3" type="audio/mp3"> -->
+<!-- Your browser does not support the audio element. -->
+<!-- </audio> -->
 </div>
 </template>
 <script>
 import TheNavbar from './components/boss/TheNavbar.vue'
+import TheFooter from './components/boss/TheFooter.vue'
 export default {
   components:{
-    TheNavbar
+    TheNavbar,TheFooter
   },
   created() {
     

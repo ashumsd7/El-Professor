@@ -73,8 +73,8 @@ export default {
   data() {
     return {
       bannerData: {
-        img: "https://images.livemint.com/img/2021/04/04/600x338/764754817dad452eadd18e908443f3ac-764754817dad452eadd18e908443f3ac-1_1617281784094_1617553913337.jpg",
-        title: "History",
+        img: "https://i.ibb.co/gvB5tcX/IMG-20210415-142008.jpg",
+        title: "Election",
       },
 
       selectedYear: 2021,

@@ -18,7 +18,7 @@
 h2{
     color: rgb(247, 76, 46);
     font-family: 'Bree Serif', serif;
-    text-shadow: 6px -1px 7px rgba(150, 150, 150, 1);
+    text-shadow: 6px -1px 4px rgba(150, 150, 150, .8);
     position: relative;
 }
 h2::after{

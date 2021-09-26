@@ -5,10 +5,10 @@
             <div class="row">
                 <div class="col-12">
                     <div class="text-content">
-                         <h1>Charawan village is located in Bikapur Tehsil of Ayodhya district in Uttar Pradesh, India. It is situated 9km away from sub-district headquarter Bikapur.</h1>
+                         <h1>चरावां  गाँव भारत के उत्तर प्रदेश में अयोध्या जिले की बीकापुर तहसील में स्थित है। यह उप-जिला मुख्यालय बीकापुर से 9 किमी दूर स्थित है।</h1>
                        <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum possimus nesciunt adipisci dicta eos. Temporibus, doloremque? Natus tempore sint magni! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, similique.</p> -->
                        <button class="btn btn-info mt-4 ">
-                          <router-link to='/itihas'> Know More..</router-link>
+                          <router-link to='/itihas'> ...और जाने </router-link>
                        </button>
                     </div>
                 </div>
@@ -33,7 +33,8 @@
     background-size: cover;
     /* -webkit-filter: grayscale(100%); 
   filter: grayscale(100%); */
-  text-shadow: 5px 3px 30px rgba(136, 142, 124, 1);
+  
+   text-shadow: 2px 2px 6px rgba(150, 150, 150, 1);
   
 
     padding-top: 100px;

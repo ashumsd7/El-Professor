@@ -3,7 +3,7 @@
     <home-glance></home-glance>
 
     <counter></counter>
-    <quick-links></quick-links>
+    <!-- <quick-links></quick-links> -->
     <about-glance></about-glance>
     <explain-banner
       :winner="data.winner"
@@ -20,7 +20,7 @@
 <script>
 // @ is an alias to /src
 import HomeGlance from "../components/HomeViews/HomeGlance";
-import QuickLinks from "../components/HomeViews/QuickLinks";
+// import QuickLinks from "../components/HomeViews/QuickLinks";
 import AboutGlance from "../components/HomeViews/AboutGlance";
 import AuthorityGlance from "../components/HomeViews/AuthorityGlance.vue";
 import Counter from "../components/HomeViews/Counter.vue";
@@ -31,7 +31,7 @@ export default {
   name: "Home",
   components: {
     HomeGlance,
-    QuickLinks,
+    // QuickLinks,
     AboutGlance,
     AuthorityGlance,
     ExplainBanner,
