@@ -5,6 +5,7 @@ import Elections from '../views/pages/Elections.vue'
 import Cricket from '../views/pages/Cricket.vue'
 import Donate from '../views/pages/Donate.vue'
 import ShopsData from '../views/pages/ShopsData.vue'
+import AddShop from '../views/pages/AddShop.vue'
 
 const routes = [
   {
@@ -36,6 +37,11 @@ const routes = [
     path: '/find',
     name: 'Shops',
     component: ShopsData
+  },
+  {
+    path: '/add-shop',
+    name: 'AddShop',
+    component: AddShop
   },
   
 ]

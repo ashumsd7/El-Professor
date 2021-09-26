@@ -1,29 +1,7 @@
 <template>
-  <section id="shops-data">
-    <top-banner
-      img="https://i.ibb.co/n1QPfzm/shop-banner.jpg"
-      title="Shops List"
-    ></top-banner>
-    <main-heading>चरावां  और आस पास की सभी दुकानें</main-heading>
-    <hr />
-    <div class="container">
-      <div class="row checkboxes">
-        <label for="exampleFormControlInput1" class="form-label mt-2 fw-bold">
-          आप किस तरह की दुकान या सर्विस के बारे में जानना चाहते हैं ?      <small class="fw-200">(आप एक से ज्यादा तरह की सर्विस पे क्लिक कर सकते हैं) </small> </label
-        >  
-   
-        <br>
-        <div class="col-4" v-for="check in getFilters" :key="check.value">
-          <input
-            type="checkbox"
-            :id="check.value"
-            :value="check.value"
-            v-model="selectedFilter"
-          />
-          <small for="jack" class="">{{ check.title }}</small>
-        </div>
-
-        <!-- <div class="form-check m-1" v-for="data in filterBy" :key="data.title">
+    <div>
+ <div class="row checkboxes">
+        <div class="form-check m-1" v-for="data in filterBy" :key="data.title">
           <input
             class="form-check-input"
             type="radio"
@@ -38,69 +16,19 @@
             {{ data.title }}
           </label>
         </div>
-        <br /> -->
+        <br />
 
         <hr />
       </div>
 
-      <div class="shop-table">
-        <h4>You have searched for {{ selectedFilter }}</h4>
-
-        <table class="table">
-          <thead>
-            <tr>
-              <th scope="col">S.No</th>
-              <th scope="col">दुकान का नाम</th>
-              <th scope="col">मोबाइल नंबर</th>
-              <th scope="col">समय</th>
-              <th scope="col">जगह</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr v-for="i in 20" :key="i">
-              <th scope="row">1</th>
-              <td>सोनू किराना स्टोर</td>
-              <td>
-                <small v-for="i in 2" :key="i" class="mx-2"
-                  ><a href="tel:+917800818001">Call</a></small
-                >
-              </td>
-              <td><small>10am to 4pm</small></td>
-              <td><small>Charawan</small></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
     </div>
-  </section>
 </template>
 
 <script>
-import ShopFilter from "../../components/filter/ShopFilter.vue";
-import axios from "axios";
-export default {
-  components: { ShopFilter },
-  created() {
-    axios
-      .get(
-        "https://docs.google.com/spreadsheets/d/1h8kWqfMzlc-thnPUHb0K2OxPc2Xb07nZ4JkXPoRngBU/gviz/tq?tqx=out:json"
-      )
-      .then((res) => {
-        let shopData = res;
-        console.log(shopData);
-        // for(let item in shopData ){
-        //   console.log(item);
-        // }
-      });
-  },
-  computed: {
-    getFilters() {
-      return this.$store.getters.getFilters;
-    },
-  },
-  data() {
-    return {
-      selectedFilter: [],
+    export default {
+        data() {
+            return {
+                 selectedFilter: "",
       filterBy: [
         { title: "सभी  ", value: "all" },
         { title: "जनरल व किराना स्टोर ", value: "generalStore" },
@@ -126,11 +54,13 @@ export default {
         { title: "कोचिंग    ", value: "coaching" },
         { title: "फास्टफूड     ", value: "fastfood" },
         { title: "होटल      ", value: "hotel" },
-        { title: "ट्रेडर्स      ", value: "buildingMaterials" },
+
+        { title: "ट्रेडर्स      ", value: "traders" },
         { title: "बाइक रिपेयर       ", value: "bikeRepair" },
         { title: "बढ़ई      ", value: "carpenter" },
         { title: "लोहार       ", value: "blacksmith" },
         { title: "सुनार        ", value: "jeweller" },
+
         { title: "गैस चूल्हा रिपेयर         ", value: "gasChulhaRepair " },
         { title: "ठेला         ", value: "thela " },
         { title: "पिक अप         ", value: "pickup " },
@@ -154,10 +84,10 @@ export default {
         { title: "श्रमिक मजदूर     ", value: "helper " },
         { title: "प्लम्बर      ", value: "plumber " },
         { title: "पेंटर      ", value: "painter " },
-        { title: "आटाचक्की       ", value: "chakki " },
+        { title: "आटाचक्की       ", value: "aataChakki " },
         { title: "चश्मा        ", value: "chashma  " },
         { title: "डेरी         ", value: "dairy  " },
-        { title: "घर की बिजली          ", value: "homeElectronic" },
+        { title: "घर की बिजली          ", value: "homeElectronic  " },
         { title: "बस सर्विस            ", value: "busService  " },
         { title: "साउंड सर्विस            ", value: "soundServie  " },
         { title: "टेंट हाउस            ", value: "tentHouse  " },
@@ -167,22 +97,16 @@ export default {
         { title: "लकड़हारा              ", value: "woodCutter   " },
         { title: "आयुर्वेदिक               ", value: "aayurvedic   " },
       ],
-
-      //shopData
-      allShopData: [],
-    };
-  },
-};
+            }
+        },
+    }
 </script>
 
-<style scoped>
+<style scoped scoped>
 .row > * {
   width: auto;
 }
 .form-check-label {
   font-size: 0.9rem;
-}
-table {
-  /* width:auto; */
 }
 </style>
