@@ -328,8 +328,6 @@ export default createStore({
       { title: "कैटर्स           ", value: "cetters  " },
       { title: "डेकोरेशन            ", value: "decoration   " },
       { title: "लकड़हारा              ", value: "woodCutter   " },
-
-      { title: "मज़दूर     ", value: "majdoor   " },
       { title: "नहीं मिला", value: "notFound   " },
     ],
   },

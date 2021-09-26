@@ -6,6 +6,8 @@
     ></top-banner>
     <main-heading>चरावां  और आस पास की सभी दुकानें</main-heading>
     <hr />
+
+    
     <div class="container">
       <div class="row checkboxes">
         <label for="exampleFormControlInput1" class="form-label mt-2 fw-bold">
@@ -20,7 +22,7 @@
             :value="check.value"
             v-model="selectedFilter"
           />
-          <small for="jack" class="">{{ check.title }}</small>
+          <small for="jack" class="ms-1">{{ check.title }}</small>
         </div>
 
         <!-- <div class="form-check m-1" v-for="data in filterBy" :key="data.title">
@@ -44,29 +46,29 @@
       </div>
 
       <div class="shop-table">
-        <h4>You have searched for {{ selectedFilter }}</h4>
+       <div class="col-lg-12"> <h4 v-if="selectedFilter.length">आपने सर्च किया है   </h4>
+        <span v-for="item in selectedFilter" :key="item" class="badge rounded-pill bg-dark ms-1">{{item}}</span></div>
 
         <table class="table">
           <thead>
             <tr>
               <th scope="col">S.No</th>
-              <th scope="col">दुकान का नाम</th>
-              <th scope="col">मोबाइल नंबर</th>
-              <th scope="col">समय</th>
-              <th scope="col">जगह</th>
+              <th scope="col"><small class="">दुकान का नाम</small></th>
+              <th scope="col"><small>मोबाइल नंबर</small></th>
+              <th scope="col"><small>समय</small></th>
+              <th scope="col"><small>जगह</small></th>
             </tr>
           </thead>
           <tbody>
-            <tr v-for="i in 20" :key="i">
-              <th scope="row">1</th>
-              <td>सोनू किराना स्टोर</td>
+            <tr v-for="(data,idx) in allShopData" :key="data.shopName">
+              <th scope="row">{{++idx}}</th>
+              <td><small>{{data.shopName}}</small></td>
               <td>
-                <small v-for="i in 2" :key="i" class="mx-2"
-                  ><a href="tel:+917800818001">Call</a></small
-                >
+                <small class="me-2"><a :href="data.mobileNumber"><img src="../../assets/telephone.png" alt="" srcset="" ></a></small>
+                <small v-if="data.mobileNumber2"><a :href="data.mobileNumber2"><img src="../../assets/telephone.png" alt="" srcset=""></a></small>
               </td>
-              <td><small>10am to 4pm</small></td>
-              <td><small>Charawan</small></td>
+              <td><small>{{data.openTime}} - {{data.closeTime}}</small></td>
+              <td><small>{{data.inCharwan}}, {{data.villageName}} ,{{data.shopAddress}}</small></td>
             </tr>
           </tbody>
         </table>
@@ -76,10 +78,10 @@
 </template>
 
 <script>
-import ShopFilter from "../../components/filter/ShopFilter.vue";
+// import ShopFilter from "../../components/filter/ShopFilter.vue";
 import axios from "axios";
 export default {
-  components: { ShopFilter },
+  // components: { ShopFilter },
   created() {
     axios
       .get(
@@ -101,76 +103,21 @@ export default {
   data() {
     return {
       selectedFilter: [],
-      filterBy: [
-        { title: "सभी  ", value: "all" },
-        { title: "जनरल व किराना स्टोर ", value: "generalStore" },
-        { title: "मेडिकल स्टोर ", value: "medicalStore" },
-        { title: "डॉक्टर्स      ", value: "doctors " },
-        { title: "पशु डॉक्टर       ", value: "animalDoctors " },
-        { title: "मशीनरी स्टोर  ", value: "machineryStore" },
-        { title: "स्कूल    ", value: "school" },
-        { title: "स्टेशनरी        ", value: "stationery " },
-        { title: "मोबाइल स्टोर   ", value: "mobileStore" },
-        { title: "प्रिंटिंग     ", value: "prinitng" },
-        { title: "मोबाइल रिपेरिंग         ", value: "mobileRepair " },
-        { title: "जन सेवा केंद्र  ", value: "janSewaKendra" },
-        { title: "बैंक   ", value: "bank" },
-        { title: "बर्तन    ", value: "bartan" },
-
-        { title: "साइकिल रिपेयर     ", value: "cycleStore" },
-        { title: "इलेक्ट्रॉनिक     ", value: "electronic" },
-        { title: "कॉस्मेटिक      ", value: "cosmetic" },
-        { title: "चप्पल जूता       ", value: "chappal" },
-        { title: "कपडा गारमेंट्स    ", value: "garments" },
-        { title: "गिफ्ट्स   ", value: "gifts" },
-        { title: "कोचिंग    ", value: "coaching" },
-        { title: "फास्टफूड     ", value: "fastfood" },
-        { title: "होटल      ", value: "hotel" },
-        { title: "ट्रेडर्स      ", value: "buildingMaterials" },
-        { title: "बाइक रिपेयर       ", value: "bikeRepair" },
-        { title: "बढ़ई      ", value: "carpenter" },
-        { title: "लोहार       ", value: "blacksmith" },
-        { title: "सुनार        ", value: "jeweller" },
-        { title: "गैस चूल्हा रिपेयर         ", value: "gasChulhaRepair " },
-        { title: "ठेला         ", value: "thela " },
-        { title: "पिक अप         ", value: "pickup " },
-        { title: "शराब       ", value: "wine " },
-        { title: "गिमटी पान मसाला        ", value: "paanMasala " },
-        { title: "कोल्डड्रिंक     ", value: "coldDrink " },
-        { title: "टेलर /दर्जी    ", value: "tailor " },
-        { title: "धोबी प्रेस    ", value: "press " },
-        { title: "किराये का घर      ", value: "rentRoom " },
-        { title: "किराये की दुकान     ", value: "rentShop " },
-        { title: "नाई    ", value: "barber " },
-        { title: "ब्यूटी पार्लर     ", value: "beautiParler " },
-        { title: "सिलाई     ", value: "silayi " },
-        { title: "मोची     ", value: "mochi " },
-        { title: "किराये की गाडी बोलेरो/कार    ", value: "rentCars " },
-        { title: "बीज भण्डार     ", value: "beejBhandaar " },
-        { title: "डीजल पेट्रोल     ", value: "dieselPetrol " },
-        { title: "स्टूडियो     ", value: "photoStudio " },
-        { title: "पतंजलि      ", value: "patanjali " },
-        { title: "पंडित पूजा के लिए       ", value: "pandit " },
-        { title: "श्रमिक मजदूर     ", value: "helper " },
-        { title: "प्लम्बर      ", value: "plumber " },
-        { title: "पेंटर      ", value: "painter " },
-        { title: "आटाचक्की       ", value: "chakki " },
-        { title: "चश्मा        ", value: "chashma  " },
-        { title: "डेरी         ", value: "dairy  " },
-        { title: "घर की बिजली          ", value: "homeElectronic" },
-        { title: "बस सर्विस            ", value: "busService  " },
-        { title: "साउंड सर्विस            ", value: "soundServie  " },
-        { title: "टेंट हाउस            ", value: "tentHouse  " },
-        { title: "कैटर्स           ", value: "cetters  " },
-        { title: "डेकोरेशन            ", value: "decoration   " },
-        { title: "डीजे             ", value: "dj   " },
-        { title: "लकड़हारा              ", value: "woodCutter   " },
-        { title: "आयुर्वेदिक               ", value: "aayurvedic   " },
-      ],
-
-      //shopData
       allShopData: [],
     };
+    
+  },
+  created() {
+     axios.get('https://charwan-shops-default-rtdb.firebaseio.com/charawan-shops.json')
+     .then(res=>{
+       console.log("here is the data");
+       console.log(res.data);
+      //  this.allShopData= res.data;
+       for(let i in res.data){
+        this.allShopData.push(res.data[i])
+       }
+       console.log(this.allShopData);
+     })
   },
 };
 </script>

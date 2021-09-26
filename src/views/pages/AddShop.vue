@@ -173,21 +173,7 @@
           </div>
         </div>
 
-        <div class="col-lg-12 mb-2">
-          <!-- <label for="exampleFormControlInput1" class="form-label mt-2">
-            दुकान / सर्विस का प्रकार लिखिए</label
-          >
-          <br /> -->
-          <!-- <span class="mx-2" v-for="check in getFilters" :key="check.value">
-            <input
-              type="checkbox"
-              :id="check.value"
-              :value="check.value"
-              v-model="checkedTypes"
-            />
-            <label for="jack" class="text-muted">{{ check.title }}</label>
-          </span> -->
-        </div>
+        
         <div class="col-lg-4">
           <label for="exampleFormControlInput1" class="form-label" >
             <span class="text-danger">*</span>#10.क्या आपकी दुकान/सर्विस किस गांव
@@ -304,7 +290,9 @@
 </template>
 
 <script>
+import axios from 'axios'
 export default {
+
   computed: {
     getFilters() {
       return this.$store.getters.getFilters;
@@ -430,6 +418,13 @@ export default {
   methods: {
     saveData(shopdata) {
       console.log(shopdata);
+      axios.post('https://charwan-shops-default-rtdb.firebaseio.com/charawan-shops.json',shopdata)
+      .then(res=>{
+          alert('डेटा सुरक्षित कर लिया  गया है')
+      })
+     .catch(err=>{
+         alert('सर्वर डाउन हो सकता हैं, कुछ समय बाद प्रयास करें  ')
+     })
     },
     validateData() {
         this.isVillageError=false,
@@ -465,14 +460,18 @@ export default {
             this.isVillageError= true;
             return
         }
+        if(this.inCharawan=='charawan'){
+            this.villageName='चरावां'
+        }
+
 
         
       let captureData = {
           shopName:this.shopName,
           owenerName:this.owenerName,
           shopType:this.checkedTypes,
-          mobileNumber:this.mobileNumber,
-          mobileNumber2:this.mobileNumber2,
+          mobileNumber:'tel:+91'+this.mobileNumber,
+          mobileNumber2:'tel:+91'+this.mobileNumber2,
           openTime:this.shopClosedAt,
           closeTime:this.shopClosedAt,
           closedOn:this.closedOn,
