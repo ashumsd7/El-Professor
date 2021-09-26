@@ -15,6 +15,8 @@
     "vue": "^3.0.0",
     "vue-js-counter": "^1.0.3",
     "vue-router": "^4.0.0-0",
+    "vue-social-sharing": "^3.0.8",
+    "vue-socialmedia-share": "^1.0.1",
     "vuex": "^4.0.0-0"
   },
   "devDependencies": {

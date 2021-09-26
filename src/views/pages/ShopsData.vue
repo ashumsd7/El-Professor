@@ -24,7 +24,7 @@
         v-if="!showCategory"
         class="btn btn-primary"
       >
-        <img src="../../assets/eyes.png" class="me-1" alt="" srcset="" />कोई और
+        <img src="../../assets/searching.png" class="me-1" alt="" srcset="" />कोई और
         दुकान देखें
       </button>
       <div v-else class="row checkboxes">
@@ -45,16 +45,7 @@
 
       <div class="shop-table">
         <hr />
-        <!-- <div class="col-lg-12">
-          <h4 v-if="selectedFilter.length">आपने सर्च किया है</h4>
 
-          <span
-            v-for="item in selectedFilter"
-            :key="item"
-            class="badge rounded-pill bg-dark ms-1"
-            >{{ item }}</span
-          >
-        </div> -->
 
         <div class="row text-center m-auto mt-2 justify-content-center">
           
@@ -69,7 +60,7 @@
             <span class="d-block mb-2 fw-bold text-primary">
               {{ data.villageName }} ,{{ data.shopAddress }}</span
             >
-               <span class="badge rounded-pill bg-white d-block"><span class="text-danger" v-for="day in data.closedOn" :key="day"> <small>{{day}}को बंद रहती है </small></span></span>
+               <span class="badge rounded-pill bg-white d-block"><span class="text-danger" v-for="day in data.closedOn" :key="day"> <small>{{day}} को बंद रहती है </small></span></span>
 
             <span class="badge rounded-pill bg-light text-dark d-block">
               {{ data.openTime }}
@@ -78,84 +69,57 @@
               }}<small class="text-muted"> बजे बंद होती है </small></span
             >
          
-            <span class="badge rounded-pill bg-danger call-btn me-3 mt-2"
+            <span class="badge rounded-pill bg-dark call-btn me-3 mt-2"
               ><a
                 class="text-decoration-none text-white"
                 :href="data.mobileNumber"
               >
-                <img src="../../assets/telephone.png" alt="" srcset="" />Call
-                Now</a
+                <img src="../../assets/telephone.png" alt="" srcset="" />
+                फ़ोन करें 
+                </a
               ></span
             >
 
             <span
               v-if="data.mobileNumber2 != 'tel:+91'"
-              class="badge rounded-pill bg-success call-btn"
+              class="badge rounded-pill bg-dark call-btn"
               ><a
                 class="text-decoration-none text-white"
                 :href="data.mobileNumber2"
               >
-                <img src="../../assets/telephone.png" alt="" srcset="" />Call
-                Now</a
+                <img src="../../assets/telephone.png" alt="" srcset="" />
+                
+                फ़ोन करें </a
               ></span
             >
           </div>
         </div>
 
-        <!-- <table class="table">
-          <thead>
-            <tr>
-              <th scope="col">S.No</th>
-              <th scope="col"><small class="">दुकान का नाम</small></th>
-              <th scope="col"><small>मोबाइल नंबर</small></th>
-              <th scope="col"><small>समय</small></th>
-              <th scope="col"><small>जगह</small></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr v-for="(data, idx) in allShopData" :key="data.shopName">
-              <th scope="row">{{ ++idx }}</th>
-              <td>
-                <small>{{ data.shopName }}</small>
-              </td>
-              <td>
-                <small class="me-2"
-                  ><a :href="data.mobileNumber"
-                    ><img
-                      src="../../assets/telephone.png"
-                      alt=""
-                      srcset="" /></a
-                ></small>
-                <small v-if="data.mobileNumber2"
-                  ><a :href="data.mobileNumber2"
-                    ><img
-                      src="../../assets/telephone.png"
-                      alt=""
-                      srcset="" /></a
-                ></small>
-              </td>
-              <td>
-                <small>{{ data.openTime }} - {{ data.closeTime }}</small>
-              </td>
-              <td>
-                <small
-                  >{{ data.inCharwan }}, {{ data.villageName }} ,{{
-                    data.shopAddress
-                  }}</small
-                >
-              </td>
-            </tr>
-          </tbody>
-        </table> -->
+<Facebook url="http://localhost:8080/find" scale="3"></Facebook>
       </div>
     </div>
+
+    
   </section>
 </template>
 
 <script>
 // import ShopFilter from "../../components/filter/ShopFilter.vue";
 import axios from "axios";
+import {
+  Facebook,
+  Twitter,
+  Telegram,
+  WhatsApp,
+} from "vue-socialmedia-share";
 export default {
+       components: {
+    Facebook,
+    Twitter,
+    Telegram,
+    WhatsApp,
+    
+  },
   // components: { ShopFilter },
   created() {
     axios
@@ -236,24 +200,30 @@ export default {
 .form-check-label {
   font-size: 0.9rem;
 }
-table {
-  /* width:auto; */
-}
+
 .call-btn {
   border-radius: 0px;
-  background: #ff0c0c;
-  box-shadow: inset 7px 7px 14px #5a5a5a, inset -7px -7px 14px #ffffff;
+  background: #000000;
+  box-shadow: inset 7px 7px 14px #000000, inset -7px -7px 14px #000000;
 }
 .shop-card {
   border-radius: 10px;
-  background: #ebe2e2;
+  background: #fcfbfb;
   /* min-width: 300px; */
 
   box-shadow: 7px 7px 14px #bebebe, -7px -7px 14px #ffffff;
 }
+.shop-card h4{
+  text-shadow: 2px 2px 6px rgba(150, 150, 150, 1);
+}
 @media (max-width:700px){
   .shop-card {
     width: 100vw;
+  }
+}
+@media (min-width:700px){
+  .shop-card {
+    min-width: 350px;
   }
 }
 </style>
