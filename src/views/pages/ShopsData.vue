@@ -55,7 +55,7 @@
             v-for="data in allShopData"
             :key="data.shopName"
           >
-            <h4 class="fw-bold">{{ data.shopName }}</h4>
+            <h3 class="fw-bolder ">{{ data.shopName }}</h3>
             <small v-if="data.owenerName" class="d-block"><span class="text-muted">मालिक:</span> {{ data.owenerName }}</small>
             <span class="d-block  fw-bold text-primary">
               {{ data.villageName }} ,{{ data.shopAddress }}</span
@@ -203,7 +203,7 @@ export default {
 
   box-shadow: 7px 7px 14px #bebebe, -7px -7px 14px #ffffff;
 }
-.shop-card h4{
+.shop-card h3{
   text-shadow: 2px 2px 6px rgba(150, 150, 150, 1);
 }
 @media (max-width:700px){
