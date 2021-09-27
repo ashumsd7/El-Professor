@@ -4,7 +4,7 @@
       img="https://i.ibb.co/yhBgbHn/cricket-banner.jpg"
       title="Cricket"
     ></top-banner>
-    <main-heading>Cricket In Charawan</main-heading>
+    <main-heading>चरावां क्रिकेट क्लब </main-heading>
     <main-content
       >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum sunt
       repellendus odio corporis tempora facere, cumque inventore ea
@@ -16,7 +16,7 @@
       Repellat!</main-content
     >
     <div class="container">
-      <sub-heading>Criket Tournament 2021</sub-heading>
+      <sub-heading>क्रिकेट टूर्नामेंट  2021</sub-heading>
       <a href="#2018Cricket" class="text-center d-block">Take a look of 2018 Tournament</a>
       <main-content> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa, nobis expedita nisi esse voluptates ipsam beatae necessitatibus sequi odit obcaecati est sunt aperiam provident ut ipsum repudiandae aspernatur nemo ab! </main-content>
       <div class="row">
@@ -26,7 +26,7 @@
         <div class="col-lg-6"></div>
       </div>
       <div class="row mt-2">
-        <sub-heading class="mb-4">Tournament Gallery</sub-heading>
+        <sub-heading class="mb-4">क्रिकेट टूर्नामेंट 2021 Gallery</sub-heading>
         <div v-for="url in videos2021" :key="url" class="col-lg-3 col-md-6 my-2 p-2">
           <iframe
             width="100%"
@@ -39,10 +39,10 @@
         </div>
       </div>
 
-      <sub-heading id="2018Cricket">Criket Tournament 2018</sub-heading>
+      <sub-heading id="2018Cricket">क्रिकेट टूर्नामेंट 2018</sub-heading>
         <main-content> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa, nobis expedita nisi esse voluptates ipsam beatae necessitatibus sequi odit obcaecati est sunt aperiam provident ut ipsum repudiandae aspernatur nemo ab! </main-content>
       <div class="row mt-2">
-        <sub-heading class="mb-4">Tournament Gallery</sub-heading>
+        <sub-heading class="mb-4">क्रिकेट टूर्नामेंट  Gallery</sub-heading>
 
          <div v-for="url in videos2018" :key="url" class="col-lg-3 col-md-6 my-2 p-2">
           <iframe

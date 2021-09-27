@@ -35,8 +35,17 @@
             <li @click="handleLink"  class="nav-item" v-for="link in links" :key="link">
               <router-link class="nav-link " aria-current="page" :to='link.to'>{{link.title}}</router-link>
             </li>
-            <li class="nav-item">
-              <p class="main-btn"><router-link class="text-decoration-none text-white" to="/donate">डोनेट</router-link></p>
+            <li class="nav-item" @click="donate">
+              <p class="main-btn">डोनेट
+                <!-- <router-link class="text-decoration-none text-white"  to="/donate"></router-link> -->
+              </p>
+              
+            </li>
+            <li class="nav-item" >
+              <p class="main-btn">
+                <a class="text-decoration-none text-dark" href="https://chat.whatsapp.com/LgCz9l1tWQKKJe6OQ5n8Zt">सम्पर्क करें </a>
+                <!-- <router-link class="text-decoration-none text-white"  to="/donate"></router-link> -->
+              </p>
               
             </li>
           </ul>
@@ -55,9 +64,11 @@ export default {
       links:[{title:'होम ',to:'/'},
       {title:' दुकान खोजें ',to:'/find'},
        {title:'इतिहास',to:'/itihas'},
-       {title:' गैलरी',to:'/gallery'},
+      //  {title:' गैलरी',to:'/gallery'},
+      //  {title:' समाचार ',to:'/readnews'},
        {title:' क्रिकेट ',to:'/cricket'},
        {title:'इलेक्शन ',to:'/election'}
+      
      ],
       addNavShadow:false,
       
@@ -73,7 +84,11 @@ export default {
     //on click closing list nav on mobile
     handleLink(e){
    e.path[3].classList.remove('show')
-  }
+  },
+  donate(){
+    alert('डोनेशन लिंक जल्द ही उपलब्ध होगी  अधिक जानकारी के लिए आप व्हाट्सप्प ग्रुप पर जुड़ सकते हैं ')
+  },
+ 
   },
 };
 </script>
