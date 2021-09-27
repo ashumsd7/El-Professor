@@ -1,21 +1,23 @@
 <template>
-  <section id="addShop">
-    <top-banner
+  <section class="addShop position-relative">
+    <top-banner 
       img="http://digitalvillage.id/frontend/assets/images/gunung3.png"
       title="Cricket"
     ></top-banner>
-    <main-heading>अपने आस पास की दुकानें जोड़े </main-heading>
+    <main-heading v-if="!showDialog">अपने आस पास की दुकानें जोड़े </main-heading>
     <div class="container add-shop-data">
       <div class="row">
-        <label for="exampleFormControlInput1" class="form-label mt-2">
+        <label v-if="!showDialog" for="exampleFormControlInput1" class="form-label mt-2">
           <span class="text-danger">*</span> #1. दुकान / सर्विस का प्रकार पर टिक
           करिये
         </label>
-        <small class="text-muted mb-3"
+        <success-dialog @addMore='showDialog=!showDialog'  v-if="showDialog" > 
+            आपके दुकान /सर्विस अब वेबसाइट पर दिखेगी   | </success-dialog>
+        <small class="text-muted mb-3 " v-if="!showDialog"
           >**अगर आप एक से ज्यादा सर्विस देते हैं तो एक से ज्यादा सर्विस पर टिक
           करिये |</small
         >
-        <div
+        <div v-if="!showDialog"
           class="col-lg-2 col-4"
           v-for="check in getFilters"
           :key="check.value"
@@ -30,6 +32,7 @@
         </div>
         <br />
 
+        <div v-if="!showDialog" class="">
         <div class="col-lg-4">
           <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label mt-2">
@@ -167,6 +170,8 @@
             </label>
             <textarea
               type="text"
+              cols="30"
+              rows="7"
               class="form-control"
               v-model="shopDetails"
               placeholder="यहाँ आप लिख सकते हैं की आप किस तरीके की सर्विस देते हैं, आप की उपलब्धिया, आपकी विशेताएं आदि... "
@@ -278,13 +283,14 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-12">
+      <div class="col-lg-12" v-if="!showDialog">
         <input
           type="button"
           @click="validateData"
           class="btn btn-success form-control my-5"
           value="जानकरी सेव करें "
         />
+      </div>
       </div>
     </div>
   </section>
@@ -313,6 +319,8 @@ export default {
       closedOn: [],
       shopDetails: "",
       isVillageError: false,
+
+      showDialog:false,
 
       days: [
         "सोमवार",
@@ -421,13 +429,16 @@ export default {
       console.log(shopdata);
       axios.post('https://charwan-shops-default-rtdb.firebaseio.com/charawan-shops.json',shopdata)
       .then(res=>{
-          alert('डेटा सुरक्षित कर लिया  गया है')
+        //   alert('डेटा सुरक्षित कर लिया  गया है')
+        this.showDialog=true;
+          
       })
      .catch(err=>{
          alert('सर्वर डाउन हो सकता हैं, कुछ समय बाद प्रयास करें  ')
      })
     },
     validateData() {
+        // this.showDialog=true;
         this.isVillageError=false,
         this.isMobileError=false,
         this.isShopNameError=false
@@ -499,5 +510,9 @@ export default {
 }
 label {
   font-weight: 600;
+}
+.form-label{
+    color: rgb(69, 96, 252);
+
 }
 </style>

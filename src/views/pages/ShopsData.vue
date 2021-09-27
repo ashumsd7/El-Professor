@@ -16,7 +16,7 @@
       </label>
 
       <button class="btn btn-secondary d-block mb-2">
-        <img src="../../assets/plus.png" alt="" srcset="" class="me-1" /> <router-link class="text-decoration-none text-white"  to="/add-shop">दुकान
+        <img src="../../assets/plus.png" alt="" srcset="" class="me-1" /> <router-link class="text-decoration-none text-white"  to="/addshop">दुकान
         /सर्विस जोड़ें</router-link>
       </button>
       <button

@@ -9,6 +9,7 @@ import TopBanner from './components/reusable/TopBanner'
 import MainHeading from './components/reusable/slots/MainHeading.vue'
 import SubHeading from './components/reusable/slots/SubHeading.vue'
 import MainContent from './components/reusable/slots/MainContent.vue'
+import SuccessDialog from './components/reusable/slots/SuccessDialog.vue'
 
 
 
@@ -17,6 +18,7 @@ vm.component('top-banner', TopBanner)
 vm.component('main-heading', MainHeading)
 vm.component('sub-heading', SubHeading)
 vm.component('main-content', MainContent)
+vm.component('success-dialog', SuccessDialog)
 vm.mount('#app')
 
 

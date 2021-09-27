@@ -41,7 +41,7 @@ const routes = [
     component: ShopsData
   },
   {
-    path: '/add-shop',
+    path: '/addshop',
     name: 'AddShop',
     component: AddShop
   },
