@@ -1,10 +1,16 @@
 <template>
 <div class="my-app">
+  <div class="nav-bar">
+
   <the-navbar></the-navbar>
+  </div>
   <div class="routers">
     <router-view/>
   </div>
+  <div class="footer">
+
   <the-footer></the-footer>
+  </div>
   <!-- <audio controls autoplay>
   <source src="./assets/audio/nature.mp3" type="audio/mp3"> -->
 <!-- Your browser does not support the audio element. -->
@@ -29,15 +35,22 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
 .my-app{
-  position: relative
+  /* position: relative */
 }
 .routers{
- position: absolute;
- top: 5rem;
- left: 0;
- width: 100%;
+ /* position: absolute;
+ top: 5rem; */
+ /* left: 0;
+ width: 100%; */
+ /* margin-top: 100px; */
 }
 a{
   text-decoration: none;
+}
+.footer{
+  /* position: absolute; */
+}
+.nav-bar{
+  /* margin-top: -50px; */
 }
 </style>

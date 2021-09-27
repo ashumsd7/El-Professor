@@ -3,7 +3,7 @@
     <nav
       class="
         navbar navbar-expand-lg bg-white
-        position-fixed
+        
         w-100
         mt-0
         start-0
@@ -36,7 +36,7 @@
               <router-link class="nav-link " aria-current="page" :to='link.to'>{{link.title}}</router-link>
             </li>
             <li class="nav-item">
-              <p class="main-btn"><router-link to="/donate">डोनेट</router-link></p>
+              <p class="main-btn"><router-link class="text-decoration-none text-white" to="/donate">डोनेट</router-link></p>
               
             </li>
           </ul>

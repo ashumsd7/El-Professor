@@ -7,11 +7,11 @@ export default createStore({
         year: "2021",
         data: [
           {
-            type: "ग्राम पंचायत प्रधान (PRADHAN)",
+            type: "ग्राम पंचायत प्रधान ",
             winnerImg: "https://i.ibb.co/Vw20jjS/anil005018092021.jpg",
             img: "",
             doanloadLink: null,
-            winner: "Anil Kumar",
+            winner: "अनिल कुमार ",
             opponent: "",
             about:
               "        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, fugiat iusto mollitia illum reprehenderit at, voluptate totam voluptas molestiae ipsum ullam harum, nulla aliquid earum maiores? Excepturi quam, dolorum ab atque velit facere architecto accusamus, expedita molestiae eveniet error repudiandae in cupiditate repellat reiciendis tenetur. Rem molestias illum quod nobis atque corporis magnam? Expedita enim vero praesentium id fugiat eius natus odit, deserunt earum ipsa sint maxime et a alias ratione esse nihil deleniti repellat aut porro obcaecati odio. Quos, corrupti quidem consequatur, iure accusantium quae ratione quas ea ex excepturi consectetur molestias vero enim ipsam. Recusandae voluptate error ex!",
@@ -28,11 +28,11 @@ export default createStore({
           //     "        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, fugiat iusto mollitia illum reprehenderit at, voluptate totam voluptas molestiae ipsum ullam harum, nulla aliquid earum maiores? Excepturi quam, dolorum ab atque velit facere architecto accusamus, expedita molestiae eveniet error repudiandae in cupiditate repellat reiciendis tenetur. Rem molestias illum quod nobis atque corporis magnam? Expedita enim vero praesentium id fugiat eius natus odit, deserunt earum ipsa sint maxime et a alias ratione esse nihil deleniti repellat aut porro obcaecati odio. Quos, corrupti quidem consequatur, iure accusantium quae ratione quas ea ex excepturi consectetur molestias vero enim ipsam. Recusandae voluptate error ex!",
           // },
           {
-            type: "BDC",
+            type: "बी डी सी",
             winnerImg: "https://i.ibb.co/JQNw2XM/anil003918092021.jpg",
             img: "",
             doanloadLink: null,
-            winner: "Anees Tiwari",
+            winner: "अनीस तिवारी ",
             opponent: "",
             about:
               "        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, fugiat iusto mollitia illum reprehenderit at, voluptate totam voluptas molestiae ipsum ullam harum, nulla aliquid earum maiores? Excepturi quam, dolorum ab atque velit facere architecto accusamus, expedita molestiae eveniet error repudiandae in cupiditate repellat reiciendis tenetur. Rem molestias illum quod nobis atque corporis magnam? Expedita enim vero praesentium id fugiat eius natus odit, deserunt earum ipsa sint maxime et a alias ratione esse nihil deleniti repellat aut porro obcaecati odio. Quos, corrupti quidem consequatur, iure accusantium quae ratione quas ea ex excepturi consectetur molestias vero enim ipsam. Recusandae voluptate error ex!",
@@ -43,7 +43,7 @@ export default createStore({
         year: "2015",
         data: [
           {
-            type: "ग्राम पंचायत प्रधान (PRADHAN) ",
+            type: "ग्राम पंचायत प्रधान  ",
             img: "https://i.ibb.co/0qLLPsD/ele2015.jpg",
             winnerImg:
               "https://scontent.fknu1-2.fna.fbcdn.net/v/t1.18169-9/18557226_457101737962730_216037800412696253_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=0ScarD4FlCsAX97Zp_g&tn=e7XmZYLoDUMmyV3u&_nc_ht=scontent.fknu1-2.fna&oh=b7b8e98ce43660111dd3a59d3b12bdd6&oe=616954BF",
@@ -67,7 +67,7 @@ export default createStore({
           //     "        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, fugiat iusto mollitia illum reprehenderit at, voluptate totam voluptas molestiae ipsum ullam harum, nulla aliquid earum maiores? Excepturi quam, dolorum ab atque velit facere architecto accusamus, expedita molestiae eveniet error repudiandae in cupiditate repellat reiciendis tenetur. Rem molestias illum quod nobis atque corporis magnam? Expedita enim vero praesentium id fugiat eius natus odit, deserunt earum ipsa sint maxime et a alias ratione esse nihil deleniti repellat aut porro obcaecati odio. Quos, corrupti quidem consequatur, iure accusantium quae ratione quas ea ex excepturi consectetur molestias vero enim ipsam. Recusandae voluptate error ex!",
           // },
           {
-            type: "BDC",
+            type: "बी डी सी",
             winnerImg:
               "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9ZPryW2FN8JQZ1y8I0BaGzVJTi6evpNrkdZ17uaWiOjIsBLYnuUHv2KIt0eBeqgzHICQ&usqp=CAU",
             img: "",
@@ -84,12 +84,12 @@ export default createStore({
         year: "2010",
         data: [
           {
-            type: "ग्राम पंचायत प्रधान (PRADHAN) ",
+            type: "ग्राम पंचायत प्रधान ",
             winnerImg:
               "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9ZPryW2FN8JQZ1y8I0BaGzVJTi6evpNrkdZ17uaWiOjIsBLYnuUHv2KIt0eBeqgzHICQ&usqp=CAU",
             img: "https://i.ibb.co/ZmRW3RZ/2010-pradhan.jpg",
             doanloadLink: "http://sec.up.nic.in/site/fonts/gpp_1404.pdf",
-            winner: "Rishikesh",
+            winner: "ऋषिकेश जायसवाल  ",
             opponent: "",
             about:
               "        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, fugiat iusto mollitia illum reprehenderit at, voluptate totam voluptas molestiae ipsum ullam harum, nulla aliquid earum maiores? Excepturi quam, dolorum ab atque velit facere architecto accusamus, expedita molestiae eveniet error repudiandae in cupiditate repellat reiciendis tenetur. Rem molestias illum quod nobis atque corporis magnam? Expedita enim vero praesentium id fugiat eius natus odit, deserunt earum ipsa sint maxime et a alias ratione esse nihil deleniti repellat aut porro obcaecati odio. Quos, corrupti quidem consequatur, iure accusantium quae ratione quas ea ex excepturi consectetur molestias vero enim ipsam. Recusandae voluptate error ex!",
@@ -107,12 +107,12 @@ export default createStore({
           //     "        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, fugiat iusto mollitia illum reprehenderit at, voluptate totam voluptas molestiae ipsum ullam harum, nulla aliquid earum maiores? Excepturi quam, dolorum ab atque velit facere architecto accusamus, expedita molestiae eveniet error repudiandae in cupiditate repellat reiciendis tenetur. Rem molestias illum quod nobis atque corporis magnam? Expedita enim vero praesentium id fugiat eius natus odit, deserunt earum ipsa sint maxime et a alias ratione esse nihil deleniti repellat aut porro obcaecati odio. Quos, corrupti quidem consequatur, iure accusantium quae ratione quas ea ex excepturi consectetur molestias vero enim ipsam. Recusandae voluptate error ex!",
           // },
           {
-            type: "BDC",
+            type: "बी डी सी",
             winnerImg:
               "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9ZPryW2FN8JQZ1y8I0BaGzVJTi6evpNrkdZ17uaWiOjIsBLYnuUHv2KIt0eBeqgzHICQ&usqp=CAU",
             img: "https://i.ibb.co/cgMZ6fL/BDC-2010.jpg",
             doanloadLink: "http://sec.up.nic.in/site/fonts/kpm_1404.pdf",
-            winner: "Kiran",
+            winner: "किरन",
             opponent: "",
             about:
               "        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, fugiat iusto mollitia illum reprehenderit at, voluptate totam voluptas molestiae ipsum ullam harum, nulla aliquid earum maiores? Excepturi quam, dolorum ab atque velit facere architecto accusamus, expedita molestiae eveniet error repudiandae in cupiditate repellat reiciendis tenetur. Rem molestias illum quod nobis atque corporis magnam? Expedita enim vero praesentium id fugiat eius natus odit, deserunt earum ipsa sint maxime et a alias ratione esse nihil deleniti repellat aut porro obcaecati odio. Quos, corrupti quidem consequatur, iure accusantium quae ratione quas ea ex excepturi consectetur molestias vero enim ipsam. Recusandae voluptate error ex!",
