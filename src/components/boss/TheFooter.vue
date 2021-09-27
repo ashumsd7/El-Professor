@@ -20,8 +20,8 @@
             <div class="col-2 "> <a href="https://www.facebook.com/profile.php?id=100073066780248"><img width="32" height="32" src="../../assets/facebook.png" alt="" srcset="" /></a>  </div>
             <div class="col-2"> <a href="mailto:meracharawan@gmail.com"><img width="32" height="32" src="../../assets/gmail.png" alt="" srcset="" /></a>  </div>
             <div class="col-2"> <a href="https://twitter.com/meracharawan"><img width="32" height="32" src="../../assets/twitter.png" alt="" srcset="" /></a>  </div>
-            <div class="col-2 "> <a href="https://twitter.com/meracharawan"><img width="32" height="32" src="../../assets/whatsapp.png" alt="" srcset="" /></a>  </div>
-            <div class="col-2 "> <a href="https://chat.whatsapp.com/LgCz9l1tWQKKJe6OQ5n8Zt"><img width="32" height="32" src="../../assets/instagram.png" alt="" srcset="" /></a> 
+            <div class="col-2 "> <a href="https://instagram.com/meracharawan"><img width="32" height="32" src="../../assets/instagram.png" alt="" srcset="" /></a>  </div>
+            <div class="col-2 "> <a href="https://chat.whatsapp.com/LgCz9l1tWQKKJe6OQ5n8Zt"><img width="32" height="32" src="../../assets/whatsapp.png" alt="" srcset="" /></a> 
         </div>
             
         </div>
