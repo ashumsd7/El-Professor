@@ -257,6 +257,8 @@ export default createStore({
       { title: "साइकिल रिपेयर     ", value: "cycleStore" },
       { title: "बाइक रिपेयर       ", value: "bikeRepair" },
       { title: "इलेक्ट्रॉनिक     ", value: "electronic" },
+      { title: "वेल्डिंग वर्कशॉप      ", value: "welding" },
+      { title: "मिस्त्री घर बनाने वाले       ", value: "homeMistri" },
       { title: "कॉस्मेटिक      ", value: "cosmetic" },
       { title: "बोलेरो/कार    ", value: "rentCars " },
       { title: "पिक अप         ", value: "pickup " },
