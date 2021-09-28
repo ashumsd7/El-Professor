@@ -10,7 +10,9 @@
     <div class="container text-center position-relative ">
       <label for="exampleFormControlInput1" class="form-label mt-2 fw-bold">
         <!-- आप किस तरह की दुकान या सर्विस के बारे में जानना चाहते हैं ? -->
-        <span class="badge bg-warning text-dark">कुल  <span class="badge bg-dark text-white ">   {{allShopData.length}}</span> दुकाने दिख रही  हैं </span>
+        <span class="badge bg-warning text-dark">कुल <span class="badge bg-info text-dark ">  
+           {{preservedData.length}}</span>  में से   <span class="badge bg-dark text-white ">   {{allShopData.length}}</span> दुकाने/सेवाएं 
+ दिख रही  हैं </span>
         <small class="fw-200 d-block">
           <!-- (आप एक से ज्यादा तरह की सर्विस पे क्लिक कर सकते हैं) -->
         </small>
