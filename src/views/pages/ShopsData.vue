@@ -62,7 +62,7 @@
             >
                <span class="badge rounded-pill bg-white d-block"><span class="text-danger" v-for="day in data.closedOn" :key="day"> <small>{{day}} को बंद रहती है </small></span></span>
 
-            <span class="badge rounded-pill bg-light text-dark d-block">
+            <span v-if="data.openTime" class="badge rounded-pill bg-light text-dark d-block">
               {{ data.openTime }}
               <small class="text-muted">बजे खुलती है </small> | 
               {{ data.closeTime
