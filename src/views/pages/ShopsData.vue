@@ -7,7 +7,7 @@
     <main-heading>चरावां और आस पास की सभी दुकानें</main-heading>
     <hr />
 
-    <div class="container text-center">
+    <div class="container text-center position-relative ">
       <label for="exampleFormControlInput1" class="form-label mt-2 fw-bold">
         <!-- आप किस तरह की दुकान या सर्विस के बारे में जानना चाहते हैं ? -->
         <span class="badge bg-warning text-dark">कुल  <span class="badge bg-dark text-white ">   {{allShopData.length}}</span> दुकाने दिख रही  हैं </span>
@@ -24,17 +24,27 @@
 
       
       <button
-        @click="showCategory = !showCategory"
+        @click="searchClicked()"
         v-if="!showCategory"
-        class="btn btn-primary d-block" 
+        class="btn btn-primary d-block search-btn  position-fixed  " 
       >
-        <img src="../../assets/searching.png" class="me-1" alt="" srcset="" /> दुकान/ सर्विस  सर्च करें 
+        <img src="../../assets/searching.png" class="me-1" alt="" srcset="" /> 
+          दुकान खोजें 
       </button>
+
+         
+
       </div>
       <div  v-if="showCategory" class="row checkboxes">
         <br />
         <br />
+  <label for="exampleFormControlInput1" class="form-label mt-2 fw-bold">
+    आप किस तरह की दुकान या सर्विस के बारे में जानना चाहते हैं ?
+  </label>
+        <!-- आप किस तरह की दुकान या सर्विस के बारे में जानना चाहते हैं ? -->
+        <div class="row">
 
+        
         <div class="col-4" v-for="check in getFilters" :key="check.value">
           <input
             type="radio"
@@ -45,13 +55,14 @@
           />
           <small for="jack" class="ms-1">{{ check.title }}</small>
         </div>
+        </div>
       </div>
 
       <div class="shop-table">
         <hr />
 
 
-        <div class="row text-center m-auto mt-2 justify-content-center">
+        <div class="row text-center m-auto mt-2 justify-content-center mt-3">
           
           <img v-if="isLoading" src="../../assets/loading.gif" class="me-1" alt="" srcset="" />
           <div
@@ -62,7 +73,7 @@
             <h3 class="fw-bolder ">{{ data.shopName }}</h3>
             <small v-if="data.owenerName" class="d-block"><span class="text-muted">मालिक:</span> {{ data.owenerName }}</small>
             <span class="d-block  fw-bold text-primary">
-              {{ data.villageName }} ,{{ data.shopAddress }}</span
+              {{ data.villageName }} {{ data.shopAddress }}</span
             >
                <span class="badge rounded-pill bg-white d-block"><span class="text-danger" v-for="day in data.closedOn" :key="day"> <small>{{day}} को बंद रहती है </small></span></span>
 
@@ -179,6 +190,11 @@ export default {
           this.isLoading=false
         });
     },
+    searchClicked(){
+    
+      this.showCategory = !this.showCategory;
+      window.scrollTo(100, 0);
+    }
   },
   created() {
     this.callAPI();
@@ -219,5 +235,9 @@ export default {
   .shop-card {
     min-width: 350px;
   }
+}
+.search-btn{
+  /* position: fixed; */
+  /* z-index: 10002; */
 }
 </style>
