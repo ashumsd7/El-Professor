@@ -224,6 +224,7 @@ export default createStore({
    
     filterBy: [
       { title: "सभी  ", value: "all" },
+      { title: "आपातकालीन सेवा   ", value: "emergency" },
       { title: "जनरल/किराना ", value: "generalStore" },
       { title: "मेडिकल स्टोर ", value: "medicalStore" },
       { title: "डॉक्टर्स      ", value: "doctors " },
