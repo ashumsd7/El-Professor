@@ -1,60 +1,117 @@
 <template>
-   <section id="authority">
-       <div class="container">
-           <div class="row">
-               <div class="col-lg-3 col-6" v-for="i in 6" :key="i">
-                   <div class="authority-conatiner text-center m-2">
-                       <div class="authority-img">
-                           <img class="img-fluid" src="https://images.financialexpress.com/2020/09/kartik-kala-1.jpg" alt="">
-                       </div>
-                       <div class="authority-about ">
-                           <p class="authority-name mt-lg-3 mt-3">Dr. Ab j Abdul Kalam</p>
-                           <p class="authority-position">Gram Pradhan (2012-2013)</p>
-                           <p class="authority-contact"><a class="text-decoration-none" href="tel:++91 123465697">Call Now</a></p>
-                       </div>
+    <div class="container">
+        <div class="row justify-content-center text-center mb-3">
+       
 
-                   </div>
-               </div>
-           </div>
-       </div>
-   </section>
+
+          
+             <div class="col-lg-4  col-md-6 col-12 mt-3 authority-container" :key="data.name" v-for="data in authorityData">
+                 <div class="row">
+                     <div class="col-7">
+                          <img  class="img-fluid mb-3  authority-img mt-3" :src="data.img" alt="" srcset="">
+                     </div>
+                     <div class="col-5 info">
+                         <p class="name">{{data.name}}
+</p>
+               <p class="position">{{data.post}}</p>
+               <p class="timings">{{data.year}} </p>
+                <span class="badge bg-dark call-badge">
+                  <a class="text-decoration-none text-white" href="tel:+">   
+                      <img class="me-1" src="../../assets/telephone.png" alt="" srcset="" />
+                      फोन करें </a></span>
+                     </div>
+                 </div>
+              
+               
+
+            </div>
+        </div>
+    </div>
 </template>
 
 <script>
     export default {
-        authorityData:[
-            {name:'', position:'', timings:'', img:'', contact:''}
-        ]
+        data() {
+            return {
+              authorityData:  [{
+                    name:'अनिल कुमार',
+                    post:'ग्राम प्रधान चरावां ',
+                    year:'2021- अब तक ',
+                    number:'',
+                    img:'https://i.ibb.co/Vw20jjS/anil005018092021.jpg'
+
+                },
+                {
+                    name:'अनीस तिवारी',
+                    post:'बी डी सी चरावां ',
+                    year:'2021- अब तक ',
+                    number:'',
+                    img:'https://i.ibb.co/JQNw2XM/anil003918092021.jpg'
+
+                },
+                {
+                    name:'अमित मौर्या ',
+                    post:'कोटेदार चरावां ',
+                    year:'2021- अब तक ',
+                    number:'',
+                    img:'https://i.ibb.co/5FGTrtc/mauryaamit.jpg'
+
+                }
+              ]
+            }
+        },
     }
 </script>
 
-<style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@500&display=swap');
-.authority-img img{
-    width: 190px;
-    height: 180px;
-  border-radius: 30% 70% 67% 33% / 46% 41% 59% 54% ;
+<style  scoped>
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@500&display=swap');
+.authority-container{
+    background: rgb(233, 232, 232);
+    border-right: 1px dotted black;
     
-   
+     box-shadow: 7px 7px 14px #bebebe, -7px -7px 14px #ffffff;
+     /* border-radius: 20px; */
+}
+.authority-img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+        /* border-radius: 30% 70% 67% 33% / 46% 41% 59% 54% ;
+ box-shadow: 9px 14px 20px -6px rgba(87,92,86,0.75);
+-webkit-box-shadow: 9px 14px 20px -6px rgba(87,92,86,0.75);
+-moz-box-shadow: 9px 14px 20px -6px rgba(87,92,86,0.75); */
+}
+
+img{
 
 }
-.authority-about p{
-    margin-top: -15px;
+.info{
+    margin-top: 50px;
 }
-.authority-about .authority-name{
- font-family: 'Yantramanav', sans-serif;
- font-weight: 600;
- font-size: 1rem;
+
+.name{
+color: rgb(255, 63, 15);
+font-weight: bold;
+/* margin-top: -10px; */
+font-family: 'Bitter', serif;
+font-size: 1.4rem;
+text-shadow: 2px 2px 6px rgba(150, 150, 150, 1);
 }
-.authority-position{
-    color: chocolate;
-    font-weight: 500;
-    font-size: .8rem;
-}
-.authority-contact{
+.position{
+    color: cornflowerblue;
     font-weight: bold;
-    color: rgb(156, 104, 252);
-    font-weight: 400;
-}
+    font-family: 'Bitter', serif;
+    /* margin-top: -10px; */
+    
 
+}
+.timings{
+    color: rgb(32, 32, 32);
+    font-weight: bold;
+    /* margin-top: -15px; */
+}
+.call-badge{
+margin-top: -40px;
+}
 </style>

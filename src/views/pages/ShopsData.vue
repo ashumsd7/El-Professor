@@ -146,6 +146,7 @@ export default {
     getFilters() {
       return this.$store.getters.getFilters;
     },
+
   },
   data() {
     return {
@@ -177,6 +178,17 @@ export default {
 
       this.allShopData = filteredData;
       this.isLoading=false;
+      
+    },
+    prepareCategory(){
+      // let categoryArray=this.allShopData.map(ele=>ele.shopType )
+      // let badgeCollection=categoryArray.map(ele=> Object.values(ele) )
+
+      // let finalBadges=badgeCollection.forEach(ele=>{
+        
+      // })
+
+
     },
     callAPI() {
       this.isLoading=true
@@ -192,6 +204,7 @@ export default {
           // console.log(this.allShopData);
           this.preservedData = this.allShopData;
           this.isLoading=false
+          this.prepareCategory()
         });
     },
     searchClicked(){

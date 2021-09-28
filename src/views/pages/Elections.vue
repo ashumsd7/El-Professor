@@ -2,7 +2,7 @@ l<template>
   <section id="history">
     <top-banner :img="bannerData.img" :title="bannerData.title"></top-banner>
     <main-heading>चुनाव चरावां में </main-heading>
-    <main-content>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus similique ut ducimus placeat ipsa corrupti molestiae perferendis delectus laudantium officia sint, fuga beatae architecto rem incidunt? Sit consequatur, reprehenderit repellendus rerum vero ab iusto pariatur quae excepturi, porro obcaecati voluptates?</main-content>
+    <main-content></main-content>
     <hr />
     <div class="container">
       <div class="row mt-lg-3 mt-2">

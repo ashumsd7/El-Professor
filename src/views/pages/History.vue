@@ -2,28 +2,38 @@ l<template>
   <section id="history">
     <top-banner :img="bannerData.img" :title="bannerData.title"></top-banner>
     <main-heading>चरावां का इतिहास </main-heading>
-    
-    <main-content>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt hic eligendi deserunt fuga distinctio eius blanditiis sit ducimus. Reprehenderit quaerat placeat earum. Porro accusamus voluptatibus laborum. A illum et repellat dolores fuga natus aperiam repellendus omnis tenetur earum nihil consectetur voluptatem reiciendis minus aspernatur, alias vel dolorem labore ea. Vero eligendi enim illum accusantium consequuntur nam officiis assumenda libero beatae cum! Est corporis vitae quis perspiciatis aperiam saepe ex quod culpa pariatur consequatur soluta, mollitia nisi qui adipisci architecto maxime dolorem eum quas sequi ipsa, molestias harum rem. Expedita asperiores magnam in error perferendis. Inventore quod, voluptas veritatis illo debitis cumque aliquam nam illum animi reiciendis sequi omnis magni recusandae nulla, modi sunt excepturi dolore. Minima quos quisquam omnis vel fugiat! Quae sit vero dolores repellendus, quod ab impedit quisquam libero voluptatibus veritatis minima soluta molestias quo laboriosam accusamus alias rerum dolore. Error est aut optio repellat deserunt maxime vitae iusto facilis laborum provident delectus, consequatur odio voluptatibus itaque asperiores nemo dolorum incidunt? A distinctio placeat fugit pariatur laboriosam quae ex perspiciatis, quo unde optio numquam officiis soluta minus nemo amet repellat cupiditate quasi reiciendis. Minima odit quo incidunt sit eos, numquam necessitatibus harum minus, fugit, reprehenderit officia voluptate autem.</main-content>
+
+    <main-content
+      >हम आपके लिए चरावां के इतिहास को लेकर एक छोटा सा वीडियो प्रस्तुत कर रहे
+      हैं, अगर आपके पास इस गांव से सम्बंधित कोई भी जानकारी है तो हमें ज़रूर भेंजे
+      आप चाहें वीडियो भेज सकते हैं या लिख कर भी भेज सकते हैं आपके द्वारा दी गयी
+      जानकरी हम वेबसाइट पर प्रकाशित करेंगे जानकारी देने के लिए ''सम्पर्क करें'' क्लिक करें |
+      <p class="main-btn">
+        <a
+          class="text-decoration-none btn btn-success text-white"
+          href="https://chat.whatsapp.com/LgCz9l1tWQKKJe6OQ5n8Zt"
+          >सम्पर्क करें
+        </a>
+      </p>
+    </main-content>
     <youtube-embed></youtube-embed>
   </section>
 </template>
 
 <script>
-import YoutubeEmbed from '../../components/reusable/YoutubeEmbed.vue'
+import YoutubeEmbed from "../../components/reusable/YoutubeEmbed.vue";
 export default {
-
-components:{YoutubeEmbed},
-    data() {
-        return {
-            bannerData:{
-                img:'https://i.ibb.co/GMqk6Xh/history-vill.jpg',
-                title:'History'
-            }
-        }
-    },
+  components: { YoutubeEmbed },
+  data() {
+    return {
+      bannerData: {
+        img: "https://i.ibb.co/GMqk6Xh/history-vill.jpg",
+        title: "History",
+      },
+    };
+  },
 };
 </script>
 
-TopBanner
 <style lang="scss" scoped>
 </style>

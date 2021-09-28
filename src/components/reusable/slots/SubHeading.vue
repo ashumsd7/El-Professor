@@ -29,6 +29,7 @@ h4::after{
     top:35px;
     left:0;
     border-bottom: 4px solid rgb(0, 0, 0,.5);
+    margin-bottom: 10px;
 
 }
 </style>

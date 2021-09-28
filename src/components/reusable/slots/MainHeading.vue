@@ -29,5 +29,6 @@ h2::after{
     left:0;
     border-bottom: 4px solid green;
 
+margin-bottom: 15px;
 }
 </style>

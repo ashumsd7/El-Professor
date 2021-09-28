@@ -5,15 +5,7 @@
     <counter></counter>
     <!-- <quick-links></quick-links> -->
     <about-glance></about-glance>
-    <explain-banner
-      :winner="data.winner"
-      :winnerImg="data.winnerImg"
-      :position="data.type"
-      :about="data.about"
-      :key="data.winner"
-      v-for="data in showData[0].data"
-    ></explain-banner>
-    <!-- <authority-glance></authority-glance> -->
+    <authority-glance></authority-glance>
   </div>
 </template>
 
@@ -25,7 +17,7 @@ import AboutGlance from "../components/HomeViews/AboutGlance";
 import AuthorityGlance from "../components/HomeViews/AuthorityGlance.vue";
 import Counter from "../components/HomeViews/Counter.vue";
 
-import ExplainBanner from "../components/reusable/ExplainBanner.vue";
+
 
 export default {
   name: "Home",
@@ -34,7 +26,7 @@ export default {
     // QuickLinks,
     AboutGlance,
     AuthorityGlance,
-    ExplainBanner,
+
     Counter,
   },
   data() {
