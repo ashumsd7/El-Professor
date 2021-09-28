@@ -225,56 +225,70 @@ export default createStore({
     filterBy: [
       { title: "सभी  ", value: "all" },
       { title: "आपातकालीन सेवा   ", value: "emergency" },
-      { title: "चरावां ऑफिसियल    ", value: "charawanOffice" },
+      { title: "चरावां ऑफिस   ", value: "charawanOffice" },
       { title: "जनरल/किराना ", value: "generalStore" },
       { title: "मेडिकल स्टोर ", value: "medicalStore" },
       { title: "डॉक्टर्स      ", value: "doctors " },
-      { title: "आयुर्वेदिक               ", value: "aayurvedic   " },
+      { title: "पशु डॉक्टर       ", value: "animalDoctors " },
+      { title: "आयुर्वेदिक ", value: "aayurvedic   " },
       { title: "पतंजलि      ", value: "patanjali " },
       { title: "होम्योपैथिक                ", value: "homeopathic   " },
-      { title: "पशु डॉक्टर       ", value: "animalDoctors " },
-      { title: "मशीनरी स्टोर  ", value: "machineryStore" },
-      { title: "कस्टमर केयर  ", value: "customerCare" },
-      { title: "स्कूल    ", value: "school" },
-      { title: "स्टेशनरी        ", value: "stationery " },
-      { title: "मोबाइल स्टोर   ", value: "mobileStore" },
-      { title: "प्रिंटिंग     ", value: "prinitng" },
-      { title: "मोबाइल रिपेरिंग         ", value: "mobileRepair " },
-      { title: "जन सेवा केंद्र  ", value: "janSewaKendra" },
+      
       { title: "फास्टफूड     ", value: "fastfood" },
       { title: "होटल      ", value: "hotel" },
       { title: "कोल्डड्रिंक     ", value: "coldDrink " },
-{ title: "बेकरी/केक     ", value: "backery " },
+      { title: "बेकरी/केक     ", value: "backery " },
+      { title: "मोबाइल स्टोर   ", value: "mobileStore" },
+      { title: "प्रिंटिंग/फोटोकॉपी     ", value: "prinitng" },
+      { title: "मोबाइल रिपेरिंग         ", value: "mobileRepair " },
+      { title: "जन सेवा केंद्र  ", value: "janSewaKendra" },
+      { title: "मशीनरी स्टोर /हार्डवेयर   ", value: "machineryStore" },
+      { title: "कस्टमर केयर ", value: "customerCare" },
+      { title: "स्कूल /कॉलेज    ", value: "school" },
+      { title: "कोचिंग    ", value: "coaching" },  
+      { title: "स्टेशनरी        ", value: "stationery " },
+
+      { title: "नाई/सैलून     ", value: "barber " },
+      { title: "ब्यूटी पार्लर     ", value: "beautiParler " },
+      { title: "कॉस्मेटिक      ", value: "cosmetic" },
+      
+     
      
       { title: "डीजे             ", value: "dj   " },
-      { title: "साउंड सर्विस            ", value: "soundServie  " },
-      { title: "लाइट हॉउस             ", value: "lightHouse  " },
-      { title: "टेंट हाउस            ", value: "tentHouse  " },
+      { title: "साउंड सर्विस ", value: "soundServie  " },
+      { title: "लाइट हॉउस   ", value: "lightHouse  " },
+      { title: "टेंट हाउस  ", value: "tentHouse  " },
       { title: "कैटर्स ", value: "cetters  " },
       { title: "डेकोरेशन  ", value: "decoration   " },
-      { title: "माली   ", value: "maali   " },
-      { title: "गैस सर्विस      ", value: "gasService " },
+      { title: "माली   ", value: "maali   " },  
       { title: "साइकिल रिपेयर     ", value: "cycleStore" },
       { title: "बाइक रिपेयर       ", value: "bikeRepair" },
+      { title: "गैस सर्विस      ", value: "gasService " },
+      { title: "गैस चूल्हा रिपेयर         ", value: "gasChulhaRepair " },
+      { title: "घर की बिजली रिपेयर         ", value: "homeElectronic" },
       { title: "इलेक्ट्रॉनिक     ", value: "electronic" },
       { title: "वेल्डिंग वर्कशॉप      ", value: "welding" },
       { title: "मिस्त्री घर बनाने वाले       ", value: "homeMistri" },
-      { title: "कॉस्मेटिक      ", value: "cosmetic" },
+
+     
+     
       { title: "बोलेरो/कार    ", value: "rentCars " },
       { title: "पिक अप         ", value: "pickup " },
     { title: "सवारी गाड़ी/टेम्पो/बस       ", value: "taxi " },
 { title: "बस सर्विस            ", value: "busService  " },
+{ title: "ठेला         ", value: "thela " },
+
       { title: "चप्पल जूता       ", value: "chappal" },
       { title: "कपडा गारमेंट्स    ", value: "garments" },
       { title: "गिफ्ट्स   ", value: "gifts" },
-      { title: "कोचिंग    ", value: "coaching" },
+    
       
       { title: "बिल्डिंग मटेरियल       ", value: "buildingMaterials" },
       { title: "बढ़ई      ", value: "carpenter" },
       { title: "लोहार       ", value: "blacksmith" },
       { title: "सुनार        ", value: "jeweller" },
-      { title: "गैस चूल्हा रिपेयर         ", value: "gasChulhaRepair " },
-      { title: "ठेला         ", value: "thela " },
+      
+     
 
       { title: "शराब       ", value: "wine " },
       { title: "पान मसाला        ", value: "paanMasala " },
@@ -285,13 +299,12 @@ export default createStore({
       { title: "किराये का घर      ", value: "rentRoom " },
       { title: "किराये की दुकान     ", value: "rentShop " },
      
-      { title: "नाई    ", value: "barber " },
-      { title: "ब्यूटी पार्लर     ", value: "beautiParler " },
-      { title: "सिलाई     ", value: "silayi " },
+     
+      { title: "सिलाई सेंटर कोचिंग      ", value: "silayi " },
       { title: "मोची     ", value: "mochi " },
       
       { title: "डीजल पेट्रोल     ", value: "dieselPetrol " },
-      { title: "स्टूडियो     ", value: "photoStudio " },
+      { title: "स्टूडियो/वीडियोग्राफी      ", value: "photoStudio " },
       { title: "पंडित        ", value: "pandit " },
       { title: "श्रमिक मजदूर     ", value: "helper " },
       { title: "प्लम्बर      ", value: "plumber " },
@@ -299,12 +312,12 @@ export default createStore({
       { title: "आटाचक्की       ", value: "chakki " },
       { title: "चश्मा        ", value: "chashma  " },
       { title: "डेरी         ", value: "dairy  " },
-      { title: "घर की बिजली          ", value: "homeElectronic" },
+      
       
     
     
       { title: "लकड़हारा  ", value: "woodCutter   " },
-{ title: "  ट्रैक्टर-ट्रॉली           ", value: "tractors   " },
+{ title: "  ट्रैक्टर/ट्रॉली           ", value: "tractors   " },
       { title: "अन्य               ", value: "others   " },
       
     ],
