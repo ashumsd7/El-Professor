@@ -291,9 +291,10 @@ export default createStore({
       { title: "घर की बिजली          ", value: "homeElectronic" },
       { title: "बस सर्विस            ", value: "busService  " },
     
-      { title: "कैटर्स           ", value: "cetters  " },
-      { title: "डेकोरेशन            ", value: "decoration   " },
-      { title: "लकड़हारा              ", value: "woodCutter   " },
+      { title: "कैटर्स ", value: "cetters  " },
+      { title: "डेकोरेशन  ", value: "decoration   " },
+      { title: "लकड़हारा  ", value: "woodCutter   " },
+{ title: "  ट्रैक्टर-ट्रॉली           ", value: "tractors   " },
       { title: "अन्य               ", value: "others   " },
       
     ],
