@@ -7,27 +7,31 @@
     <main-heading>चरावां और आस पास की सभी दुकानें</main-heading>
     <hr />
 
-    <div class="container">
+    <div class="container text-center">
       <label for="exampleFormControlInput1" class="form-label mt-2 fw-bold">
         <!-- आप किस तरह की दुकान या सर्विस के बारे में जानना चाहते हैं ? -->
+        <span class="badge bg-warning text-dark">कुल  <span class="badge bg-dark text-white ">   {{allShopData.length}}</span> दुकाने दिख रही  हैं </span>
         <small class="fw-200 d-block">
           <!-- (आप एक से ज्यादा तरह की सर्विस पे क्लिक कर सकते हैं) -->
         </small>
       </label>
 
-      <button class="btn btn-secondary d-block mb-2">
+      <div class="">
+        <button class="btn btn-secondary d-block mb-2">
         <img src="../../assets/plus.png" alt="" srcset="" class="me-1" /> <router-link class="text-decoration-none text-white"  to="/addshop">दुकान
         /सर्विस जोड़ें</router-link>
       </button>
+
+      
       <button
         @click="showCategory = !showCategory"
         v-if="!showCategory"
-        class="btn btn-primary"
+        class="btn btn-primary d-block" 
       >
-        <img src="../../assets/searching.png" class="me-1" alt="" srcset="" />कोई और
-        दुकान देखें
+        <img src="../../assets/searching.png" class="me-1" alt="" srcset="" /> दुकान/ सर्विस  सर्च करें 
       </button>
-      <div v-else class="row checkboxes">
+      </div>
+      <div  v-if="showCategory" class="row checkboxes">
         <br />
         <br />
 

@@ -462,16 +462,16 @@ export default {
        
 
 
-        if(this.inCharawan==''){
-            alert(' एंट्री नंबर #10 :आपकी दुकान किस गांव में है आपने ये नहीं चुना है ')
-            return;
-        }
-        if(this.inCharawan!='charawan' && !this.villageName){
+        // if(this.inCharawan==''){
+        //     alert(' एंट्री नंबर #10 :आपकी दुकान किस गांव में है आपने ये नहीं चुना है ')
+        //     return;
+        // }
+        // if(this.inCharawan!='charawan' && !this.villageName){
             
-            alert('एंट्री नंबर #10.1 :अपने कहा है की आपकी दुकान चरावा के बाहर की है तो कृपया अपने गांव का नाम लिखें ')
-            this.isVillageError= true;
-            return
-        }
+        //     alert('एंट्री नंबर #10.1 :अपने कहा है की आपकी दुकान चरावा के बाहर की है तो कृपया अपने गांव का नाम लिखें ')
+        //     this.isVillageError= true;
+        //     return
+        // }
         if(this.inCharawan=='charawan'){
             this.villageName='चरावां'
         }
