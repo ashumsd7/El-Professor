@@ -232,6 +232,7 @@ export default createStore({
       { title: "होम्योपैथिक                ", value: "homeopathic   " },
       { title: "पशु डॉक्टर       ", value: "animalDoctors " },
       { title: "मशीनरी स्टोर  ", value: "machineryStore" },
+      { title: "कस्टमर केयर  ", value: "customerCare" },
       { title: "स्कूल    ", value: "school" },
       { title: "स्टेशनरी        ", value: "stationery " },
       { title: "मोबाइल स्टोर   ", value: "mobileStore" },
