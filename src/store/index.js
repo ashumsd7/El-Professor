@@ -243,6 +243,7 @@ export default createStore({
       { title: "फास्टफूड     ", value: "fastfood" },
       { title: "होटल      ", value: "hotel" },
       { title: "कोल्डड्रिंक     ", value: "coldDrink " },
+{ title: "बेकरी/केक     ", value: "backery " },
      
       { title: "डीजे             ", value: "dj   " },
       { title: "साउंड सर्विस            ", value: "soundServie  " },
