@@ -47,7 +47,7 @@
         <div class="row">
 
         
-        <div class="col-4" v-for="check in getFilters" :key="check.value">
+        <div class="col-4 radio-btns" v-for="check in getFilters" :key="check.value">
           <input
             type="radio"
             :id="check.value"
@@ -211,6 +211,7 @@ export default {
 .form-check-label {
   font-size: 0.9rem;
 }
+
 
 .call-btn {
   border-radius: 0px;
