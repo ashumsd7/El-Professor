@@ -54,8 +54,10 @@
             :value="check.value"
             @change="filterResult"
             v-model="selectedFilter"
+
+          class="radio-input"
           />
-          <small for="jack" class="ms-1">{{ check.title }}</small>
+          <small for="jack" class="ms-1 ">{{ check.title }}</small>
         </div>
         </div>
       </div>
@@ -210,6 +212,13 @@ export default {
 }
 .form-check-label {
   font-size: 0.9rem;
+}
+.radio-input{
+  font-size: 20px;
+}
+small{
+  font-weight: bold;
+  /* opacity: .9; */
 }
 
 
