@@ -253,6 +253,8 @@ export default createStore({
       { title: "कॉस्मेटिक      ", value: "cosmetic" },
       { title: "बोलेरो/कार    ", value: "rentCars " },
       { title: "पिक अप         ", value: "pickup " },
+    { title: "सवारी गाड़ी/टेम्पो/बस       ", value: "taxi " },
+{ title: "बस सर्विस            ", value: "busService  " },
       { title: "चप्पल जूता       ", value: "chappal" },
       { title: "कपडा गारमेंट्स    ", value: "garments" },
       { title: "गिफ्ट्स   ", value: "gifts" },
@@ -264,7 +266,7 @@ export default createStore({
       { title: "सुनार        ", value: "jeweller" },
       { title: "गैस चूल्हा रिपेयर         ", value: "gasChulhaRepair " },
       { title: "ठेला         ", value: "thela " },
-    
+
       { title: "शराब       ", value: "wine " },
       { title: "पान मसाला        ", value: "paanMasala " },
       { title: "टेलर /दर्जी    ", value: "tailor " },
@@ -289,7 +291,7 @@ export default createStore({
       { title: "चश्मा        ", value: "chashma  " },
       { title: "डेरी         ", value: "dairy  " },
       { title: "घर की बिजली          ", value: "homeElectronic" },
-      { title: "बस सर्विस            ", value: "busService  " },
+      
     
       { title: "कैटर्स ", value: "cetters  " },
       { title: "डेकोरेशन  ", value: "decoration   " },
