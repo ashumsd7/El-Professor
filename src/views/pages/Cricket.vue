@@ -93,6 +93,9 @@
 import MainContent from "../../components/reusable/slots/MainContent.vue";
 import SubHeading from "../../components/reusable/slots/SubHeading.vue";
 export default {
+  mounted() {
+    window.scrollTo(0, 0);
+  },
   components: { MainContent, SubHeading },
   data() {
     return {

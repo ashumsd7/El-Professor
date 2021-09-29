@@ -43,6 +43,9 @@ export default {
       showData: [],
     };
   },
+   mounted() {
+    window.scrollTo(0, 0);
+  },
   methods: {
     changeData(year) {
       let filteredData = this.getElectionData.filter((val, idx) => {

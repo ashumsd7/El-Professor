@@ -165,6 +165,9 @@ export default {
       isLoading:false
     };
   },
+   mounted() {
+    window.scrollTo(0, 0);
+  },
   methods: {
     filterResult() {
       this.isLoading=true
@@ -203,6 +206,7 @@ export default {
 
     },
     callAPI() {
+
       this.isLoading=true
       axios
         .get(

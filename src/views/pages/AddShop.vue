@@ -424,6 +424,9 @@ export default {
       shopPhotos:''
     };
   },
+   mounted() {
+    window.scrollTo(0, 0);
+  },
   methods: {
     saveData(shopdata) {
       console.log(shopdata);

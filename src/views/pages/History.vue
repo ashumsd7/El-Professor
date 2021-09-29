@@ -23,6 +23,9 @@ l<template>
 <script>
 import YoutubeEmbed from "../../components/reusable/YoutubeEmbed.vue";
 export default {
+   mounted() {
+    window.scrollTo(0, 0);
+  },
   components: { YoutubeEmbed },
   data() {
     return {
