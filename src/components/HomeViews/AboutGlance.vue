@@ -8,7 +8,7 @@
                          <h1>चरावां  गाँव भारत के उत्तर प्रदेश में अयोध्या जिले की बीकापुर तहसील में स्थित है। यह उप-जिला मुख्यालय बीकापुर से 9 किमी दूर स्थित है।</h1>
                        <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum possimus nesciunt adipisci dicta eos. Temporibus, doloremque? Natus tempore sint magni! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, similique.</p> -->
                        <button class="btn btn-info mt-4 ">
-                          <router-link to='/itihas'> ...और जाने </router-link>
+                          <router-link class="text-decoration-none text-dark" to='/itihas'> ...और जाने </router-link>
                        </button>
                     </div>
                 </div>

@@ -1,5 +1,13 @@
 <template>
+<main-heading>चरावां गैलरी </main-heading>
+<main-content>आप अपने बनाये हुए वीडियो या फोटोज जो आपके गांव से या आस पास से सम्बंधित हो हमे भेज सकते हैं भेजने के लिए   <a
+          class="text-decoration-none btn btn-success text-white"
+          href="https://chat.whatsapp.com/LgCz9l1tWQKKJe6OQ5n8Zt"
+          >सम्पर्क करें
+        </a></main-content>
+        <hr>
   <div class="container">
+
       <div class="row justify-content-center align-items-center ">
           <div class="col-lg-4 mt-2  mb-2 col-md-6 col-sm-6 p-1 text-center gallery-blocks" v-for="data in galleryData" :key="data.title">
               <div class="row">
@@ -20,7 +28,7 @@
               </div>
               <div class="">
                   <buttton :disabled='!data.link' class="btn btn-dark form-control mb-1"><a class="text-decoration-none text-warning fw-bold" :href="data.link">
-                      {{data.type=='photo' ? 'फोटो देखें 🖼️' : 'वीडियो  देखें 🎥  '}} </a></buttton>
+                      {{data.type=='photo' ? 'फोटो देखें 🖼️' : 'वीडियो  देखें 📹  '}} </a></buttton>
                   
               </div>
 
@@ -44,8 +52,17 @@
                         icon:'https://cdn-icons-png.flaticon.com/512/2210/2210000.png'
                     },
                      {
+                        title:'चरावां Vlogs',
+                        subTitle:'वीडियो लॉग्स देखें  ',
+                        link:'https://www.youtube.com/watch?v=3ysh5vssdeg&list=PL4ehj0-yhmAJAo8YqqJeHPbWqIFtN2ExL',
+                        info:'',
+                        numberOfPhotos:'2 वीडियो',
+                        type:'video',
+                        icon:'https://cdn-icons-png.flaticon.com/512/1518/1518977.png'
+                    },
+                     {
                         title:'टूर्नामेंट तैयारी  2021',
-                        subTitle:'',
+                        subTitle:'टूर्नामेंट तैयारी 2021',
                         link:'https://photos.app.goo.gl/FNDNuQZ66qVkZtKR6',
                         info:'',
                         numberOfPhotos:'130+ फोटो',
@@ -126,7 +143,7 @@
                     },
                     {
                         title:'होली 2021',
-                        subTitle:'',
+                        subTitle:'चरावां चौराहा होली',
                         link:'https://photos.app.goo.gl/eiiL5MQ2oCZReenH9',
                         info:'',
                         numberOfPhotos:'280+ फोटो',
@@ -136,13 +153,23 @@
                     },
                     {
                         title:'होली 2018',
-                        subTitle:'',
+                        subTitle:'चरावां चौराहा होली',
                         link:'https://www.youtube.com/playlist?list=PL4ehj0-yhmAIqe3jSpwYGDtuD7bZVuzEw',
                         info:'',
                         numberOfPhotos:'19+ वीडियो',
                         type:'video',
 
                         icon:'https://cdn-icons-png.flaticon.com/512/1532/1532582.png'
+                    },
+                    {
+                        title:'होली 2017',
+                        subTitle:'चरावां चौराहा होली',
+                        link:'https://www.youtube.com/watch?v=awvKP0rpMrw',
+                        info:'',
+                        numberOfPhotos:'1+ वीडियो',
+                        type:'video',
+
+                        icon:'https://image.shutterstock.com/image-vector/happy-holi-logo-banner-icon-260nw-1662836647.jpg'
                     },
 
                 ]

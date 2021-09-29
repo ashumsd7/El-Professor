@@ -171,7 +171,9 @@ export default {
       this.showCategory = false;
       if (this.selectedFilter == "all") {
         this.allShopData = [];
-        this.callAPI();
+        this.allShopData= this.preservedData;
+        // this.callAPI();
+        this.isLoading=false
         return;
       }
       let filteredData = this.preservedData.filter((val, idx) => {
@@ -181,7 +183,9 @@ export default {
       });
       if (!filteredData.length) {
         alert("कोई सर्विस या दुकान नहीं मिली ");
-        this.callAPI();
+      //  this.allShopData= this.preservedData;
+      this.isLoading=true;
+      this.callAPI();
       }
 
       this.allShopData = filteredData;
@@ -218,7 +222,7 @@ export default {
     searchClicked(){
     
       this.showCategory = !this.showCategory;
-      window.scrollTo(100, 0);
+      window.scrollTo(100, 120);
     }
   },
   created() {
