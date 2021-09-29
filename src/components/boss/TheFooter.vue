@@ -77,6 +77,11 @@
           </div>
         </div>
       </div>
+
+      <div class="col-lg-4">
+          
+      </div>
+
       <hr />
       <div class="col-lg-12 mb-3 text-center">
         <button class="btn btn-outline-success mt-2 me-2">

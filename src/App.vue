@@ -17,7 +17,8 @@
 </template>
 <script>
 import TheNavbar from './components/boss/TheNavbar.vue'
-import TheFooter from './components/boss/TheFooter.vue'
+// import TheFooter from './components/boss/TheFooter.vue'
+import TheFooter from './components/boss/NewFooter.vue'
 export default {
   components:{
     TheNavbar,TheFooter
