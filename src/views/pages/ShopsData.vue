@@ -65,7 +65,8 @@
 
           class="radio-input"
           />
-          <small for="jack" class="ms-1 ">{{ check.title }}</small>
+          <small for="jack" class="ms-1 input-title ">{{ check.title }}</small>
+          <!-- <button class=" input-title">{{ check.title }}</button> -->
         </div>
         </div>
       </div>
@@ -246,11 +247,48 @@ export default {
 }
 .radio-input{
   font-size: 20px;
+  /* position: relative;
+  z-index: 100000;
+  opacity: 0; */
 }
 small{
   font-weight: bold;
-  /* opacity: .9; */
+
 }
+
+
+/* .input-title{
+ 
+  border-left: none;
+  background: none;
+  border-radius: 1px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+background: transparent;
+box-shadow: inset 5px 5px 6px #c7c7c7,
+            inset -5px -5px 6px #f9f9f9;
+            font-size: .8rem;
+            position: relative;
+
+}
+.input-title::before{
+  content: '';
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  background: rgb(255, 255, 251);
+
+  left: -20px;
+  top: -2px;
+  border: 1px solid black;
+ 
+  border-right: none;
+  margin-top: 3px;
+  margin-left: 3px;
+    border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+
+} */
 
 
 .call-btn {
@@ -261,7 +299,6 @@ small{
 .shop-card {
   border-radius: 10px;
   background: #fcfbfb;
-  /* min-width: 300px; */
   border: .5px dotted rgb(88, 88, 88);
 
   box-shadow: 7px 7px 14px #bebebe, -7px -7px 14px #ffffff;
@@ -276,12 +313,9 @@ small{
 }
 @media (min-width:700px){
   .shop-card {
-    min-width: 350px;
-    max-width: 400px;
+    max-width: 350px;
+    
   }
 }
-.search-btn{
-  /* position: fixed; */
-  /* z-index: 10002; */
-}
+
 </style>
