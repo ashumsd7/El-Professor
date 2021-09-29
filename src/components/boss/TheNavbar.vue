@@ -64,7 +64,7 @@ export default {
       links:[{title:'होम ',to:'/'},
       {title:' दुकान खोजें ',to:'/find'},
        {title:'इतिहास',to:'/itihas'},
-      //  {title:' गैलरी',to:'/gallery'},
+       {title:' गैलरी',to:'/gallery'},
       //  {title:' समाचार ',to:'/readnews'},
        {title:' क्रिकेट ',to:'/cricket'},
        {title:'इलेक्शन ',to:'/election'}

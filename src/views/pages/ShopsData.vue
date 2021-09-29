@@ -23,12 +23,20 @@
         <img src="../../assets/plus.png" alt="" srcset="" class="me-1" /> <router-link class="text-decoration-none text-white"  to="/addshop">दुकान
         /सर्विस जोड़ें</router-link>
       </button>
+        <button
+        @click="searchClicked()"
+        v-if="!showCategory"
+        class="btn btn-primary d-block search-btn   d-none d-lg-block  " 
+      >
+        <img src="../../assets/searching.png" class="me-1" alt="" srcset="" /> 
+          दुकान खोजें 
+      </button>
 
       
       <button
         @click="searchClicked()"
         v-if="!showCategory"
-        class="btn btn-primary d-block search-btn  position-fixed  " 
+        class="btn btn-primary d-block search-btn  position-fixed d-md-none  " 
       >
         <img src="../../assets/searching.png" class="me-1" alt="" srcset="" /> 
           दुकान खोजें 
