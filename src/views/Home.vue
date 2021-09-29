@@ -3,18 +3,24 @@
     <home-glance></home-glance>
 
     <counter></counter>
-    <!-- <quick-links></quick-links> -->
+   
     <about-glance></about-glance>
     <authority-glance></authority-glance>
+  <cricket-cup></cricket-cup>
+
+    
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import HomeGlance from "../components/HomeViews/HomeGlance";
-// import QuickLinks from "../components/HomeViews/QuickLinks";
+import CricketCup from "../components/HomeViews/CricketCup";
+
 import AboutGlance from "../components/HomeViews/AboutGlance";
 import AuthorityGlance from "../components/HomeViews/AuthorityGlance.vue";
+
+
 import Counter from "../components/HomeViews/Counter.vue";
 
 
@@ -24,8 +30,11 @@ export default {
   components: {
     HomeGlance,
     // QuickLinks,
+    CricketCup,
     AboutGlance,
     AuthorityGlance,
+ 
+    
 
     Counter,
   },

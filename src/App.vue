@@ -24,6 +24,10 @@ export default {
   components:{
     TheNavbar,TheFooter
   },
+   metaInfo: {
+    title: 'HOME',
+    titleTemplate: '%s |चरावा'
+  },
   created() {
     
   },

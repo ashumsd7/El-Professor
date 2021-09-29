@@ -1,6 +1,6 @@
 <template>
-<div class=" banner">
-<img :src="img" class="img-fluid" alt="" srcset="">
+<div class=" banner d-none d-md-block">
+<img :src="img" class="img-resive" alt="" srcset="">
 </div>
 </template>
 
@@ -13,7 +13,7 @@
 <style scoped>
 .banner img{
     width: 100%;
-    height: 20rem;
+    height: 30rem;
     /* background: url('../../assets/img/history_vill.jpg') no-repeat center;
     background-size: cover; */
 }

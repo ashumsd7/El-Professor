@@ -83,7 +83,7 @@
                 <a class="text-decoration-none text-dark" href="https://chat.whatsapp.com/LgCz9l1tWQKKJe6OQ5n8Zt"
               ><img
            
-            src="../../assets/feedback.png"
+            src="../../assets/help.png"
             alt=""
             srcset=""
           />इस गांव की मदद करें </a>
@@ -95,7 +95,7 @@
                 <a class="text-decoration-none text-white" href="https://chat.whatsapp.com/LgCz9l1tWQKKJe6OQ5n8Zt"
               ><img
           
-            src="../../assets/help.png"
+            src="../../assets/feedback.png"
             alt=""
             srcset=""
           />वेबसाइट कैसी लगी ?फीडबैक दें</a>

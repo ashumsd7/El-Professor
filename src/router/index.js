@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import History from '../views/pages/History.vue'
+import Gallery from '../views/pages/Gallery.vue'
 import Elections from '../views/pages/Elections.vue'
 import Cricket from '../views/pages/Cricket.vue'
 import Donate from '../views/pages/Donate.vue'
@@ -19,6 +20,11 @@ const routes = [
     path: '/itihas',
     name: 'History',
     component: History
+  },
+  {
+    path: '/gallery',
+    name: 'Gallery',
+    component: Gallery
   },
   {
     path: '/election',

@@ -1,7 +1,7 @@
 <template>
   <section class="addShop position-relative">
     <top-banner 
-      img="http://digitalvillage.id/frontend/assets/images/gunung3.png"
+      img="https://www.ynotpics.com/wp-content/uploads/2017/11/village-environment.jpg"
       title="Cricket"
     ></top-banner>
     <main-heading v-if="!showDialog">अपने आस पास की दुकानें जोड़े </main-heading>

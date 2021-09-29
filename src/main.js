@@ -6,6 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap";
 
 import TopBanner from './components/reusable/TopBanner'
+import ImageSlider from './components/reusable/ImageSlider'
 import MainHeading from './components/reusable/slots/MainHeading.vue'
 import SubHeading from './components/reusable/slots/SubHeading.vue'
 import MainContent from './components/reusable/slots/MainContent.vue'
@@ -19,6 +20,7 @@ vm.component('main-heading', MainHeading)
 vm.component('sub-heading', SubHeading)
 vm.component('main-content', MainContent)
 vm.component('success-dialog', SuccessDialog)
+vm.component('image-slider', ImageSlider)
 vm.mount('#app')
 
 

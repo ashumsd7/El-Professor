@@ -1,7 +1,7 @@
 <template>
   <section id="cricket">
     <top-banner
-      img="https://i.ibb.co/yhBgbHn/cricket-banner.jpg"
+      img="https://i.ibb.co/K6jby1w/rampur-Cricket-Winner.jpg"
       title="Cricket"
     ></top-banner>
     <main-heading>चरावां क्रिकेट क्लब </main-heading>

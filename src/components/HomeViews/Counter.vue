@@ -23,7 +23,7 @@
               <strong>{{ item.title }}</strong>
             </p>
           </div>
-          <small class="text-center text-danger fw-bold mb-3 d-block text-muted"
+          <small class="text-center text-danger  mb-3 d-block text-muted"
             >*यह डेटा 2011 की जनगणना  और 2021  के अनुसार एक्सपेक्टेड डेटा है, </small
           >
         </div>
