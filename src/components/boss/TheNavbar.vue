@@ -2,7 +2,7 @@
   <header>
     <nav
       class="
-        navbar navbar-expand-lg bg-white
+        navbar navbar-expand-lg bg-white fixed-top
         
         w-100
         mt-0

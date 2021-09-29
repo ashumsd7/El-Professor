@@ -91,10 +91,12 @@
 
             <span v-if="data.openTime" class="badge rounded-pill bg-light text-dark d-block">
               {{ data.openTime }}
-              <small class="text-muted">बजे खुलती है </small> | 
+              <small class="text-muted">बजे से </small> | 
               {{ data.closeTime
-              }}<small class="text-muted"> बजे बंद होती है </small></span
+              }}<small class="text-muted"> बजे तक </small></span
             >
+
+            <p class="text-muted"> <small>{{data.shopInfo}}</small> </p>
          
             <span class="badge rounded-pill bg-dark call-btn me-3 mt-2"
               ><a
@@ -275,6 +277,7 @@ small{
 @media (min-width:700px){
   .shop-card {
     min-width: 350px;
+    max-width: 400px;
   }
 }
 .search-btn{
