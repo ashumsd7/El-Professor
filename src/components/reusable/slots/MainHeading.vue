@@ -16,10 +16,11 @@
 <style  scoped>
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
 h2{
-    color: rgb(247, 76, 46);
+    color: rgb(3, 0, 206);
     font-family: 'Bree Serif', serif;
     text-shadow: 6px -1px 4px rgba(150, 150, 150, .8);
     position: relative;
+    font-weight: bolder;
 }
 h2::after{
     content: '';

@@ -17,7 +17,7 @@
 
           </span> 
       </p>
-      <small class="heading-declaration">| चरावां में आपका स्वागत है | </small>
+      <small class="heading-declaration fw-bold text-white">| चरावां में आपका स्वागत है | </small>
      <div class="row">
         <form action="" @submit.prevent="searchItems">
 
@@ -25,8 +25,9 @@
 
         <!-- <input  v-model="searhedKey" class="form-control form-control-md d-inline" type="text" placeholder="Search in Charawan" aria-label=".form-control-md example"> -->
         <!-- <button type="submit"  class="btn btn-success search-btn d-block m-auto mt-2">दुकानों के नंबर खोजें</button> -->
-        <button class="btn btn-success d-block  m-auto mt-2">
-        <img src="../../assets/searching.png" alt="" srcset="" class="me-1" /> <router-link class="text-decoration-none text-white"  to="/find">दुकानों के नंबर खोजें</router-link>
+        <button class="btn btn-info d-block  m-auto mt-5 mt-lg-2">
+        <img src="../../assets/searching.png" alt="" srcset="" class="me-1" />
+         <router-link class="text-decoration-none text-black fw-bold"  to="/find">दुकानों के नंबर खोजें</router-link>
       </button>
         </form>
           </div>
@@ -48,7 +49,7 @@ export default {};
     /* height: 50vh; */
     background: url('https://i.ibb.co/XkgXvdQ/IMG-20210930-114423.jpg') no-repeat center;
     background-size: cover;
-    height: 90vh;
+    height: 85vh;
 }
 .village_name{
   height: 15vh;
@@ -59,6 +60,9 @@ export default {};
      /* margin: auto; */
      /* border-radius: 47% 53% 48% 52% / 35% 31% 69% 65% ; */
      /* animation: chnageBorder 8s linear 1s infinite alternate; */
+}
+a{
+  color: rgb(0, 0, 0);
 }
 .form-control,.search-btn{
   width:250px;
@@ -105,6 +109,8 @@ export default {};
 .heading span span {
   font-family: "Maven Pro", sans-serif;
   color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 6px rgb(14, 13, 13);
+
   transition: all 0.3s;
   margin-left: -25px;
 }
@@ -126,7 +132,7 @@ span.welcome-text{
 .heading-declaration {
   font-size: .8rem;
   font-family: "Dancing Script", cursive;
-  color: rgb(0, 185, 15);
+  /* color: rgb(0, 185, 15); */
 }
 
 .heading .heading-declaration  {

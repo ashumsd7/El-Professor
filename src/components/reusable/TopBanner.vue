@@ -13,7 +13,7 @@
 <style scoped>
 .banner img{
     width: 100%;
-    height: 30rem;
+    height: 25rem;
     /* background: url('../../assets/img/history_vill.jpg') no-repeat center;
     background-size: cover; */
 }

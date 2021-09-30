@@ -22,13 +22,7 @@
       देंगे फ़िलहाल नीचे वीडियो का आनंद लीजिये और आपके पास चरावां या इसके आस पास
       गांव कि कोई भी क्लिप या फोटोज हो तो हमे भेजना न भूले इन सबको हम वेबसाइट पर
       प्रकाशित ज़रूर करेंगे धन्यवाद किसी भी प्रकार कि फोटो या वीडियो भेजने के लिए
-      'सम्पर्क करें' क्लिक करें !<p class="main-btn">
-        <a
-          class="text-decoration-none btn btn-success text-white"
-          href="https://chat.whatsapp.com/LgCz9l1tWQKKJe6OQ5n8Zt"
-          >सम्पर्क करें
-        </a>
-      </p></main-content
+     <a href="https://chat.whatsapp.com/LgCz9l1tWQKKJe6OQ5n8Zt">सम्पर्क करें</a> क्लिक करें !</main-content
     >
     <div class="container">
       <sub-heading>क्रिकेट टूर्नामेंट 2021</sub-heading>

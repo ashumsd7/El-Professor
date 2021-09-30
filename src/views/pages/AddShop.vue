@@ -1,7 +1,7 @@
 <template>
   <section class="addShop position-relative">
     <top-banner 
-      img="https://www.ynotpics.com/wp-content/uploads/2017/11/village-environment.jpg"
+      img="https://i.ibb.co/tBt88YP/ch2.jpg"
       title="Cricket"
     ></top-banner>
     <main-heading v-if="!showDialog">अपने आस पास की दुकानें जोड़े </main-heading>
@@ -12,7 +12,7 @@
           करिये
         </label>
         <success-dialog @addMore='showDialog=!showDialog'  v-if="showDialog" > 
-            आपके दुकान /सर्विस अब वेबसाइट पर दिखेगी   | </success-dialog>
+          <span class="badge bg-danger">{{shopName}}</span>   अब वेबसाइट पर दिखेगी   | </success-dialog>
         <small class="text-muted mb-3 " v-if="!showDialog"
           >**अगर आप एक से ज्यादा सर्विस देते हैं तो एक से ज्यादा सर्विस पर टिक
           करिये |</small
@@ -243,6 +243,8 @@
               v-model="shopAddress"
               placeholder="अपने दुकान या सर्विस का पूरा पता लैंडमार्क सही दें जिससे आपके ग्राहकों को ढूढ़ने में आसानी हो "
               id="floatingTextarea"
+              cols="30"
+              rows="7"
             ></textarea>
           </div>
         </div>
@@ -287,8 +289,9 @@
         <input
           type="button"
           @click="validateData"
+          :disabled='isDisabled'
           class="btn btn-success form-control my-5"
-          value="जानकरी सेव करें "
+          :value="isDisabled? 'कृपया इंतज़ार करिये' : 'जानकरी सेव करें' "
         />
       </div>
       </div>
@@ -421,7 +424,8 @@ export default {
       submitData: {},
       shopAddress:'',
       owenerPhoto:'',
-      shopPhotos:''
+      shopPhotos:'',
+      isDisabled:false
     };
   },
    mounted() {
@@ -429,11 +433,14 @@ export default {
   },
   methods: {
     saveData(shopdata) {
-      console.log(shopdata);
+      this.isDisabled= true;
+      // console.log(shopdata);
       axios.post('https://charwan-shops-default-rtdb.firebaseio.com/charawan-shops.json',shopdata)
       .then(res=>{
         //   alert('डेटा सुरक्षित कर लिया  गया है')
         this.showDialog=true;
+        window.scrollTo(0, 0);
+        this.isDisabled= false;
           
       })
      .catch(err=>{

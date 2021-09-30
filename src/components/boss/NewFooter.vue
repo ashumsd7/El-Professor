@@ -10,12 +10,12 @@
           align-items-center
           fw-bold
           text-white text-center
-          bg-dark
+          bg-primary
         "
       >
         © चरावां 2021 <a class="text-white" href="http://">charawan.in</a>
       </div>
-      <div class="col-lg-3 col-4 text-center">
+      <div class="col-lg-2 col-4 new-footer ">
         <div class="row">
           <a href="https://www.facebook.com/meracharawanfb"
             ><img
@@ -80,7 +80,7 @@
         </div>
       </div>
 
-      <div class="col-lg-4 col-md-8 col-8 mt-2">
+      <div class="col-lg-6  col-8 mt-2">
         <router-link class="navbar-brand" to="/"
           ><img
             width="200"
@@ -104,19 +104,19 @@
         </p>
       </div>
 
-      <div class="col-lg-4 col-12 text-center mt-5">
+      <div class="col-lg-4 col-12 text-center mt-lg-5 ">
          
-                <a class=" text-white d-block" href="https://chat.whatsapp.com/LgCz9l1tWQKKJe6OQ5n8Zt"
+                <a class=" d-md-block d-inline   text-primary" href="https://chat.whatsapp.com/LgCz9l1tWQKKJe6OQ5n8Zt"
               ><img
            
             src="../../assets/help.png"
             alt=""
             srcset=""
-          />गांव का  सहयोग दें  </a>
+          />गांव में सहयोग दें  </a>
           
        
     
-                <a class="d-block  text-white" href="https://chat.whatsapp.com/LgCz9l1tWQKKJe6OQ5n8Zt"
+                <a class="d-md-block d-inline  text-primary" href="https://chat.whatsapp.com/LgCz9l1tWQKKJe6OQ5n8Zt"
               ><img
           
             src="../../assets/feedback.png"
@@ -128,7 +128,7 @@
         
 
       
-                <a class="d-block text-white" href="https://chat.whatsapp.com/LgCz9l1tWQKKJe6OQ5n8Zt"
+                <a class="d-block text-primary" href="https://chat.whatsapp.com/LgCz9l1tWQKKJe6OQ5n8Zt"
               ><img
             width="32"
             height="32"
@@ -137,7 +137,8 @@
             srcset=""
           /> वेबसाइट बनाने वाले का सहयोग करें  </a>
           
-         
+         <br>
+         <hr>
         
       </div>
     </div>
@@ -150,7 +151,7 @@ export default {};
 
 <style  scoped>
 .container-fluid {
-  background: rgb(36, 36, 36);
+  background: rgb(0, 0, 0);
 }
 a {
   margin-left: 0.5rem;
@@ -159,5 +160,8 @@ a {
 }
 a img {
   margin-right: 10px;
+}
+.new-footer{
+    margin-bottom: 120px;
 }
 </style>

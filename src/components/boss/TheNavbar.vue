@@ -14,8 +14,11 @@
     >
       <div class="container">
         <router-link class="navbar-brand" to="/"
-          ><img width="200" height="60" src="https://i.ibb.co/JCkn2x6/IMG-20210930-144311.jpg" alt="" srcset=""
+          >
+          <img width="90" height="40" class="tiranga" src="../../assets/tiranga.gif" alt="" srcset="">
+          <img width="200" height="60"  src="https://i.ibb.co/JCkn2x6/IMG-20210930-144311.jpg" alt="" class="logo-img" srcset=""
         /></router-link>
+        <!-- <img width="90" height="40" src="../../assets/tiranga.gif" alt="" srcset=""> -->
         <button
           class="navbar-toggler"
           type="button"
@@ -36,7 +39,7 @@
               <router-link class="nav-link " aria-current="page" :to='link.to'>{{link.title}}</router-link>
             </li>
             <li class="nav-item" @click="donate">
-              <p class="main-btn">डोनेट
+              <p class="main-btn">डोनेट+
                 <!-- <router-link class="text-decoration-none text-white"  to="/donate"></router-link> -->
               </p>
               
@@ -61,7 +64,7 @@ export default {
   components: { MainContent },
   data() {
     return {
-      links:[{title:'होम ',to:'/'},
+      links:[{title:'मुख्य पेज  ',to:'/'},
       {title:' दुकान खोजें ',to:'/find'},
        {title:'इतिहास',to:'/itihas'},
        {title:' गैलरी',to:'/gallery'},
@@ -146,9 +149,13 @@ export default {
 }
 .main-btn{
 border-radius: 12px;
-background: linear-gradient(145deg, #ffffff, #f83a00);
+background: linear-gradient(145deg, #ffffff, #0400f8);
 box-shadow:  6px 6px 12px #a6a6a6,
              -6px -6px 12px #ffffff;
              cursor: pointer;
+             color: white;
+}
+.router-link-exact-active{
+  color: red;
 }
 </style>

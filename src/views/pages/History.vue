@@ -7,14 +7,8 @@ l<template>
       >हम आपके लिए चरावां के इतिहास को लेकर एक छोटा सा वीडियो प्रस्तुत कर रहे
       हैं, अगर आपके पास इस गांव से सम्बंधित कोई भी जानकारी है तो हमें ज़रूर भेंजे
       आप चाहें वीडियो भेज सकते हैं या लिख कर भी भेज सकते हैं आपके द्वारा दी गयी
-      जानकरी हम वेबसाइट पर प्रकाशित करेंगे जानकारी देने के लिए ''सम्पर्क करें'' क्लिक करें |
-      <p class="main-btn">
-        <a
-          class="text-decoration-none btn btn-success text-white"
-          href="https://chat.whatsapp.com/LgCz9l1tWQKKJe6OQ5n8Zt"
-          >सम्पर्क करें
-        </a>
-      </p>
+      जानकरी हम वेबसाइट पर प्रकाशित करेंगे जानकारी देने के लिए <a href="https://chat.whatsapp.com/LgCz9l1tWQKKJe6OQ5n8Zt">सम्पर्क करें</a>
+      
     </main-content>
     <youtube-embed></youtube-embed>
   </section>
@@ -30,7 +24,7 @@ export default {
   data() {
     return {
       bannerData: {
-        img: "https://i.ibb.co/GMqk6Xh/history-vill.jpg",
+        img: "https://i.ibb.co/3fh2g7S/history-banner.png",
         title: "History",
       },
     };

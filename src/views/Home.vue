@@ -9,7 +9,40 @@
     <important-links></important-links>
   <cricket-cup></cricket-cup>
 
-    
+    <div class="shop-footer fixed-bottom d-lg-none d-block">
+<div class="container-fluid">
+<div class="row justify-content-center ">
+  <div class="col-4 footer-btns mt-2 "
+          >
+   <p class="btn-text">  
+      <router-link class="text-decoration-none text-white" to="/find">
+      
+     <img src="../assets/shopf.png"  class="me-2" alt="" srcset="" />
+      
+        दुकानें 
+</router-link
+          >
+     
+      </p>
+  </div>
+  <div class="col-4 mt-2 footer-btns ">
+      <p class="btn-text">   
+        <img src="../assets/galleryf.png" alt="" srcset="" class="me-2" />
+        <router-link class="text-decoration-none mt-3 text-white " to="/gallery"
+            > गैलरी</router-link
+          ></p>
+  </div>
+
+  <div class="col-4 mt-2 footer-btns ">
+      <p class="btn-text">   
+        <img src="../assets/phonef.png" alt="" srcset="" class="me-2" />
+        <a class="text-decoration-none text-white" href='https://chat.whatsapp.com/LgCz9l1tWQKKJe6OQ5n8Zt'
+            >सम्पर्क करें </a
+          ></p>
+  </div>
+</div>
+</div>
+</div>
   </div>
 </template>
 
@@ -69,4 +102,15 @@ export default {
 };
 </script>
 <style  scoped>
+.shop-footer{
+  height: 50px;
+  background: linear-gradient(360deg,#316add,#316add);
+  width: 100%;
+  /* border: 1px dashed black;
+  border-top:  1px solid rgb(255, 255, 255); */
+}
+.footer-btns{
+  font-weight: bolder;
+  /* color: rgb(3, 1, 5); */
+}
 </style>
