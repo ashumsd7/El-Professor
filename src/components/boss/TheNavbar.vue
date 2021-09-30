@@ -14,7 +14,7 @@
     >
       <div class="container">
         <router-link class="navbar-brand" to="/"
-          ><img width="200" height="60" src="https://i.ibb.co/Ht6hkb4/IMG-20210930-004544.jpg" alt="" srcset=""
+          ><img width="200" height="60" src="https://i.ibb.co/JCkn2x6/IMG-20210930-144311.jpg" alt="" srcset=""
         /></router-link>
         <button
           class="navbar-toggler"
