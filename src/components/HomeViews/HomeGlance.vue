@@ -1,6 +1,9 @@
 <template>
   <div class="glance-container m-auto">
-    <div class="container mt-5 text-center">
+    <div class="village_name">
+      
+    </div>
+    <div class="container mt-5 text-center village_name">
       <p class="heading display-3"><span class="welcome-text">Welcome to</span>
           <span class="d-block village-name ">
           <span class="display-1 "> C</span>
@@ -43,6 +46,12 @@ export default {};
     width: 100%;
     height: 25rem; */
     /* height: 50vh; */
+    background: url('https://i.ibb.co/XkgXvdQ/IMG-20210930-114423.jpg') no-repeat center;
+    background-size: cover;
+    height: 90vh;
+}
+.village_name{
+  height: 15vh;
 }
 .village-name{
      /* background-color: rgb(0, 185, 15); */
@@ -91,10 +100,11 @@ export default {};
 }
 .heading {
   color: gray;
+  /* margin-top: 100px; */
 }
 .heading span span {
   font-family: "Maven Pro", sans-serif;
-  color: rgb(44, 43, 43);
+  color: rgb(255, 255, 255);
   transition: all 0.3s;
   margin-left: -25px;
 }
@@ -110,7 +120,7 @@ span.welcome-text{
   margin-left: 0px;
 }
 .heading span:hover {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   cursor: pointer;
 }
 .heading-declaration {

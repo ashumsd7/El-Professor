@@ -4,7 +4,7 @@ import History from '../views/pages/History.vue'
 import Gallery from '../views/pages/Gallery.vue'
 import Elections from '../views/pages/Elections.vue'
 import Cricket from '../views/pages/Cricket.vue'
-import Donate from '../views/pages/Donate.vue'
+import Donate from '../views/pages/SimpleDonate.vue'
 import ShopsData from '../views/pages/ShopsData.vue'
 import AddShop from '../views/pages/AddShop.vue'
 import News from '../views/pages/News.vue'
@@ -36,11 +36,11 @@ const routes = [
     name: 'Cricket',
     component: Cricket
   },
-  // {
-  //   path: '/donate',
-  //   name: 'Donate',
-  //   component: Donate
-  // },
+  {
+    path: '/donate',
+    name: 'Donate',
+    component: Donate
+  },
   {
     path: '/find',
     name: 'Shops',

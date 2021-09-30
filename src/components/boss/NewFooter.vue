@@ -112,7 +112,7 @@
             src="../../assets/help.png"
             alt=""
             srcset=""
-          />गांव में  सहयोग दें  </a>
+          />गांव का  सहयोग दें  </a>
           
        
     
@@ -122,7 +122,7 @@
             src="../../assets/feedback.png"
             alt=""
             srcset=""
-          />वेबसाइट कैसी लगी ?फीडबैक दें</a>
+          />वेबसाइट कैसी लगी ?</a>
           
          
         
@@ -150,7 +150,7 @@ export default {};
 
 <style  scoped>
 .container-fluid {
-  background: black;
+  background: rgb(36, 36, 36);
 }
 a {
   margin-left: 0.5rem;
