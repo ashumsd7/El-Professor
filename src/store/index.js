@@ -284,6 +284,7 @@ export default createStore({
     
       
       { title: "बिल्डिंग मटेरियल       ", value: "buildingMaterials" },
+      { title: "बीज भंडार / पेस्टीसाइड        ", value: "beej" },
       { title: "बढ़ई      ", value: "carpenter" },
       { title: "लोहार       ", value: "blacksmith" },
       { title: "सुनार        ", value: "jeweller" },
