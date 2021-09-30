@@ -40,6 +40,6 @@ export default {
 
 
 .fill-gap{
-  margin-top: 90px;
+  margin-top: 80px;
 }
 </style>
