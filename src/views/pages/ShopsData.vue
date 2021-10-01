@@ -74,7 +74,7 @@
               v-model="selectedFilter"
               class="radio-input"
             />
-            <small for="jack" class="ms-1 input-title">{{ check.title }}</small>
+            <small for="jack" class="ms-2 input-title">{{ check.title }}</small>
             <!-- <button class=" input-title">{{ check.title }}</button> -->
           </div>
         </div>
@@ -82,6 +82,40 @@
 
       <div class="shop-table">
         <hr />
+
+        <div class="mb-3">
+            
+            <input
+              type="radio"
+              class="me-2"
+              value="no"
+              v-model="showOnlyCharawan"
+              checked
+              id=""
+              @change="filterOnlyCharawan"
+              
+            />
+
+            <label for="exampleFormControlInput1" class="form-label mt-2  fw-bold text-primary">
+             सभी दुकानें /सर्विस  देखें 
+            </label>
+
+
+             <input
+              type="radio"
+              class=" ms-3"
+              value="yes"
+              v-model="showOnlyCharawan"
+              id=""
+              @change="filterOnlyCharawan"
+           
+            />
+
+            <label for="exampleFormControlInput1" class="form-label mt-2 ms-2 fw-bold text-primary">
+              केवल चरावां की  दुकानें /सर्विस  देखें 
+
+            </label>
+          </div>
 
         <div class="row text-center m-auto mt-2 justify-content-center mt-3">
           <img
@@ -194,13 +228,46 @@ export default {
       preservedData: [],
       showCategory: false,
       isLoading: false,
+      showOnlyCharawan:'',
+      //using for in charwan filter
+      updated:true,
+      preservedCurrentData:[]
     };
   },
   mounted() {
     window.scrollTo(0, 0);
   },
   methods: {
+
+    filterOnlyCharawan(){
+        // console.log(this.allShopData.length);
+        if(this.updated){
+          this.preservedCurrentData=this.allShopData;
+          this.updated=!this.updated
+          
+        }
+       if(this.showOnlyCharawan=='yes'){
+          let filteredCharawanData = this.preservedCurrentData.filter((val, idx) => {
+        if (val.inCharawan=='charawan') {
+          return val;
+        }
+        
+      });
+      this.allShopData =filteredCharawanData;
+      
+       }
+
+       if(this.showOnlyCharawan=='no'){      
+        this.allShopData =this.preservedCurrentData;
+       }
+
+
+      
+
+    },
+
     filterResult() {
+      this.updated=true;
       this.isLoading = true;
       this.showCategory = false;
       if (this.selectedFilter == "all") {
