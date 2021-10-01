@@ -79,6 +79,16 @@
           />
             <div class="text-muted">जानकारी लोड हो रही  हैं ...</div>
            </div>
+
+
+
+
+
+
+
+
+
+
           <div
             class="notifications mb-2 ms-lg-5 p-2"
             v-for="news in allNews"
@@ -87,7 +97,7 @@
             <div class="title-time">
               <span class="time-name">
                 <small class="badge text-light bg-dark text-white">
-                  {{ news.timeStamp }}
+                
                   <span
                     :class="{ adminColor: news.isAdmin }"
                     class="text-warning"
@@ -95,13 +105,14 @@
                   >
                   द्वारा
                 </small>
+                <small class="text-muted ms-1 ">  {{ news.timeStamp }}</small>
               </span>
-              <small class="title fw-bold d-block text-muted">{{
+              <small class="title mt-1 fw-bold d-block text-muted">{{
                 news.newsTitle
               }}</small>
             </div>
 
-            <a href="" class="short-info">{{ news.shortInfo }}</a>
+            <a href="" class="short-info text-decoration-none ms-3 mt-2">💬{{ news.shortInfo }}</a>
             <!-- <a @click="showDetail = !showDetail" v-if="news.detailedInfo"
               >show More</a
             > -->
@@ -119,6 +130,7 @@
 
 <script>
 import LinkForm from "./LinkForm.vue";
+
 import axios from "axios";
 export default {
   components: { LinkForm },
@@ -211,6 +223,7 @@ export default {
 }
 .notifications{
      transition: all .5s ease-in;
+     border-bottom: 1px dotted gray;
 }
 .my-data {
   overflow-y: scroll;

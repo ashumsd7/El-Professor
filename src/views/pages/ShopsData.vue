@@ -2,56 +2,34 @@
   <section id="shops-data">
     <top-banner
       img="https://i.ibb.co/ZSZ8WgG/IMG-20211001-012136.jpg"
+      mobileImg='https://i.ibb.co/vLqp8tN/IMG-20211002-000232.jpg'
+      
       title="Shops List"
     ></top-banner>
     <main-heading>चरावां और आस पास की सभी दुकानें</main-heading>
-    <hr />
+
 
 
     <div class="container text-center position-relative">
-      <label for="exampleFormControlInput1" class="form-label mt-2 fw-bold">
-        <!-- आप किस तरह की दुकान या सर्विस के बारे में जानना चाहते हैं ? -->
-        <span class="badge bg-warning text-dark"
-          >कुल
-          <span class="badge bg-info text-dark">
-            {{ preservedData.length }}</span
-          >
-          में से
-          <span class="badge bg-dark text-white">
-            {{ allShopData.length }}</span
-          >
-          दुकाने/सेवाएं दिख रही हैं
-        </span>
-        <small class="fw-200 d-block">
-          <!-- (आप एक से ज्यादा तरह की सर्विस पे क्लिक कर सकते हैं) -->
-        </small>
-      </label>
+     
+
+      <div class="info-container bg-white  text-center">
+        <div class="row counter bg-lg-info bg-dark text-white">
+          <div class="col-12 w-100 mt-1 fw-bold">
+
+        कुल  {{ preservedData.length }}     में से {{ allShopData.length }} दुकाने/सेवाएं दिख रही हैं
+          </div>
+        </div>
+        <div class="row">
+
+        </div>
+      </div>
       
 
       <div class="">
-        <!-- <button class="btn btn-secondary d-block d-none d-lg-block mb-2">
-          <img src="../../assets/plus.png" alt="" srcset="" class="me-1"  />
-          <router-link class="text-decoration-none text-white" to="/addshop"
-            >दुकान /सर्विस जोड़ें</router-link
-          >
-        </button> -->
-        <!-- <button
-          @click="searchClicked()"
-          v-if="!showCategory"
-          class="btn btn-primary d-block search-btn d-none d-lg-block"
-        >
-          <img src="../../assets/searching.png" class="me-1" alt="" srcset="" />
-          दुकान खोजें
-        </button> -->
+      
 
-        <!-- <button
-          @click="searchClicked()"
-          v-if="!showCategory"
-          class="btn btn-primary d-block search-btn position-fixed d-md-none"
-        >
-          <img src="../../assets/searching.png" class="me-1" alt="" srcset="" />
-          दुकान खोजें
-        </button> -->
+       
       </div>
       <div v-if="showCategory" class="row checkboxes">
         <br />
@@ -81,13 +59,13 @@
       </div>
 
       <div class="shop-table">
-        <hr />
+      
 
-        <div class="mb-3">
+        <div class=''>
             
             <input
               type="radio"
-              class="me-2"
+              class="me-1"
               value="no"
               v-model="showOnlyCharawan"
               checked
@@ -97,7 +75,7 @@
             />
 
             <label for="exampleFormControlInput1" class="form-label mt-2  fw-bold text-primary">
-             सभी दुकानें /सर्विस  देखें 
+             <small>सभी दुकानें /सर्विस </small>
             </label>
 
 
@@ -111,9 +89,9 @@
            
             />
 
-            <label for="exampleFormControlInput1" class="form-label mt-2 ms-2 fw-bold text-primary">
-              केवल चरावां की  दुकानें /सर्विस  देखें 
-
+            <label for="exampleFormControlInput1" class="form-label mt-2 ms-1 fw-bold text-primary">
+              <small>केवल चरावां की 
+</small>
             </label>
           </div>
 
@@ -374,6 +352,10 @@ small {
 .footer-btns{
   font-weight: 600;
   color: white;
+}
+.counter{
+  /* background: black; */
+  height: 30px;
 }
 
 </style>

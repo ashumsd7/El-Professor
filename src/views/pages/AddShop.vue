@@ -2,6 +2,7 @@
   <section class="addShop position-relative">
     <top-banner 
       img="https://i.ibb.co/tBt88YP/ch2.jpg"
+      mobileImg='https://i.ibb.co/TvJmyj2/IMG-20211002-000201.jpg'
       title="Cricket"
     ></top-banner>
     <main-heading v-if="!showDialog">अपने आस पास की दुकानें जोड़े </main-heading>

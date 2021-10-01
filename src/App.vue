@@ -27,6 +27,7 @@ export default {
     title: 'HOME',
     titleTemplate: '%s |चरावा'
   },
+  
   created() {
     
   },

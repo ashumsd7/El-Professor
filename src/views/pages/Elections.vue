@@ -1,6 +1,6 @@
 l<template>
   <section id="history">
-    <top-banner :img="bannerData.img" :title="bannerData.title"></top-banner>
+    <top-banner :img="bannerData.img" mobileImg='https://i.ibb.co/CmyYj3K/IMG-20211002-002104.jpg' :title="bannerData.title"></top-banner>
     <main-heading>चुनाव चरावां में </main-heading>
     <main-content></main-content>
     <hr />

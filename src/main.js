@@ -13,6 +13,9 @@ import MainContent from './components/reusable/slots/MainContent.vue'
 import SuccessDialog from './components/reusable/slots/SuccessDialog.vue'
 
 
+// Vue.use(VueMeta)
+
+
 
 const vm= createApp(App).use(store).use(router)
 vm.component('top-banner', TopBanner)

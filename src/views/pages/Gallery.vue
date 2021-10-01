@@ -1,5 +1,7 @@
 <template>
-<top-banner img='https://i.ibb.co/7WjRCh8/IMG-20211001-011117.jpg'></top-banner>
+<top-banner img='https://i.ibb.co/7WjRCh8/IMG-20211001-011117.jpg'
+mobileImg='https://i.ibb.co/9VKvWpn/IMG-20211002-002743.jpg'
+></top-banner>
 <main-heading>चरावां गैलरी </main-heading>
 <main-content>आप अपने बनाये हुए वीडियो या फोटोज जो आपके गांव से या आस पास से सम्बंधित हो हमे भेज सकते हैं भेजने के लिए <a href="https://chat.whatsapp.com/LgCz9l1tWQKKJe6OQ5n8Zt">सम्पर्क करें</a>  </main-content>
         <hr>

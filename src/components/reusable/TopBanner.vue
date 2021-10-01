@@ -1,12 +1,13 @@
 <template>
-<div class=" banner d-none d-md-block">
-<img :src="img" class="img-resive" alt="" srcset="">
+<div class=" banner ">
+<img :src="img" class="img-resive d-none d-md-block" alt="" srcset="">
+<img :src="mobileImg" class="img-resive d-block d-md-none" alt="" srcset="">
 </div>
 </template>
 
 <script>
     export default {
-        props:['img','title']
+        props:['img','title','mobileImg']
     }
 </script>
 

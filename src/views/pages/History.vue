@@ -1,6 +1,6 @@
 l<template>
   <section id="history">
-    <top-banner :img="bannerData.img" :title="bannerData.title"></top-banner>
+    <top-banner :img="bannerData.img" mobileImg='https://i.ibb.co/F56P31N/IMG-20211002-000632.jpg' :title="bannerData.title"></top-banner>
     <main-heading>चरावां का इतिहास </main-heading>
 
     <main-content

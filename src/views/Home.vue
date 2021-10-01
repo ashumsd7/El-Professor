@@ -1,11 +1,12 @@
 <template>
   <div class="home">
     <home-glance></home-glance>
+   
 
     <important-links></important-links>
+    <about-glance></about-glance>
     <counter></counter>
 
-    <about-glance></about-glance>
     <cricket-cup></cricket-cup>
     <authority-glance></authority-glance>
 
@@ -122,17 +123,21 @@
 <script>
 // @ is an alias to /src
 import HomeGlance from "../components/HomeViews/HomeGlance";
+
 import CricketCup from "../components/HomeViews/CricketCup";
 
 import AboutGlance from "../components/HomeViews/AboutGlance";
 import AuthorityGlance from "../components/HomeViews/AuthorityGlance.vue";
 import ImportantLinks from "../components/HomeViews/ImportantLinks.vue";
 
-import Counter from "../components/HomeViews/Counter.vue";
 
+import Counter from "../components/HomeViews/Counter.vue";
+import  ChitChat from "../components/reusable/ChitChat.vue";
 export default {
   name: "Home",
   components: {
+    ChitChat,
+    
     HomeGlance,
     // QuickLinks,
     CricketCup,

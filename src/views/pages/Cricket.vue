@@ -2,6 +2,7 @@
   <section id="cricket">
     <top-banner
       img="https://i.ibb.co/K6jby1w/rampur-Cricket-Winner.jpg"
+      mobileImg='https://i.ibb.co/X7zZ9ts/IMG-20211002-000344.jpg'
       title="Cricket"
     ></top-banner>
     <main-heading>चरावां क्रिकेट क्लब </main-heading>
