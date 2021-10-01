@@ -88,18 +88,20 @@
            <span class="text-danger"> *</span> जानकारी को संक्षिप्त रूप में लिखें 
            <span class="text-danger">(जरूरी है लिखना)</span>
           </label>
-          <input
+          <textarea
             type="text"
             class="form-control"
             v-model="shortInfo"
             id=""
             placeholder="कब शब्दों में  जानकारी लिखें  "
+            cols="35"
+            rows='5'
           />
         </div>
       </div>
 
       <div class="col-lg-12">
-        <label for="exampleFormControlInput1" class="form-label mt-2">
+        <!-- <label for="exampleFormControlInput1" class="form-label mt-2">
           विस्तृत जानकारी यहाँ लिखें (अगर लिखना चाहें  तो )
         </label>
         <div class="">
@@ -113,7 +115,7 @@
             placeholder="अगर जानकारी विस्तृत रूप में लिखना चाहते हैं तो यहाँ टाइप करें "
           >
           </textarea>
-        </div>
+        </div> -->
         <div class="row news-btn">
           <div class="col-lg-6 col-6">
             <input
@@ -161,19 +163,19 @@ export default {
       this.$emit("goBack");
     },
     sumbitData() {
-      if (this.newsTitle == "") {
-        alert("खबर किस बारे में हैं ? ");
-        return;
-      }
+    //   if (this.newsTitle == "") {
+    //     alert("खबर किस बारे में हैं ? ");
+    //     return;
+    //   }
       if (this.shortInfo == "") {
         alert("कब शब्दों में खबर लिखें ");
         return;
       }
-      if(this.newsTitle.length<20){
-          alert('शीर्षक काफी छोटा है ')
-          return;
-      }
-      if(this.shortInfo.length<50){
+    //   if(this.newsTitle.length<10){
+    //       alert('शीर्षक काफी छोटा है ')
+    //       return;
+    //   }
+      if(this.shortInfo.length<15){
           alert('जानकारी कुछ ज्यादा ही संक्षिप्त है कृपया कुछ ज्यादा शब्दों में लिखें ')
           return;
       }
@@ -188,8 +190,10 @@ export default {
           if(this.reporterName==''){
               this.reporterName='अनाम'
           }
-          if(this.isAdmin=='22'){
-              this.reporterName=='एडमिन'
+          if(this.adminID=='22'){
+              alert('he is admin')
+              this.reporterName='एडमिन'
+              alert(this.reporterName)
           }
           
         let newsData = {
@@ -198,6 +202,7 @@ export default {
           shortInfo: this.shortInfo,
           detailedInfo: this.detailedInfo,
           timeStamp: this.timeStamp,
+          isAdmin:this.isAdmin
         };
         this.isLoading= true;
         axios.post("https://charawan-notification-default-rtdb.firebaseio.com/Notification.json",newsData)
@@ -235,5 +240,8 @@ label {
 }
 .form{
     background: linear-gradient(230deg,rgb(219, 247, 231),rgb(250, 240, 194));
+}
+.adminColor{
+        color: #08ed4f!important;
 }
 </style>

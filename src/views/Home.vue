@@ -2,12 +2,12 @@
   <div class="home">
     <home-glance></home-glance>
 
+    <important-links></important-links>
     <counter></counter>
    
     <about-glance></about-glance>
-    <authority-glance></authority-glance>
-    <important-links></important-links>
   <cricket-cup></cricket-cup>
+    <authority-glance></authority-glance>
 
     <div class="shop-footer fixed-bottom d-lg-none d-block">
 <div class="container-fluid">

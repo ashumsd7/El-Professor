@@ -181,20 +181,7 @@
 import axios from "axios";
 
 export default {
-  // components: { ShopFilter },
-  created() {
-    axios
-      .get(
-        "https://docs.google.com/spreadsheets/d/1h8kWqfMzlc-thnPUHb0K2OxPc2Xb07nZ4JkXPoRngBU/gviz/tq?tqx=out:json"
-      )
-      .then((res) => {
-        let shopData = res;
-        console.log(shopData);
-        // for(let item in shopData ){
-        //   console.log(item);
-        // }
-      });
-  },
+
   computed: {
     getFilters() {
       return this.$store.getters.getFilters;
@@ -238,12 +225,6 @@ export default {
       this.allShopData = filteredData;
       this.isLoading = false;
     },
-    prepareCategory() {
-      // let categoryArray=this.allShopData.map(ele=>ele.shopType )
-      // let badgeCollection=categoryArray.map(ele=> Object.values(ele) )
-      // let finalBadges=badgeCollection.forEach(ele=>{
-      // })
-    },
     callAPI() {
       this.isLoading = true;
       axios
@@ -256,9 +237,9 @@ export default {
             this.allShopData.push(res.data[i]);
           }
           // console.log(this.allShopData);
-          this.preservedData = this.allShopData;
+          this.preservedData = this.allShopData.reverse();
           this.isLoading = false;
-          this.prepareCategory();
+          
         });
     },
     searchClicked() {
