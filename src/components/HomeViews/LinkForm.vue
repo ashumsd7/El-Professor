@@ -150,7 +150,7 @@ export default {
       newsTitle: "",
       shortInfo: "",
       detailedInfo: "",
-      timeStamp: new Date(),
+      timeStamp: new Date().getTime(),
 
       isDisabled: false,
       isLoading: false,
@@ -186,14 +186,14 @@ export default {
               return;
           }
       }
-      if (this.shortInfo != "" && this.newsTitle != "") {
+      if (this.shortInfo != "" ) {
           if(this.reporterName==''){
               this.reporterName='अनाम'
           }
           if(this.adminID=='22'){
-              alert('he is admin')
+             
               this.reporterName='एडमिन'
-              alert(this.reporterName)
+             
           }
           
         let newsData = {

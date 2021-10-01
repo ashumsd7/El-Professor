@@ -2,14 +2,6 @@
   <div class="container-fluid mt-5">
     <div class="row">
       <div class="col-12">
-
-
- 
-
-
-
-
-
         <div class="section-title text-center mb-3 mt-3 position-relative">
           <h4 class="fw-bolder">
             <img
@@ -29,24 +21,26 @@
             />
           </h4>
         </div>
-       <button @click="callApi" class="text-dark btn "> {{showLoading ? 'रिफ्रेश हो रहा है ' : 'रिफ्रेश करें' }}   <img
-              src="../../assets/refresh.png" v-if="!showLoading"
-              width="24"
-              alt=""
-              srcset=""
-              class="me-1"
-            />
+        <button @click="callApi" class="text-dark btn">
+          {{ showLoading ? "रिफ्रेश हो रहा है " : "रिफ्रेश करें" }}
+          <img
+            src="../../assets/refresh.png"
+            v-if="!showLoading"
+            width="24"
+            alt=""
+            srcset=""
+            class="me-1"
+          />
 
-            <img v-if="showLoading"
-              src="../../assets/refreshing.gif"
-              width="24"
-              alt=""
-              srcset=""
-              class="me-1"
-            />
-            
-            
-            </button>
+          <img
+            v-if="showLoading"
+            src="../../assets/refreshing.gif"
+            width="24"
+            alt=""
+            srcset=""
+            class="me-1"
+          />
+        </button>
         <hr />
         <div class="form-container" v-if="openForm">
           <link-form @goBack="fireGoBack"></link-form>
@@ -68,20 +62,23 @@
               src="../../assets/plusnoti.png"
               alt=""
               srcset=""
-              class="me-1 "
+              class="me-1"
             />जोड़ें
           </button>
           <!-- <marquee behavior="" direction="up" scrollamount="4" loop='true'> -->
 
-               <img v-if="showLoading"
-        class="me-1 mt-4"
-        width="300"
-        src="../../assets/loading2.gif"
-        alt=""
-        srcset=""
-      />
-
-
+        
+           <div class="loading text-center" v-if="showLoading">
+                 <img
+            
+            class="me-1 mt-4"
+            width="300"
+            src="../../assets/loading2.gif"
+            alt=""
+            srcset=""
+          />
+            <div class="text-muted">जानकारी लोड हो रही  हैं ...</div>
+           </div>
           <div
             class="notifications mb-2 ms-lg-5 p-2"
             v-for="news in allNews"
@@ -89,14 +86,19 @@
           >
             <div class="title-time">
               <span class="time-name">
-                <small class=" badge text-light bg-dark text-white">
+                <small class="badge text-light bg-dark text-white">
                   {{ news.timeStamp }}
-                  <span :class="{adminColor:news.isAdmin}" class="text-warning">{{
-                    news.reporterName
-                  }}</span> द्वारा </small
-                >
+                  <span
+                    :class="{ adminColor: news.isAdmin }"
+                    class="text-warning"
+                    >({{ news.reporterName }})</span
+                  >
+                  द्वारा
+                </small>
               </span>
-              <small class="title fw-bold d-block text-muted ">{{ news.newsTitle }}</small>
+              <small class="title fw-bold d-block text-muted">{{
+                news.newsTitle
+              }}</small>
             </div>
 
             <a href="" class="short-info">{{ news.shortInfo }}</a>
@@ -120,10 +122,11 @@ import LinkForm from "./LinkForm.vue";
 import axios from "axios";
 export default {
   components: { LinkForm },
+ 
   data() {
     return {
       //type:   notification / news/ vikas
-      showLoading:true,
+      showLoading: true,
       showDetail: false,
       openForm: false,
       allNews: [],
@@ -134,30 +137,63 @@ export default {
       this.openForm = !this.openForm;
       this.callApi();
     },
-    callApi(){
-     this.allNews=[]
-        this.showLoading=true
-    axios
-      .get(
-        "https://charawan-notification-default-rtdb.firebaseio.com/Notification.json"
-      )
-      .then((res) => {
+    callApi() {
+      this.allNews = [];
+      this.showLoading = true;
+      axios
+        .get(
+          "https://charawan-notification-default-rtdb.firebaseio.com/Notification.json"
+        )
+        .then((res) => {
+          //   console.log(res.data);
+          for (let i in res.data) {
+            this.allNews.push(res.data[i]);
+          }
+          for(let i in this.allNews){
+              let currentStamp= new Date().getTime()-this.allNews[i].timeStamp;
+              let difference= this.calculateTimeago(Date.now()-currentStamp);
+              this.allNews[i].timeStamp= difference;
           
-        //   console.log(res.data);
-        for (let i in res.data) {
-          this.allNews.push(res.data[i]);
-        }
-        this.allNews = this.allNews.reverse();
-        this.showLoading=false
-       
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-    }
+          }
+          this.allNews = this.allNews.reverse();
+          this.showLoading = false;
+        
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    },
+
+    calculateTimeago(date) {
+      let seconds = Math.floor((Date.now() - date) / 1000);
+      let unit = " सेकंड ";
+      let direction = "पहले ";
+      if (seconds < 0) {
+        seconds = -seconds;
+        direction = "from now";
+      }
+      let value = seconds;
+      if (seconds >= 31536000) {
+        value = Math.floor(seconds / 31536000);
+        unit = "  साल";
+      } else if (seconds >= 86400) {
+        value = Math.floor(seconds / 86400);
+        unit = "दिन";
+      } else if (seconds >= 3600) {
+        value = Math.floor(seconds / 3600);
+        unit = " घण्टे ";
+      } else if (seconds >= 60) {
+        value = Math.floor(seconds / 60);
+        unit = "मिनट";
+      }
+      if (value != 1) unit = unit + "";
+      return value + " " + unit + " " + direction;
+
+    //   console.log(getTimeInterval(Date.now() - 25650));
+    },
   },
   created() {
-      this.callApi();
+    this.callApi();
   },
 };
 </script>
@@ -171,9 +207,9 @@ export default {
 
   border-left: 3px solid rgb(1, 161, 1);
 }
-.my-data{
-    overflow-y: scroll;
-    height: 200px;
+.my-data {
+  overflow-y: scroll;
+  height: 200px;
 }
 
 .section-title {
@@ -204,7 +240,7 @@ export default {
 ::-webkit-scrollbar-thumb:hover {
   background: #b30000;
 }
-.adminColor{
-        color: #08ed4f!important;
+.adminColor {
+  color: #08ed4f !important;
 }
 </style>
