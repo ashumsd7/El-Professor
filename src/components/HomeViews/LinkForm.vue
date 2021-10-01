@@ -69,8 +69,8 @@
       <div class="col-lg-4">
         <div class="mb-3">
           <label for="exampleFormControlInput1" class="form-label mt-2">
-             <span class="text-danger"> *</span>जानकारी किस बारे में हैं ?
-             <span class="text-danger">(जरूरी है लिखना)</span>
+           जानकारी किस बारे में हैं ?
+            
           </label>
           <input
             type="text"
@@ -155,7 +155,8 @@ export default {
       isDisabled: false,
       isLoading: false,
       isAdmin:false,
-      adminID:''
+      adminID:'',
+      isDisabled:false
     };
   },
   methods: {
@@ -168,7 +169,7 @@ export default {
     //     return;
     //   }
       if (this.shortInfo == "") {
-        alert("कब शब्दों में खबर लिखें ");
+        alert("कब शब्दों में जानकारी लिखें ");
         return;
       }
     //   if(this.newsTitle.length<10){
@@ -205,11 +206,13 @@ export default {
           isAdmin:this.isAdmin
         };
         this.isLoading= true;
+        this.isDisabled=true;
         axios.post("https://charawan-notification-default-rtdb.firebaseio.com/Notification.json",newsData)
           .then((res) => {
               this.isLoading= false;
                this.$emit("goBack");
             // console.log(res);
+            this.isDisabled=false;
           })
           .catch((err) => {
               this.isLoading= false;

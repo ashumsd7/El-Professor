@@ -21,7 +21,7 @@
             />
           </h4>
         </div>
-        <button @click="callApi" class="text-dark btn">
+        <button @click="callApi" class="text-dark btn" v-if="!openForm">
           {{ showLoading ? "रिफ्रेश हो रहा है " : "रिफ्रेश करें" }}
           <img
             src="../../assets/refresh.png"
@@ -202,7 +202,8 @@ export default {
 .notification_container {
   /* width: 100vw; */
 
-  height: 400px;
+  min-height: 250px;
+  max-height:450px ;
   overflow-y: scroll;
 
   border-left: 3px solid rgb(1, 161, 1);
