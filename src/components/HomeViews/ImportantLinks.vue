@@ -11,7 +11,7 @@
               srcset=""
               class="me-1"
             />
-            {{ openForm ? "जानकारी  जोड़ें " : "नोटिफिकेशन  " }}
+           चरावां : {{ openForm ? "जानकारी  जोड़ें " : "नोटिफिकेशन  " }}
             <img
               src="../../assets/live.png"
               width="80"
@@ -200,6 +200,7 @@ export default {
 
 <style  scoped>
 .notification_container {
+   
   /* width: 100vw; */
 
   min-height: 250px;
@@ -207,6 +208,9 @@ export default {
   overflow-y: scroll;
 
   border-left: 3px solid rgb(1, 161, 1);
+}
+.notifications{
+     transition: all .5s ease-in;
 }
 .my-data {
   overflow-y: scroll;
