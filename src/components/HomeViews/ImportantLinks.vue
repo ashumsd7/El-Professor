@@ -4,13 +4,19 @@
         
       <div class=" col-12 " >
           <div class="section-title text-center mb-3 mt-3 position-relative">
-              <h4 class="fw-bolder text-decoration-underline">नोटिफिकेशन 📢 
+              <h4 class="fw-bolder text-decoration-underline">
+                  {{openForm ?'जानकारी  जोड़ें ' :'नोटिफिकेशन 📢 '}}
+                  
                   </h4>
              
               
           </div>
-          <div class="notification_container   ">
- <button  class="ms-auto d-block  add-noti-btn btn btn-warning fw-bold p-1 rounded-2">
+          <hr>
+          <div class="form-container" v-if="openForm">
+              <link-form @goBack='fireGoBack'></link-form>
+          </div>
+          <div v-if="!openForm" class="notification_container   ">
+ <button @click="openForm=!openForm"  class="ms-auto d-block  add-noti-btn btn btn-warning fw-bold p-1 rounded-2">
      <img src="../../assets/plusnoti.png" alt="" srcset="" class="me-1" />जोड़ें </button>
           <!-- <marquee behavior="" direction="up" scrollamount="4" loop='true'> -->
        <div class="notifications mb-2 ms-lg-5 p-2 " v-for="i in 10" :key="i">
@@ -32,7 +38,9 @@
 </template>
 
 <script>
+import LinkForm from './LinkForm.vue'
 export default {
+    components:{LinkForm},
   data() {
     return {
       //type:   notification / news/ vikas
@@ -48,8 +56,15 @@ export default {
           name: "admin",
         },
       ],
-    };
+      openForm:false
+    }
+    
   },
+  methods: {
+        fireGoBack(){
+            this.openForm= !this.openForm
+        }
+    },
 };
 </script>
 

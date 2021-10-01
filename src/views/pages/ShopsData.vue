@@ -89,6 +89,7 @@
             src="../../assets/loading.gif"
             class="me-1"
             alt=""
+            width="200"
             srcset=""
           />
           <div
