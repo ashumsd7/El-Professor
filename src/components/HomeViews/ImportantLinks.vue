@@ -4,8 +4,9 @@
         
       <div class=" col-12 " >
           <div class="section-title text-center mb-3 mt-3 position-relative">
-              <h4 class="fw-bolder text-decoration-underline">
-                  {{openForm ?'जानकारी  जोड़ें ' :'नोटिफिकेशन 📢 '}}
+              <h4 class="fw-bolder ">
+                  {{openForm ?'जानकारी  जोड़ें ➕ ' :'नोटिफिकेशन 📢 '}}
+                   <img src="../../assets/live.png" width="80" alt="" srcset="" class="d-block me-1" />
                   
                   </h4>
              
@@ -21,7 +22,7 @@
           <!-- <marquee behavior="" direction="up" scrollamount="4" loop='true'> -->
        <div class="notifications mb-2 ms-lg-5 p-2 " v-for="i in 10" :key="i">
             <div class="title-time">
-          <spam class="time-name">   <span class="badge text-light bg-dark">12 सामन्य <span class="text-warning">Admin</span></span> </spam>
+          <span class="time-name">   <span class="badge text-light bg-dark">12 सामन्य <span class="text-warning">Admin</span></span> </span>
           <small class="title fw-bold d-block">टूर्नामेंट और सामन्य क्लिप</small>
             </div>
 
@@ -70,11 +71,14 @@ export default {
 
 <style  scoped>
 .notification_container {
+    /* width: 100vw; */
   height: 400px;
   overflow-y: scroll;
-  box-shadow: 9px 9px 10px -2px rgba(0,0,0,0.75);
+  /* box-shadow: 9px 9px 10px -2px rgba(0,0,0,0.75);
 -webkit-box-shadow: 9px 9px 10px -2px rgba(0,0,0,0.75);
 -moz-box-shadow: 9px 9px 10px -2px rgba(0,0,0,0.75);
+background: linear-gradient(230deg,rgb(219, 247, 231),rgb(166, 166, 194)); */
+border-left: 3px solid rgb(1, 161, 1);
 }
 
 .section-title {
