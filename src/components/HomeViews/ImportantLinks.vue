@@ -238,6 +238,7 @@ background: rgb(255, 252, 246);
 .add-noti-btn {
   position: absolute;
   right: 30px;
+  cursor: pointer;
 }
 /* width */
 ::-webkit-scrollbar {

@@ -8,41 +8,10 @@
         alt=""
         srcset=""
       />
-      <h4 class="text-warning fw-bolder">जानकारी भेजी जा रही है....</h4>
+      <h4 class="text-info fw-bolder">जानकारी भेजी जा रही है....</h4>
     </div>
     <div class="form-conatiner" v-else>
-      <!-- <div class="col-lg-4" v-if="!isAdmin">
-        <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label mt-2">
-            रिपोर्टर का नाम <span class="text-danger">(जरूरी है लिखना)</span>
-          </label>
-          <input
-            type="text"
-            class="form-control"
-            v-model.trim="reporterName"
-            id=""
-            placeholder="कृपया अपना नाम लिखे  "
-          />
-        </div>
-      </div> -->
-
-      <!-- <div class="col-lg-4">
-        <div class="mb-3">
-     
-          <input
-            type="checkbox"
-            class="me-2"
-            
-            id=""
-            v-model="isAdmin"
-            value="isAdmin"
-            
-          />
-               <label for="exampleFormControlInput1" class="form-label mt-2">
-             <span class="text-danger">एडमिन के रूप में जारी करें  </span>
-          </label>
-        </div>
-      </div> -->
+  
 
         <div class="col-lg-4">
         <div class="">
@@ -57,17 +26,8 @@
             id=""
             placeholder="अपनी  ID डालें  "
           />
-          <!-- <span class="ms-2 text-primary">{{reporterName}}</span> -->
-        </div>
-        
+        </div>      
       </div>
-      
-      
-        
-
-
-
-
       <div class="col-lg-4">
         <div class="">
           <label for="exampleFormControlInput1" class="form-label mt-2">
@@ -83,12 +43,6 @@
           />
         </div>
       </div>
-
-
-
-
-
-
       <div class="col-lg-4">
         <div class="">
           <label for="exampleFormControlInput1" class="form-label mt-2">
@@ -108,10 +62,6 @@
       </div>
 
 <!-- photo feild -->
-
-
-
-
 <!-- img 1 -->
        <div class="col-lg-4 mt-3">
         <span class="fw-lighter text-secondary"> क्या आपके पास फोटो लिंक है ? तो अपलोड करें | अगर नहीं है तो 
@@ -167,28 +117,7 @@
           />
         </div>
       </div>
-
-
-
-
-
-
       <div class="col-lg-12">
-        <!-- <label for="exampleFormControlInput1" class="form-label mt-2">
-          विस्तृत जानकारी यहाँ लिखें (अगर लिखना चाहें  तो )
-        </label>
-        <div class="">
-          <textarea
-            name=""
-            id=""
-            cols="35"
-            class="w-100"
-            v-model="detailedInfo"
-            rows="5"
-            placeholder="अगर जानकारी विस्तृत रूप में लिखना चाहते हैं तो यहाँ टाइप करें "
-          >
-          </textarea>
-        </div> -->
         <div class="row news-btn">
           <div class="col-lg-6 col-6">
             <input
@@ -224,15 +153,10 @@ export default {
       shortInfo: "",
       detailedInfo: "",
       timeStamp:'',
-
       isDisabled: false,
       isLoading: false,
       isAdmin:true,
       adminID:'',
-      isDisabled:false,
-      wantToUploadImg:false
-
-      
     };
   },
   methods: {
@@ -240,18 +164,12 @@ export default {
       this.$emit("goBack");
     },
     sumbitData() {
-    //   if (this.newsTitle == "") {
-    //     alert("खबर किस बारे में हैं ? ");
-    //     return;
-    //   }
+
       if (this.shortInfo == "") {
         alert("कब शब्दों में जानकारी लिखें ");
         return;
       }
-    //   if(this.newsTitle.length<10){
-    //       alert('शीर्षक काफी छोटा है ')
-    //       return;
-    //   }
+
       if(this.shortInfo.length<15){
           alert('जानकारी कुछ ज्यादा ही संक्षिप्त है कृपया कुछ ज्यादा शब्दों में लिखें ')
           return;
@@ -265,9 +183,6 @@ export default {
       }
       if (this.shortInfo != "" ) {
         let isValid=false;
-          // if(this.reporterName==''){
-          //     this.reporterName='अनाम'
-          // }
           if(this.adminID=='101'){
               this.reporterName='एडमिन' 
               isValid=true         
@@ -278,7 +193,7 @@ export default {
           }
 
           if(!isValid ){
-              alert('  ID गलत है  अगर आप एडमिन नहीं है तो या तो एडमिन बनने के लिए सम्पर्क करें')
+              alert('ID गलत है  अगर आप एडमिन नहीं है तो या तो एडमिन बनने के लिए सम्पर्क करें')
               return;
           }
           
@@ -299,7 +214,6 @@ export default {
           .then((res) => {
               this.isLoading= false;
                this.$emit("goBack");
-            // console.log(res);
             this.isDisabled=false;
           })
           .catch((err) => {
@@ -307,7 +221,6 @@ export default {
             alert('सर्वर डाउन हो सकता हैं, कुछ समय बाद प्रयास करें  ')
           });
       }
-      //   console.log(newsData);
     },
   },
 };
