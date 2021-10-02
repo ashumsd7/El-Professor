@@ -21,7 +21,7 @@
             />
           </h4>
         </div>
-        <button
+        <p
             @click="openForm = !openForm"
             v-if="!openForm"
             class="
@@ -29,7 +29,7 @@
               
               d-block
               add-noti-btn
-              btn btn-primary
+              text-dark
               fw-bold
               p-2
               rounded-2
@@ -40,8 +40,8 @@
               alt=""
               srcset=""
               class="me-2"
-            />जोड़ें
-          </button>
+            /> जोड़ें
+          </p>
         <button @click="callApi" class=" btn fw-bolder text-primary" v-if="!openForm">
           {{ showLoading ? "रिफ्रेश हो रहा है " : "रिफ्रेश करें" }}
           <img
@@ -96,7 +96,8 @@
               }}</small>
             </div>
 
-            <a href="" class="short-info text-dark text-decoration-none ms-3 mb-2">💬{{ news.shortInfo }}</a>
+            <a href="" class="short-info text-dark fw-bold text-decoration-none  mb-2">
+              ✉️{{ news.shortInfo }}</a>
             <span class="time-name d-block" >
                 <small class="badge rounded-pill   text-light bg-dark text-white"  
                 :class="{ 'adminColor': news.isAdmin }"
@@ -110,7 +111,7 @@
                     {{ news.reporterName }}</span
                   >
                   द्वारा
-                  <small class="text-info ms-1 ">  {{ news.timeStamp }}</small>
+                  <small class="text-gray ms-1 "> ⏳ {{ news.timeStamp }}</small>
                 </small>
                 
               </span>
@@ -219,7 +220,7 @@ export default {
      transition: all .5s ease-in;
      /* border: 1px dotted gray; */
      margin: 1rem;
-     border-radius: 10% 10% 1% 21% / 0% 9% 0% 31%  ;
+     /* border-radius: 10% 10% 1% 21% / 0% 9% 0% 31%  ; */
      position: relative;
      margin-bottom: 50px;
      padding: 1rem;
@@ -266,7 +267,7 @@ export default {
   background: #b30000;
 }
 .adminColor {
-  color: #08ed4f !important;
-  background: red ;
+  color: #ffffff !important;
+ 
 }
 </style>
