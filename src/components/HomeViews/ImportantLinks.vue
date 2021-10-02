@@ -210,7 +210,7 @@ background: rgb(255, 252, 246);
 }
 .notifications {
   transition: all 0.5s ease-in;
-  /* border: 1px dotted gray; */
+  border: 2px solid rgb(110, 110, 110);
   margin: 1rem;
   /* border-radius: 10% 10% 1% 21% / 0% 9% 0% 31%  ; */
   background: rgb(255, 255, 255);
@@ -225,7 +225,7 @@ background: rgb(255, 252, 246);
 .time-name {
   position: absolute;
   top: -15px;
-  left: 0;
+  left: 3px;
 }
 .my-data {
   overflow-y: scroll;

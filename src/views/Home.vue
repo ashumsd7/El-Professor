@@ -112,12 +112,9 @@
       </div>
     </div>
 
-    <div class="row">
-      <div class="col-12">
-       
+   
       </div>
-    </div>
-  </div>
+
 </template>
 
 <script>
@@ -203,5 +200,7 @@ export default {
   /* box-shadow: 2px 4px 6px gray; */
   /* border-radius: 0%; */
 }
+
+
 
 </style>

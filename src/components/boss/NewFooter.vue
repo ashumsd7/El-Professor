@@ -1,20 +1,7 @@
 <template>
   <div class="container-fluid">
     <div class="row">
-      <div
-        class="
-          col-12
-          mb-4
-          strip
-          justify-content-center
-          align-items-center
-          fw-bold
-          text-white text-center
-          bg-primary
-        "
-      >
-        © चरावां 2021 <a class="text-white" href="http://">charawan.in</a>
-      </div>
+     
       <div class="col-lg-2 col-4 new-footer ">
         <div class="row">
           <a href="https://www.facebook.com/meracharawanfb"
@@ -142,6 +129,36 @@
         
       </div>
     </div>
+     <div
+        class="
+          col-12
+          mb-4
+          strip
+          justify-content-center
+          align-items-center
+          fw-bold
+          text-white text-center
+          bg-dark
+        "
+      >
+        © चरावां 2021 <a class="text-white" href="http://">charawan.in</a>
+      </div>
+    
+        <div class="mapouter">
+            <div class="gmap_canvas">
+              <iframe
+                class="gmap_iframe"
+                width="100%"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+                src="https://www.google.com/maps?q=Charawan%20Cricket%20Ground%2C%20Charawan%2C%20Uttar%20Pradesh%2C%20India&z=17&t=k&ie=UTF8&output=embed"
+              ></iframe>
+            </div>
+          </div>
+
+          
   </div>
 </template>
 
@@ -151,7 +168,7 @@ export default {};
 
 <style  scoped>
 .container-fluid {
-  background: rgb(0, 0, 0);
+  background: rgb(24, 24, 24);
 }
 a {
   margin-left: 0.5rem;
@@ -163,5 +180,21 @@ a img {
 }
 .new-footer{
     margin-bottom: 120px;
+}
+.mapouter {
+  /* position: relative; */
+  /* text-align: right; */
+  width: auto;
+  height: 400px;
+  /* overflow-x: hidden; */
+}
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  width:auto;
+  height: 400px;
+}
+.gmap_iframe {
+  height: 400px !important;
 }
 </style>
