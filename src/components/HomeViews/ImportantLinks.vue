@@ -81,47 +81,38 @@
            </div>
 
 
-
-
-
-
-
-
-
-
           <div
-            class="notifications mb-2 ms-lg-5 p-2"
+            class="notifications  ms-lg-5 p-2"
             v-for="news in allNews"
             :key="news.timeStamp"
           >
             <div class="title-time">
-              <span class="time-name">
-                <small class="badge text-light bg-dark text-white">
-                
-                  <span
-                    :class="{ adminColor: news.isAdmin }"
-                    class="text-warning"
-                    >({{ news.reporterName }})</span
-                  >
-                  द्वारा
-                </small>
-                <small class="text-muted ms-1 ">  {{ news.timeStamp }}</small>
-              </span>
+             
               <small class="title mt-1 fw-bold d-block text-muted">{{
                 news.newsTitle
               }}</small>
             </div>
 
-            <a href="" class="short-info text-decoration-none ms-3 mt-2">💬{{ news.shortInfo }}</a>
-            <!-- <a @click="showDetail = !showDetail" v-if="news.detailedInfo"
-              >show More</a
-            > -->
-            <!-- <a class="text-decoration-none full-info" v-if="showDetail" href=""
-              >{{ news.detailedInfo }}
-            </a> -->
-            <!-- <a @click="showDetail=!showDetail" v-if="!news.detailedInfo" >show less</a> -->
+            <a href="" class="short-info text-dark text-decoration-none ms-3 mb-2">💬{{ news.shortInfo }}</a>
+            <span class="time-name d-block" >
+                <small class="badge rounded-pill   text-light bg-dark text-white"  
+                :class="{ 'adminColor': news.isAdmin }"
+                >
+                
+                  <span
+                    
+                    class=""
+                    >
+                    <span v-if="news.isAdmin">🛡️</span>
+                    {{ news.reporterName }}</span
+                  >
+                  द्वारा
+                  <small class="text-info ms-1 ">  {{ news.timeStamp }}</small>
+                </small>
+                
+              </span>
           </div>
-          <!-- </marquee> -->
+          
         </div>
       </div>
     </div>
@@ -213,7 +204,7 @@ export default {
 <style  scoped>
 .notification_container {
    
-  /* width: 100vw; */
+
 
   min-height: 250px;
   max-height:450px ;
@@ -223,7 +214,20 @@ export default {
 }
 .notifications{
      transition: all .5s ease-in;
-     border-bottom: 1px dotted gray;
+     /* border: 1px dotted gray; */
+     margin: 1rem;
+     border-radius: 10% 10% 1% 21% / 0% 9% 0% 31%  ;
+     position: relative;
+     margin-bottom: 50px;
+     padding: 1rem;
+     box-shadow: 6px 10px 17px -3px rgba(0,0,0,0.6);
+-webkit-box-shadow: 6px 10px 17px -3px rgba(0,0,0,0.6);
+-moz-box-shadow: 6px 10px 17px -3px rgba(0,0,0,0.6);
+}
+.time-name {
+  position: absolute;
+  top: -15px;
+  left: 0;
 }
 .my-data {
   overflow-y: scroll;
@@ -260,5 +264,6 @@ export default {
 }
 .adminColor {
   color: #08ed4f !important;
+  background: red ;
 }
 </style>
