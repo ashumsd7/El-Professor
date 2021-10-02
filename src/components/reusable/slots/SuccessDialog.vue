@@ -18,7 +18,7 @@
             alt=""
             srcset=""
           />
-          <h3 class="text-center">
+          <h3 class="text-center d-block">
             <slot></slot>
           </h3>
           <div class="text-center mb-2">

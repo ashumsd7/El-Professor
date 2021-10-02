@@ -38,15 +38,17 @@
             <li @click="handleLink"  class="nav-item" v-for="link in links" :key="link">
               <router-link class="nav-link " aria-current="page" :to='link.to'>{{link.title}}</router-link>
             </li>
-            <li class="nav-item" @click="donate">
-              <p class="main-btn">डोनेट+
+            <li class="nav-item" >
+              <router-link class="btn btn-light border-1 fw-bolder" to="/donate" >    <img src="../../assets/donation.png" alt="" srcset="" />
+              डोनेट
                 <!-- <router-link class="text-decoration-none text-white"  to="/donate"></router-link> -->
-              </p>
+              </router-link>
               
             </li>
             <li class="nav-item" >
               <p class="main-btn">
-                <a class="text-decoration-none text-dark" href="https://chat.whatsapp.com/LgCz9l1tWQKKJe6OQ5n8Zt">सम्पर्क करें </a>
+                <a class="text-decoration-none text-white fw-bolder" href="https://chat.whatsapp.com/LgCz9l1tWQKKJe6OQ5n8Zt">
+                   <img src="../../assets/telephone.png" alt="" class="me-1" srcset="" />सम्पर्क करें </a>
                 <!-- <router-link class="text-decoration-none text-white"  to="/donate"></router-link> -->
               </p>
               
@@ -88,9 +90,9 @@ export default {
     handleLink(e){
    e.path[3].classList.remove('show')
   },
-  donate(){
-    alert('डोनेशन लिंक जल्द ही उपलब्ध होगी  अधिक जानकारी के लिए आप व्हाट्सप्प ग्रुप पर जुड़ सकते हैं ')
-  },
+  // donate(){
+  //   alert('डोनेशन लिंक जल्द ही उपलब्ध होगी  अधिक जानकारी के लिए आप व्हाट्सप्प ग्रुप पर जुड़ सकते हैं ')
+  // },
  
   },
 };
@@ -149,7 +151,7 @@ export default {
 }
 .main-btn{
 border-radius: 12px;
-background: linear-gradient(145deg, #ffffff, #0400f8);
+background: linear-gradient(145deg, #ee5e5e, #f50000);
 box-shadow:  6px 6px 12px #a6a6a6,
              -6px -6px 12px #ffffff;
              cursor: pointer;

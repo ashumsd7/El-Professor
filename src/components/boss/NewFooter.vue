@@ -93,56 +93,49 @@
 
       <div class="col-lg-4 col-12 text-center mt-lg-5 ">
          
-                <a class=" d-md-block d-inline   text-primary" href="https://chat.whatsapp.com/LgCz9l1tWQKKJe6OQ5n8Zt"
+                <a class="  d-inline   text-primary" href="https://chat.whatsapp.com/LgCz9l1tWQKKJe6OQ5n8Zt"
               ><img
            
             src="../../assets/help.png"
             alt=""
             srcset=""
-          />गांव में सहयोग दें  </a>
+          />
+          <!-- गांव में सहयोग दें  -->
+           </a>
           
        
     
-                <a class="d-md-block d-inline  text-primary" href="https://chat.whatsapp.com/LgCz9l1tWQKKJe6OQ5n8Zt"
+                <a class=" d-inline  text-primary" href="https://chat.whatsapp.com/LgCz9l1tWQKKJe6OQ5n8Zt"
               ><img
           
             src="../../assets/feedback.png"
             alt=""
             srcset=""
-          />वेबसाइट कैसी लगी ?</a>
+          />
+          <!-- वेबसाइट कैसी लगी ? -->
+          </a>
           
          
         
 
       
-                <a class="d-block text-primary" href="https://chat.whatsapp.com/LgCz9l1tWQKKJe6OQ5n8Zt"
+                <router-link class=" d-inline text-primary" to="/donate"
               ><img
             width="32"
             height="32"
             src="../../assets/helping.png"
             alt=""
             srcset=""
-          /> वेबसाइट बनाने वाले का सहयोग करें  </a>
+          /> 
+          <!-- वेबसाइट बनाने वाले का सहयोग करें -->
+            </router-link>
           
          <br>
          <hr>
         
       </div>
     </div>
-     <div
-        class="
-          col-12
-          mb-4
-          strip
-          justify-content-center
-          align-items-center
-          fw-bold
-          text-white text-center
-          bg-dark
-        "
-      >
-        © चरावां 2021 <a class="text-white" href="http://">charawan.in</a>
-      </div>
+     
     
         <div class="mapouter">
             <div class="gmap_canvas">
@@ -158,6 +151,21 @@
             </div>
           </div>
 
+          <div
+        class="
+          col-12
+       
+          strip
+          justify-content-center
+          align-items-center
+          fw-bold
+          text-dark text-center
+          bg-info
+        "
+      >
+        © चरावां 2021 <a class="text-primary" href="http://">charawan.in</a>
+      </div>
+
           
   </div>
 </template>
@@ -168,7 +176,7 @@ export default {};
 
 <style  scoped>
 .container-fluid {
-  background: rgb(24, 24, 24);
+  background: rgb(37, 37, 37);
 }
 a {
   margin-left: 0.5rem;
@@ -179,7 +187,7 @@ a img {
   margin-right: 10px;
 }
 .new-footer{
-    margin-bottom: 120px;
+    margin-bottom: 40px;
 }
 .mapouter {
   /* position: relative; */

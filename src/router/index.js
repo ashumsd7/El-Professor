@@ -7,8 +7,7 @@ import Cricket from '../views/pages/Cricket.vue'
 import Donate from '../views/pages/SimpleDonate.vue'
 import ShopsData from '../views/pages/ShopsData.vue'
 import AddShop from '../views/pages/AddShop.vue'
-import News from '../views/pages/News.vue'
-import ReadNews from '../views/pages/ReadNews.vue'
+
 
 const routes = [
   {
@@ -50,17 +49,8 @@ const routes = [
     path: '/addshop',
     name: 'AddShop',
     component: AddShop
-  },
-  // {
-  //   path: '/news',
-  //   name: 'News',
-  //   component: News
-  // },
-  // {
-  //   path: '/readnews',
-  //   name: 'ReadNews',
-  //   component: ReadNews
-  // },
+  }
+  
   
 ]
 
