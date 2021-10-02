@@ -11,7 +11,7 @@
               srcset=""
               class="me-1"
             />
-           चरावां : {{ openForm ? "जानकारी  जोड़ें " : "नोटिफिकेशन  " }}
+            चरावां : {{ openForm ? "जानकारी  जोड़ें " : "नोटिफिकेशन  " }}
             <img
               src="../../assets/live.png"
               width="80"
@@ -22,27 +22,18 @@
           </h4>
         </div>
         <p
-            @click="openForm = !openForm"
-            v-if="!openForm"
-            class="
-              ms-auto
-              
-              d-block
-              add-noti-btn
-              text-dark
-              fw-bold
-              p-2
-              rounded-2
-            "
-          >
-            <img
-              src="../../assets/plusnoti.png"
-              alt=""
-              srcset=""
-              class="me-2"
-            /> जोड़ें
-          </p>
-        <button @click="callApi" class=" btn fw-bolder text-primary" v-if="!openForm">
+          @click="openForm = !openForm"
+          v-if="!openForm"
+          class="ms-auto d-block add-noti-btn text-dark fw-bold p-2 rounded-2"
+        >
+          <img src="../../assets/plusnoti.png" alt="" srcset="" class="me-2" />
+          जोड़ें
+        </p>
+        <p
+          @click="callApi"
+          class="btn fw-bolder text-primary"
+          v-if="!openForm"
+        >
           {{ showLoading ? "रिफ्रेश हो रहा है " : "रिफ्रेश करें" }}
           <img
             src="../../assets/refresh.png"
@@ -61,62 +52,68 @@
             srcset=""
             class="me-1"
           />
-        </button>
+        </p>
         <hr />
         <div class="form-container" v-if="openForm">
           <link-form @goBack="fireGoBack"></link-form>
         </div>
         <div v-if="!openForm" class="notification_container">
-          
           <!-- <marquee behavior="" direction="up" scrollamount="4" loop='true'> -->
 
-        
-           <div class="loading text-center" v-if="showLoading">
-                 <img
-            
-            class="me-1 mt-4"
-            width="300"
-            src="../../assets/loading2.gif"
-            alt=""
-            srcset=""
-          />
-            <div class="text-muted">जानकारी लोड हो रही  हैं ...</div>
-           </div>
-
+          <div class="loading text-center" v-if="showLoading">
+            <img
+              class="me-1 mt-4"
+              width="300"
+              src="../../assets/loading2.gif"
+              alt=""
+              srcset=""
+            />
+            <div class="text-muted">जानकारी लोड हो रही हैं ...</div>
+          </div>
 
           <div
-            class="notifications  ms-lg-5 p-2"
+            class="notifications ms-lg-5 p-2"
             v-for="news in allNews"
             :key="news.timeStamp"
           >
             <div class="title-time">
-             
               <small class="title mt-1 fw-bold d-block text-muted">{{
                 news.newsTitle
               }}</small>
             </div>
 
-            <a href="" class="short-info text-dark fw-bold text-decoration-none  mb-2">
-              ✉️{{ news.shortInfo }}</a>
-            <span class="time-name d-block" >
-                <small class="badge rounded-pill   text-light bg-dark text-white"  
-                :class="{ 'adminColor': news.isAdmin }"
+            <a
+              href=""
+              class="short-info text-dark fw-bold text-decoration-none mb-2"
+            >
+              ✉️{{ news.shortInfo }}</a
+            >
+            <span class="time-name d-block">
+              <small
+                class="badge rounded-pill text-light bg-dark text-white"
+                :class="{ adminColor: news.isAdmin }"
+              >
+                <span class="">
+                  <span v-if="news.isAdmin">🛡️</span>
+                  {{ news.reporterName }}</span
                 >
-                
-                  <span
-                    
-                    class=""
-                    >
-                    <span v-if="news.isAdmin">🛡️</span>
-                    {{ news.reporterName }}</span
-                  >
-                  द्वारा
-                  <small class="text-gray ms-1 "> ⏳ {{ news.timeStamp }}</small>
-                </small>
-                
-              </span>
+                द्वारा
+                <small class="text-gray ms-1"> ⏳ {{ news.timeStamp }}</small>
+              </small>
+            </span>
+              <div class="img-container">
+                <div v-if="news.img1" class="row">
+                  <div class="col-lg-3 col-6">
+                    <img :src="news.img1" alt="news_photo1" class="img-fluid" srcset="">
+                  </div>
+                  <div v-if="news.img2" class="col-lg-3 col-6">
+                    <img :src="news.img2" class="img-fluid" srcset="">
+                  </div>
+                </div>
+                 
+              </div>
           </div>
-          
+
         </div>
       </div>
     </div>
@@ -129,7 +126,7 @@ import LinkForm from "./LinkForm.vue";
 import axios from "axios";
 export default {
   components: { LinkForm },
- 
+
   data() {
     return {
       //type:   notification / news/ vikas
@@ -156,15 +153,13 @@ export default {
           for (let i in res.data) {
             this.allNews.push(res.data[i]);
           }
-          for(let i in this.allNews){
-              let currentStamp= new Date().getTime()-this.allNews[i].timeStamp;
-              let difference= this.calculateTimeago(Date.now()-currentStamp);
-              this.allNews[i].timeStamp= difference;
-          
+          for (let i in this.allNews) {
+            let currentStamp = new Date().getTime() - this.allNews[i].timeStamp;
+            let difference = this.calculateTimeago(Date.now() - currentStamp);
+            this.allNews[i].timeStamp = difference;
           }
           this.allNews = this.allNews.reverse();
           this.showLoading = false;
-        
         })
         .catch((err) => {
           console.log(err);
@@ -196,7 +191,7 @@ export default {
       if (value != 1) unit = unit + "";
       return value + " " + unit + " " + direction;
 
-    //   console.log(getTimeInterval(Date.now() - 25650));
+      //   console.log(getTimeInterval(Date.now() - 25650));
     },
   },
   created() {
@@ -207,26 +202,25 @@ export default {
 
 <style  scoped>
 .notification_container {
-   
-
-
-  min-height: 250px;
-  max-height:450px ;
+  min-height: 350px;
+  max-height: 450px;
   overflow-y: scroll;
-
+background: rgb(255, 252, 246);
   border-left: 3px solid rgb(1, 161, 1);
 }
-.notifications{
-     transition: all .5s ease-in;
-     /* border: 1px dotted gray; */
-     margin: 1rem;
-     /* border-radius: 10% 10% 1% 21% / 0% 9% 0% 31%  ; */
-     position: relative;
-     margin-bottom: 50px;
-     padding: 1rem;
-     box-shadow: 6px 10px 17px -3px rgba(0,0,0,0.6);
--webkit-box-shadow: 6px 10px 17px -3px rgba(0,0,0,0.6);
--moz-box-shadow: 6px 10px 17px -3px rgba(0,0,0,0.6);
+.notifications {
+  transition: all 0.5s ease-in;
+  /* border: 1px dotted gray; */
+  margin: 1rem;
+  /* border-radius: 10% 10% 1% 21% / 0% 9% 0% 31%  ; */
+  background: rgb(255, 255, 255);
+  position: relative;
+  margin-bottom: 50px;
+  padding: 1rem;
+  
+  box-shadow: 6px 10px 17px -3px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 6px 10px 17px -3px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 6px 10px 17px -3px rgba(0, 0, 0, 0.6);
 }
 .time-name {
   position: absolute;
@@ -268,6 +262,5 @@ export default {
 }
 .adminColor {
   color: #ffffff !important;
- 
 }
 </style>

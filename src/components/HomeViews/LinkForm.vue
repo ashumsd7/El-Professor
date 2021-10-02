@@ -85,7 +85,7 @@
       </div>
 
 
-        
+
 
 
 
@@ -106,6 +106,72 @@
           />
         </div>
       </div>
+
+<!-- photo feild -->
+
+
+
+
+<!-- img 1 -->
+       <div class="col-lg-4 mt-3">
+        <span class="fw-lighter text-secondary"> क्या आपके पास फोटो लिंक है ? तो अपलोड करें | अगर नहीं है तो 
+         <a href="https://imgbb.com/">यहाँ क्लिक करके </a> फोटो अपलोड करें , अपलोड करने के बाद आपको एक लिंक मिलेगी ,
+           लिंक कॉपी करके यहाँ डालें |
+        
+<span class="text-dark fw-light text-decoration-underline">आप चाहें तो खाली भी छोड़ सकते हैं |</span> </span>
+        <div class="">
+          
+          <label for="exampleFormControlInput1" class="form-label mt-2">
+          पहली   फोटो का लिंक यहाँ डालें 
+            
+          </label>
+          <input
+            type="text"
+            class="form-control"
+            v-model="img1"
+            id=""
+            placeholder="पहली फोटो का लिंक "
+          />
+        </div>
+      </div>
+<!-- img2 -->
+
+       <div class="col-lg-4" >
+        <div class="">
+          <label for="exampleFormControlInput1" class="form-label mt-2">
+            दूसरी फोटो का लिंक यहाँ डालें 
+                     
+          </label>
+          <input
+            type="text"
+            class="form-control"
+            v-model="img2"
+            id=""
+            placeholder="दूसरी फोटो का लिंक  "
+          />
+        </div>
+      </div>
+
+       <div class="col-lg-4 invisible" >
+        <div class="">
+          <label for="exampleFormControlInput1" class="form-label mt-2">
+            दूसरी फोटो का लिंक यहाँ डालें 
+                     
+          </label>
+          <input
+            type="text"
+            class="form-control"
+            v-model="img2"
+            id=""
+            placeholder="दूसरी फोटो का लिंक  "
+          />
+        </div>
+      </div>
+
+
+
+
+
 
       <div class="col-lg-12">
         <!-- <label for="exampleFormControlInput1" class="form-label mt-2">
@@ -157,13 +223,14 @@ export default {
       newsTitle: "",
       shortInfo: "",
       detailedInfo: "",
-      timeStamp: new Date().getTime(),
+      timeStamp:'',
 
       isDisabled: false,
       isLoading: false,
       isAdmin:true,
       adminID:'',
       isDisabled:false,
+      wantToUploadImg:false
 
       
     };
@@ -192,28 +259,39 @@ export default {
       if(this.isAdmin){
       
           if(this.adminID==''){
-              alert('बिन ID डाले आप आगे नहीं बढ़ सकते या फिर  ID गलत है  अगर आप एडमिन नहीं है तो या तो एडमिन बनने के लिए सम्पर्क करें')
+              alert('बिन ID डाले आप आगे नहीं बढ़ सकते')
               return;
           }
       }
       if (this.shortInfo != "" ) {
+        let isValid=false;
           // if(this.reporterName==''){
           //     this.reporterName='अनाम'
           // }
           if(this.adminID=='101'){
-              this.reporterName='एडमिन'          
+              this.reporterName='एडमिन' 
+              isValid=true         
           }
           if(this.adminID=='555'){
-              this.reporterName='वालंटियर'          
+              this.reporterName='वालंटियर'  
+               isValid=true         
           }
+
+          if(!isValid ){
+              alert('  ID गलत है  अगर आप एडमिन नहीं है तो या तो एडमिन बनने के लिए सम्पर्क करें')
+              return;
+          }
+          
           
         let newsData = {
           reporterName: this.reporterName,
           newsTitle: this.newsTitle,
           shortInfo: this.shortInfo,
           detailedInfo: this.detailedInfo,
-          timeStamp: this.timeStamp,
-          isAdmin:this.isAdmin
+          timeStamp:  new Date().getTime(),
+          isAdmin:this.isAdmin,
+          img1:this.img1,
+          img2:this.img2
         };
         this.isLoading= true;
         this.isDisabled=true;
