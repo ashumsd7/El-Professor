@@ -11,7 +11,7 @@
       <h4 class="text-warning fw-bolder">जानकारी भेजी जा रही है....</h4>
     </div>
     <div class="form-conatiner" v-else>
-      <div class="col-lg-4" v-if="!isAdmin">
+      <!-- <div class="col-lg-4" v-if="!isAdmin">
         <div class="mb-3">
           <label for="exampleFormControlInput1" class="form-label mt-2">
             रिपोर्टर का नाम <span class="text-danger">(जरूरी है लिखना)</span>
@@ -24,9 +24,9 @@
             placeholder="कृपया अपना नाम लिखे  "
           />
         </div>
-      </div>
+      </div> -->
 
-      <div class="col-lg-4">
+      <!-- <div class="col-lg-4">
         <div class="mb-3">
      
           <input
@@ -42,22 +42,24 @@
              <span class="text-danger">एडमिन के रूप में जारी करें  </span>
           </label>
         </div>
-      </div>
+      </div> -->
 
-        <div class="col-lg-4" v-if="isAdmin">
-        <div class="mb-3">
+        <div class="col-lg-4">
+        <div class="">
           <label for="exampleFormControlInput1" class="form-label mt-2">
-             <span class="text-danger"> *</span>एडमिन ID डालें
+             <span class="text-danger"> *</span>अपनी  ID डालें
               <span class="text-danger">(जरूरी है लिखना)</span>
           </label>
           <input
-            type="text"
+            type="number"
             class="form-control"
             v-model="adminID"
             id=""
-            placeholder="एडमिन ID डालें  "
+            placeholder="अपनी  ID डालें  "
           />
+          <!-- <span class="ms-2 text-primary">{{reporterName}}</span> -->
         </div>
+        
       </div>
       
       
@@ -67,7 +69,7 @@
 
 
       <div class="col-lg-4">
-        <div class="mb-3">
+        <div class="">
           <label for="exampleFormControlInput1" class="form-label mt-2">
            जानकारी किस बारे में हैं ?
             
@@ -82,8 +84,13 @@
         </div>
       </div>
 
+
+        
+
+
+
       <div class="col-lg-4">
-        <div class="mb-3">
+        <div class="">
           <label for="exampleFormControlInput1" class="form-label mt-2">
            <span class="text-danger"> *</span> जानकारी को संक्षिप्त रूप में लिखें 
            <span class="text-danger">(जरूरी है लिखना)</span>
@@ -154,9 +161,11 @@ export default {
 
       isDisabled: false,
       isLoading: false,
-      isAdmin:false,
+      isAdmin:true,
       adminID:'',
-      isDisabled:false
+      isDisabled:false,
+
+      
     };
   },
   methods: {
@@ -182,19 +191,20 @@ export default {
       }
       if(this.isAdmin){
       
-          if(this.adminID!='22'){
-              alert('बिन एडमिन ID डाले आप आगे नहीं बढ़ सकते या फिर एडमिन ID गलत है  अगर आप एडमिन नहीं है तो या तो एडमिन बनने के लिए सम्पर्क करें या फिर रिपोर्टर के रूप में खबर डालें ')
+          if(this.adminID==''){
+              alert('बिन ID डाले आप आगे नहीं बढ़ सकते या फिर  ID गलत है  अगर आप एडमिन नहीं है तो या तो एडमिन बनने के लिए सम्पर्क करें')
               return;
           }
       }
       if (this.shortInfo != "" ) {
-          if(this.reporterName==''){
-              this.reporterName='अनाम'
+          // if(this.reporterName==''){
+          //     this.reporterName='अनाम'
+          // }
+          if(this.adminID=='101'){
+              this.reporterName='एडमिन'          
           }
-          if(this.adminID=='22'){
-             
-              this.reporterName='एडमिन'
-             
+          if(this.adminID=='555'){
+              this.reporterName='वालंटियर'          
           }
           
         let newsData = {

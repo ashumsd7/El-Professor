@@ -3,7 +3,7 @@
     <home-glance></home-glance>
    
 
-    <important-links></important-links>
+    <important-links id="notify"></important-links>
     <about-glance></about-glance>
     <counter></counter>
 
@@ -100,11 +100,11 @@
 
           <div class="col-4 mt-2 footer-btns">
             <p class="btn-text">
-              <img src="../assets/phonef.png" alt="" srcset="" class="me-2" />
+              <img src="../assets/blink.gif" alt="" width="30" height="30" srcset="" class="me-2" />
               <a
                 class="text-decoration-none text-white"
-                href="https://chat.whatsapp.com/LgCz9l1tWQKKJe6OQ5n8Zt"
-                >सम्पर्क करें
+                href="#notify"
+                >चरावां 
               </a>
             </p>
           </div>

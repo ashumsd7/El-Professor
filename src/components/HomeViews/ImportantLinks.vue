@@ -21,7 +21,28 @@
             />
           </h4>
         </div>
-        <button @click="callApi" class="text-dark btn" v-if="!openForm">
+        <button
+            @click="openForm = !openForm"
+            v-if="!openForm"
+            class="
+              ms-auto
+              
+              d-block
+              add-noti-btn
+              btn btn-primary
+              fw-bold
+              p-2
+              rounded-2
+            "
+          >
+            <img
+              src="../../assets/plusnoti.png"
+              alt=""
+              srcset=""
+              class="me-2"
+            />जोड़ें
+          </button>
+        <button @click="callApi" class=" btn fw-bolder text-primary" v-if="!openForm">
           {{ showLoading ? "रिफ्रेश हो रहा है " : "रिफ्रेश करें" }}
           <img
             src="../../assets/refresh.png"
@@ -46,25 +67,7 @@
           <link-form @goBack="fireGoBack"></link-form>
         </div>
         <div v-if="!openForm" class="notification_container">
-          <button
-            @click="openForm = !openForm"
-            class="
-              ms-auto
-              d-block
-              add-noti-btn
-              btn btn-warning
-              fw-bold
-              p-2
-              rounded-2
-            "
-          >
-            <img
-              src="../../assets/plusnoti.png"
-              alt=""
-              srcset=""
-              class="me-1"
-            />जोड़ें
-          </button>
+          
           <!-- <marquee behavior="" direction="up" scrollamount="4" loop='true'> -->
 
         

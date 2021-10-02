@@ -230,6 +230,7 @@ export default createStore({
       { title: "मेडिकल स्टोर ", value: "medicalStore" },
       { title: "डॉक्टर्स", value: "doctors " },
       { title: "पशु डॉक्टर ", value: "animalDoctors " },
+      { title: "हॉस्पिटल  ", value: "hospital " },
       { title: "आयुर्वेदिक ", value: "aayurvedic   " },
       { title: "पतंजलि ", value: "patanjali " },
       { title: "होम्योपैथिक  ", value: "homeopathic   " },
