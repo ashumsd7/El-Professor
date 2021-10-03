@@ -79,7 +79,7 @@
 
         <p class="text-muted text-white mt-2">
           लगभग 2000 से ज्यादा आबादी वाला 5 पुरवा का ये गांव उत्तर प्रदेश के
-          अयोध्या जिले के बीकापुर तहसील के 9 किलोमीटर दक्षिण पूर्व की और बसा है
+          अयोध्या जिले के बीकापुर तहसील के 9 किलोमीटर दक्षिण पूर्व की ओर  बसा है
           चरावां के पडोसी गांव बेनीगद्दोपुर ,बरांव, कोदैला हैं चरावां में लगभग
           350 से ज्यादा घर है। चरावां के प्रधान जो अभी 2021 के आम चुनाव में चुने
           गए हैं <span class="text-white fw-bold">अनिल कुमार जी</span> है 
@@ -131,6 +131,12 @@
             </router-link>
           
          <br>
+         <a class="mt-3 d-block text-white" href="https://cdn-106.anonfiles.com/d4dau8L1ua/a27d0664-1633281888/MERA%20CHARAWAN.apk"><img
+           
+            src="../../assets/android.png"
+            alt=""
+            srcset=""
+          /> एंड्राइड ऐप  </a>
          <hr>
         
       </div>
@@ -164,6 +170,7 @@
         "
       >
         © चरावां 2021 <a class="text-primary" href="http://">charawan.in</a>
+        <router-link class="text-dark" to="/termsAndConditions">नियम  और  शर्तें  </router-link>
       </div>
 
           

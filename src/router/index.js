@@ -7,6 +7,7 @@ import Cricket from '../views/pages/Cricket.vue'
 import Donate from '../views/pages/SimpleDonate.vue'
 import ShopsData from '../views/pages/ShopsData.vue'
 import AddShop from '../views/pages/AddShop.vue'
+import TermsConditions from '../views/pages/TermsConditions.vue'
 
 
 const routes = [
@@ -44,6 +45,11 @@ const routes = [
     path: '/find',
     name: 'Shops',
     component: ShopsData
+  },
+  {
+    path: '/termsAndConditions',
+    name: 'TermsConditions',
+    component: TermsConditions
   },
   {
     path: '/addshop',

@@ -53,6 +53,9 @@
             class="me-1"
           />
         </p>
+        <small class="text-muted d-block ms-2"> पिछली बारे <span class="text-danger fw-bold">
+          ⌚{{currentTime}}
+          </span> रिफ्रेश हुआ था |</small>
         <hr />
         <div class="form-container" v-if="openForm">
           <link-form @goBack="fireGoBack"></link-form>
@@ -82,11 +85,11 @@
               }}</small>
             </div>
 
-            <a
-              href=""
+            <p
+              
               class="short-info text-dark fw-bold text-decoration-none mb-2"
             >
-              ✉️{{ news.shortInfo }}</a
+              ✉️{{ news.shortInfo }}</p
             >
             <span class="time-name d-block">
               <small
@@ -134,7 +137,16 @@ export default {
       showDetail: false,
       openForm: false,
       allNews: [],
+      lastRefreshAt:null,
+
+      //for refresh btn
+      currentTime:0,
+      
+      // new Date().getTime()
     };
+  },
+  watch:{
+
   },
   methods: {
     fireGoBack() {
@@ -142,6 +154,7 @@ export default {
       this.callApi();
     },
     callApi() {
+      this.lastRefreshAt=new Date().getTime()
       this.allNews = [];
       this.showLoading = true;
       axios
@@ -196,6 +209,10 @@ export default {
   },
   created() {
     this.callApi();
+    setInterval(() => {
+      let currentStamp = new Date().getTime()- this.lastRefreshAt
+      this.currentTime=this.calculateTimeago(Date.now() - currentStamp);
+    }, 1000);
   },
 };
 </script>
