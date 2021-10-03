@@ -81,10 +81,7 @@
   box-shadow: 6px 10px 17px -3px rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: 6px 10px 17px -3px rgba(0, 0, 0, 0.6);
   -moz-box-shadow: 6px 10px 17px -3px rgba(0, 0, 0, 0.6);
-        /* border-radius: 30% 70% 67% 33% / 46% 41% 59% 54% ;
- box-shadow: 9px 14px 20px -6px rgba(87,92,86,0.75);
--webkit-box-shadow: 9px 14px 20px -6px rgba(87,92,86,0.75);
--moz-box-shadow: 9px 14px 20px -6px rgba(87,92,86,0.75); */
+
 }
 
 img{

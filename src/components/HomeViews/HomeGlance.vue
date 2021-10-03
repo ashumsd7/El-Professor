@@ -17,7 +17,7 @@
 
           </span> 
       </p>
-      <small class="heading-declaration fw-bold text-white">| चरावां में आपका स्वागत है | </small>
+      <small class="heading-declaration fw-bold text-white">| चरावां में आपका स्वागत है 1| </small>
      <div class="row">
         <form action="" @submit.prevent="searchItems">
 
