@@ -172,6 +172,7 @@ export default {
             this.allNews[i].timeStamp = difference;
           }
           this.allNews = this.allNews.reverse();
+          this.allNews= this.allNews.splice(0,10)
           this.showLoading = false;
         })
         .catch((err) => {
