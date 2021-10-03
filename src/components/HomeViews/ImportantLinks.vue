@@ -55,7 +55,7 @@
         </p>
         <small class="text-muted d-block ms-2"> <span class="text-danger fw-bold">
           ⌚{{currentTime}}
-          </span> रिफ्रेश हुआ है </small>
+          </span> रिफ्रेश हुआ था |</small>
         <hr />
         <div class="form-container" v-if="openForm">
           <link-form @goBack="fireGoBack"></link-form>
@@ -140,7 +140,7 @@ export default {
       lastRefreshAt:null,
 
       //for refresh btn
-      currentTime:'अभी अभी  ',
+      currentTime:'अभी अभी',
       
       // new Date().getTime()
     };
@@ -212,7 +212,7 @@ export default {
     setInterval(() => {
       let currentStamp = new Date().getTime()- this.lastRefreshAt
       this.currentTime=this.calculateTimeago(Date.now() - currentStamp);
-    }, 10000);
+    }, 1000);
   },
 };
 </script>

@@ -26,6 +26,8 @@
             id=""
             placeholder="अपनी  ID डालें  "
           />
+          <span class="text-muted ms-2">ID नहीं है ?  <a class=" d-inline  text-primary" href="https://chat.whatsapp.com/LgCz9l1tWQKKJe6OQ5n8Zt"
+              > सम्पर्क करें </a></span>
         </div>      
       </div>
       <div class="col-lg-4">

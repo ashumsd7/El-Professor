@@ -105,7 +105,8 @@
           
        
     
-                <a class=" d-inline  text-primary" href="https://chat.whatsapp.com/LgCz9l1tWQKKJe6OQ5n8Zt"
+                <a class=" d-inline  text-primary" 
+                href="https://chat.whatsapp.com/LgCz9l1tWQKKJe6OQ5n8Zt"
               ><img
           
             src="../../assets/feedback.png"
@@ -131,7 +132,8 @@
             </router-link>
           
          <br>
-         <a class="mt-3 d-block text-white" href="https://cdn-106.anonfiles.com/d4dau8L1ua/a27d0664-1633281888/MERA%20CHARAWAN.apk"><img
+         <a class="mt-3 d-block text-white" 
+         href="https://cdn-107.anonfiles.com/d4dau8L1ua/fe1e3533-1633295083/MERA%20CHARAWAN.apk"><img
            
             src="../../assets/android.png"
             alt=""

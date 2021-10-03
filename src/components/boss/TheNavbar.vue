@@ -134,9 +134,9 @@ export default {
     letter-spacing: 1px
 }
 .navigation-wrap .main-btn{
-    padding: .32rem 1.4rem;
+    padding: .12rem 1rem;
     box-shadow: none;
-    margin-left: .625rem;
+    margin-left: .15rem;
 }
 /* //USED IN SCROLL : CHNAGE NAV BAR STYLE ON SCROLL */
 .navigation-wrap.onScroll{
