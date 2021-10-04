@@ -1,6 +1,6 @@
 <template>
   <div class="static-link-section">
-    <div class="section-title text-center mb-2 mt-3 position-relative ">
+    <div class="section-title text-center mb-2 mt-lg-3  position-relative ">
       <h4 class="fw-bolder bg-primary rounded-3 p-2 text-white">
         <img
           src="../../assets/link.png"
@@ -12,7 +12,7 @@
         महत्वपूर्ण लिंक
       </h4>
     </div>
-    <div class="links_container mt-5">
+    <div class="links_container mt-lg-5 mt-2">
       <ul class="list-unstyled">
         <li class="ms-2 mb-4 mt-2 text-dark fw-bold" :key="data.link" v-for="data in staticLinksData">
           <img
@@ -57,6 +57,9 @@ export default {
   border-bottom: none;
   border-right: none;
   /* border-top-width: 200px; */
+  background: linear-gradient(230deg,white,rgb(236, 240, 239));
+
+  border-top-left-radius: 15px;
 }
 ::-webkit-scrollbar {
   width: 5px;

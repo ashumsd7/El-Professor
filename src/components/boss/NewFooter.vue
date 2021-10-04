@@ -133,7 +133,7 @@
           
          <br>
          <a class="mt-3 d-block text-white" 
-         href="https://cdn-107.anonfiles.com/d4dau8L1ua/fe1e3533-1633295083/MERA%20CHARAWAN.apk"><img
+         href="https://drive.google.com/uc?export=download&id=1jMZus9iSCuFFzbjBknGxFMchE-_4mQC1"><img
            
             src="../../assets/android.png"
             alt=""

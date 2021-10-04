@@ -69,7 +69,7 @@
           <div class="loading text-center" v-if="showLoading">
             <img
               class="me-1 mt-4"
-              width="300"
+              width="60"
               src="../../assets/loading2.gif"
               alt=""
               srcset=""
@@ -228,12 +228,14 @@ export default {
   min-height: 350px;
   max-height: 450px;
   overflow-y: scroll;
-background: rgb(255, 252, 246);
+/* background: rgb(255, 252, 246); */
   border-left: 3px solid rgb(1, 161, 1);
+  background: rgb(235, 228, 228);
+  
 }
 .notifications {
   transition: all 0.5s ease-in;
-  border: 2px solid rgb(110, 110, 110);
+  border: 2px solid rgba(212, 203, 203, 0.11);
   margin: .5rem;
   /* border-radius: 10% 10% 1% 21% / 0% 9% 0% 31%  ; */
   background: rgb(255, 255, 255);
@@ -243,6 +245,7 @@ background: rgb(255, 252, 246);
   border-bottom: none;
   border-top-left-radius: 10px;
   padding: 1rem;
+  margin-top: 10px;
   
   box-shadow: 6px 5px 17px -3px rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: 6px 10px 17px -3px rgba(0, 0, 0, 0.6);
@@ -250,7 +253,7 @@ background: rgb(255, 252, 246);
 }
 .time-name {
   position: absolute;
-  top: -15px;
+  top: -13px;
   left: 3px;
 }
 .my-data {
