@@ -1,6 +1,6 @@
 <template>
   <div class="static-link-section">
-    <div class="section-title text-center mb-2 mt-lg-3  position-relative ">
+    <div class="section-title text-center mb-2 mt-lg-3 mt-5  position-relative ">
       <h4 class="fw-bolder bg-primary rounded-3 p-2 text-white">
         <img
           src="../../assets/link.png"

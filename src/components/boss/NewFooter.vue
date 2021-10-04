@@ -41,7 +41,7 @@
           >
         </div>
 
-        <div class="row">
+        <!-- <div class="row">
           <a href="https://instagram.com/meracharawan"
             ><img
               width="32"
@@ -51,7 +51,7 @@
               srcset=""
             />इंस्टाग्राम
           </a>
-        </div>
+        </div> -->
 
         <div class="row">
           <a href="https://chat.whatsapp.com/LgCz9l1tWQKKJe6OQ5n8Zt"
@@ -145,6 +145,23 @@
         
       </div>
     </div>
+
+        <div
+        class="
+          col-12
+       
+          strip
+          justify-content-center
+          align-items-center
+          fw-bold
+          text-dark text-center
+          bg-info
+        "
+      >
+        © चरावां 2021 <a class="text-primary" href="http://">charawan.in</a>
+        <router-link class="text-dark" to="/termsAndConditions">नियम  और  शर्तें  </router-link>
+      </div>
+
      
     
         <div class="mapouter">
@@ -161,22 +178,7 @@
             </div>
           </div>
 
-          <div
-        class="
-          col-12
-       
-          strip
-          justify-content-center
-          align-items-center
-          fw-bold
-          text-dark text-center
-          bg-info
-        "
-      >
-        © चरावां 2021 <a class="text-primary" href="http://">charawan.in</a>
-        <router-link class="text-dark" to="/termsAndConditions">नियम  और  शर्तें  </router-link>
-      </div>
-
+      
           
   </div>
 </template>

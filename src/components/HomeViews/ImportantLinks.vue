@@ -1,11 +1,9 @@
 <template>
   <div class="container-fluid mt-5">
     <div class="row">
-   <div class="col-lg-6 col-12">
-<static-links></static-links>
-      </div>
+ 
       <div class="col-lg-6 col-12">
-        <div class="section-title text-center mb-3 mt-3 position-relative">
+        <div class="section-title text-center mb-3 mt-lg-3 position-relative">
           <h4 class="fw-bolder bg-primary p-2 text-white rounded-3">
             <img
               src="../../assets/notification.png"
@@ -23,8 +21,8 @@
               class="me-1"
             />
           </h4>
-        </div>
-        <p
+
+          <p
           @click="openForm = !openForm"
           v-if="!openForm"
           class="ms-auto d-block add-noti-btn text-dark fw-bold p-2 rounded-2"
@@ -32,6 +30,8 @@
           <img src="../../assets/plusnoti.png" alt="" srcset="" class="me-2" />
           जोड़ें
         </p>
+        </div>
+        
         <p
           @click="callApi"
           class="btn fw-bolder text-primary"
@@ -56,10 +56,12 @@
             class="me-1"
           />
         </p>
-        <small v-if="!openForm" class="text-muted d-block ms-2"> <span class="text-danger fw-bold">
+
+        
+        <small v-if="!openForm" class="text-muted d-block ms-2 mb-2"> <span class="text-danger fw-bold">
           ⌚{{currentTime}}
-          </span> रिफ्रेश हुआ था |</small>
-        <hr />
+          </span> रिफ्रेश किया गया</small>
+     
         <div class="form-container" v-if="openForm">
           <link-form @goBack="fireGoBack"></link-form>
         </div>
@@ -121,6 +123,10 @@
           </div>
 
         </div>
+      </div>
+
+        <div class="col-lg-6 col-12">
+<static-links></static-links>
       </div>
    
     </div>
@@ -232,17 +238,17 @@ export default {
   border-left: 3px solid rgb(1, 161, 1);
   background: rgb(235, 228, 228);
   
+  
 }
 .notifications {
   transition: all 0.5s ease-in;
-  border: 2px solid rgba(212, 203, 203, 0.11);
+
   margin: .5rem;
   /* border-radius: 10% 10% 1% 21% / 0% 9% 0% 31%  ; */
   background: rgb(255, 255, 255);
   position: relative;
   margin-bottom: 50px;
-  border-right: none;
-  border-bottom: none;
+
   border-top-left-radius: 10px;
   padding: 1rem;
   margin-top: 10px;
@@ -250,6 +256,8 @@ export default {
   box-shadow: 6px 5px 17px -3px rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: 6px 10px 17px -3px rgba(0, 0, 0, 0.6);
   -moz-box-shadow: 6px 10px 17px -3px rgba(0, 0, 0, 0.6);
+
+
 }
 .time-name {
   position: absolute;

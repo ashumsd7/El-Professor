@@ -3,7 +3,7 @@
     <div class="loading-container text-center " v-if="isLoading">
       <img
         class="me-1"
-        width="300"
+        width="60"
         src="../../assets/loading2.gif"
         alt=""
         srcset=""
@@ -30,21 +30,7 @@
               > सम्पर्क करें </a></span>
         </div>      
       </div>
-      <div class="">
-        <div class="">
-          <label for="exampleFormControlInput1" class="form-label mt-2">
-      <span class="text-danger">*</span>    कृपया चरावां का सही पिनकोड डालें <span class="text-danger">(जरूरी है लिखना)</span>
-            
-          </label>
-          <input
-            type="number"
-            class="form-control"
-            v-model="pincode"
-            id=""
-            placeholder="चरावां का पिनकोड डालें   "
-          />
-        </div>
-      </div>
+    
 
 
 
@@ -204,7 +190,7 @@ export default {
       isLoading: false,
       isAdmin:true,
       adminID:'',
-      pincode:'',
+    
 
       selectedFile:null,
       serverImgURL:null,
@@ -262,10 +248,10 @@ const fd= new FormData();
           alert('जानकारी कुछ ज्यादा ही संक्षिप्त है कृपया कुछ ज्यादा शब्दों में लिखें ')
           return;
       }
-      if(this.pincode!=224203){
-          alert('कृपया चरावां का सही पिनकोड डालें ')
-          return;
-      }
+      // if(this.pincode!=224203){
+      //     alert('कृपया चरावां का सही पिनकोड डालें ')
+      //     return;
+      // }
       if(this.isAdmin){
       
           if(this.adminID==''){

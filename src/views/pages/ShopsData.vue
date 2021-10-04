@@ -14,7 +14,7 @@
      
 
       <div class="info-container bg-white  text-center">
-        <div class="row counter bg-lg-info bg-dark text-white">
+        <div v-if="!isLoading" class="row counter bg-lg-info bg-dark text-white">
           <div class="col-12 w-100 mt-1 fw-bold">
 
         कुल  {{ preservedData.length }}     में से {{ allShopData.length }} दुकाने/सेवाएं दिख रही हैं
@@ -61,7 +61,7 @@
       <div class="shop-table">
       
 
-        <div class=''>
+        <div v-if="!isLoading" class=''>
             
             <input
               type="radio"
@@ -99,11 +99,12 @@
           <img
             v-if="isLoading"
             src="../../assets/loading.gif"
-            class="me-1"
+            class="me-1 d-block"
             alt=""
             width="200"
             srcset=""
           />
+          <span v-if="isLoading" class="d-block text-muted mb-4">कृपया   intzaar  करें  दुकानें लोड हो  रही हैं </span>
           <div
             class="col-lg-4 col-md-6 col-12 shop-card p-2 ms-2 mt-2 mt-lg-4"
             v-for="data in allShopData"

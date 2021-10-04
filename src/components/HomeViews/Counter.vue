@@ -24,7 +24,7 @@
             </p>
           </div>
           <small class="text-center text-danger  mb-3 d-block text-muted"
-            >*यह डेटा 2011 की जनगणना  और 2021  के अनुसार एक्सपेक्टेड डेटा है, </small
+            >*यह डेटा 2011 की जनगणना  और 2021  के अनुसार एक्सपेक्टेड डेटा है | </small
           >
         </div>
       </div>

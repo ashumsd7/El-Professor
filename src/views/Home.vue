@@ -50,7 +50,7 @@
               </a>
             </div>
 
-            <div class="row mt-3">
+            <!-- <div class="row mt-3">
               <a href="https://instagram.com/meracharawan"
                 ><img
                   width="25"
@@ -60,7 +60,7 @@
                   srcset=""
                 />
               </a>
-            </div>
+            </div> -->
 
             <div class="row mt-3">
               <a href="https://chat.whatsapp.com/LgCz9l1tWQKKJe6OQ5n8Zt"
