@@ -296,8 +296,8 @@ const fd= new FormData();
           detailedInfo: this.detailedInfo,
           timeStamp:  new Date().getTime(),
           isAdmin:this.isAdmin,
-          img1:this.img1,
-          img2:this.img2
+          img1:this.serverImgURL,
+          // img2:this.img2
         };
         this.isLoading= true;
         this.isDisabled=true;
