@@ -6,7 +6,7 @@
       </div>
       <div class="col-lg-6 col-12">
         <div class="section-title text-center mb-3 mt-3 position-relative">
-          <h4 class="fw-bolder">
+          <h4 class="fw-bolder bg-primary p-2 text-white rounded-3">
             <img
               src="../../assets/notification.png"
               height="25"

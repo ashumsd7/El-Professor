@@ -89,7 +89,7 @@
 
        <div class="" >
         <div class="">
-          <label for="exampleFormControlInput1" class="form-label mt-2">
+          <label for="exampleFormControlInput1" class="form-label mt-2" v-if="!isImgUploaded">
              फोटो  अपलोड करें
            <span class="text-info">(जरूरी नहीं )</span>
                      
@@ -123,8 +123,9 @@
             srcset=""
             class="me-1"
           />  
+          अपलोड करें
  </button>
-          <button v-if="isImgUploaded"  class="btn btn-primary d-block mt-2" @click='uploadAgain'>
+          <a v-if="isImgUploaded"  class=" d-block mt-2 btn text-muted" @click='uploadAgain'>
               <img
           
             src="../../assets/replay.png"
@@ -134,7 +135,7 @@
             srcset=""
             class="me-1"
           />
-दोबारा अपलोड करें</button>
+दोबारा अपलोड करें</a>
           <span class="text-info d-block mt-2" v-if="isImgUploading">
             <img
      
@@ -280,6 +281,10 @@ const fd= new FormData();
           }
           if(this.adminID=='555'){
               this.reporterName='वालंटियर'  
+               isValid=true         
+          }
+          if(this.adminID=='1818'){
+              this.reporterName='सचिन तिवारी (वालंटियर)'  
                isValid=true         
           }
 
