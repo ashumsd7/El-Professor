@@ -33,6 +33,25 @@
       <div class="">
         <div class="">
           <label for="exampleFormControlInput1" class="form-label mt-2">
+      <span class="text-danger">*</span>    कृपया चरावां का सही पिनकोड डालें <span class="text-danger">(जरूरी है लिखना)</span>
+            
+          </label>
+          <input
+            type="number"
+            class="form-control"
+            v-model="pincode"
+            id=""
+            placeholder="चरावां का पिनकोड डालें   "
+          />
+        </div>
+      </div>
+
+
+
+
+      <div class="">
+        <div class="">
+          <label for="exampleFormControlInput1" class="form-label mt-2">
            जानकारी किस बारे में हैं ?
             
           </label>
@@ -63,56 +82,81 @@
         </div>
       </div>
 
-<!-- photo feild -->
-<!-- img 1 -->
-       <div class=" mt-3">
-        <span class="fw-lighter text-secondary"> क्या आपके पास फोटो लिंक है ? तो अपलोड करें | अगर नहीं है तो 
-         <a href="https://imgbb.com/">यहाँ क्लिक करके </a> फोटो अपलोड करें , अपलोड करने के बाद आपको एक लिंक मिलेगी ,
-           लिंक कॉपी करके यहाँ डालें |
-        
-<span class="text-dark fw-light text-decoration-underline">आप चाहें तो खाली भी छोड़ सकते हैं |</span> </span>
-        <div class="">
-          
-          <label for="exampleFormControlInput1" class="form-label mt-2">
-          पहली   फोटो का लिंक यहाँ डालें 
-            
-          </label>
-          <input
-            type="text"
-            class="form-control"
-            v-model="img1"
-            id=""
-            placeholder="पहली फोटो का लिंक "
-          />
-        </div>
+       <div class=" mt-1">
+       
+       
       </div>
-<!-- img2 -->
 
        <div class="" >
         <div class="">
           <label for="exampleFormControlInput1" class="form-label mt-2">
-            दूसरी फोटो का लिंक यहाँ डालें 
+             फोटो  अपलोड करें
+           <span class="text-info">(जरूरी नहीं )</span>
                      
           </label>
-          <input
-            type="text"
-            class="form-control"
-            v-model="img2"
+           <img v-if="isImgUploaded" :src="serverImgURL" height="100" width="100" alt="news_photo1" class="d-block" srcset="">
+          <input v-if="!isImgUploaded"
+            type="file"
+            class="d-block"
+            @change="fileSelected"
             id=""
             placeholder="दूसरी फोटो का लिंक  "
           />
+
+          <span class="text-success d-block mt-2" v-else>
+              <img
+           
+            src="../../assets/check.png"
+            width="24"
+            height="24"
+            alt=""
+            srcset=""
+            class="me-1"
+          />अपलोड हो गयी </span>
+          <button v-if="showUploadBtn "  class="btn btn-outline-success d-block mt-2" @click='uploadImg'>
+              <img
+       
+            src="../../assets/upload.png"
+            width="24"
+            height="24"
+            alt=""
+            srcset=""
+            class="me-1"
+          />  
+ </button>
+          <button v-if="isImgUploaded"  class="btn btn-primary d-block mt-2" @click='uploadAgain'>
+              <img
+          
+            src="../../assets/replay.png"
+            width="24"
+            height="24"
+            alt=""
+            srcset=""
+            class="me-1"
+          />
+दोबारा अपलोड करें</button>
+          <span class="text-info d-block mt-2" v-if="isImgUploading">
+            <img
+     
+            src="../../assets/refreshing.gif"
+            width="24"
+            height="24"
+            alt=""
+            srcset=""
+            class="me-1"
+          />
+अपलोड हो रही है...
+</span>
+
         </div>
       </div>
 
        <div class="" >
         <div class="invisible">
-          <label for="exampleFormControlInput1" class="form-label mt-2">
-            दूसरी फोटो का लिंक यहाँ डालें 
-                     
-          </label>
+         
           <input
             type="text"
-            class="form-control"
+            class="form-control "
             v-model="img2"
             id=""
             placeholder="दूसरी फोटो का लिंक  "
@@ -159,12 +203,53 @@ export default {
       isLoading: false,
       isAdmin:true,
       adminID:'',
+      pincode:'',
+
+      selectedFile:null,
+      serverImgURL:null,
+      isImgUploading:false,
+      isImgUploaded:false,
+      showUploadBtn:false
     };
   },
   methods: {
     goBack() {
       this.$emit("goBack");
     },
+    fileSelected(e){
+      this.showUploadBtn=true
+      this.selectedFile=e.target.files[0]
+
+    },
+    uploadImg(){
+      this.isImgUploading= true;
+      this.isDisabled=true;
+      this.showUploadBtn= false
+alert('dd')
+const fd= new FormData();
+                fd.append('image',this.selectedFile, this.selectedFile.name)
+             
+                axios.post('https://api.imgbb.com/1/upload?expiration=0&key=45fdf5c62459de1d05f5467a287c5b44',fd)
+                .then(res=>{
+                    this.isImgUploading=false
+                    this.isDisabled=false;
+                    this.isImgUploaded=true
+                   
+                    this.serverImgURL= res.data.data.display_url
+                    
+                })
+    },
+
+    uploadAgain(){
+  
+                    this.showUploadBtn=true
+                    this.isImgUploaded=false
+                    // this.showUploadBtn=true
+                    this.serverImgURL= null
+    },
+    
+
+
     sumbitData() {
 
       if (this.shortInfo == "") {
@@ -174,6 +259,10 @@ export default {
 
       if(this.shortInfo.length<15){
           alert('जानकारी कुछ ज्यादा ही संक्षिप्त है कृपया कुछ ज्यादा शब्दों में लिखें ')
+          return;
+      }
+      if(this.pincode!=224203){
+          alert('कृपया चरावां का सही पिनकोड डालें ')
           return;
       }
       if(this.isAdmin){

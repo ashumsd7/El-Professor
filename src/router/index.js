@@ -8,6 +8,7 @@ import Donate from '../views/pages/SimpleDonate.vue'
 import ShopsData from '../views/pages/ShopsData.vue'
 import AddShop from '../views/pages/AddShop.vue'
 import TermsConditions from '../views/pages/TermsConditions.vue'
+import Test from '../views/pages/test.vue'
 
 
 const routes = [
@@ -55,6 +56,11 @@ const routes = [
     path: '/addshop',
     name: 'AddShop',
     component: AddShop
+  },
+  {
+    path: '/test',
+    name: 'Test',
+    component: Test
   }
   
   
