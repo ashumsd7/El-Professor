@@ -281,6 +281,22 @@ export default {
           for (let i in res.data) {
             this.allShopData.push(res.data[i]);
           }
+
+          for (let i in this.allShopData) {
+
+            // if(this.allShopData[i].openTime>12){
+            //   this.allShopData[i].openTime-=12
+            // }
+
+            // if(this.allShopData[i].closeTime>12){
+            //   this.allShopData[i].closeTime-=12
+            // }
+
+
+            // let currentStamp = new Date().getTime() - this.allNews[i].timeStamp;
+            // let difference = this.calculateTimeago(Date.now() - currentStamp);
+            // this.allNews[i].timeStamp = difference;
+          }
           // console.log(this.allShopData);
           this.preservedData = this.allShopData.reverse();
           this.isLoading = false;

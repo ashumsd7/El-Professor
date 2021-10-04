@@ -1,7 +1,10 @@
 <template>
   <div class="container-fluid mt-5">
     <div class="row">
-      <div class="col-12">
+   <div class="col-lg-6 col-12">
+<static-links></static-links>
+      </div>
+      <div class="col-lg-6 col-12">
         <div class="section-title text-center mb-3 mt-3 position-relative">
           <h4 class="fw-bolder">
             <img
@@ -53,7 +56,7 @@
             class="me-1"
           />
         </p>
-        <small class="text-muted d-block ms-2"> <span class="text-danger fw-bold">
+        <small v-if="!openForm" class="text-muted d-block ms-2"> <span class="text-danger fw-bold">
           ⌚{{currentTime}}
           </span> रिफ्रेश हुआ था |</small>
         <hr />
@@ -75,7 +78,7 @@
           </div>
 
           <div
-            class="notifications ms-lg-5 p-2"
+            class="notifications ms-lg-2 p-2"
             v-for="news in allNews"
             :key="news.timeStamp"
           >
@@ -119,16 +122,18 @@
 
         </div>
       </div>
+   
     </div>
   </div>
 </template>
 
 <script>
 import LinkForm from "./LinkForm.vue";
+import StaticLinks from './StaticLinks'
 
 import axios from "axios";
 export default {
-  components: { LinkForm },
+  components: { LinkForm,StaticLinks },
 
   data() {
     return {
@@ -229,14 +234,17 @@ background: rgb(255, 252, 246);
 .notifications {
   transition: all 0.5s ease-in;
   border: 2px solid rgb(110, 110, 110);
-  margin: 1rem;
+  margin: .5rem;
   /* border-radius: 10% 10% 1% 21% / 0% 9% 0% 31%  ; */
   background: rgb(255, 255, 255);
   position: relative;
   margin-bottom: 50px;
+  border-right: none;
+  border-bottom: none;
+  border-top-left-radius: 10px;
   padding: 1rem;
   
-  box-shadow: 6px 10px 17px -3px rgba(0, 0, 0, 0.6);
+  box-shadow: 6px 5px 17px -3px rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: 6px 10px 17px -3px rgba(0, 0, 0, 0.6);
   -moz-box-shadow: 6px 10px 17px -3px rgba(0, 0, 0, 0.6);
 }

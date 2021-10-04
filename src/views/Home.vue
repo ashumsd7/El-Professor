@@ -126,6 +126,7 @@ import CricketCup from "../components/HomeViews/CricketCup";
 import AboutGlance from "../components/HomeViews/AboutGlance";
 import AuthorityGlance from "../components/HomeViews/AuthorityGlance.vue";
 import ImportantLinks from "../components/HomeViews/ImportantLinks.vue";
+import StaticLinks from "../components/HomeViews/StaticLinks.vue";
 
 
 import Counter from "../components/HomeViews/Counter.vue";
@@ -136,6 +137,7 @@ export default {
     ChitChat,
     
     HomeGlance,
+    
     // QuickLinks,
     CricketCup,
     AboutGlance,

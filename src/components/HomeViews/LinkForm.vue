@@ -13,7 +13,7 @@
     <div class="form-conatiner" v-else>
   
 
-        <div class="col-lg-4">
+        <div class="">
         <div class="">
           <label for="exampleFormControlInput1" class="form-label mt-2">
              <span class="text-danger"> *</span>अपनी  ID डालें
@@ -30,7 +30,7 @@
               > सम्पर्क करें </a></span>
         </div>      
       </div>
-      <div class="col-lg-4">
+      <div class="">
         <div class="">
           <label for="exampleFormControlInput1" class="form-label mt-2">
            जानकारी किस बारे में हैं ?
@@ -45,7 +45,7 @@
           />
         </div>
       </div>
-      <div class="col-lg-4">
+      <div class="">
         <div class="">
           <label for="exampleFormControlInput1" class="form-label mt-2">
            <span class="text-danger"> *</span> जानकारी को संक्षिप्त रूप में लिखें 
@@ -65,7 +65,7 @@
 
 <!-- photo feild -->
 <!-- img 1 -->
-       <div class="col-lg-4 mt-3">
+       <div class=" mt-3">
         <span class="fw-lighter text-secondary"> क्या आपके पास फोटो लिंक है ? तो अपलोड करें | अगर नहीं है तो 
          <a href="https://imgbb.com/">यहाँ क्लिक करके </a> फोटो अपलोड करें , अपलोड करने के बाद आपको एक लिंक मिलेगी ,
            लिंक कॉपी करके यहाँ डालें |
@@ -88,7 +88,7 @@
       </div>
 <!-- img2 -->
 
-       <div class="col-lg-4" >
+       <div class="" >
         <div class="">
           <label for="exampleFormControlInput1" class="form-label mt-2">
             दूसरी फोटो का लिंक यहाँ डालें 
@@ -104,8 +104,8 @@
         </div>
       </div>
 
-       <div class="col-lg-4 invisible" >
-        <div class="">
+       <div class="" >
+        <div class="invisible">
           <label for="exampleFormControlInput1" class="form-label mt-2">
             दूसरी फोटो का लिंक यहाँ डालें 
                      
@@ -230,7 +230,7 @@ export default {
 
 <style  scoped>
 .input-group {
-  width: 300px;
+  /* width: 300px; */
 }
 label {
   font-weight: 600;
