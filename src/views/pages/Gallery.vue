@@ -9,13 +9,16 @@ mobileImg='https://i.ibb.co/9VKvWpn/IMG-20211002-002743.jpg'
 
       <div class="row justify-content-center align-items-center ">
           <div class="col-lg-4 mt-2  mb-2 col-md-6 col-sm-6 p-1 text-center gallery-blocks" v-for="data in galleryData" :key="data.title">
+              <a class="text-decoration-none text-warning fw-bold" :href="data.link">
               <div class="row">
+
                   <div class="col-3">
                        <img :src="data.icon" alt="" class="img-fluid">
                        <p></p>
                        <span class="badge bg-warning text-dark mb-2">{{data.numberOfPhotos}} </span>
                   </div>
                   <div class="col-8">
+
                     <div class="row mt-3">
                         <h4>{{data.title}}</h4>
                         <span class="badge subTitle w-50 m-auto rounded-pill bg-primary">{{data.subTitle}}</span>
@@ -24,9 +27,14 @@ mobileImg='https://i.ibb.co/9VKvWpn/IMG-20211002-002743.jpg'
                     </div>
 
                   </div>
+
+
+                  
               </div>
+              </a>
               <div class="">
-                  <buttton :disabled='!data.link' class="btn btn-dark form-control mb-1"><a class="text-decoration-none text-warning fw-bold" :href="data.link">
+                  <buttton :disabled='!data.link' class="btn btn-dark form-control mb-1">
+                      <a class="text-decoration-none text-warning fw-bold" :href="data.link">
                       {{data.type=='photo' ? 'फोटो देखें 🖼️' : 'वीडियो  देखें 📹  '}} </a></buttton>
                   
               </div>
@@ -53,6 +61,15 @@ mobileImg='https://i.ibb.co/9VKvWpn/IMG-20211002-002743.jpg'
                         numberOfPhotos:'7500+ फोटो',
                         type:'photo',
                         icon:'https://cdn-icons-png.flaticon.com/512/2210/2210000.png'
+                    },
+                     {
+                        title:'श्री रामचरित मानस पाठ  ',
+                        subTitle:'( विजय मिश्रा & पार्टी)   ',
+                        link:'https://www.youtube.com/channel/UCKGWoWw1mXPcpiR0yz5vO3g/videos',
+                        info:'फिल्मों के गानों के तर्ज़ों पर रामायण पाठ की संगीतमय प्रस्तुति ',
+                        numberOfPhotos:'25+ वीडियो',
+                        type:'video',
+                        icon:'https://images-eu.ssl-images-amazon.com/images/I/51l-0n5kdsL._SX198_BO1,204,203,200_QL40_FMwebp_.jpg'
                     },
                      {
                         title:'चरावां Vlogs',
