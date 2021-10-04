@@ -140,7 +140,8 @@
             srcset=""
           /> एंड्राइड ऐप  </a>
          <hr>
-         <a href="../../assets/CHARAWAN.apk" download >Download Link</a>
+         <a href="../../assets/CHARAWAN.apk" 
+          >Download Link</a>
         
       </div>
     </div>
