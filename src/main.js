@@ -1,6 +1,6 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import './registerServiceWorker'
+
 import router from './router'
 import store from './store'
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -12,6 +12,7 @@ import MainHeading from './components/reusable/slots/MainHeading.vue'
 import SubHeading from './components/reusable/slots/SubHeading.vue'
 import MainContent from './components/reusable/slots/MainContent.vue'
 import SuccessDialog from './components/reusable/slots/SuccessDialog.vue'
+import './registerServiceWorker'
 
 
 // Vue.use(VueMeta)
