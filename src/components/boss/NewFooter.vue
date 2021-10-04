@@ -133,13 +133,14 @@
           
          <br>
          <a class="mt-3 d-block text-white" 
-         href="https://drive.google.com/uc?export=download&id=1jMZus9iSCuFFzbjBknGxFMchE-_4mQC1"><img
+         href="https://file.io/0QcMCapXyeq3"><img
            
             src="../../assets/android.png"
             alt=""
             srcset=""
           /> एंड्राइड ऐप  </a>
          <hr>
+         <a href="../../assets/CHARAWAN.apk" download >Download Link</a>
         
       </div>
     </div>
