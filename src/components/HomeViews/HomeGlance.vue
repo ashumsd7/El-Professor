@@ -17,7 +17,7 @@
 
           </span> 
       </p>
-      <small class="heading-declaration fw-bold text-white">| चरावां में आपका स्वागत है 1| </small>
+      <small class="heading-declaration fw-bold text-white">| चरावां में आपका स्वागत है | </small>
      <div class="row">
         <form action="" @submit.prevent="searchItems">
 
@@ -60,6 +60,16 @@ export default {};
      /* margin: auto; */
      /* border-radius: 47% 53% 48% 52% / 35% 31% 69% 65% ; */
      /* animation: chnageBorder 8s linear 1s infinite alternate; */
+}
+
+@media (max-width:900px){
+  .glance-container {
+
+    height: 40vh;
+}
+.village_name{
+  height: 1vh;
+}
 }
 a{
   color: rgb(0, 0, 0);
