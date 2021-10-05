@@ -2,7 +2,7 @@
   <div class="container-fluid mt-5">
     <div class="row">
  
-      <div class="col-lg-6 col-12">
+      <div class=" col-12">
         <div class="section-title text-center mb-3 mt-lg-3 position-relative">
           <h4 class="fw-bolder bg-primary p-2 text-white rounded-3">
             <img
@@ -123,26 +123,25 @@
               </div>
           </div>
 
-          <router-link to='/notification'>Aur load krein</router-link>
-
         </div>
       </div>
 
-        <div class="col-lg-6 col-12">
-<static-links></static-links>
-      </div>
+
    
     </div>
   </div>
 </template>
 
 <script>
-import LinkForm from "./LinkForm.vue";
-import StaticLinks from './StaticLinks'
+import LinkForm from "../../components/HomeViews/LinkForm.vue";
+// import StaticLinks from './StaticLinks'
 
 import axios from "axios";
 export default {
-  components: { LinkForm,StaticLinks },
+  mounted() {
+    window.scrollTo(0, 0);
+  },
+  components: { LinkForm, },
 
   data() {
     return {
@@ -186,7 +185,7 @@ export default {
             this.allNews[i].timeStamp = difference;
           }
           this.allNews = this.allNews.reverse();
-          this.allNews= this.allNews.splice(0,10)
+          // this.allNews= this.allNews.splice(0,10)
           this.showLoading = false;
         })
         .catch((err) => {
@@ -234,9 +233,7 @@ export default {
 
 <style  scoped>
 .notification_container {
-  min-height: 350px;
-  max-height: 450px;
-  overflow-y: scroll;
+
 /* background: rgb(255, 252, 246); */
   border-left: 3px solid rgb(1, 161, 1);
   background: rgb(235, 228, 228);

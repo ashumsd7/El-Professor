@@ -8,6 +8,7 @@ import Donate from '../views/pages/SimpleDonate.vue'
 import ShopsData from '../views/pages/ShopsData.vue'
 import AddShop from '../views/pages/AddShop.vue'
 import TermsConditions from '../views/pages/TermsConditions.vue'
+import Notification from '../views/pages/Notification.vue'
 import Test from '../views/pages/test.vue'
 
 
@@ -61,6 +62,11 @@ const routes = [
     path: '/test',
     name: 'Test',
     component: Test
+  },
+  {
+    path: '/notification',
+    name: 'Notification',
+    component: Notification
   }
   
   

@@ -104,7 +104,7 @@
             width="200"
             srcset=""
           />
-          <span v-if="isLoading" class="d-block text-muted mb-4">कृपया   intzaar  करें  दुकानें लोड हो  रही हैं </span>
+          <span v-if="isLoading" class="d-block text-muted mb-4">कृपया इंतज़ार करिये  दुकानें लोड हो  रही हैं </span>
           <div
             class="col-lg-4 col-md-6 col-12 shop-card p-2 ms-2 mt-2 mt-lg-4"
             v-for="data in allShopData"
