@@ -12,7 +12,7 @@ import MainHeading from './components/reusable/slots/MainHeading.vue'
 import SubHeading from './components/reusable/slots/SubHeading.vue'
 import MainContent from './components/reusable/slots/MainContent.vue'
 import SuccessDialog from './components/reusable/slots/SuccessDialog.vue'
-import './registerServiceWorker'
+
 
 
 // Vue.use(VueMeta)
