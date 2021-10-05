@@ -99,18 +99,7 @@
             srcset=""
             class="me-1"
           />अपलोड हो गयी </span>
-          <button v-if="showUploadBtn "  class="btn btn-outline-success d-block mt-2" @click='uploadImg'>
-              <img
-       
-            src="../../assets/upload.png"
-            width="24"
-            height="24"
-            alt=""
-            srcset=""
-            class="me-1"
-          />  
-          अपलोड करें
- </button>
+  
           <a v-if="isImgUploaded"  class=" d-block mt-2 btn text-muted" @click='uploadAgain'>
               <img
           
@@ -125,12 +114,13 @@
           <span class="text-info d-block mt-2" v-if="isImgUploading">
             <img
      
-            src="../../assets/refreshing.gif"
-            width="24"
-            height="24"
+            src="../../assets/uploading.gif"
+           width="150"
+           height="100"
+           
             alt=""
             srcset=""
-            class="me-1"
+            class="me-1 d-block"
           />
 अपलोड हो रही है...
 </span>
@@ -196,7 +186,7 @@ export default {
       serverImgURL:null,
       isImgUploading:false,
       isImgUploaded:false,
-      showUploadBtn:false
+      // showUploadBtn:false
     };
   },
   methods: {
@@ -204,15 +194,16 @@ export default {
       this.$emit("goBack");
     },
     fileSelected(e){
-      this.showUploadBtn=true
+      // this.showUploadBtn=true
       this.selectedFile=e.target.files[0]
+      this.uploadImg();
 
     },
     uploadImg(){
       this.isImgUploading= true;
       this.isDisabled=true;
-      this.showUploadBtn= false
-alert('dd')
+      // this.showUploadBtn= false
+// alert('dd')
 const fd= new FormData();
                 fd.append('image',this.selectedFile, this.selectedFile.name)
              
@@ -229,7 +220,7 @@ const fd= new FormData();
 
     uploadAgain(){
   
-                    this.showUploadBtn=true
+                    // this.showUploadBtn=true
                     this.isImgUploaded=false
                     // this.showUploadBtn=true
                     this.serverImgURL= null
