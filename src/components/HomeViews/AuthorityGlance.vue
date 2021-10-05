@@ -16,7 +16,7 @@
                <p class="position">{{data.post}}</p>
                <p class="timings">{{data.year}} </p>
                 <span class="badge bg-dark call-badge">
-                  <a class="text-decoration-none text-white" href="tel:+">   
+                  <a class="text-decoration-none text-white" :href="data.number">   
                       <img class="me-1" src="../../assets/telephone.png" alt="" srcset="" />
                       फोन करें </a></span>
                      </div>
@@ -37,7 +37,7 @@
                     name:'अनिल कुमार',
                     post:'ग्राम प्रधान चरावां ',
                     year:'2021- अब तक ',
-                    number:'',
+                    number:'tel:+919839018844',
                     img:'https://i.ibb.co/Vw20jjS/anil005018092021.jpg'
 
                 },
@@ -45,7 +45,7 @@
                     name:'अनीस तिवारी',
                     post:'बी डी सी चरावां ',
                     year:'2021- अब तक ',
-                    number:'',
+                    number:'tel:+',
                     img:'https://i.ibb.co/JQNw2XM/anil003918092021.jpg'
 
                 },
@@ -53,7 +53,7 @@
                     name:'अमित मौर्या ',
                     post:'कोटेदार चरावां ',
                     year:'2021- अब तक ',
-                    number:'',
+                    number:'tel:+919628771123',
                     img:'https://i.ibb.co/5FGTrtc/mauryaamit.jpg'
 
                 }
