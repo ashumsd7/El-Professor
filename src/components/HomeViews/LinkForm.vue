@@ -264,6 +264,10 @@ const fd= new FormData();
               this.reporterName='सचिन तिवारी (वालंटियर)'  
                isValid=true         
           }
+          if(this.adminID=='0100'){
+              this.reporterName='सूरज पाठक'  
+               isValid=true         
+          }
 
           if(!isValid ){
               alert('ID गलत है  अगर आप एडमिन नहीं है तो या तो एडमिन बनने के लिए सम्पर्क करें')
