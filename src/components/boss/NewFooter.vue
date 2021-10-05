@@ -133,15 +133,15 @@
           
          <br>
          <a class="mt-3 d-block text-white" 
-         href="https://file.io/0QcMCapXyeq3"><img
+         href="https://drive.google.com/file/d/1jMZus9iSCuFFzbjBknGxFMchE-_4mQC1/view?usp=sharing"><img
            
             src="../../assets/android.png"
             alt=""
             srcset=""
           /> एंड्राइड ऐप  </a>
-         <hr>
-         <a href="../../assets/CHARAWAN.apk" 
-          >Download Link</a>
+         <!-- <hr> -->
+         <!-- <a href="https://drive.google.com/file/d/1jMZus9iSCuFFzbjBknGxFMchE-_4mQC1/view?usp=sharing" 
+          >Download Link</a> -->
         
       </div>
     </div>
@@ -158,7 +158,7 @@
           bg-info
         "
       >
-        © चरावां 2021 <a class="text-primary" href="http://">charawan.in</a>
+        © चरावां 2021 <a class="text-primary" href="https://charawan.in">charawan.in</a>
         <router-link class="text-dark" to="/termsAndConditions">नियम  और  शर्तें  </router-link>
       </div>
 
