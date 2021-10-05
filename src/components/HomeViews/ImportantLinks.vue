@@ -123,7 +123,8 @@
               </div>
           </div>
 
-          <router-link to='/notification'>Aur load krein</router-link>
+          <router-link class="text-center d-block fw-bold" to='/notification'>और लोड करें 
+</router-link>
 
         </div>
       </div>
