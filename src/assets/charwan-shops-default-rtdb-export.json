@@ -1,7 +1,7 @@
 {
   "charawan-shops" : {
     "-MkWsixtWXs8BQcslLPN" : {
-      "closeTime" : "20:00",
+      "closeTime" : "08:00",
       "inCharawan" : "charawan",
       "mobileNumber" : "tel:+919696865230",
       "mobileNumber2" : "tel:+919838539922",
@@ -16,7 +16,7 @@
       "villageName" : "चरावां"
     },
     "-MkWzgsCh8qLP-mX9-5V" : {
-      "closeTime" : "20:00",
+      "closeTime" : "08:00",
       "inCharawan" : "charawan",
       "mobileNumber" : "tel:+917239096065",
       "mobileNumber2" : "tel:+919616013139",
@@ -31,7 +31,7 @@
       "villageName" : "चरावां"
     },
     "-MkX09N_o-1GEFvUhXDz" : {
-      "closeTime" : "20:00",
+      "closeTime" : "08:00",
       "inCharawan" : "charawan",
       "mobileNumber" : "tel:+919721218468",
       "mobileNumber2" : "tel:+91",
@@ -46,7 +46,7 @@
       "villageName" : "चरावां"
     },
     "-MkXEYIg-HCWSla7UR88" : {
-      "closeTime" : "19:00",
+      "closeTime" : "07:00",
       "inCharawan" : "charawan",
       "mobileNumber" : "tel:+919984915000",
       "mobileNumber2" : "tel:+91",
@@ -61,7 +61,7 @@
       "villageName" : "चरावां"
     },
     "-MkXFC5OyAKdmr8FWpHe" : {
-      "closeTime" : "20:00",
+      "closeTime" : "08:00",
       "closedOn" : [ "रविवार" ],
       "inCharawan" : "charawan",
       "mobileNumber" : "tel:+919918112648",
@@ -77,7 +77,7 @@
       "villageName" : "चरावां"
     },
     "-MkXHlBD0W8358OrHGrn" : {
-      "closeTime" : "20:00",
+      "closeTime" : "08:00",
       "inCharawan" : "charawan",
       "mobileNumber" : "tel:+919670509293",
       "mobileNumber2" : "tel:+918933996252",
@@ -92,7 +92,7 @@
       "villageName" : "चरावां"
     },
     "-MkXIGyI6ERXO-hg31A8" : {
-      "closeTime" : "19:00",
+      "closeTime" : "07:00",
       "inCharawan" : "charawan",
       "mobileNumber" : "tel:+919838368699",
       "mobileNumber2" : "tel:+91",
@@ -107,7 +107,7 @@
       "villageName" : "चरावां"
     },
     "-MkXJRAqoZSo6OVTTw2d" : {
-      "closeTime" : "21:00",
+      "closeTime" : "09:00",
       "inCharawan" : "charawan",
       "mobileNumber" : "tel:+916386172574",
       "mobileNumber2" : "tel:+91",
@@ -122,7 +122,7 @@
       "villageName" : "चरावां"
     },
     "-MkXKGtZMcrgUuXAybQ3" : {
-      "closeTime" : "21:00",
+      "closeTime" : "09:00",
       "inCharawan" : "charawan",
       "mobileNumber" : "tel:+918601177477",
       "mobileNumber2" : "tel:+91",
@@ -137,7 +137,7 @@
       "villageName" : "चरावां"
     },
     "-MkXKXT5sV2XdD-ac22q" : {
-      "closeTime" : "21:00",
+      "closeTime" : "09:00",
       "inCharawan" : "charawan",
       "mobileNumber" : "tel:+919984118891",
       "mobileNumber2" : "tel:+91",
@@ -152,7 +152,7 @@
       "villageName" : "चरावां"
     },
     "-MkXKtaP2rFBwtC2OzoS" : {
-      "closeTime" : "21:00",
+      "closeTime" : "09:00",
       "inCharawan" : "charawan",
       "mobileNumber" : "tel:+919792064368",
       "mobileNumber2" : "tel:+91",
@@ -167,7 +167,7 @@
       "villageName" : "चरावां"
     },
     "-MkXLVkgcux7-q9ZiP7a" : {
-      "closeTime" : "19:00",
+      "closeTime" : "07:00",
       "inCharawan" : "charawan",
       "mobileNumber" : "tel:+919918822979",
       "mobileNumber2" : "tel:+91",
@@ -197,7 +197,7 @@
       "villageName" : "बराव"
     },
     "-MkY5-tIzWj-J2gFLaYI" : {
-      "closeTime" : "20:00",
+      "closeTime" : "08:00",
       "inCharawan" : "outOfCharawan",
       "mobileNumber" : "tel:+916387307334",
       "mobileNumber2" : "tel:+91",
@@ -212,7 +212,7 @@
       "villageName" : "चमनगंज"
     },
     "-MkY5uxWQqP4TefY34q4" : {
-      "closeTime" : "20:00",
+      "closeTime" : "08:00",
       "inCharawan" : "charawan",
       "mobileNumber" : "tel:+919838368660",
       "mobileNumber2" : "tel:+91",
@@ -243,7 +243,7 @@
       "villageName" : "कोदैला"
     },
     "-MkYHMsTvmjk7eu1Bx5K" : {
-      "closeTime" : "20:00",
+      "closeTime" : "08:00",
       "inCharawan" : "charawan",
       "mobileNumber" : "tel:+919838350627",
       "mobileNumber2" : "tel:+91",
@@ -258,7 +258,7 @@
       "villageName" : "चरावां"
     },
     "-MkYlWTZZLXS8vu94AJe" : {
-      "closeTime" : "20:00",
+      "closeTime" : "08:00",
       "inCharawan" : "charawan",
       "mobileNumber" : "tel:+919565505033",
       "mobileNumber2" : "tel:+91",
@@ -273,7 +273,7 @@
       "villageName" : "चरावां"
     },
     "-Mk_MZAK8ncd2tGzauwT" : {
-      "closeTime" : "21:00",
+      "closeTime" : "09:00",
       "inCharawan" : "outOfCharawan",
       "mobileNumber" : "tel:+917891441318",
       "mobileNumber2" : "tel:+918289020994",
@@ -288,7 +288,7 @@
       "villageName" : "बीकापुर"
     },
     "-MkbETDXsiMTC7qeSXWY" : {
-      "closeTime" : "20:00",
+      "closeTime" : "08:00",
       "inCharawan" : "charawan",
       "mobileNumber" : "tel:+917460820918",
       "mobileNumber2" : "tel:+91",
@@ -303,7 +303,7 @@
       "villageName" : "चरावां"
     },
     "-Mkeoukhsd-u7c9FzJFD" : {
-      "closeTime" : "18:00",
+      "closeTime" : "06:00",
       "closedOn" : [ "रविवार" ],
       "inCharawan" : "charawan",
       "mobileNumber" : "tel:+919919424026",
@@ -319,7 +319,7 @@
       "villageName" : "चरावां"
     },
     "-Mker4aZUcvHM6CZ_iUI" : {
-      "closeTime" : "22:00",
+      "closeTime" : "10:00",
       "inCharawan" : "outOfCharawan",
       "mobileNumber" : "tel:+919919981426",
       "mobileNumber2" : "tel:+91",
@@ -334,7 +334,7 @@
       "villageName" : "कोदैला"
     },
     "-Mkew4aBWR8CB_m1iOio" : {
-      "closeTime" : "16:30",
+      "closeTime" : "04:30",
       "inCharawan" : "charawan",
       "mobileNumber" : "tel:+919792182739",
       "mobileNumber2" : "tel:+91",
@@ -349,7 +349,7 @@
       "villageName" : "चरावां"
     },
     "-MkewgjBkwCAt2ZNxODt" : {
-      "closeTime" : "20:00",
+      "closeTime" : "08:00",
       "inCharawan" : "outOfCharawan",
       "mobileNumber" : "tel:+919118958916",
       "mobileNumber2" : "tel:+91",
@@ -380,7 +380,7 @@
       "villageName" : "चरावां"
     },
     "-Mkexp-VFjhoogd9q5jc" : {
-      "closeTime" : "20:00",
+      "closeTime" : "08:00",
       "inCharawan" : "charawan",
       "mobileNumber" : "tel:+916394293446",
       "mobileNumber2" : "tel:+91",
@@ -395,7 +395,7 @@
       "villageName" : "चरावां"
     },
     "-Mkey_us1Vvhc6cOHzRz" : {
-      "closeTime" : "18:00",
+      "closeTime" : "06:00",
       "inCharawan" : "charawan",
       "mobileNumber" : "tel:+918858695063",
       "mobileNumber2" : "tel:+91",
@@ -410,7 +410,7 @@
       "villageName" : "चरावां"
     },
     "-MkeyzugIsB0JyxUOtL3" : {
-      "closeTime" : "20:00",
+      "closeTime" : "08:00",
       "inCharawan" : "outOfCharawan",
       "mobileNumber" : "tel:+919838187742",
       "mobileNumber2" : "tel:+91",
@@ -425,7 +425,7 @@
       "villageName" : "रामपुर भगन"
     },
     "-MkezGndZNqRQJ1Ple7p" : {
-      "closeTime" : "20:00",
+      "closeTime" : "08:00",
       "inCharawan" : "outOfCharawan",
       "mobileNumber" : "tel:+919792554885",
       "mobileNumber2" : "tel:+91",
@@ -440,7 +440,7 @@
       "villageName" : "कोदैला"
     },
     "-Mkf-3ywsHJcdq4RTx3p" : {
-      "closeTime" : "20:00",
+      "closeTime" : "08:00",
       "inCharawan" : "charawan",
       "mobileNumber" : "tel:+919794987576",
       "mobileNumber2" : "tel:+91",
@@ -470,7 +470,7 @@
       "villageName" : "चरावां"
     },
     "-Mkf0QXiiJWqp1VjBLoM" : {
-      "closeTime" : "20:00",
+      "closeTime" : "08:00",
       "inCharawan" : "outOfCharawan",
       "mobileNumber" : "tel:+919795950258",
       "mobileNumber2" : "tel:+91",
@@ -485,7 +485,7 @@
       "villageName" : "किसनगंज"
     },
     "-Mkf0xHMi2MZmYJZbfFe" : {
-      "closeTime" : "20:00",
+      "closeTime" : "08:00",
       "inCharawan" : "outOfCharawan",
       "mobileNumber" : "tel:+918932855012",
       "mobileNumber2" : "tel:+919506053103",
@@ -500,7 +500,7 @@
       "villageName" : "रामपुर भगन"
     },
     "-Mkf1iYWSrnQcmz-ZL1D" : {
-      "closeTime" : "14:00",
+      "closeTime" : "02:00",
       "closedOn" : [ "रविवार" ],
       "inCharawan" : "charawan",
       "mobileNumber" : "tel:+919936145354",
@@ -516,7 +516,7 @@
       "villageName" : "चरावां"
     },
     "-Mkf4BJB77tZ7G6fJmqY" : {
-      "closeTime" : "20:00",
+      "closeTime" : "08:00",
       "inCharawan" : "outOfCharawan",
       "mobileNumber" : "tel:+919670940817",
       "mobileNumber2" : "tel:+91",
@@ -531,11 +531,11 @@
       "villageName" : "रामपुर भगन"
     },
     "-Mkf5aSxMbz0bDm8_Ogr" : {
-      "closeTime" : "23:59",
+      "closeTime" : "",
       "inCharawan" : "outOfCharawan",
       "mobileNumber" : "tel:+91198",
       "mobileNumber2" : "tel:+91",
-      "openTime" : "00:00",
+      "openTime" : "",
       "owenerName" : "",
       "ownerPhoto" : "",
       "shopAddress" : "",
@@ -576,7 +576,7 @@
       "villageName" : ""
     },
     "-MkfNU1gu1IrqayOwaP7" : {
-      "closeTime" : "20:00",
+      "closeTime" : "08:00",
       "inCharawan" : "outOfCharawan",
       "mobileNumber" : "tel:+919628615985",
       "mobileNumber2" : "tel:+91",
@@ -591,7 +591,7 @@
       "villageName" : "रामपुर भगन"
     },
     "-MkfOGkf3_uRF8uEU07R" : {
-      "closeTime" : "19:00",
+      "closeTime" : "07:00",
       "inCharawan" : "outOfCharawan",
       "mobileNumber" : "tel:+9199984415810",
       "mobileNumber2" : "tel:+918887882366",
@@ -606,7 +606,7 @@
       "villageName" : "रामपुर बाजार इंडिया वन ATM के सामने "
     },
     "-MkfU6Zld2Hs6Wrq_CP2" : {
-      "closeTime" : "20:01",
+      "closeTime" : "08:00",
       "inCharawan" : "outOfCharawan",
       "mobileNumber" : "tel:+919984820527",
       "mobileNumber2" : "tel:+919161300100",
@@ -766,7 +766,7 @@
       "villageName" : "चरावां"
     },
     "-MkgElcLXQ07l_xw1I23" : {
-      "closeTime" : "21:00",
+      "closeTime" : "09:00",
       "inCharawan" : "charawan",
       "mobileNumber" : "tel:+919140302077",
       "mobileNumber2" : "tel:+91",
@@ -811,7 +811,7 @@
       "villageName" : "शिवरामपुर गाँव"
     },
     "-Mkh5zg7JL3y3jZtLtDs" : {
-      "closeTime" : "19:00",
+      "closeTime" : "07:00",
       "inCharawan" : "charawan",
       "mobileNumber" : "tel:+918418003407",
       "mobileNumber2" : "tel:+91",
@@ -856,7 +856,7 @@
       "villageName" : "चरावां"
     },
     "-MkiCVF9Cs6RJ8HM6feq" : {
-      "closeTime" : "20:00",
+      "closeTime" : "08:00",
       "inCharawan" : "charawan",
       "mobileNumber" : "tel:+918090302022",
       "mobileNumber2" : "tel:+91",
@@ -871,7 +871,7 @@
       "villageName" : "चरावां"
     },
     "-Mkjb8WibMr2nsISDCMv" : {
-      "closeTime" : "20:30",
+      "closeTime" : "08:30",
       "inCharawan" : "outOfCharawan",
       "mobileNumber" : "tel:+918052815208",
       "mobileNumber2" : "tel:+918080456456",
@@ -901,7 +901,7 @@
       "villageName" : "गैनी"
     },
     "-MklDOCkuxqWgzXTmSWT" : {
-      "closeTime" : "21:00",
+      "closeTime" : "09:00",
       "inCharawan" : "charawan",
       "mobileNumber" : "tel:+917897492885",
       "mobileNumber2" : "tel:+919044768016",
@@ -946,7 +946,7 @@
       "villageName" : "रामपुर भगन"
     },
     "-Mkq1TN-ZJVFfwRWOdsX" : {
-      "closeTime" : "20:00",
+      "closeTime" : "08:00",
       "inCharawan" : "outOfCharawan",
       "mobileNumber" : "tel:+918081611572",
       "mobileNumber2" : "tel:+918853121572",
@@ -961,7 +961,7 @@
       "villageName" : "ककराही चैराहा"
     },
     "-Mkq27BEZMWWlBMYiGwW" : {
-      "closeTime" : "19:00",
+      "closeTime" : "07:00",
       "inCharawan" : "charawan",
       "mobileNumber" : "tel:+918853121572",
       "mobileNumber2" : "tel:+918081611572",
@@ -976,7 +976,7 @@
       "villageName" : "चरावां"
     },
     "-Mkq2xMTgMqtmd7pAPpS" : {
-      "closeTime" : "20:00",
+      "closeTime" : "08:00",
       "inCharawan" : "charawan",
       "mobileNumber" : "tel:+918004979241",
       "mobileNumber2" : "tel:+91",
@@ -991,7 +991,7 @@
       "villageName" : "चरावां"
     },
     "-MkqKdHrDezkkazcH6Oz" : {
-      "closeTime" : "20:00",
+      "closeTime" : "08:00",
       "inCharawan" : "outOfCharawan",
       "mobileNumber" : "tel:+919451707768",
       "mobileNumber2" : "tel:+917007897577",
@@ -1021,7 +1021,7 @@
       "villageName" : "बीकापुर"
     },
     "-MkqLbxqBVv8BYqcAknq" : {
-      "closeTime" : "19:00",
+      "closeTime" : "07:00",
       "inCharawan" : "outOfCharawan",
       "mobileNumber" : "tel:+919005643395",
       "mobileNumber2" : "tel:+917424904205",
@@ -1036,7 +1036,7 @@
       "villageName" : "बीकापुर"
     },
     "-MkqREL08Lpv1FwergLH" : {
-      "closeTime" : "20:00",
+      "closeTime" : "08:00",
       "inCharawan" : "outOfCharawan",
       "mobileNumber" : "tel:+919794153916",
       "mobileNumber2" : "tel:+917991621366",
@@ -1051,7 +1051,7 @@
       "villageName" : "उमरनी पिपरी"
     },
     "-MkqSnGm8o7xV6s-nlux" : {
-      "closeTime" : "18:00",
+      "closeTime" : "06:00",
       "inCharawan" : "charawan",
       "mobileNumber" : "tel:+918948144651",
       "mobileNumber2" : "tel:+91",
@@ -1126,7 +1126,7 @@
       "villageName" : "चरावां"
     },
     "-MkrBlrENpKIyvJsYvx_" : {
-      "closeTime" : "19:00",
+      "closeTime" : "07:00",
       "inCharawan" : "charawan",
       "mobileNumber" : "tel:+916394782873",
       "mobileNumber2" : "tel:+91",
@@ -1141,7 +1141,7 @@
       "villageName" : "चरावां"
     },
     "-MkrCKpTTCeiXetb-08K" : {
-      "closeTime" : "19:00",
+      "closeTime" : "07:00",
       "inCharawan" : "charawan",
       "mobileNumber" : "tel:+919918722934",
       "mobileNumber2" : "tel:+91",
@@ -1171,7 +1171,7 @@
       "villageName" : "दहलवा बरांव"
     },
     "-MkrDz3oOVaYsRxMhLEe" : {
-      "closeTime" : "19:00",
+      "closeTime" : "07:00",
       "inCharawan" : "charawan",
       "mobileNumber" : "tel:+919555119098",
       "mobileNumber2" : "tel:+91",
@@ -1186,7 +1186,7 @@
       "villageName" : "चरावां"
     },
     "-MkrFpowEoJo2YmkGoiU" : {
-      "closeTime" : "20:00",
+      "closeTime" : "08:00",
       "inCharawan" : "outOfCharawan",
       "mobileNumber" : "tel:+919838649186",
       "mobileNumber2" : "tel:+918127395886",
@@ -1201,7 +1201,7 @@
       "villageName" : "रामपुरभगन"
     },
     "-MksT72FokhHuiQiYSoq" : {
-      "closeTime" : "17:00",
+      "closeTime" : "05:00",
       "inCharawan" : "outOfCharawan",
       "mobileNumber" : "tel:+919794136760",
       "mobileNumber2" : "tel:+917905718501",
@@ -1216,7 +1216,7 @@
       "villageName" : "बीकापुर"
     },
     "-MksU6GdwNtK60vEuej_" : {
-      "closeTime" : "17:00",
+      "closeTime" : "05:00",
       "inCharawan" : "outOfCharawan",
       "mobileNumber" : "tel:+919598676878",
       "mobileNumber2" : "tel:+91",
@@ -1231,7 +1231,7 @@
       "villageName" : "गोसाईगंज"
     },
     "-MktolNNad_AiNEtSTKa" : {
-      "closeTime" : "20:00",
+      "closeTime" : "08:00",
       "inCharawan" : "charawan",
       "mobileNumber" : "tel:+919839567152",
       "mobileNumber2" : "tel:+91",
@@ -1246,7 +1246,7 @@
       "villageName" : "चरावां"
     },
     "-Mku1zeATLe-iOzx7f7S" : {
-      "closeTime" : "18:00",
+      "closeTime" : "06:00",
       "inCharawan" : "charawan",
       "mobileNumber" : "tel:+917408836684",
       "mobileNumber2" : "tel:+91",
@@ -1261,7 +1261,7 @@
       "villageName" : "चरावां"
     },
     "-Mku2nPxI7x6fC5b74x9" : {
-      "closeTime" : "20:00",
+      "closeTime" : "08:00",
       "inCharawan" : "charawan",
       "mobileNumber" : "tel:+916307045546",
       "mobileNumber2" : "tel:+919838713472",
@@ -1306,7 +1306,7 @@
       "villageName" : "चरावां"
     },
     "-MkueJyCzlI1JoHnmfb7" : {
-      "closeTime" : "18:00",
+      "closeTime" : "06:00",
       "inCharawan" : "charawan",
       "mobileNumber" : "tel:+917705886516",
       "mobileNumber2" : "tel:+91",
@@ -1321,7 +1321,7 @@
       "villageName" : "चरावां"
     },
     "-Mkv2DmFwM6otlrAmYJi" : {
-      "closeTime" : "19:00",
+      "closeTime" : "07:00",
       "inCharawan" : "charawan",
       "mobileNumber" : "tel:+919598202255",
       "mobileNumber2" : "tel:+91",
@@ -1336,7 +1336,7 @@
       "villageName" : "चरावां"
     },
     "-MkzKfUFlFHjl7mQIEgn" : {
-      "closeTime" : "19:00",
+      "closeTime" : "07:00",
       "inCharawan" : "charawan",
       "mobileNumber" : "tel:+919506862398",
       "mobileNumber2" : "tel:+917317288544",
@@ -1381,7 +1381,7 @@
       "villageName" : "किसनगंज"
     },
     "-Mkz_lCTrFlSJZm0_-T0" : {
-      "closeTime" : "20:00",
+      "closeTime" : "08:00",
       "inCharawan" : "outOfCharawan",
       "mobileNumber" : "tel:+919005675994",
       "mobileNumber2" : "tel:+91",
@@ -1426,7 +1426,7 @@
       "villageName" : "रामपुर भगन"
     },
     "-Mkzb26d4ece2cfKcCWZ" : {
-      "closeTime" : "20:00",
+      "closeTime" : "08:00",
       "inCharawan" : "outOfCharawan",
       "mobileNumber" : "tel:+919453660344",
       "mobileNumber2" : "tel:+91",
@@ -1441,7 +1441,7 @@
       "villageName" : "रामपुर भगन चरावां मो"
     },
     "-Ml-9kKZhGsu_PSp6Boa" : {
-      "closeTime" : "19:00",
+      "closeTime" : "07:00",
       "inCharawan" : "charawan",
       "mobileNumber" : "tel:+919654420209",
       "mobileNumber2" : "tel:+919999799656",
@@ -1456,7 +1456,7 @@
       "villageName" : "चरावां"
     },
     "-Ml-ADdYPLFPsZGlXcSC" : {
-      "closeTime" : "19:00",
+      "closeTime" : "07:00",
       "inCharawan" : "charawan",
       "mobileNumber" : "tel:+919918592057",
       "mobileNumber2" : "tel:+91",
@@ -1486,7 +1486,7 @@
       "villageName" : "चरावां"
     },
     "-Ml-Bct0ReSj5AaVLb0V" : {
-      "closeTime" : "20:00",
+      "closeTime" : "08:00",
       "inCharawan" : "outOfCharawan",
       "mobileNumber" : "tel:+919984188037",
       "mobileNumber2" : "tel:+91",
@@ -1501,7 +1501,7 @@
       "villageName" : "गैनी अयोध्या"
     },
     "-Ml-CTP5zgHBlh2suR17" : {
-      "closeTime" : "20:00",
+      "closeTime" : "08:00",
       "inCharawan" : "outOfCharawan",
       "mobileNumber" : "tel:+919919709950",
       "mobileNumber2" : "tel:+919670165428",
@@ -1516,7 +1516,7 @@
       "villageName" : "गैनी"
     },
     "-Ml-Da1a6VQhVgl8d8C6" : {
-      "closeTime" : "18:00",
+      "closeTime" : "06:00",
       "inCharawan" : "outOfCharawan",
       "mobileNumber" : "tel:+916000000000",
       "mobileNumber2" : "tel:+91",
@@ -1546,7 +1546,7 @@
       "villageName" : "जाने"
     },
     "-Ml-HRk2UFHXyX0EjhQd" : {
-      "closeTime" : "20:00",
+      "closeTime" : "08:00",
       "inCharawan" : "charawan",
       "mobileNumber" : "tel:+917388747238",
       "mobileNumber2" : "tel:+91",
@@ -1574,6 +1574,21 @@
       "shopPhotos" : "",
       "shopType" : [ "cetters  " ],
       "villageName" : "रामपुर भगन कृषक रोड"
+    },
+    "-MlE_w-4BtyquoUa5_G6" : {
+      "closeTime" : "",
+      "inCharawan" : "outOfCharawan",
+      "mobileNumber" : "tel:+919450042791",
+      "mobileNumber2" : "tel:+916306020028",
+      "openTime" : "",
+      "owenerName" : "श्रीनिवास जायसवाल",
+      "ownerPhoto" : "",
+      "shopAddress" : " शिवरामपुर",
+      "shopInfo" : "सस्ते दाम पर मज़बूत ईंट उपलब्ध",
+      "shopName" : "कुबेर ब्रिक फील्ड  ",
+      "shopPhotos" : "",
+      "shopType" : [ "bricks" ],
+      "villageName" : "(गोपालापुर) "
     }
   }
 }
