@@ -19,6 +19,8 @@
           <img width="200" height="60"  src="https://i.ibb.co/JCkn2x6/IMG-20210930-144311.jpg" alt="" class="logo-img" srcset=""
         /></router-link>
         <!-- <img width="90" height="40" src="../../assets/tiranga.gif" alt="" srcset=""> -->
+
+        
         <button
           class="navbar-toggler"
           type="button"

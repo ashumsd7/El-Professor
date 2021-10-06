@@ -252,7 +252,7 @@ const fd= new FormData();
       }
       if (this.shortInfo != "" ) {
         let isValid=false;
-          if(this.adminID=='101'){
+          if(this.adminID=='2797'){
               this.reporterName='एडमिन' 
               isValid=true         
           }

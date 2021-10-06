@@ -28,9 +28,7 @@ export default {
     titleTemplate: '%s |चरावा'
   },
   
-  created() {
-    
-  },
+ 
 }
 </script>
 <style>
