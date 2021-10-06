@@ -268,6 +268,10 @@ const fd= new FormData();
               this.reporterName='सूरज पाठक'  
                isValid=true         
           }
+          if(this.adminID=='9007'){
+              this.reporterName='अनुराग तिवारी '  
+               isValid=true         
+          }
 
           if(!isValid ){
               alert('ID गलत है  अगर आप एडमिन नहीं है तो या तो एडमिन बनने के लिए सम्पर्क करें')
