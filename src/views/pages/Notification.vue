@@ -222,7 +222,7 @@ export default {
             this.allNews[i].timeStamp2 = difference;
           }
           this.allNews = this.allNews.reverse();
-          this.allNews = this.allNews.splice(0, 10);
+          // this.allNews = this.allNews.splice(0, 10);
           this.showLoading = false;
 
           console.log(this.allNews);
