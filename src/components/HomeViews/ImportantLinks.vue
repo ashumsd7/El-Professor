@@ -296,7 +296,7 @@ export default {
           this.isLiked=true
         })
         .catch((error) => {
-          alert("Something Went Wrong :(");
+          alert("शायद इंटरनेट सही नहीं चल रहा एक बार चेक कर लीजिये धन्यवाद ");
           // console.log(error);
         });
     },
