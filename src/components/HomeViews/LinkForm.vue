@@ -287,6 +287,7 @@ const fd= new FormData();
           timeStamp:  new Date().getTime(),
           isAdmin:this.isAdmin,
           img1:this.serverImgURL,
+          likeCounter:0
           // img2:this.img2
         };
         this.isLoading= true;

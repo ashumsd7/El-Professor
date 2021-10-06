@@ -1,43 +1,47 @@
 <template>
   <div class="container-fluid mt-5">
     <div class="row">
- 
       <div class=" col-12">
         <div class="section-title text-center mb-3 mt-lg-3 position-relative">
-          <h4 class="fw-bolder bg-primary p-2 text-white rounded-3">
-            <img
-              src="../../assets/notification.png"
-              height="25"
-              alt=""
-              srcset=""
-              class="me-1"
-            />
-            चरावां : {{ openForm ? "जानकारी  जोड़ें " : "नोटिफिकेशन  " }}
-            <img
-              src="../../assets/live.gif"
-              width="80"
-            
-              alt=""
-              srcset=""
-              class="me-1"
-            />
-          </h4>
+          <router-link
+            class="text-center text-decoration-none d-block fw-bold"
+            to="/notification"
+          >
+            <h4 class="fw-bolder bg-primary p-2 text-white rounded-3">
+              <img
+                src="../../assets/notification.png"
+                height="25"
+                alt=""
+                srcset=""
+                class="me-1"
+              />
+              चरावां : {{ openForm ? "जानकारी  जोड़ें " : "नोटिफिकेशन  " }}
+              <img
+                src="../../assets/live.gif"
+                width="80"
+                alt=""
+                srcset=""
+                class="me-1"
+              />
+            </h4>
+          </router-link>
 
           <p
-          @click="openForm = !openForm"
-          v-if="!openForm"
-          class="ms-auto d-block add-noti-btn text-dark fw-bold p-2 rounded-2"
-        >
-          <img src="../../assets/plusnoti.png" alt="" srcset="" class="me-2" />
-          जोड़ें
-        </p>
+            @click="openForm = !openForm"
+            v-if="!openForm"
+            class="ms-auto d-block add-noti-btn text-dark fw-bold p-2 rounded-2"
+          >
+            <img
+              src="../../assets/plusnoti.png"
+              alt=""
+              srcset=""
+              class="me-2"
+            />
+            जोड़ें
+          </p>
         </div>
-        
-        <p
-          @click="callApi"
-          class="btn fw-bolder text-primary"
-          v-if="!openForm"
-        >
+
+        <p @click="callApi" class="btn fw-bolder text-primary" v-if="!openForm">
           {{ showLoading ? "रिफ्रेश हो रहा है " : "रिफ्रेश करें" }}
           <img
             src="../../assets/refresh.png"
@@ -58,11 +62,11 @@
           />
         </p>
 
-        
-        <small v-if="!openForm" class="text-muted d-block ms-2 mb-2"> <span class="text-danger fw-bold">
-          ⌚{{currentTime}}
-          </span> रिफ्रेश किया गया</small>
-     
+        <small v-if="!openForm" class="text-muted d-block ms-2 mb-2">
+          <span class="text-danger fw-bold"> ⌚{{ currentTime }} </span> रिफ्रेश
+          किया गया</small
+        >
+
         <div class="form-container" v-if="openForm">
           <link-form @goBack="fireGoBack"></link-form>
         </div>
@@ -91,12 +95,35 @@
               }}</small>
             </div>
 
-            <p
-              
-              class="short-info text-dark fw-bold text-decoration-none mb-2"
-            >
-              ✉️{{ news.shortInfo }}</p
-            >
+            
+
+            <span @click="hitLike(news)"   class="badge rounded-pill bg-primary  
+            like-btn ">
+           
+                लाइक करें 
+                 <span class="heart popItup" >
+              👍
+              </span> 
+              <!--  -->
+              <span 
+                class="
+                  position-absolute
+                  top-0
+                  start-100
+                  translate-middle
+                  badge
+                  rounded-pill
+                  bg-danger
+                "
+              >
+               {{ news.likeCounter ? news.likeCounter : 0 }}
+                <span class="visually-hidden">unread messages</span>
+              </span>
+            </span>
+
+            <p class="short-info text-dark fw-bold text-decoration-none mb-2">
+              ✉️{{ news.shortInfo }}
+            </p>
             <span class="time-name d-block">
               <small
                 class="badge rounded-pill text-light bg-dark text-white"
@@ -107,41 +134,47 @@
                   {{ news.reporterName }}</span
                 >
                 द्वारा
-                <small class="text-gray ms-1"> ⏳ {{ news.timeStamp }}</small>
+                <small class="text-gray ms-1"> ⏳ {{ news.timeStamp2 }}</small>
               </small>
             </span>
-              <div class="img-container">
-                <div v-if="news.img1" class="row">
-                  <div class="col-lg-3 col-6">
-                    <img :src="news.img1" alt="news_photo1" class="img-fluid" srcset="">
-                  </div>
-                  <div v-if="news.img2" class="col-lg-3 col-6">
-                    <img :src="news.img2" class="img-fluid" srcset="">
-                  </div>
+
+            <div class="img-container">
+              <div v-if="news.img1" class="row">
+                <div class="col-lg-3 col-6">
+                  <img
+                    :src="news.img1"
+                    alt="news_photo1"
+                    class="img-fluid"
+                    srcset=""
+                  />
                 </div>
-                 
+                <div v-if="news.img2" class="col-lg-3 col-6">
+                  <img :src="news.img2" class="img-fluid" srcset="" />
+                </div>
               </div>
+            </div>
           </div>
 
+          <router-link class="text-center d-block fw-bold" to="/notification"
+            >और लोड करें
+          </router-link>
         </div>
       </div>
 
-
-   
+      <div class=" col-12">
+        <static-links></static-links>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 import LinkForm from "../../components/HomeViews/LinkForm.vue";
-// import StaticLinks from './StaticLinks'
+import StaticLinks from "../../components/HomeViews/StaticLinks";
 
 import axios from "axios";
 export default {
-  mounted() {
-    window.scrollTo(0, 0);
-  },
-  components: { LinkForm, },
+  components: { LinkForm, StaticLinks },
 
   data() {
     return {
@@ -150,24 +183,24 @@ export default {
       showDetail: false,
       openForm: false,
       allNews: [],
-      lastRefreshAt:null,
+      lastRefreshAt: null,
 
       //for refresh btn
-      currentTime:'अभी अभी',
-      
+      currentTime: "अभी अभी",
+
       // new Date().getTime()
+
+      isLiked:false
     };
   },
-  watch:{
-
-  },
+  watch: {},
   methods: {
     fireGoBack() {
       this.openForm = !this.openForm;
       this.callApi();
     },
     callApi() {
-      this.lastRefreshAt=new Date().getTime()
+      this.lastRefreshAt = new Date().getTime();
       this.allNews = [];
       this.showLoading = true;
       axios
@@ -177,16 +210,22 @@ export default {
         .then((res) => {
           //   console.log(res.data);
           for (let i in res.data) {
+            console.log(i);
+            res.data[i].key = i;
             this.allNews.push(res.data[i]);
+            console.log('pushed',res.data[i]);
           }
           for (let i in this.allNews) {
             let currentStamp = new Date().getTime() - this.allNews[i].timeStamp;
+          
             let difference = this.calculateTimeago(Date.now() - currentStamp);
-            this.allNews[i].timeStamp = difference;
+            this.allNews[i].timeStamp2 = difference;
           }
           this.allNews = this.allNews.reverse();
-          // this.allNews= this.allNews.splice(0,10)
+          this.allNews = this.allNews.splice(0, 10);
           this.showLoading = false;
+
+          console.log(this.allNews);
         })
         .catch((err) => {
           console.log(err);
@@ -220,12 +259,54 @@ export default {
 
       //   console.log(getTimeInterval(Date.now() - 25650));
     },
+    hitLike(news) {
+      
+
+      
+
+      if (!news.likeCounter) {
+        news.likeCounter = 0;
+      }
+      ++news.likeCounter;
+
+      let uniqueKey = news.key;
+
+
+      let newsData = {
+          reporterName: news.reporterName,
+          newsTitle: news.newsTitle,
+          shortInfo: news.shortInfo,
+          detailedInfo: news.detailedInfo,
+          timeStamp:  news.timeStamp,
+          isAdmin:news.isAdmin,
+          img1:news.serverImgURL,
+          likeCounter:news.likeCounter
+          // img2:this.img2
+        };
+
+      axios
+        .put(
+          `https://charawan-notification-default-rtdb.firebaseio.com/Notification/${uniqueKey}.json`,
+          newsData
+        )
+        .then((response) => {
+          // console.log("sucesssss");
+          // alert("You are Rewarded :)");
+          // console.log(response);
+          this.isLiked=true
+        })
+        .catch((error) => {
+          alert("Something Went Wrong :(");
+          // console.log(error);
+        });
+    },
+    //LIKE
   },
   created() {
     this.callApi();
     setInterval(() => {
-      let currentStamp = new Date().getTime()- this.lastRefreshAt
-      this.currentTime=this.calculateTimeago(Date.now() - currentStamp);
+      let currentStamp = new Date().getTime() - this.lastRefreshAt;
+      this.currentTime = this.calculateTimeago(Date.now() - currentStamp);
     }, 1000);
   },
 };
@@ -234,16 +315,15 @@ export default {
 <style  scoped>
 .notification_container {
 
-/* background: rgb(255, 252, 246); */
+ ]
+  /* background: rgb(255, 252, 246); */
   border-left: 3px solid rgb(1, 161, 1);
   background: rgb(235, 228, 228);
-  
-  
 }
 .notifications {
   transition: all 0.5s ease-in;
 
-  margin: .5rem;
+  margin: 0.5rem;
   /* border-radius: 10% 10% 1% 21% / 0% 9% 0% 31%  ; */
   background: rgb(255, 255, 255);
   position: relative;
@@ -252,12 +332,10 @@ export default {
   border-top-left-radius: 10px;
   padding: 1rem;
   margin-top: 10px;
-  
+
   box-shadow: 6px 5px 17px -3px rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: 6px 10px 17px -3px rgba(0, 0, 0, 0.6);
   -moz-box-shadow: 6px 10px 17px -3px rgba(0, 0, 0, 0.6);
-
-
 }
 .time-name {
   position: absolute;
@@ -300,5 +378,31 @@ export default {
 }
 .adminColor {
   color: #ffffff !important;
+}
+
+
+.like-btn{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+  
+}
+
+.popItup{
+  animation: popup 1s ease-in 0s 1;
+}
+
+@keyframes popup {
+  0%{
+    transform: scale(1);
+  }
+  0%{
+    transform: scale(1.5);
+  }
+  100%{
+    transform: scale(1);
+  }
+  
 }
 </style>
