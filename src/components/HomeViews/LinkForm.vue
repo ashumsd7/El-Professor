@@ -322,7 +322,7 @@ label {
   margin-top: -40px;
 }
 .loading-container {
-  height: 400px;
+  height: 300px;
 }
 .form{
     background: linear-gradient(230deg,rgb(219, 247, 231),rgb(250, 240, 194));

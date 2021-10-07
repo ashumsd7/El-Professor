@@ -175,6 +175,9 @@ import StaticLinks from "../../components/HomeViews/StaticLinks";
 import axios from "axios";
 export default {
   components: { LinkForm, StaticLinks },
+    mounted() {
+    window.scrollTo(0, 0);
+  },
 
   data() {
     return {

@@ -155,11 +155,20 @@
             </div>
           </div>
 
-          <router-link class="text-center d-block fw-bold" to="/notification"
-            >और लोड करें
-          </router-link>
+       
         </div>
+           
       </div>
+      <router-link class="text-center d-block fw-bold mt-2 text-dark  " to="/notification"
+            >और लोड करें <img
+          
+            src="../../assets/down.png"
+       
+            alt=""
+            srcset=""
+            class="loadmore ms-1"
+          />
+          </router-link>
 
       <div class="col-lg-6 col-12">
         <static-links></static-links>
@@ -390,20 +399,27 @@ export default {
   
 }
 
-.popItup{
-  animation: popup 1s ease-in 0s 1;
+.loadmore{
+  animation: pushDown 1s ease-in 0s infinite alternate;
 }
 
-@keyframes popup {
+@keyframes pushDown {
   0%{
-    transform: scale(1);
+    transform: translateY(10px);
   }
-  0%{
-    transform: scale(1.5);
-  }
+ 
   100%{
-    transform: scale(1);
+    transform: translateY(0px);
   }
   
+}
+
+@media (max-width:900px){
+  .notification_container {
+  
+  max-height: 100vh;
+  overflow-y: hidden;
+  
+  }
 }
 </style>
