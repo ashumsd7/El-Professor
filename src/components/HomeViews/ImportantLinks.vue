@@ -2,7 +2,7 @@
   <div class="container-fluid mt-5">
     <div class="row">
       <div class="col-lg-6 col-12">
-        <div class="section-title text-center mb-3 mt-lg-3 position-relative">
+        <div class="section-title text-center  mt-lg-3 position-relative">
           <router-link
             class="text-center text-decoration-none d-block fw-bold"
             to="/notification"

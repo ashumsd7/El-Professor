@@ -1,6 +1,7 @@
 <template>
   <div class="home">
     <home-glance></home-glance>
+    <celebration-wall></celebration-wall>
    
 
     <important-links id="notify"></important-links>
@@ -125,8 +126,9 @@ import CricketCup from "../components/HomeViews/CricketCup";
 
 import AboutGlance from "../components/HomeViews/AboutGlance";
 import AuthorityGlance from "../components/HomeViews/AuthorityGlance.vue";
-import ImportantLinks from "../components/HomeViews/ImportantLinks.vue";
 import StaticLinks from "../components/HomeViews/StaticLinks.vue";
+import ImportantLinks from "../components/HomeViews/ImportantLinks.vue";
+import CelebrationWall from "../components/HomeViews/CelebrationWall.vue";
 
 
 import Counter from "../components/HomeViews/Counter.vue";
@@ -135,6 +137,7 @@ export default {
   name: "Home",
   components: {
     ChitChat,
+    CelebrationWall,
     
     HomeGlance,
     
