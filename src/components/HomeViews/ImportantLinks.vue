@@ -296,8 +296,8 @@ export default {
           shortInfo: news.shortInfo,
           detailedInfo: news.detailedInfo,
           timeStamp:  news.timeStamp,
-          isAdmin:news.isAdmin,
-          img1:news.serverImgURL,
+          isAdmin:news.isAdmin0,
+          img1:news.img1,
           likeCounter:news.likeCounter
           // img2:this.img2
         };
