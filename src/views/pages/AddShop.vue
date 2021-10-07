@@ -429,9 +429,8 @@ export default {
       isDisabled:false
     };
   },
-   mounted() {
-    window.scrollTo(0, 0);
-  },
+  
+
   methods: {
     saveData(shopdata) {
       this.isDisabled= true;

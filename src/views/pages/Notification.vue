@@ -213,10 +213,10 @@ export default {
         .then((res) => {
           //   console.log(res.data);
           for (let i in res.data) {
-            console.log(i);
+            // console.log(i);
             res.data[i].key = i;
             this.allNews.push(res.data[i]);
-            console.log('pushed',res.data[i]);
+            // console.log('pushed',res.data[i]);
           }
           for (let i in this.allNews) {
             let currentStamp = new Date().getTime() - this.allNews[i].timeStamp;
@@ -228,7 +228,7 @@ export default {
           // this.allNews = this.allNews.splice(0, 10);
           this.showLoading = false;
 
-          console.log(this.allNews);
+          // console.log(this.allNews);
         })
         .catch((err) => {
           console.log(err);

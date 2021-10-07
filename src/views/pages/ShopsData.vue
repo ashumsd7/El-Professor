@@ -24,6 +24,14 @@
 
         </div>
       </div>
+
+      <div class="row text-center m-auto d-block" >
+        <small class="text-muted">आप सर्च कर सकते हैं: नंबर,  दुकान का नाम ,पता  लिखकर <br>
+          <small class="text-danger">NOTE: </small> लगभग दुकानों के नाम हिंदी में हैं </small>
+        <input type="search" placeholder="नंबर, नाम ,पता लिखिए  "   v-model.trim="searchedKey" name="" class="form-control m-auto mt-2 d-block" id="">
+        <button class="form-control m-auto d-block btn btn-success mt-2" @click="filterShops()">सर्च करें </button>
+
+      </div>
       
 
       <div class="">
@@ -163,6 +171,9 @@
                 फ़ोन करें
               </a></span
             >
+
+            <small class="d-block text-muted fw-lighter mt-2">फ़ोन न मिल रहा हो या किसी सुधार के लिए 
+                <a href="https://chat.whatsapp.com/LgCz9l1tWQKKJe6OQ5n8Zt">सम्पर्क करें</a></small>
           </div>
         </div>
       </div>
@@ -210,13 +221,82 @@ export default {
       showOnlyCharawan:'',
       //using for in charwan filter
       updated:true,
-      preservedCurrentData:[]
+      preservedCurrentData:[],
+
+//searchbox
+      searchedKey:''
     };
+  },
+
+  watch:{
+     searchedKey(val){
+       if(val==''){
+         this.isLoading= true;
+         this.callAPI();
+       }
+     }
   },
   mounted() {
     window.scrollTo(0, 0);
   },
   methods: {
+    filterShops(){
+      this.allShopData = [];
+      // console.log(this.searchedKey);
+      let tempArr=[]
+      let filteredData = this.preservedData.filter((val, idx) => {
+       tempArr=[];
+      //  tempArr=[val.owenerName.split(" "),val.shopAddress.split(" "),val.shopInfo.split(" "),
+      //  val.shopName.split(" "),val.villageName.split(" "),val.shopType,
+      //  val.mobileNumber1.split(" "),val.mobileNumber2.split(" ")]
+     let tempShopName=val.shopName.split(" ")
+     let tempOwnerName= val.owenerName.split(" ")
+     let tempVillageName=val.shopAddress.split(" ")
+     let tempShopInfo=val.shopInfo.split(" ")
+    //  console.log(val.mobileNumber1);
+     let mobileNumber1=val.mobileNumber.split('')
+   let number1= mobileNumber1.splice(7,10).join('')
+
+    let mobileNumber2=val.mobileNumber2.split('')
+   let number2= mobileNumber2.splice(7,10).join('')
+    //  console.log(mobileNumber1);
+
+      tempArr=[...tempShopName,...tempOwnerName,...tempVillageName,...tempShopInfo,number1,number2];
+
+      console.log('preparedArray', tempArr);
+
+
+
+
+
+      //  console.log('this is arr',tempArr);
+        
+        if (tempArr.includes(this.searchedKey)) {
+          // console.log('matched',val);
+          return val;
+        }
+
+
+
+    
+          
+      });
+
+           if (!filteredData.length) {
+        alert("कोई सर्विस या दुकान नहीं मिली ");
+        //  this.allShopData= this.preservedData;
+        this.isLoading = true;
+        this.allShopData=[];
+        this.callAPI();
+        return
+      }
+
+this.showCategory = false;
+        this.allShopData = filteredData;
+      this.isLoading = false;
+
+      
+    },
 
     filterOnlyCharawan(){
         // console.log(this.allShopData.length);
@@ -226,7 +306,7 @@ export default {
           
         }
        if(this.showOnlyCharawan=='yes'){
-          let filteredCharawanData = this.preservedCurrentData.filter((val, idx) => {
+          let filteredCharawanData = this.allShopData.filter((val, idx) => {
         if (val.inCharawan=='charawan') {
           return val;
         }
@@ -273,6 +353,7 @@ export default {
     },
     callAPI() {
       this.isLoading = true;
+      this.allShopData=[];
       axios
         .get(
           "https://charwan-shops-default-rtdb.firebaseio.com/charawan-shops.json"

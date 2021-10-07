@@ -154,12 +154,21 @@
               </div>
             </div>
           </div>
-
+<router-link class="text-center d-block fw-bold d-none d-lg-block mt-2 text-dark  " to="/notification"
+            >और लोड करें <img
+          
+            src="../../assets/down.png"
+       
+            alt=""
+            srcset=""
+            class="loadmore ms-1"
+          />
+          </router-link>
        
         </div>
            
       </div>
-      <router-link class="text-center d-block fw-bold mt-2 text-dark  " to="/notification"
+      <router-link class="text-center d-lg-none d-block fw-bold mt-2 text-dark  " to="/notification"
             >और लोड करें <img
           
             src="../../assets/down.png"
@@ -219,10 +228,10 @@ export default {
         .then((res) => {
           //   console.log(res.data);
           for (let i in res.data) {
-            console.log(i);
+            // console.log(i);
             res.data[i].key = i;
             this.allNews.push(res.data[i]);
-            console.log('pushed',res.data[i]);
+            // console.log('pushed',res.data[i]);
           }
           for (let i in this.allNews) {
             let currentStamp = new Date().getTime() - this.allNews[i].timeStamp;
@@ -234,7 +243,7 @@ export default {
           this.allNews = this.allNews.splice(0, 10);
           this.showLoading = false;
 
-          console.log(this.allNews);
+          // console.log(this.allNews);
         })
         .catch((err) => {
           console.log(err);
