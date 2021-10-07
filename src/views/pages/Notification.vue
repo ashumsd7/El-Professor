@@ -155,9 +155,6 @@
             </div>
           </div>
 
-          <router-link class="text-center d-block fw-bold" to="/notification"
-            >और लोड करें
-          </router-link>
         </div>
       </div>
 
@@ -282,8 +279,9 @@ export default {
           detailedInfo: news.detailedInfo,
           timeStamp:  news.timeStamp,
           isAdmin:news.isAdmin,
-          img1:news.serverImgURL,
+          img1:news.img1,
           likeCounter:news.likeCounter
+          
           // img2:this.img2
         };
 
