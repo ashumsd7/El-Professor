@@ -10,6 +10,7 @@ import AddShop from '../views/pages/AddShop.vue'
 import TermsConditions from '../views/pages/TermsConditions.vue'
 import Notification from '../views/pages/Notification.vue'
 import Test from '../views/pages/test.vue'
+// import OpenImg from '../views/pages/test.vue'
 
 
 const routes = [
@@ -67,7 +68,8 @@ const routes = [
     path: '/notification',
     name: 'Notification',
     component: Notification
-  }
+  },
+
   
   
 ]

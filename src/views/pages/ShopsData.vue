@@ -2,43 +2,48 @@
   <section id="shops-data">
     <top-banner
       img="https://i.ibb.co/ZSZ8WgG/IMG-20211001-012136.jpg"
-      mobileImg='https://i.ibb.co/vLqp8tN/IMG-20211002-000232.jpg'
-      
+      mobileImg="https://i.ibb.co/vLqp8tN/IMG-20211002-000232.jpg"
       title="Shops List"
     ></top-banner>
     <main-heading>चरावां और आस पास की सभी दुकानें</main-heading>
 
-
-
     <div class="container text-center position-relative">
-     
-
-      <div class="info-container bg-white  text-center">
-        <div v-if="!isLoading" class="row counter bg-lg-info bg-dark text-white">
+      <div class="info-container bg-white text-center">
+        <div
+          v-if="!isLoading"
+          class="row counter bg-lg-info bg-dark text-white"
+        >
           <div class="col-12 w-100 mt-1 fw-bold">
-
-        कुल  {{ preservedData.length }}     में से {{ allShopData.length }} दुकाने/सेवाएं दिख रही हैं
+            कुल {{ preservedData.length }} में से
+            {{ allShopData.length }} दुकाने/सेवाएं दिख रही हैं
           </div>
         </div>
-        <div class="row">
-
-        </div>
+        <div class="row"></div>
       </div>
 
-      <div class="row text-center m-auto d-block" >
-        <small class="text-muted">आप सर्च कर सकते हैं: नंबर,  दुकान का नाम ,पता  लिखकर <br>
-          <small class="text-danger">NOTE: </small> लगभग दुकानों के नाम हिंदी में हैं </small>
-        <input type="search" placeholder="नंबर, नाम ,पता लिखिए  "   v-model.trim="searchedKey" name="" class="form-control m-auto mt-2 d-block" id="">
-        <button class="form-control m-auto d-block btn btn-success mt-2" @click="filterShops()">सर्च करें </button>
-
+      <div class="row text-center m-auto d-block">
+        <small class="text-muted"
+          >आप सर्च कर सकते हैं: नंबर, दुकान का नाम ,पता लिखकर <br />
+          <small class="text-danger">NOTE: </small> लगभग दुकानों के नाम हिंदी
+          में हैं
+        </small>
+        <input
+          type="search"
+          placeholder="नंबर, नाम ,पता लिखिए  "
+          v-model.trim="searchedKey"
+          name=""
+          class="form-control m-auto mt-2 d-block"
+          id=""
+        />
+        <button
+          class="form-control m-auto d-block btn btn-success mt-2"
+          @click="filterShops()"
+        >
+          सर्च करें
+        </button>
       </div>
-      
 
-      <div class="">
-      
-
-       
-      </div>
+      <div class=""></div>
       <div v-if="showCategory" class="row checkboxes">
         <br />
         <br />
@@ -67,41 +72,40 @@
       </div>
 
       <div class="shop-table">
-      
+        <div v-if="!isLoading" class="">
+          <input
+            type="radio"
+            class="me-1"
+            value="no"
+            v-model="showOnlyCharawan"
+            checked
+            id=""
+            @change="filterOnlyCharawan"
+          />
 
-        <div v-if="!isLoading" class=''>
-            
-            <input
-              type="radio"
-              class="me-1"
-              value="no"
-              v-model="showOnlyCharawan"
-              checked
-              id=""
-              @change="filterOnlyCharawan"
-              
-            />
+          <label
+            for="exampleFormControlInput1"
+            class="form-label mt-2 fw-bold text-primary"
+          >
+            <small>सभी दुकानें /सर्विस </small>
+          </label>
 
-            <label for="exampleFormControlInput1" class="form-label mt-2  fw-bold text-primary">
-             <small>सभी दुकानें /सर्विस </small>
-            </label>
+          <input
+            type="radio"
+            class="ms-3"
+            value="yes"
+            v-model="showOnlyCharawan"
+            id=""
+            @change="filterOnlyCharawan"
+          />
 
-
-             <input
-              type="radio"
-              class=" ms-3"
-              value="yes"
-              v-model="showOnlyCharawan"
-              id=""
-              @change="filterOnlyCharawan"
-           
-            />
-
-            <label for="exampleFormControlInput1" class="form-label mt-2 ms-1 fw-bold text-primary">
-              <small>केवल चरावां की 
-</small>
-            </label>
-          </div>
+          <label
+            for="exampleFormControlInput1"
+            class="form-label mt-2 ms-1 fw-bold text-primary"
+          >
+            <small>केवल चरावां की </small>
+          </label>
+        </div>
 
         <div class="row text-center m-auto mt-2 justify-content-center mt-3">
           <img
@@ -112,13 +116,59 @@
             width="200"
             srcset=""
           />
-          <span v-if="isLoading" class="d-block text-muted mb-4">कृपया इंतज़ार करिये  दुकानें लोड हो  रही हैं </span>
+          <span v-if="isLoading" class="d-block text-muted mb-4"
+            >कृपया इंतज़ार करिये दुकानें लोड हो रही हैं
+          </span>
           <div
             class="col-lg-4 col-md-6 col-12 shop-card p-2 ms-2 mt-2 mt-lg-4"
             v-for="data in allShopData"
             :key="data.shopName"
           >
-            <h3 class="fw-bolder">{{ data.shopName }}</h3>
+            <div  class="profile-img mb-1">
+
+              
+              
+              <input v-if="showInput && !isUploading && !isUploaded"
+               class="d-block popItup" type="file" @change="fileSelected"
+               accept="image/x-png,image/jpeg"
+                name="" id="">
+              <img
+            src="../../assets/refreshing.gif"
+           v-if="isUploading"
+            width="24"
+            alt=""
+            class="d-block"
+            srcset=""
+            
+          />
+              <button v-if="showSaveBtn" class="d-block btn btn-success popItup" @click="updateProfile(data)">सेव कर दीजिये </button>
+              <img v-if="!data.ownerPhoto"
+                src="../../assets/profile.png"
+                alt=""
+                width="70"
+                height="70"
+                class="border-1 dummy-profile"
+                srcset=""
+                @click="showInputFile"
+              />
+
+              <img v-if="data.ownerPhoto"
+                :src="data.ownerPhoto"
+                alt=""
+                width="70"
+                height="70"
+                class="border-1 main-profile mb-2"
+                srcset=""
+
+                @click="showInputFile"
+              />
+
+              
+              
+
+              
+            </div>
+            <h5 class="fw-bolder">{{ data.shopName }}</h5>
             <small v-if="data.owenerName" class="d-block"
               ><span class="text-muted">मालिक:</span>
               {{ data.owenerName }}</small
@@ -172,31 +222,52 @@
               </a></span
             >
 
-            <small class="d-block text-muted fw-lighter mt-2">फ़ोन न मिल रहा हो या किसी सुधार के लिए 
-                <a href="https://chat.whatsapp.com/LgCz9l1tWQKKJe6OQ5n8Zt">सम्पर्क करें</a></small>
+            <small class="d-block text-muted fw-lighter mt-2"
+              >फ़ोन न मिल रहा हो या किसी सुधार के लिए
+              <a href="https://chat.whatsapp.com/LgCz9l1tWQKKJe6OQ5n8Zt"
+                >सम्पर्क करें</a
+              ></small
+            >
           </div>
         </div>
       </div>
     </div>
 
-
-<div class="shop-footer fixed-bottom  d-block">
-<div class="container-fluid">
-<div class="row justify-content-around ">
-  <div class="col-6 footer-btns mt-2 "  @click="searchClicked()"
-          v-if="!showCategory">
-   <p class="btn-text">  
-     <img src="../../assets/searching.png"  class="me-1" alt="" srcset="" />
-     दुकान खोजें</p>
-  </div>
-  <div class="col-6 mt-2 footer-btns ">
-      <p class="btn-text">   <img src="../../assets/plus.png" alt="" srcset="" class="me-2" /><router-link class="text-decoration-none text-white" to="/addshop"
-            >दुकान /सर्विस जोड़ें</router-link
-          ></p>
-  </div>
-</div>
-</div>
-</div>
+    <div class="shop-footer fixed-bottom d-block">
+      <div class="container-fluid">
+        <div class="row justify-content-around">
+          <div
+            class="col-6 footer-btns mt-2"
+            @click="searchClicked()"
+            v-if="!showCategory"
+          >
+            <p class="btn-text">
+              <img
+                src="../../assets/searching.png"
+                class="me-1"
+                alt=""
+                srcset=""
+              />
+              दुकान खोजें
+            </p>
+          </div>
+          <div class="col-6 mt-2 footer-btns">
+            <p class="btn-text">
+              <img
+                src="../../assets/plus.png"
+                alt=""
+                srcset=""
+                class="me-2"
+              /><router-link
+                class="text-decoration-none text-white"
+                to="/addshop"
+                >दुकान /सर्विस जोड़ें</router-link
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 </template>
 
@@ -205,7 +276,6 @@
 import axios from "axios";
 
 export default {
-
   computed: {
     getFilters() {
       return this.$store.getters.getFilters;
@@ -218,115 +288,113 @@ export default {
       preservedData: [],
       showCategory: false,
       isLoading: false,
-      showOnlyCharawan:'',
+      showOnlyCharawan: "",
       //using for in charwan filter
-      updated:true,
-      preservedCurrentData:[],
+      updated: true,
+      preservedCurrentData: [],
 
-//searchbox
-      searchedKey:''
+      //searchbox
+      searchedKey: "",
+      serverImgURL:null,
+
+      //img upload 
+     isUploading:false,
+     showInput:false,
+     isUploaded:false,
+     showSaveBtn:false,
+     isPhotoChanged:false
+
     };
   },
 
-  watch:{
-     searchedKey(val){
-       if(val==''){
-         this.isLoading= true;
-         this.callAPI();
-       }
-     }
+  watch: {
+    searchedKey(val) {
+      if (val == "") {
+        this.isLoading = true;
+        this.callAPI();
+      }
+    },
   },
   mounted() {
     window.scrollTo(0, 0);
   },
   methods: {
-    filterShops(){
+    filterShops() {
       this.allShopData = [];
       // console.log(this.searchedKey);
-      let tempArr=[]
+      let tempArr = [];
       let filteredData = this.preservedData.filter((val, idx) => {
-       tempArr=[];
-      //  tempArr=[val.owenerName.split(" "),val.shopAddress.split(" "),val.shopInfo.split(" "),
-      //  val.shopName.split(" "),val.villageName.split(" "),val.shopType,
-      //  val.mobileNumber1.split(" "),val.mobileNumber2.split(" ")]
-     let tempShopName=val.shopName.split(" ")
-     let tempOwnerName= val.owenerName.split(" ")
-     let tempVillageName=val.shopAddress.split(" ")
-     let tempShopInfo=val.shopInfo.split(" ")
-    //  console.log(val.mobileNumber1);
-     let mobileNumber1=val.mobileNumber.split('')
-   let number1= mobileNumber1.splice(7,10).join('')
+        tempArr = [];
+        //  tempArr=[val.owenerName.split(" "),val.shopAddress.split(" "),val.shopInfo.split(" "),
+        //  val.shopName.split(" "),val.villageName.split(" "),val.shopType,
+        //  val.mobileNumber1.split(" "),val.mobileNumber2.split(" ")]
+        let tempShopName = val.shopName.split(" ");
+        let tempOwnerName = val.owenerName.split(" ");
+        let tempVillageName = val.shopAddress.split(" ");
+        let tempShopInfo = val.shopInfo.split(" ");
+        //  console.log(val.mobileNumber1);
+        let mobileNumber1 = val.mobileNumber.split("");
+        let number1 = mobileNumber1.splice(7, 10).join("");
 
-    let mobileNumber2=val.mobileNumber2.split('')
-   let number2= mobileNumber2.splice(7,10).join('')
-    //  console.log(mobileNumber1);
+        let mobileNumber2 = val.mobileNumber2.split("");
+        let number2 = mobileNumber2.splice(7, 10).join("");
+        //  console.log(mobileNumber1);
 
-      tempArr=[...tempShopName,...tempOwnerName,...tempVillageName,...tempShopInfo,number1,number2];
+        tempArr = [
+          ...tempShopName,
+          ...tempOwnerName,
+          ...tempVillageName,
+          ...tempShopInfo,
+          number1,
+          number2,
+        ];
 
-      console.log('preparedArray', tempArr);
+        console.log("preparedArray", tempArr);
 
+        //  console.log('this is arr',tempArr);
 
-
-
-
-      //  console.log('this is arr',tempArr);
-        
         if (tempArr.includes(this.searchedKey)) {
           // console.log('matched',val);
           return val;
         }
-
-
-
-    
-          
       });
 
-           if (!filteredData.length) {
+      if (!filteredData.length) {
         alert("कोई सर्विस या दुकान नहीं मिली ");
         //  this.allShopData= this.preservedData;
         this.isLoading = true;
-        this.allShopData=[];
+        this.allShopData = [];
         this.callAPI();
-        return
+        return;
       }
 
-this.showCategory = false;
-        this.allShopData = filteredData;
+      this.showCategory = false;
+      this.allShopData = filteredData;
       this.isLoading = false;
-
-      
     },
 
-    filterOnlyCharawan(){
-        // console.log(this.allShopData.length);
-        if(this.updated){
-          this.preservedCurrentData=this.allShopData;
-          this.updated=!this.updated
-          
-        }
-       if(this.showOnlyCharawan=='yes'){
-          let filteredCharawanData = this.allShopData.filter((val, idx) => {
-        if (val.inCharawan=='charawan') {
-          return val;
-        }
-        
-      });
-      this.allShopData =filteredCharawanData;
-      
-       }
+    filterOnlyCharawan() {
+      // console.log(this.allShopData.length);
+      if (this.updated) {
+        this.preservedCurrentData = this.allShopData;
+        this.updated = !this.updated;
+      }
+      if (this.showOnlyCharawan == "yes") {
+        let filteredCharawanData = this.allShopData.filter((val, idx) => {
+          if (val.inCharawan == "charawan") {
+            return val;
+          }
+        });
+        this.allShopData = filteredCharawanData;
+      }
 
-       if(this.showOnlyCharawan=='no'){      
-        this.allShopData =this.preservedCurrentData;
-       }
-
-
-      
-
+      if (this.showOnlyCharawan == "no") {
+        this.allShopData = this.preservedCurrentData;
+      }
     },
 
     filterResult() {
-      this.updated=true;
+      this.updated = true;
       this.isLoading = true;
       this.showCategory = false;
       if (this.selectedFilter == "all") {
@@ -353,7 +421,7 @@ this.showCategory = false;
     },
     callAPI() {
       this.isLoading = true;
-      this.allShopData=[];
+      this.allShopData = [];
       axios
         .get(
           "https://charwan-shops-default-rtdb.firebaseio.com/charawan-shops.json"
@@ -361,34 +429,70 @@ this.showCategory = false;
         .then((res) => {
           //  this.allShopData= res.data;
           for (let i in res.data) {
+            res.data[i].key = i;
             this.allShopData.push(res.data[i]);
           }
 
+          // console.log(  this.allShopData);
+
           for (let i in this.allShopData) {
-
-            // if(this.allShopData[i].openTime>12){
-            //   this.allShopData[i].openTime-=12
-            // }
-
-            // if(this.allShopData[i].closeTime>12){
-            //   this.allShopData[i].closeTime-=12
-            // }
-
-
-            // let currentStamp = new Date().getTime() - this.allNews[i].timeStamp;
-            // let difference = this.calculateTimeago(Date.now() - currentStamp);
-            // this.allNews[i].timeStamp = difference;
           }
-          // console.log(this.allShopData);
+
           this.preservedData = this.allShopData.reverse();
           this.isLoading = false;
-          
         });
     },
     searchClicked() {
       this.showCategory = !this.showCategory;
       window.scrollTo(100, 120);
     },
+    showInputFile(){
+this.showInput=true;
+    },
+
+    fileSelected(e) {
+      // this.showUploadBtn=true
+      this.selectedFile = e.target.files[0];
+      this.uploadImg();
+    },
+    uploadImg() {
+      this.isUploading=true
+
+   
+      const fd = new FormData();
+      fd.append("image", this.selectedFile, this.selectedFile.name);
+
+      axios
+        .post(
+          "https://api.imgbb.com/1/upload?expiration=0&key=45fdf5c62459de1d05f5467a287c5b44",
+          fd
+        )
+        .then((res) => {
+         this.isUploading=false
+         this.isUploaded=true
+         this.showSaveBtn=true
+
+
+          this.serverImgURL = res.data.data.display_url;
+        });
+    },
+
+    updateProfile(shop){
+       this.isUploading=true
+      shop.ownerPhoto=this.serverImgURL
+      let key= shop.key;
+      axios.put(`https://charwan-shops-default-rtdb.firebaseio.com/charawan-shops/${key}.json`,shop)
+      .then(res=>{
+        this.isUploading=false
+        this.showSaveBtn=false
+          alert('प्रोफाइल फोटो सफलता पूर्वक बदल दी गयी है  ,दोबारा बदलने के लिए फिर से फोटो पर फिर से क्लिक करें ')
+          
+      })
+     .catch(err=>{
+         alert('सर्वर डाउन हो सकता हैं, कुछ समय बाद प्रयास करें  ')
+     })
+
+    }
   },
   created() {
     this.callAPI();
@@ -412,8 +516,6 @@ this.showCategory = false;
 small {
   font-weight: bold;
 }
-
-
 
 .call-btn {
   border-radius: 0px;
@@ -440,20 +542,47 @@ small {
     max-width: 350px;
   }
 }
-.shop-footer{
+.shop-footer {
   height: 50px;
-  background: linear-gradient(360deg,rgb(103, 93, 252),rgb(39, 77, 248));
+  background: linear-gradient(360deg, rgb(103, 93, 252), rgb(39, 77, 248));
   width: 100%;
   /* border: 2px dashed black; */
   border-top: none;
 }
-.footer-btns{
+.footer-btns {
   font-weight: 600;
   color: white;
 }
-.counter{
+.counter {
   /* background: black; */
   height: 30px;
 }
 
+.dummy-profile {
+  border-radius: 50%;
+  border: 1px dotted blue;
+}
+.main-profile{
+   border-radius: 50%;
+  /* border: 2px solid rgb(0, 0, 0); */
+  box-shadow: 6px 7px 14px -1px rgba(0,0,0,0.56);
+-webkit-box-shadow: 6px 7px 14px -1px rgba(0,0,0,0.56);
+-moz-box-shadow: 6px 7px 14px -1px rgba(0,0,0,0.56);
+}
+.popItup{
+  animation: popup 2s linear 0s infinite alternate;
+}
+
+@keyframes popup {
+  0%{
+    transform: scale(1);
+  }
+  0%{
+    transform: scale(.8);
+  }
+  100%{
+    transform: scale(1);
+  }
+  
+}
 </style>
