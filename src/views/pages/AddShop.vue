@@ -42,7 +42,7 @@
             <input
               type="text"
               class="form-control"
-              v-model="shopName"
+              v-model.trim="shopName"
               required=""
               id="exampleFormControlInput1"
               maxlength="40"
