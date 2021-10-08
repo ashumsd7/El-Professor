@@ -128,7 +128,7 @@
 
               
               
-              <input v-if="showInput && !isUploading && !isUploaded"
+              <input v-if="showInput "
                class="d-block popItup" type="file" @change="fileSelected"
                accept="image/x-png,image/jpeg"
                 name="" id="">
@@ -478,6 +478,7 @@ this.showInput=true;
          this.isUploading=false
          this.isUploaded=true
          this.showSaveBtn=true
+         this.showInput=false
 
 
           this.serverImgURL = res.data.data.display_url;
