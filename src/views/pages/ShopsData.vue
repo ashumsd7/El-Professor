@@ -138,6 +138,7 @@
             width="24"
             alt=""
             class="d-block"
+
             srcset=""
             
           />
@@ -149,8 +150,9 @@
                 height="70"
                 class="border-1 dummy-profile"
                 srcset=""
-                @click="showInputFile"
+                @click="contact()"
               />
+                <!-- @click="showInputFile()" -->
 
               <img v-if="data.ownerPhoto"
                 :src="data.ownerPhoto"
@@ -159,9 +161,10 @@
                 height="70"
                 class="border-1 main-profile mb-2"
                 srcset=""
+                @click="contact()"
 
-                @click="showInputFile"
               />
+                <!-- @click="showInputFile" -->
 
               <shop-sharing :data='data' class="shop-sharing"></shop-sharing>
 
@@ -180,8 +183,8 @@
             <span class="d-block fw-bold text-primary">
               {{ data.villageName }} {{ data.shopAddress }}</span
             >
-            <span class="badge rounded-pill bg-white d-block"
-              ><span
+            <span class="badge rounded-pill bg-white d-block" v-if="data.closedOn"
+              ><span 
                 class="text-danger"
                 v-for="day in data.closedOn"
                 :key="day"
@@ -326,6 +329,9 @@ export default {
     window.scrollTo(0, 0);
   },
   methods: {
+    contact(){
+      alert('अगर आप फोटो बदलना चाहते हैं या फिर आपके द्वारा दी गयी जानकरी में कुछ बदलाव करना चाहते हैं तो निचे सम्पर्क करें पर क्लिक करके वेबसाइट मैनेजर से बात करके कुछ मिनट में बदलाव करवा सकते हैं वेबसाइट विजिट करने के लिए आपका बहुत बहुत धन्यवाद  ')
+    },
     filterShops() {
       this.allShopData = [];
       // console.log(this.searchedKey);
@@ -454,6 +460,7 @@ export default {
       window.scrollTo(100, 120);
     },
     showInputFile(){
+      
 this.showInput=true;
     },
 
@@ -532,7 +539,7 @@ small {
 }
 .shop-card {
   border-radius: 10px;
-  background: #fcfbfb;
+  background: linear-gradient(210deg,rgb(245, 242, 242),rgb(243, 243, 223));
   border: 0.5px dotted rgb(88, 88, 88);
 
   box-shadow: 7px 7px 14px #bebebe, -7px -7px 14px #ffffff;

@@ -13,7 +13,7 @@
           करिये
         </label>
         <success-dialog @addMore='showDialog=!showDialog'  v-if="showDialog" > 
-          <span class="badge bg-danger">{{shopName}}</span>   अब वेबसाइट पर दिखेगी   | </success-dialog>
+          <span class="badge bg-danger">{{shopName}}</span>   को सफलता पूर्वक  <span class="text-danger">चरावां की वेबसाइट</span> पर जोड़ दिया गया है   | </success-dialog>
         <small class="text-muted mb-3 " v-if="!showDialog"
           >**अगर आप एक से ज्यादा सर्विस देते हैं तो एक से ज्यादा सर्विस पर टिक
           करिये |</small
@@ -143,7 +143,8 @@
         <div class="col-lg-4">
           <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label mt-2">
-             #8. क्या दुकान / सर्विस किसी दिन बंद रहती है ? यदि हाँ दिन लिखें
+             #8. जिस दिन दुकान बंद रहती है टिक करें |  अगर हर दिन खुली रहती है कुछ न करें आगे बढ़ें 
+             
             </label>
 
             <input
@@ -250,13 +251,13 @@
           </div>
         </div>
 
-        <small class="text-info p-3"
+        <!-- <small class="text-info p-3"
           >अगर आप के पास आके दुकान की फोटो की लिंक और आपके फोटो की लिंक है तो
           नीचे दिए गए बॉक्स में लिखे नहीं तो इसे छोड़ दें और निचे
           <span class="text-danger">'जानकारी सेव करे'</span> वाली बटन पर क्लिक
           कर के व्हाट्सप्प के माध्यम से फोटो भेजें
-        </small>
-        <div class="col-lg-4">
+        </small> -->
+        <!-- <div class="col-lg-4">
           <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label mt-2">
              #12. अगर चाहें अपने दुकान / सर्विस की फोटो का link डालें
@@ -269,20 +270,32 @@
               placeholder="दुकान/सर्विस की फोटो का link डालें"
             />
           </div>
-        </div>
+        </div> -->
 
         <div class="col-lg-4">
           <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label mt-2">
-             #13. अगर चाहें दुकान / सर्विस के मालिक की फोटो का link डालें
+             #13. अगर चाहें अपनी दुकान या सर्विस का कार्ड , अपनी फोटो , या दुकान की फोटो या फिर कोई पहचान अपलोड करें जिससे लोगों को आपके बारे में जानने में आसानी हो |
             </label>
-            <input
-              type="text"
-              class="form-control"
-              v-model="owenerPhoto"
-              id=""
-              placeholder="मालिक की फोटो का link डालें "
-            />
+             <input 
+               class="d-block popItup mb-2" type="file" @change="fileSelected"
+               accept="image/x-png,image/jpeg"
+                name="" id="">
+
+          <small v-if="owenerPhoto" class="d-block text-danger">
+            फोटो कुछ ऐसी दिखाई देगी अगर सही नहीं है तो फिर से अपलोड कर सकते हैं |
+            अगर सही है तो <span class="text-success fw-bold">'जानकारी सेव करें'</span> बटन पर क्लिक करिये  |</small>
+                 <img
+            src="../../assets/refreshing.gif"
+           v-if="isUploading"
+             width="40"
+            alt=""
+            class="d-block"
+            srcset=""
+            
+          />
+
+                <img v-if="owenerPhoto" :src="owenerPhoto" width="70" height="70" class="showImg" alt="">
           </div>
         </div>
       </div>
@@ -425,8 +438,13 @@ export default {
       submitData: {},
       shopAddress:'',
       owenerPhoto:'',
-      shopPhotos:'',
-      isDisabled:false
+      shopPhotos:null,
+      isDisabled:false,
+
+
+    selectedFile:'',
+    isUploading:false
+
     };
   },
   
@@ -439,13 +457,41 @@ export default {
       .then(res=>{
         //   alert('डेटा सुरक्षित कर लिया  गया है')
         this.showDialog=true;
-        window.scrollTo(0, 0);
+        window.scrollTo(0, 200);
         this.isDisabled= false;
           
       })
      .catch(err=>{
          alert('सर्वर डाउन हो सकता हैं, कुछ समय बाद प्रयास करें  ')
      })
+    },
+
+     fileSelected(e) {
+      // this.showUploadBtn=true
+
+      this.selectedFile = e.target.files[0];
+      this.uploadImg();
+    },
+    uploadImg() {
+       this.isDisabled= true;
+       this.isUploading=true
+
+   
+      const fd = new FormData();
+      fd.append("image", this.selectedFile, this.selectedFile.name);
+
+      axios
+        .post(
+          "https://api.imgbb.com/1/upload?expiration=0&key=45fdf5c62459de1d05f5467a287c5b44",
+          fd
+        )
+        .then((res) => {
+         
+
+             this.isDisabled= false;
+             this.isUploading= false
+          this.owenerPhoto = res.data.data.display_url;
+        });
     },
     validateData() {
         // this.showDialog=true;
@@ -524,5 +570,8 @@ label {
 .form-label{
     color: rgb(69, 96, 252);
 
+}
+.showImg{
+  border-radius: 50%;
 }
 </style>

@@ -12,15 +12,15 @@
         <div class="col-12">
           <img
             class="mb-4"
-            width="300"
-            height="250"
+            width="220"
+            height="215"
             src="../../../assets/tick.gif"
             alt=""
             srcset=""
           />
-          <h3 class="text-center d-block">
+          <h4 class="text-center d-block">
             <slot></slot>
-          </h3>
+          </h4>
           <div class="text-center mb-2 d-block">
             <a
               class="text-dark"
