@@ -12,6 +12,9 @@ import MainHeading from './components/reusable/slots/MainHeading.vue'
 import SubHeading from './components/reusable/slots/SubHeading.vue'
 import MainContent from './components/reusable/slots/MainContent.vue'
 import SuccessDialog from './components/reusable/slots/SuccessDialog.vue'
+import VueSocialSharing from 'vue-social-sharing'
+
+
 
 
 
@@ -19,7 +22,7 @@ import SuccessDialog from './components/reusable/slots/SuccessDialog.vue'
 
 
 
-const vm= createApp(App).use(store).use(router)
+const vm= createApp(App).use(store).use(router).use(VueSocialSharing)
 vm.component('top-banner', TopBanner)
 vm.component('main-heading', MainHeading)
 vm.component('sub-heading', SubHeading)

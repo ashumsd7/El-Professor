@@ -124,7 +124,7 @@
             v-for="data in allShopData"
             :key="data.shopName"
           >
-            <div  class="profile-img mb-1">
+            <div  class="profile-img mb-1 position-relative">
 
               
               
@@ -162,6 +162,10 @@
 
                 @click="showInputFile"
               />
+
+              <shop-sharing :data='data' class="shop-sharing"></shop-sharing>
+
+   
 
               
               
@@ -272,10 +276,13 @@
 </template>
 
 <script>
-// import ShopFilter from "../../components/filter/ShopFilter.vue";
+import ShopSharing from "../../components/shops/ShopSharing.vue";
 import axios from "axios";
 
 export default {
+  components:{
+    ShopSharing
+  },
   computed: {
     getFilters() {
       return this.$store.getters.getFilters;
@@ -572,6 +579,11 @@ small {
 .popItup{
   animation: popup 2s linear 0s infinite alternate;
 }
+.shop-sharing{
+position: absolute;
+top: 0;
+right: 0;
+}
 
 @keyframes popup {
   0%{
@@ -583,6 +595,7 @@ small {
   100%{
     transform: scale(1);
   }
-  
+
+
 }
 </style>

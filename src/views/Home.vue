@@ -9,6 +9,8 @@
     <counter></counter>
 
     <cricket-cup></cricket-cup>
+
+
     <authority-glance></authority-glance>
 
     <div class="shop-footer fixed-bottom d-lg-none d-block">
