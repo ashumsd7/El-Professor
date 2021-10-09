@@ -176,10 +176,15 @@
               
             </div>
             <h5 class="fw-bolder">{{ data.shopName }}</h5>
-            <small v-if="data.owenerName" class="d-block"
-              ><span class="text-muted">मालिक:</span>
+           <div class="owner-name-container position-relative">
+              <small v-if="data.owenerName" class="d-block owner-name text-muted"
+              >
+              <span class="text-muted">
+                <!-- मालिक: -->
+                👨‍💼</span>
               {{ data.owenerName }}</small
             >
+           </div>
             <span class="d-block fw-bold text-primary">
               {{ data.villageName }} {{ data.shopAddress }}</span
             >
@@ -193,6 +198,11 @@
               ></span
             >
 
+
+            <p class="text-muted">
+              <small>{{ data.shopInfo }}</small>
+            </p>
+
             <span
               v-if="data.openTime"
               class="badge rounded-pill bg-light text-dark d-block"
@@ -201,11 +211,6 @@
               <small class="text-muted">बजे से </small> | {{ data.closeTime
               }}<small class="text-muted"> बजे तक </small></span
             >
-
-            <p class="text-muted">
-              <small>{{ data.shopInfo }}</small>
-            </p>
-
             <span class="badge rounded-pill bg-dark call-btn me-3 mt-2"
               ><a
                 class="text-decoration-none text-white"
@@ -591,6 +596,11 @@ small {
 position: absolute;
 top: 0;
 right: 0;
+}
+.owner-name{
+  position: absolute;
+  top: -120px;
+  left: 0;
 }
 
 @keyframes popup {
