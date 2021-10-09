@@ -185,6 +185,10 @@
               {{ data.owenerName }}</small
             >
            </div>
+           <div class="numbers">
+             <a class="d-block text-decoration-none " :href="data.mobileNumber1">☎️<small> {{prepareNumber1(data)}}</small></a>
+             <a class="d-block text-decoration-none" v-if="data.mobileNumber2" :href="data.mobileNumber2"><span v-if="data.mobileNumber2!='tel:+91'">☎️</span><small> {{prepareNumber2(data)}}</small></a>
+           </div>
             <span class="d-block fw-bold text-primary">
               {{ data.villageName }} {{ data.shopAddress }}</span
             >
@@ -237,7 +241,7 @@
             <small class="d-block text-muted fw-lighter mt-2"
               >फ़ोन न मिल रहा हो या किसी सुधार के लिए
               <a href="https://chat.whatsapp.com/LgCz9l1tWQKKJe6OQ5n8Zt"
-                >सम्पर्क करें</a
+                >सम्पर्क करें  </a
               ></small
             >
 
@@ -320,6 +324,7 @@ export default {
     getFilters() {
       return this.$store.getters.getFilters;
     },
+
   },
   data() {
     return {
@@ -362,6 +367,24 @@ export default {
     contact(){
       alert('अगर आप फोटो बदलना चाहते हैं या फिर आपके द्वारा दी गयी जानकरी में कुछ बदलाव करना चाहते हैं तो निचे सम्पर्क करें पर क्लिक करके वेबसाइट मैनेजर से बात करके कुछ मिनट में बदलाव करवा सकते हैं वेबसाइट विजिट करने के लिए आपका बहुत बहुत धन्यवाद  ')
     },
+
+           prepareNumber1(data){
+            
+           let number= data.mobileNumber.split('');
+            number = number.splice(7,10).join('')
+           return number
+          },
+          prepareNumber2(data){
+            
+            if(data.mobileNumber2!='tel:+91'){
+               let number= data.mobileNumber2.split('');
+            number = number.splice(7,10).join('')
+           return number
+            }
+            else{
+              return ''
+            }
+          },
     filterShops() {
       if(this.searchedKey==''){
         alert('आप आखिर सर्च क्या करना चाहते हैं कुछ तो लिखिए')
@@ -574,7 +597,7 @@ small {
 .shop-card {
   border-radius: 10px;
   background: linear-gradient(210deg,rgb(245, 242, 242),rgb(243, 243, 223));
-  border: 0.5px dotted rgb(88, 88, 88);
+  border: 0.8px solid rgb(0, 0, 0);
 
   box-shadow: 7px 7px 14px #bebebe, -7px -7px 14px #ffffff;
 }
@@ -637,7 +660,7 @@ right: 0;
   /* left: 0; */
   bottom: 0;
   right: 0px;
-  opacity: .2;
+  opacity: .1;
 
 }
 .leaf-img2{
@@ -647,6 +670,15 @@ right: 0;
   left: 0px;
   opacity: .1;
 
+}
+.numbers{
+  position: absolute;
+   top: 20px;
+  left: 10px;
+  
+}
+.numbers a small{
+  font-size: .7rem;
 }
 @keyframes popup {
   0%{
