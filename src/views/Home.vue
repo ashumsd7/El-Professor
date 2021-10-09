@@ -1,7 +1,10 @@
 <template>
   <div class="home">
-    <home-glance></home-glance>
     <celebration-wall></celebration-wall>
+
+    <home-glance></home-glance>
+    <marquee class="text-danger fw-bolder d-none d-lg-block fs-2 ">🙏चरावां गांव की ओर से आप सभी को नवरात्री  की ढेरों   शुभकामनाएं  
+🙏</marquee>
    
 
     <important-links id="notify"></important-links>
