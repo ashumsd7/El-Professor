@@ -120,7 +120,7 @@
             >कृपया इंतज़ार करिये दुकानें लोड हो रही हैं
           </span>
           <div
-            class="col-lg-4 col-md-6 col-12 shop-card p-2 ms-2 mt-2 mt-lg-4"
+            class="col-lg-4 col-md-6 col-12 shop-card p-2 ms-2 mt-2 mt-lg-4 position-relative"
             v-for="data in allShopData"
             :key="data.shopName"
           >
@@ -176,7 +176,7 @@
               
             </div>
             <h5 class="fw-bolder">{{ data.shopName }}</h5>
-           <div class="owner-name-container position-relative">
+           <div class="owner-name-container position-relative mt-1">
               <small v-if="data.owenerName" class="d-block owner-name text-muted"
               >
               <span class="text-muted">
@@ -240,6 +240,31 @@
                 >सम्पर्क करें</a
               ></small
             >
+
+            <img
+           
+            
+            src="../../assets/leaf.png"
+            width="250"
+            height="200"
+            class=" leaf-img position-absolute"
+            alt=""
+            
+            srcset=""
+          />
+
+           <img
+           
+            
+            src="../../assets/leaf2.png"
+            width="250"
+            height="200"
+            class=" leaf-img2 position-absolute"
+            alt=""
+            
+            srcset=""
+          />
+
           </div>
         </div>
       </div>
@@ -607,6 +632,22 @@ right: 0;
   left: 0;
 }
 
+.leaf-img{
+  position: absolute;
+  /* left: 0; */
+  bottom: 0;
+  right: 0px;
+  opacity: .2;
+
+}
+.leaf-img2{
+  position: absolute;
+  /* left: 0; */
+  top: 0;
+  left: 0px;
+  opacity: .1;
+
+}
 @keyframes popup {
   0%{
     transform: scale(1);
