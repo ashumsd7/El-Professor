@@ -217,7 +217,7 @@
             >
             <span class="badge rounded-pill bg-dark call-btn me-3 mt-2"
               ><a
-                class="text-decoration-none text-white"
+                class="text-decoration-none text-white "
                 :href="data.mobileNumber"
               >
                 <img src="../../assets/telephone.png" alt="" srcset="" />
@@ -592,6 +592,8 @@ small {
 .call-btn {
   border-radius: 0px;
   background: #000000;
+  position: relative;
+  z-index: 10;
   box-shadow: inset 7px 7px 14px #000000, inset -7px -7px 14px #000000;
 }
 .shop-card {
