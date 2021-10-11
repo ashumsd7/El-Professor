@@ -57,6 +57,10 @@
             v-for="check in getFilters"
             :key="check.value"
           >
+
+             
+          
+
             <input
               type="radio"
               :id="check.value"
@@ -65,7 +69,14 @@
               v-model="selectedFilter"
               class="radio-input"
             />
-            <small for="jack" class="ms-2 input-title">{{ check.title }}</small>
+
+            <img 
+                  :src="require(`../../assets/filters/${check.value}.png`)"
+                  alt=""
+                  srcset=""
+                />
+             
+            <small for="jack"  class="ms-2 input-title">{{ check.title }}</small>
             <!-- <button class=" input-title">{{ check.title }}</button> -->
           </div>
         </div>
@@ -464,6 +475,8 @@ export default {
     },
 
     filterResult() {
+     
+      
       this.updated = true;
       this.isLoading = true;
       this.showCategory = false;
@@ -474,6 +487,7 @@ export default {
         this.isLoading = false;
         return;
       }
+      
       let filteredData = this.preservedData.filter((val, idx) => {
         if (val.shopType.includes(this.selectedFilter)) {
           return val;
