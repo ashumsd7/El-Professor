@@ -490,7 +490,7 @@ export default {
     },
 
     filterResult() {
-      alert(this.selectedFilter)
+      // alert(this.selectedFilter)
      
       
       this.updated = true;
