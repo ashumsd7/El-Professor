@@ -45,7 +45,7 @@
       "shopInfo" : "सिलाई में 20 वर्षों से ज्यादा का अनुभव ",
       "shopName" : "बॉम्बे टेलर्स",
       "shopPhotos" : "",
-      "shopType" : [ "tailor " ],
+      "shopType" : [ "tailor" ],
       "villageName" : "चरावां"
     },
     "-MkXEYIg-HCWSla7UR88" : {
@@ -78,7 +78,7 @@
       "shopInfo" : "मोबाइल एक्सेस्सरीज़ और ऑनलाइन वर्क जैसे फोटो कॉपी आदि के लिए सम्पर्क करें इलेक्ट्रिक सामन भी उपलब्ध हैं ",
       "shopName" : "अरुण कम्युनिकेशन",
       "shopPhotos" : "",
-      "shopType" : [ "mobileStore", "mobileRepair ", "photoStudio ", "prinitng", "electronic" ],
+      "shopType" : [ "mobileStore", "mobileRepair", "photoStudio", "prinitng", "electronic" ],
       "villageName" : "चरावां"
     },
     "-MkXHlBD0W8358OrHGrn" : {
@@ -94,7 +94,7 @@
       "shopInfo" : "चायपत्ती सेलर",
       "shopName" : "शिवम टी सेंटर",
       "shopPhotos" : "",
-      "shopType" : [ "others   " ],
+      "shopType" : [ "others" ],
       "villageName" : "चरावां"
     },
     "-MkXIGyI6ERXO-hg31A8" : {
@@ -110,7 +110,7 @@
       "shopInfo" : "गेहूं की पिसाई और सरसो की पेराई होती है मोबिल आयल भी उपलब्ध है ",
       "shopName" : "आटा चक्की",
       "shopPhotos" : "",
-      "shopType" : [ "chakki " ],
+      "shopType" : [ "chakki" ],
       "villageName" : "चरावां"
     },
     "-MkXJRAqoZSo6OVTTw2d" : {
@@ -174,7 +174,7 @@
       "shopInfo" : "चाय समोसा मिठाई उपलब्ध ",
       "shopName" : "जायसवाल स्वीट हाउस ",
       "shopPhotos" : "",
-      "shopType" : [ "fastfood", "hotel", "coldDrink " ],
+      "shopType" : [ "fastfood", "hotel", "coldDrink" ],
       "villageName" : "चरावां"
     },
     "-MkXLVkgcux7-q9ZiP7a" : {
@@ -206,7 +206,7 @@
       "shopInfo" : "",
       "shopName" : "लवकुश डी जे एंड लाइट हाउस",
       "shopPhotos" : "",
-      "shopType" : [ "lightHouse  ", "soundServie  ", "dj   ", "decoration   " ],
+      "shopType" : [ "lightHouse", "soundServie", "dj", "decoration" ],
       "villageName" : "बराव"
     },
     "-MkY5-tIzWj-J2gFLaYI" : {
@@ -238,7 +238,7 @@
       "shopInfo" : "शादी विवाह पार्टी के लिए टेंट आदि के लिए सम्पर्क करें ",
       "shopName" : "जनता टेंट हाउस",
       "shopPhotos" : "",
-      "shopType" : [ "tentHouse  " ],
+      "shopType" : [ "tentHouse" ],
       "villageName" : "चरावां"
     },
     "-MkY6dLla5BuIaZCTy5q" : {
@@ -255,7 +255,7 @@
       "shopInfo" : "जलेबी, ब्रेड पकोड़ा, चना समोसा, चाय ",
       "shopName" : "शर्मा जलेबी ",
       "shopPhotos" : "",
-      "shopType" : [ "hotel", "fastfood", "coldDrink " ],
+      "shopType" : [ "hotel", "fastfood", "coldDrink" ],
       "villageName" : "कोदैला"
     },
     "-MkYHMsTvmjk7eu1Bx5K" : {
@@ -271,7 +271,7 @@
       "shopInfo" : "कार्ड प्रिंटिंग एवं विडिओग्राफी के लिए सम्पर्क करें ",
       "shopName" : "राधा स्टूडियो & प्रिंटिंग प्रेस",
       "shopPhotos" : "",
-      "shopType" : [ "prinitng", "photoStudio ", "cycleStore" ],
+      "shopType" : [ "prinitng", "photoStudio", "cycleStore" ],
       "villageName" : "चरावां"
     },
     "-MkYlWTZZLXS8vu94AJe" : {
@@ -303,7 +303,7 @@
       "shopInfo" : "छोला भटूरा , फ्राई राइस , बाटी चोखा , बर्गर ,कोल्डड्रिंक, चाउमीन, पनीर चिल्ली",
       "shopName" : "कृष फ़ास्ट फ़ूड कार्नर",
       "shopPhotos" : "",
-      "shopType" : [ "coldDrink ", "fastfood", "hotel" ],
+      "shopType" : [ "coldDrink", "fastfood", "hotel" ],
       "villageName" : "बीकापुर"
     },
     "-MkbETDXsiMTC7qeSXWY" : {
@@ -319,7 +319,7 @@
       "shopInfo" : "शादी पार्टी में डी जे लाइट के लिए बुकिंग ",
       "shopName" : "श्री लक्ष्मीनारायण साउंड & लाइट हाउस ",
       "shopPhotos" : "",
-      "shopType" : [ "lightHouse  ", "soundServie  ", "dj   " ],
+      "shopType" : [ "lightHouse", "soundServie", "dj" ],
       "villageName" : "चरावां"
     },
     "-Mkeoukhsd-u7c9FzJFD" : {
@@ -336,7 +336,7 @@
       "shopInfo" : "खाद और कीटनाशी सरकारी दाम पर उपलब्ध धान व् गेंहूं का क्रय होता है ",
       "shopName" : "सरकारी गोदाम",
       "shopPhotos" : "",
-      "shopType" : [ "others   ", "beej", "charawanOffice" ],
+      "shopType" : [ "others", "beej", "charawanOffice" ],
       "villageName" : "चरावां"
     },
     "-Mker4aZUcvHM6CZ_iUI" : {
@@ -352,7 +352,7 @@
       "shopInfo" : "खेत जोतने के लिए व् ट्रॉली आदि के लिए सम्पर्क करें ",
       "shopName" : "मुंशी ट्रैक्टर ट्रॉली",
       "shopPhotos" : "",
-      "shopType" : [ "tractors   " ],
+      "shopType" : [ "tractors" ],
       "villageName" : "कोदैला"
     },
     "-Mkew4aBWR8CB_m1iOio" : {
@@ -368,7 +368,7 @@
       "shopInfo" : "बस रोज़ जाने बाजार से होते हुए वाया चरावां फैज़ाबाद जाती है १० बजे चरावां से गुजरती है ",
       "shopName" : "10 बजे बस ",
       "shopPhotos" : "",
-      "shopType" : [ "busService  ", "taxi " ],
+      "shopType" : [ "busService", "taxi" ],
       "villageName" : "चरावां"
     },
     "-MkewgjBkwCAt2ZNxODt" : {
@@ -384,7 +384,7 @@
       "shopInfo" : "बुकिंग आदि के लिए उपलब्ध",
       "shopName" : "थ्री व्हीलर टेम्पो",
       "shopPhotos" : "",
-      "shopType" : [ "taxi " ],
+      "shopType" : [ "taxi" ],
       "villageName" : "गैनी"
     },
     "-MkexBTi3rTNDFnGtPKK" : {
@@ -401,7 +401,7 @@
       "shopInfo" : "",
       "shopName" : "डॉक्टर उपाध्याय ",
       "shopPhotos" : "",
-      "shopType" : [ "doctors " ],
+      "shopType" : [ "doctors" ],
       "villageName" : "चरावां"
     },
     "-Mkexp-VFjhoogd9q5jc" : {
@@ -417,7 +417,7 @@
       "shopInfo" : "",
       "shopName" : "डॉक्टर शर्मा",
       "shopPhotos" : "",
-      "shopType" : [ "doctors " ],
+      "shopType" : [ "doctors" ],
       "villageName" : "चरावां"
     },
     "-Mkey_us1Vvhc6cOHzRz" : {
@@ -433,7 +433,7 @@
       "shopInfo" : "चरावां से रोज़ लखनऊ जाती है ",
       "shopName" : "महादेव बस सर्विस (लखनऊ तक)",
       "shopPhotos" : "",
-      "shopType" : [ "taxi ", "busService  " ],
+      "shopType" : [ "taxi", "busService" ],
       "villageName" : "चरावां"
     },
     "-MkeyzugIsB0JyxUOtL3" : {
@@ -449,7 +449,7 @@
       "shopInfo" : "किसी भी प्रकार की सिलाई का वर्षो का अनुभव",
       "shopName" : "लाली टेलर्स",
       "shopPhotos" : "",
-      "shopType" : [ "tailor " ],
+      "shopType" : [ "tailor" ],
       "villageName" : "रामपुर भगन"
     },
     "-MkezGndZNqRQJ1Ple7p" : {
@@ -465,7 +465,7 @@
       "shopInfo" : "शादी व् पार्टी में बुकिंग के लिए सम्पर्क करें ",
       "shopName" : "सभाजीत कैटर्स",
       "shopPhotos" : "",
-      "shopType" : [ "cetters  " ],
+      "shopType" : [ "cetters" ],
       "villageName" : "कोदैला"
     },
     "-Mkf-3ywsHJcdq4RTx3p" : {
@@ -481,7 +481,7 @@
       "shopInfo" : "प्रमाणपत्र बनवाने के लिए फॉर्म ऑनलाइन भरने के लिए बैंकिंग काम हेतु सम्पर्क करें स्टेशनरी सामान भी उपलब्ध है ",
       "shopName" : "इंडियन कंप्यूटर्स",
       "shopPhotos" : "",
-      "shopType" : [ "janSewaKendra", "bank", "prinitng", "photoStudio ", "stationery " ],
+      "shopType" : [ "janSewaKendra", "bank", "prinitng", "photoStudio", "stationery" ],
       "villageName" : "चरावां"
     },
     "-Mkf-oaweB-c9tgSdnhE" : {
@@ -497,7 +497,7 @@
       "shopInfo" : "",
       "shopName" : "पंडित नीरज",
       "shopPhotos" : "",
-      "shopType" : [ "pandit " ],
+      "shopType" : [ "pandit" ],
       "villageName" : "चरावां"
     },
     "-Mkf0QXiiJWqp1VjBLoM" : {
@@ -562,7 +562,7 @@
       "shopInfo" : "",
       "shopName" : "फूल माली सर्विस( रोज़ के लिए)",
       "shopPhotos" : "",
-      "shopType" : [ "maali   " ],
+      "shopType" : [ "maali" ],
       "villageName" : "रामपुर भगन"
     },
     "-Mkf5aSxMbz0bDm8_Ogr" : {
@@ -626,7 +626,7 @@
       "shopInfo" : "ताज़ा  पनीर  दूध समोसा मटर कोल्ड्रिंक इमिरती जलेबी ब्रेड पकोड़ा अवं ताज़ी मिठाईओं के बुकिंग हेतु सम्पर्क करें ",
       "shopName" : "यादव मिष्ठान भंडार (मंसाराम)",
       "shopPhotos" : "",
-      "shopType" : [ "fastfood", "coldDrink ", "hotel" ],
+      "shopType" : [ "fastfood", "coldDrink", "hotel" ],
       "villageName" : "रामपुर भगन"
     },
     "-MkfOGkf3_uRF8uEU07R" : {
@@ -642,7 +642,7 @@
       "shopInfo" : "ताज़ा केक ,पेटीज, और बेकरी आइटम्स के लिए सम्पर्क करें , कोल्ड ड्रिंक्स भी उपलब्ध है ",
       "shopName" : "बाबा बेकरी",
       "shopPhotos" : "",
-      "shopType" : [ "backery ", "coldDrink " ],
+      "shopType" : [ "backery", "coldDrink" ],
       "villageName" : "रामपुर बाजार इंडिया वन ATM के सामने "
     },
     "-MkfU6Zld2Hs6Wrq_CP2" : {
@@ -674,7 +674,7 @@
       "shopInfo" : "",
       "shopName" : "पंडित संतोष मिश्रा",
       "shopPhotos" : "",
-      "shopType" : [ "pandit " ],
+      "shopType" : [ "pandit" ],
       "villageName" : "मिश्र का पूरा, बराव"
     },
     "-Mkf_QyKV1THXcP_3xLS" : {
@@ -845,7 +845,7 @@
       "shopInfo" : "",
       "shopName" : "पंडित अखिलेश मिश्र",
       "shopPhotos" : "",
-      "shopType" : [ "pandit " ],
+      "shopType" : [ "pandit" ],
       "villageName" : "मिश्र का पूरा, बराव"
     },
     "-MkgJ6rwhDVLIq-vGtZm" : {
@@ -861,7 +861,7 @@
       "shopInfo" : "शादी पार्टी या किसी भी मौके पर बोलेरो बुकिंग के लिए सम्पर्क करें ",
       "shopName" : "बोलेरो (किराये पर)",
       "shopPhotos" : "",
-      "shopType" : [ "rentCars " ],
+      "shopType" : [ "rentCars" ],
       "villageName" : "शिवरामपुर गाँव"
     },
     "-Mkh5zg7JL3y3jZtLtDs" : {
@@ -909,7 +909,7 @@
       "shopInfo" : "आपके  सेवा के लिए पिकअप तैयार अभी कॉल करें ",
       "shopName" : "पिकअप सर्विस",
       "shopPhotos" : "",
-      "shopType" : [ "pickup " ],
+      "shopType" : [ "pickup" ],
       "villageName" : "चरावां"
     },
     "-MkiCVF9Cs6RJ8HM6feq" : {
@@ -941,7 +941,7 @@
       "shopInfo" : "इलेक्ट्रिक और हार्डवेयर सामान उपलब्ध साइकिल एवं बाइक का पंचर भी बनाया जाता है ",
       "shopName" : "शादाब इलेक्ट्रिक एंड हार्डवेयर",
       "shopPhotos" : "",
-      "shopType" : [ "cycleStore", "bikeRepair", "electronic", "dieselPetrol " ],
+      "shopType" : [ "cycleStore", "bikeRepair", "electronic", "dieselPetrol" ],
       "villageName" : "गैनी"
     },
     "-MkjfVjmYPi8_UzYzmga" : {
@@ -957,7 +957,7 @@
       "shopInfo" : "",
       "shopName" : "मौर्या टेंट हाउस",
       "shopPhotos" : "",
-      "shopType" : [ null, "tentHouse  " ],
+      "shopType" : [ null, "tentHouse" ],
       "villageName" : "गैनी"
     },
     "-MklDOCkuxqWgzXTmSWT" : {
@@ -973,23 +973,7 @@
       "shopInfo" : "आटा चक्की सरसो तेल सहित कॉस्मेटिक सामान कोल्ड्रिंक और गैस चूल्हा भी रिपेयर होता है ",
       "shopName" : "अशोक मल्टी शॉप",
       "shopPhotos" : "",
-      "shopType" : [ "stationery ", "cosmetic", "gasChulhaRepair ", "coldDrink ", "chakki ", "dieselPetrol " ],
-      "villageName" : "चरावां"
-    },
-    "-Mkli7n-8kASMfxjWZui" : {
-      "closeTime" : "",
-      "inCharawan" : "charawan",
-      "key" : "-Mkli7n-8kASMfxjWZui",
-      "mobileNumber" : "tel:+919616137795",
-      "mobileNumber2" : "tel:+91",
-      "openTime" : "",
-      "owenerName" : "अध्यापक ( ग्रा. वि. इ. कॉलेज कोदैला )",
-      "ownerPhoto" : "https://i.ibb.co/9G8vrZx/images-61.jpg",
-      "shopAddress" : "डिग्री कॉलेज के सामने,  लकी गारमेंट्स के पास",
-      "shopInfo" : "",
-      "shopName" : "जितेंद्र सर",
-      "shopPhotos" : "",
-      "shopType" : [ "coaching" ],
+      "shopType" : [ "stationery", "cosmetic", "gasChulhaRepair", "coldDrink", "chakki", "dieselPetrol" ],
       "villageName" : "चरावां"
     },
     "-Mklicx76t_234BP7YVL" : {
@@ -1003,7 +987,7 @@
       "ownerPhoto" : "https://i.ibb.co/fGGvLNZ/images-60.jpg",
       "shopAddress" : "पुलिस चौकी के बगल",
       "shopInfo" : "",
-      "shopName" : "ठेला सर्विस ",
+      "shopName" : "ठेला सर्विस",
       "shopPhotos" : "",
       "shopType" : [ "thela " ],
       "villageName" : "रामपुर भगन"
@@ -1021,7 +1005,7 @@
       "shopInfo" : "शादी विवाह पार्टी मुंडन अवसर पर गुब्बारा सजावट,पॉपकॉर्न मशीन, कॉफी मशीन के लिए सम्पर्क करें",
       "shopName" : "पटेल गुब्बारा डेकोरेशन",
       "shopPhotos" : "",
-      "shopType" : [ "decoration   " ],
+      "shopType" : [ "decoration" ],
       "villageName" : "ककराही चैराहा"
     },
     "-Mkq27BEZMWWlBMYiGwW" : {
@@ -1053,7 +1037,7 @@
       "shopInfo" : "",
       "shopName" : "वर्मा आयुर्वेदिक",
       "shopPhotos" : "",
-      "shopType" : [ "aayurvedic   " ],
+      "shopType" : [ "aayurvedic" ],
       "villageName" : "चरावां"
     },
     "-MkqKdHrDezkkazcH6Oz" : {
@@ -1069,7 +1053,7 @@
       "shopInfo" : "",
       "shopName" : "रीति मेहंदी आर्ट",
       "shopPhotos" : "",
-      "shopType" : [ "beautiParler " ],
+      "shopType" : [ "beautiParler" ],
       "villageName" : "बीकापुर, चरावां मोड़ "
     },
     "-MkqKupsLYAjZ-pRb957" : {
@@ -1242,7 +1226,7 @@
       "shopInfo" : "",
       "shopName" : "राहुल डेकोरेशन",
       "shopPhotos" : "",
-      "shopType" : [ "decoration   ", "photoStudio " ],
+      "shopType" : [ "decoration", "photoStudio" ],
       "villageName" : "दहलवा बरांव"
     },
     "-MkrDz3oOVaYsRxMhLEe" : {
@@ -1274,7 +1258,7 @@
       "shopInfo" : "कॉस्मेटिक, मोबाइल इयरफोन हैडफ़ोन, गैस चूल्हा रिपेयर आदि के लिए संपर्क करें ।",
       "shopName" : "आर्या कॉस्मेटिक & गिफ्ट सेंटर",
       "shopPhotos" : "",
-      "shopType" : [ "gifts", "gasService ", "gasChulhaRepair ", "mobileStore", "cosmetic" ],
+      "shopType" : [ "gifts", "gasService", "gasChulhaRepair", "mobileStore", "cosmetic" ],
       "villageName" : "रामपुरभगन"
     },
     "-MksT72FokhHuiQiYSoq" : {
@@ -1354,7 +1338,7 @@
       "shopInfo" : "",
       "shopName" : "राइस मील ( आटा चक्की / तेल)",
       "shopPhotos" : "",
-      "shopType" : [ "chakki " ],
+      "shopType" : [ "chakki" ],
       "villageName" : "चरावां"
     },
     "-Mku4CWAcWOwECC_W3hY" : {
@@ -1386,7 +1370,7 @@
       "shopInfo" : "काम करवाने के लिए, पेड़ कटवाने के लिये संपर्क करें",
       "shopName" : "ओमकार",
       "shopPhotos" : "",
-      "shopType" : [ "woodCutter   ", "helper " ],
+      "shopType" : [ "woodCutter", "helper" ],
       "villageName" : "चरावां"
     },
     "-MkueJyCzlI1JoHnmfb7" : {
@@ -1402,7 +1386,7 @@
       "shopInfo" : "",
       "shopName" : "सोनू हेयर कटिंग सैलून",
       "shopPhotos" : "",
-      "shopType" : [ "barber " ],
+      "shopType" : [ "barber" ],
       "villageName" : "चरावां"
     },
     "-Mkv2DmFwM6otlrAmYJi" : {
@@ -1418,7 +1402,7 @@
       "shopInfo" : "",
       "shopName" : "यशवंत बुक डिपो",
       "shopPhotos" : "",
-      "shopType" : [ "stationery " ],
+      "shopType" : [ "stationery" ],
       "villageName" : "चरावां"
     },
     "-MkzKfUFlFHjl7mQIEgn" : {
@@ -1450,7 +1434,7 @@
       "shopInfo" : "डी जे साउंड के लिए संपर्क करें",
       "shopName" : "कोमल DJ",
       "shopPhotos" : "",
-      "shopType" : [ "dj   ", "soundServie  " ],
+      "shopType" : [ "dj", "soundServie" ],
       "villageName" : "बनकटा बीकापुर"
     },
     "-MkzZz8xsEBFGLCJkzGk" : {
@@ -1466,7 +1450,7 @@
       "shopInfo" : "",
       "shopName" : "मिथुन DJ",
       "shopPhotos" : "",
-      "shopType" : [ "dj   ", "soundServie  " ],
+      "shopType" : [ "dj", "soundServie" ],
       "villageName" : "किसनगंज"
     },
     "-Mkz_lCTrFlSJZm0_-T0" : {
@@ -1498,7 +1482,7 @@
       "shopInfo" : "",
       "shopName" : "चितवन सर्जिकल सेंटर",
       "shopPhotos" : "",
-      "shopType" : [ "hospital " ],
+      "shopType" : [ "hospital" ],
       "villageName" : "रामपुर भगन"
     },
     "-MkzabajZnNpCh2YZ_GK" : {
@@ -1514,7 +1498,7 @@
       "shopInfo" : "",
       "shopName" : "विशाल कैटर्स",
       "shopPhotos" : "",
-      "shopType" : [ "cetters  " ],
+      "shopType" : [ "cetters" ],
       "villageName" : "रामपुर भगन"
     },
     "-Mkzb26d4ece2cfKcCWZ" : {
@@ -1626,7 +1610,7 @@
       "shopInfo" : "हमारे यहाँ दुल्हन मेकअप ब्राइडल मेकअप, हेयर कटिंग, मेहंदी एवं किराये पर ज्वेलरी, लहंगा उपलब्ध है",
       "shopName" : "लक्ष्मी ब्यूटी पार्लर & कॉस्मेटिक",
       "shopPhotos" : "",
-      "shopType" : [ "beautiParler ", "cosmetic" ],
+      "shopType" : [ "beautiParler", "cosmetic" ],
       "villageName" : "गैनी"
     },
     "-Ml-FDPfhQwUFkk6Oi5-" : {
@@ -1642,7 +1626,7 @@
       "shopInfo" : "",
       "shopName" : "सुनील हेयर ड्रेसिंग & वर्मा टेंट लाइट",
       "shopPhotos" : "",
-      "shopType" : [ "lightHouse  ", "tentHouse  ", "decoration   ", "barber " ],
+      "shopType" : [ "lightHouse", "tentHouse", "decoration", "barber" ],
       "villageName" : "जाने"
     },
     "-Ml-HRk2UFHXyX0EjhQd" : {
@@ -1658,7 +1642,7 @@
       "shopInfo" : "हमारे यहाँ सभी प्रकार के कपडो की सिलाई की जाती हैं।",
       "shopName" : "मयूर टेलर्स  इस्पेस्लीस्ट जेन्टस",
       "shopPhotos" : "",
-      "shopType" : [ "tailor " ],
+      "shopType" : [ "tailor" ],
       "villageName" : "चरावां"
     },
     "-Ml10mJFh0Xtos4wbxWE" : {
@@ -1674,7 +1658,7 @@
       "shopInfo" : "हमारे यहाँ फूल एवं हॉफ कैटरिंग का काम किया जाता है • हमारे यहाँ शादी विवाह से सम्बन्धित सभी व्यवस्थाएं उपलब्ध है ,हमारे यहाँ शादी-विवाह, मुण्डन एवं भण्डारे आदि के शुभ अवसरों पर मिठाईयां एवं भोजन बनवाने के लिए सम्पर्क करें कॉफी मशीन, कच्चा छेना, दूध, दही, पनीर, खोचा, आइसक्रीम, मक्खन, क्रीम महाराजा सेट, लाईट, टेन्ट डी.जे., जयमाल, दरबारी, मिक्की माउस, गेट हाथी, गुब्बारा, अंकल आंटी, कार्टुन आदि उपलब्ध है",
       "shopName" : "रतन कैटर्स",
       "shopPhotos" : "",
-      "shopType" : [ "cetters  " ],
+      "shopType" : [ "cetters" ],
       "villageName" : "रामपुर भगन कृषक रोड"
     },
     "-MlE_w-4BtyquoUa5_G6" : {
@@ -1725,7 +1709,7 @@
       "shopInfo" : "हमारे यहाँ शादी विबाह मुंडन पार्टी हेतु डीजे, साउंड सर्विस कैमरा उपलब्ध है ।",
       "shopName" : "दीपांशु राजा मोबाइल डीजे ",
       "shopPhotos" : "",
-      "shopType" : [ "photoStudio " ],
+      "shopType" : [ "photoStudio" ],
       "villageName" : "जाना बाजार"
     },
     "-MlF8g9x_oh2auhYL5os" : {
@@ -1741,7 +1725,7 @@
       "shopInfo" : "सभी तरह की ताजी सब्जियां उपलब्ध, आर्डर पर भी सब्जियां मंगाई जाती हैं । ",
       "shopName" : "मौर्या सब्जी की दुकान",
       "shopPhotos" : "",
-      "shopType" : [ "vegetables " ],
+      "shopType" : [ "vegetables" ],
       "villageName" : "चरावां"
     },
     "-MlFRTUnam9cxYL2F1bH" : {
@@ -1854,7 +1838,7 @@
       "shopInfo" : "रोटावेटर, कल्टीवेटर , आदि से खेत मे जुताई करवाने के लिए संपर्क करें ।",
       "shopName" : "ट्रेक्टर जुताई",
       "shopPhotos" : "",
-      "shopType" : [ "tractors   " ],
+      "shopType" : [ "tractors" ],
       "villageName" : "दहलवा"
     },
     "-MlIDAwjAl06-6dxzSn0" : {
@@ -1870,7 +1854,7 @@
       "shopInfo" : "हमारे यहां शुभ अवसरों पर लाइट ,साउंड सर्विस एंव डीजे की बुकिंग की जाती हैं।",
       "shopName" : "Shyamji light house and sound service",
       "shopPhotos" : "",
-      "shopType" : [ "electronic", "dj   ", "lightHouse  ", "decoration   ", "soundServie  " ],
+      "shopType" : [ "electronic", "dj", "lightHouse", "decoration", "soundServie" ],
       "villageName" : "Ankari"
     },
     "-MlIGYOCNpyQFzneNaSg" : {
@@ -1886,7 +1870,7 @@
       "shopInfo" : "हमारे यहां सभी प्रकार से जुताई की जाती है।",
       "shopName" : "ट्रैक्टर जुताई",
       "shopPhotos" : "",
-      "shopType" : [ "tractors   " ],
+      "shopType" : [ "tractors" ],
       "villageName" : "अंकारी"
     },
     "-MlIurgzUOQ0OhcXtkS9" : {
@@ -1935,7 +1919,7 @@
       "shopInfo" : "सौन्दर्य प्रसाधन सिलाई\n\nशिखाया जाता है।",
       "shopName" : "अंश ब्यूटी पार्लर",
       "shopPhotos" : "",
-      "shopType" : [ "beautiParler ", "silayi ", "cosmetic" ],
+      "shopType" : [ "beautiParler", "silayi", "cosmetic" ],
       "villageName" : "उमरनी पिपरी चौराहा"
     },
     "-MlKU-YmjNG7MdxEaF0-" : {
@@ -1951,7 +1935,7 @@
       "shopInfo" : "",
       "shopName" : "सुभाष टेंट हाउस",
       "shopPhotos" : "",
-      "shopType" : [ "tentHouse  " ],
+      "shopType" : [ "tentHouse" ],
       "villageName" : "चरावां"
     },
     "-MlL8Ux9ocBonnjyEaxQ" : {
@@ -2000,7 +1984,7 @@
       "shopInfo" : "",
       "shopName" : "Doctor Rajneesh Tiwari ",
       "shopPhotos" : "",
-      "shopType" : [ "doctors " ],
+      "shopType" : [ "doctors" ],
       "villageName" : "चरावां"
     },
     "-MlOxt0aZRWnMw2kn6kD" : {
@@ -2016,7 +2000,7 @@
       "shopInfo" : "",
       "shopName" : "संतोष",
       "shopPhotos" : "",
-      "shopType" : [ "helper " ],
+      "shopType" : [ "helper" ],
       "villageName" : "चरावां"
     },
     "-MlPzbngSVpeFvUZhbh0" : {
@@ -2032,7 +2016,7 @@
       "shopInfo" : "ताजी सब्जी वगैरह मंगाने के लिए संपर्क करें  चौराहे पर हमेशा ताजी सब्जी उपलब्ध रहती है",
       "shopName" : "सियाराम सब्जी की दुकान",
       "shopPhotos" : "",
-      "shopType" : [ "vegetables " ],
+      "shopType" : [ "vegetables" ],
       "villageName" : "चरावां"
     },
     "-MlQ-yIF7jQvg1SXJyyO" : {
@@ -2048,7 +2032,7 @@
       "shopInfo" : "",
       "shopName" : "कौशल डी.जे.  लाइट हाउस लाइट सर्विस",
       "shopPhotos" : "",
-      "shopType" : [ "dj   ", "lightHouse  ", "soundServie  ", "photoStudio " ],
+      "shopType" : [ "dj", "lightHouse", "soundServie", "photoStudio" ],
       "villageName" : "दूबे का पुरवा,"
     },
     "-MlQLYpKHa0WZuDaCTmI" : {
@@ -2080,7 +2064,7 @@
       "shopInfo" : "",
       "shopName" : "डॉ वर्मा",
       "shopPhotos" : "",
-      "shopType" : [ "doctors " ],
+      "shopType" : [ "doctors" ],
       "villageName" : "चरावां"
     },
     "-MlUqORx9ooH3a6UYTOB" : {
@@ -2096,7 +2080,7 @@
       "shopInfo" : "अनुभवी होम्योपैथिक चिकित्सक",
       "shopName" : "होम्योपैथिक दराबगंज",
       "shopPhotos" : "",
-      "shopType" : [ "homeopathic   ", "doctors " ],
+      "shopType" : [ "homeopathic", "doctors" ],
       "villageName" : "दराबगंज"
     },
     "-MlVmQes3SR0ylxseq8U" : {
@@ -2114,6 +2098,202 @@
       "shopPhotos" : "",
       "shopType" : [ "electronic" ],
       "villageName" : "सुल्हेपुर"
+    },
+    "-MlabbqbzS90W9NMaxXW" : {
+      "closeTime" : "",
+      "inCharawan" : "outOfCharawan",
+      "mobileNumber" : "tel:+918756030412",
+      "mobileNumber2" : "tel:+91",
+      "openTime" : "",
+      "owenerName" : "मुकेश",
+      "ownerPhoto" : "https://i.ibb.co/rmp0k7Y/IMG-20211010-012117.jpg",
+      "shopAddress" : "",
+      "shopInfo" : "घर ऑफिस दुकान पेंट करवाने के लिए संपर्क करें हमारे पास अनुभवी पेंटर हैं",
+      "shopName" : "मुकेश पेंटर",
+      "shopType" : [ "painter" ],
+      "villageName" : "कोदैला"
+    },
+    "-Mlae4mkmCzuCZHI6trj" : {
+      "closeTime" : "19:00",
+      "inCharawan" : "outOfCharawan",
+      "mobileNumber" : "tel:+919161629714",
+      "mobileNumber2" : "tel:+916387300160",
+      "openTime" : "09:00",
+      "owenerName" : "प्रदीप मिस्त्री",
+      "ownerPhoto" : "https://i.ibb.co/gWvsdWV/IMG-20211010-013414.jpg",
+      "shopAddress" : "कंचन डॉक्टर चश्मा वाले के थोड़ा आगे तारुन रोड",
+      "shopInfo" : "लकड़ी के दरवाजे, चौखट-वाजू, खिड़की, वेड, सोफा, श्रृंगारदान, प्लाई दरवाजा, एल्यूमीनियम दरवाजा सलाइडर खिड़की, पार्टीशन आदि आर्डर देने पा उचित मूल्य में तैयार किया जाता है। एक बार सेवा का अवसर देकर गुणवत्ता पहचानें",
+      "shopName" : "प्रदीप फर्नीचर हाउस",
+      "shopType" : [ "carpenter", "furniture" ],
+      "villageName" : "रामपुर भगन"
+    },
+    "-MlcRGRlVqHjW1WgljwF" : {
+      "closeTime" : "",
+      "inCharawan" : "outOfCharawan",
+      "mobileNumber" : "tel:+919919408175",
+      "mobileNumber2" : "tel:+91",
+      "openTime" : "",
+      "owenerName" : "",
+      "ownerPhoto" : "https://i.ibb.co/Rh0wVXB/images-2.jpg",
+      "shopAddress" : "",
+      "shopInfo" : "",
+      "shopName" : "Dr Yadav",
+      "shopType" : [ "animalDoctors" ],
+      "villageName" : "Kodaila"
+    },
+    "-MlcXKi0yuM02mBzcoWQ" : {
+      "closeTime" : "",
+      "inCharawan" : "outOfCharawan",
+      "mobileNumber" : "tel:+918052147411",
+      "mobileNumber2" : "tel:+919120172071",
+      "openTime" : "",
+      "owenerName" : "सुशील",
+      "ownerPhoto" : "",
+      "shopAddress" : "बरावं",
+      "shopInfo" : "",
+      "shopName" : "सुशील कुमार",
+      "shopType" : [ "helper" ],
+      "villageName" : "मिश्र का पूरा"
+    },
+    "-MlcvobWNli51HevCXz-" : {
+      "closeTime" : "20:00",
+      "inCharawan" : "charawan",
+      "mobileNumber" : "tel:+919988271220",
+      "mobileNumber2" : "tel:+91",
+      "openTime" : "10:00",
+      "owenerName" : "सनित",
+      "ownerPhoto" : "https://i.ibb.co/m4LP4GW/IMG-20211010-120842.jpg",
+      "shopAddress" : "मेन चरावां चौराहा",
+      "shopInfo" : "",
+      "shopName" : "सनित हेयर कटिंग",
+      "shopType" : [ "barber" ],
+      "villageName" : "चरावां"
+    },
+    "-MlcwXShK0e2V3RcJPVh" : {
+      "closeTime" : "19:00",
+      "inCharawan" : "charawan",
+      "mobileNumber" : "tel:+919984833485",
+      "mobileNumber2" : "tel:+91",
+      "openTime" : "09:00",
+      "owenerName" : "कृष्णा नंद दुबे",
+      "ownerPhoto" : "https://i.ibb.co/gWfT2pp/images-95.jpg",
+      "shopAddress" : "",
+      "shopInfo" : "",
+      "shopName" : "श्री हनुमत कृपा लाइट डेकोरेशन",
+      "shopType" : [ "lightHouse", "soundServie", "dj" ],
+      "villageName" : "चरावां"
+    },
+    "-Mlcx66PUq3AvtQornhh" : {
+      "closeTime" : "",
+      "inCharawan" : "outOfCharawan",
+      "mobileNumber" : "tel:+919565476144",
+      "mobileNumber2" : "tel:+919473012824",
+      "openTime" : "",
+      "owenerName" : "",
+      "ownerPhoto" : "https://i.ibb.co/Wzb7Pgn/images-96.jpg",
+      "shopAddress" : "",
+      "shopInfo" : "",
+      "shopName" : "डॉक्टर वर्मा (पशु वाले)",
+      "shopType" : [ "animalDoctors" ],
+      "villageName" : "ककराही"
+    },
+    "-MlcxqGdPSnAKgqZaPcp" : {
+      "closeTime" : "",
+      "inCharawan" : "charawan",
+      "mobileNumber" : "tel:+918052826556",
+      "mobileNumber2" : "tel:+91",
+      "openTime" : "",
+      "owenerName" : "हज़ारी प्रसाद",
+      "ownerPhoto" : "https://i.ibb.co/0nSstm9/IMG-20211010-121857.jpg",
+      "shopAddress" : "अरुण कम्युनिकेशन के सामने",
+      "shopInfo" : "कीटनाशक, किराना, चप्पल जूता, कपड़ा , हार्डवेयर समान उपलब्ध",
+      "shopName" : "अमन किराना स्टोर (हज़ारी)",
+      "shopType" : [ "generalStore", "beej", "chappal", "garments", "machineryStore" ],
+      "villageName" : "चरावां"
+    },
+    "-Mldslgm-OWKHYJMZyyQ" : {
+      "closeTime" : "",
+      "inCharawan" : "outOfCharawan",
+      "mobileNumber" : "tel:+919956155271",
+      "mobileNumber2" : "tel:+918127774420",
+      "openTime" : "",
+      "owenerName" : "रोहित कसौधन",
+      "ownerPhoto" : "https://i.ibb.co/09GfTmG/images-32.jpg",
+      "shopAddress" : "",
+      "shopInfo" : "हमारे यहाँ कॉफी मशीन, चीनी गोला, पापकॉर्न, अंकल आंटी, दबान, नोकर, लाला - लाली इत्यादि की बुकिंग के लिए रूपर्क करें।",
+      "shopName" : "महाकाल जयमाल ,शगुन ब्यूटी पार्लर",
+      "shopType" : [ "decoration", "beautiParler" ],
+      "villageName" : "स्टेशन रोड, बीकापुर,"
+    },
+    "-Mldw0_Q9gfO-iF5poWl" : {
+      "closeTime" : "21:00",
+      "inCharawan" : "outOfCharawan",
+      "mobileNumber" : "tel:+919670957014",
+      "mobileNumber2" : "tel:+91",
+      "openTime" : "14:00",
+      "owenerName" : "प्रमोद",
+      "ownerPhoto" : "https://i.ibb.co/QMdDYXy/images-91.jpg",
+      "shopAddress" : "",
+      "shopInfo" : "हमारे यहाँ स्पेशल टिक्की व सूजी के गोल गप्प मिलते हैं ।",
+      "shopName" : "प्रमोद चाट भण्डार",
+      "shopType" : [ "fastfood" ],
+      "villageName" : "बीकापुर"
+    },
+    "-MldxATuw-llziDLtBGB" : {
+      "closeTime" : "",
+      "inCharawan" : "outOfCharawan",
+      "mobileNumber" : "tel:+919793151542",
+      "mobileNumber2" : "tel:+918528864238",
+      "openTime" : "",
+      "owenerName" : "रागिनी",
+      "ownerPhoto" : "https://i.ibb.co/M8pjWF3/IMG-20211010-165610.jpg",
+      "shopAddress" : "दराबगंज ",
+      "shopInfo" : "हमारे यहां सभी प्रकार के कास्मेटिक आइटम आर्टीफिशियल ज्वेतरी\n\nमेकअप के सामान आदि उचित मूल्य पर उपलब्ध है।\n\nदुल्हन को सजाया जाता है, लहंगा और ज्वेलरी किराये पर उपलब्ध है।\nयहाँ स्तर फाल यागा, बटन, बकरम, लाउज डोरी, लटकन आदि उचित मूल्य पर उपलब्ध",
+      "shopName" : "रागिनी सौन्दर्य प्रसाधन : श्रृंगार पैलेस",
+      "shopType" : [ "beautiParler", "cosmetic", "gifts" ],
+      "villageName" : "तोरो माफी"
+    },
+    "-MleXpSH255gZObR1DYt" : {
+      "closeTime" : "20:00",
+      "inCharawan" : "outOfCharawan",
+      "mobileNumber" : "tel:+919621075832",
+      "mobileNumber2" : "tel:+918005042920",
+      "openTime" : "10:00",
+      "owenerName" : "एम वर्मा",
+      "ownerPhoto" : "https://i.ibb.co/DtspJ9c/download-3.jpg",
+      "shopAddress" : "",
+      "shopInfo" : "",
+      "shopName" : "दीप ट्रेडर्स एण्ड ट्रेडिंग कम्पनी",
+      "shopType" : [ "buildingMaterials" ],
+      "villageName" : "उमरनी पिपरी चौराहा"
+    },
+    "-Mleg2z35IUJ7gJARLaQ" : {
+      "closeTime" : "08:00",
+      "inCharawan" : "outOfCharawan",
+      "mobileNumber" : "tel:+917518416589",
+      "mobileNumber2" : "tel:+91",
+      "openTime" : "10:00",
+      "owenerName" : "",
+      "ownerPhoto" : "https://i.ibb.co/p41dSKW/IMG-20211010-202124.jpg",
+      "shopAddress" : "",
+      "shopInfo" : "",
+      "shopName" : "दुल्हन ब्यूटी पार्लर",
+      "shopType" : [ "beautiParler" ],
+      "villageName" : "बीकापुर"
+    },
+    "-Mlehu_1MN1QOueuwKtV" : {
+      "closeTime" : "08:00",
+      "inCharawan" : "outOfCharawan",
+      "mobileNumber" : "tel:+917054039995",
+      "mobileNumber2" : "tel:+91",
+      "openTime" : "10:00",
+      "owenerName" : "अज़मत",
+      "ownerPhoto" : "https://i.ibb.co/MsL4Y4w/images-97.jpg",
+      "shopAddress" : "",
+      "shopInfo" : "मोरंग बाल सीमेंट सरिया आदि विल्डिंग मिटीरियल के विक्रेता।",
+      "shopName" : "अजमत ट्रेडर्स",
+      "shopType" : [ "buildingMaterials" ],
+      "villageName" : "दराबगंज"
     }
   }
 }

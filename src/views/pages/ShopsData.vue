@@ -249,12 +249,25 @@
               </a></span
             >
 
-            <small class="d-block text-muted fw-lighter mt-2"
+            <small class="d-block text-muted feedback fw-lighter mt-2"
               >फ़ोन न मिल रहा हो या किसी सुधार के लिए
               <a href="https://chat.whatsapp.com/LgCz9l1tWQKKJe6OQ5n8Zt"
                 >सम्पर्क करें  </a
               ></small
             >
+
+
+            <!-- <img
+           
+            
+             :src="data.ownerPhoto"
+            width="250"
+            height="200"
+            class="profile-imgbg "
+            alt=""
+            
+            srcset=""
+          /> -->
 
             <img
            
@@ -279,6 +292,8 @@
             
             srcset=""
           />
+
+          
 
           </div>
         </div>
@@ -475,6 +490,7 @@ export default {
     },
 
     filterResult() {
+      alert(this.selectedFilter)
      
       
       this.updated = true;
@@ -489,6 +505,8 @@ export default {
       }
       
       let filteredData = this.preservedData.filter((val, idx) => {
+        console.log('searching for ', this.selectedFilter);
+        console.log(val.shopType);
         if (val.shopType.includes(this.selectedFilter)) {
           return val;
         }
@@ -517,9 +535,12 @@ export default {
             this.allShopData.push(res.data[i]);
           }
 
+
+
           // console.log(  this.allShopData);
 
           for (let i in this.allShopData) {
+            
           }
 
           this.preservedData = this.allShopData.reverse();
@@ -664,6 +685,7 @@ small {
 position: absolute;
 top: 0;
 right: 0;
+z-index: 3000;
 }
 .owner-name{
   position: absolute;
@@ -677,6 +699,7 @@ right: 0;
   bottom: 0;
   right: 0px;
   opacity: .1;
+  
 
 }
 .leaf-img2{
@@ -685,12 +708,25 @@ right: 0;
   top: 0;
   left: 0px;
   opacity: .1;
+ 
+
 
 }
+.feedback{
+  position: relative;
+  z-index: 2000;
+}
+
+/* profile-imgbg{
+  position: absolute;
+  top: -200px;
+
+} */
 .numbers{
   position: absolute;
    top: 20px;
   left: 10px;
+  z-index: 1000;
   
 }
 .numbers a small{
