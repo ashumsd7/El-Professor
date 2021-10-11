@@ -21,7 +21,10 @@
         <div class="row"></div>
       </div>
 
-      <div class="row text-center m-auto d-block">
+      <div class="row text-center m-auto  ">
+
+
+
         <small class="text-muted"
           >आप सर्च कर सकते हैं: नंबर, दुकान का नाम ,पता लिखकर <br />
           <small class="text-danger">NOTE: </small> लगभग दुकानों के नाम हिंदी
@@ -32,35 +35,36 @@
           placeholder="नंबर, नाम ,पता लिखिए  "
           v-model.trim="searchedKey"
           name=""
-          class="form-control m-auto mt-2 d-block"
+          class="form-control d-block m-auto mt-2 d-block"
           id=""
         />
         <button
-          class="form-control m-auto d-block btn btn-success mt-2"
+          class="form-control  btn btn-success mt-2"
           @click="filterShops()"
         >
           सर्च करें
         </button>
-      </div>
+      
 
-      <div class=""></div>
-      <div v-if="showCategory" class="row checkboxes">
-        <br />
-        <br />
-        <label for="exampleFormControlInput1" class="form-label mt-2 fw-bold">
-          किस तरह की दुकान/सर्विस के बारे में जानना चाहते हैं ?
-        </label>
-        <!-- आप किस तरह की दुकान या सर्विस के बारे में जानना चाहते हैं ? -->
-        <div class="row">
+    
+        <div v-if="showCategory" class="checkboxes">
+          <br />
+          <br />
+
+          <label for="exampleFormControlInput1" class="form-label mt-2 fw-bold d-block">
+            किस तरह की दुकान/सर्विस के बारे में जानना चाहते हैं ?
+          </label>
+
+
+          <!-- आप किस तरह की दुकान या सर्विस के बारे में जानना चाहते हैं ? -->
+
+
+
           <div
-            class="col-4 radio-btns"
+            class="col-lg-2 col-6 d-inline-block radiobtn" 
             v-for="check in getFilters"
             :key="check.value"
           >
-
-             
-          
-
             <input
               type="radio"
               :id="check.value"
@@ -70,17 +74,17 @@
               class="radio-input"
             />
 
-            <img 
-                  :src="require(`../../assets/filters/${check.value}.png`)"
-                  alt=""
-                  srcset=""
-                />
-             
-            <small for="jack"  class="ms-2 input-title">{{ check.title }}</small>
-            <!-- <button class=" input-title">{{ check.title }}</button> -->
+            <img
+              :src="require(`../../assets/filters/${check.value}.png`)"
+              alt=""
+              srcset=""
+            />
+
+            <small for="jack" class="ms-2 input-title">{{ check.title }}</small>
           </div>
         </div>
-      </div>
+        </div>
+   
 
       <div class="shop-table">
         <div v-if="!isLoading" class="">
@@ -131,30 +135,44 @@
             >कृपया इंतज़ार करिये दुकानें लोड हो रही हैं
           </span>
           <div
-            class="col-lg-4 col-md-6 col-12 shop-card p-2 ms-2 mt-2 mt-lg-4 position-relative"
+            class="
+              col-lg-4 col-md-6 col-12
+              shop-card
+              p-2
+              ms-2
+              mt-2 mt-lg-4
+              position-relative
+            "
             v-for="data in allShopData"
             :key="data.shopName"
           >
-            <div  class="profile-img mb-1 position-relative">
-
-              
-              
-              <input v-if="showInput "
-               class="d-block popItup" type="file" @change="fileSelected"
-               accept="image/x-png,image/jpeg"
-                name="" id="">
+            <div class="profile-img mb-1 position-relative">
+              <input
+                v-if="showInput"
+                class="d-block popItup"
+                type="file"
+                @change="fileSelected"
+                accept="image/x-png,image/jpeg"
+                name=""
+                id=""
+              />
               <img
-            src="../../assets/refreshing.gif"
-           v-if="isUploading"
-            width="24"
-            alt=""
-            class="d-block"
-
-            srcset=""
-            
-          />
-              <button v-if="showSaveBtn" class="d-block btn btn-success popItup" @click="updateProfile(data)">सेव कर दीजिये </button>
-              <img v-if="!data.ownerPhoto"
+                src="../../assets/refreshing.gif"
+                v-if="isUploading"
+                width="24"
+                alt=""
+                class="d-block"
+                srcset=""
+              />
+              <button
+                v-if="showSaveBtn"
+                class="d-block btn btn-success popItup"
+                @click="updateProfile(data)"
+              >
+                सेव कर दीजिये
+              </button>
+              <img
+                v-if="!data.ownerPhoto"
                 src="../../assets/profile.png"
                 alt=""
                 width="70"
@@ -163,9 +181,10 @@
                 srcset=""
                 @click="contact()"
               />
-                <!-- @click="showInputFile()" -->
+              <!-- @click="showInputFile()" -->
 
-              <img v-if="data.ownerPhoto"
+              <img
+                v-if="data.ownerPhoto"
                 :src="data.ownerPhoto"
                 alt=""
                 width="70"
@@ -173,38 +192,43 @@
                 class="border-1 main-profile mb-2"
                 srcset=""
                 @click="contact()"
-
               />
-                <!-- @click="showInputFile" -->
+              <!-- @click="showInputFile" -->
 
-              <shop-sharing :data='data' class="shop-sharing"></shop-sharing>
-
-   
-
-              
-              
-
-              
+              <shop-sharing :data="data" class="shop-sharing"></shop-sharing>
             </div>
             <h5 class="fw-bolder">{{ data.shopName }}</h5>
-           <div class="owner-name-container position-relative mt-1">
-              <small v-if="data.owenerName" class="d-block owner-name text-muted"
+            <div class="owner-name-container position-relative mt-1">
+              <small
+                v-if="data.owenerName"
+                class="d-block owner-name text-muted"
               >
-              <span class="text-muted">
-                <!-- मालिक: -->
-                👨‍💼</span>
-              {{ data.owenerName }}</small
-            >
-           </div>
-           <div class="numbers">
-             <a class="d-block text-decoration-none " :href="data.mobileNumber1">☎️<small> {{prepareNumber1(data)}}</small></a>
-             <a class="d-block text-decoration-none" v-if="data.mobileNumber2" :href="data.mobileNumber2"><span v-if="data.mobileNumber2!='tel:+91'">☎️</span><small> {{prepareNumber2(data)}}</small></a>
-           </div>
+                <span class="text-muted">
+                  <!-- मालिक: -->
+                  👨‍💼</span
+                >
+                {{ data.owenerName }}</small
+              >
+            </div>
+            <div class="numbers">
+              <a class="d-block text-decoration-none" :href="data.mobileNumber1"
+                >☎️<small> {{ prepareNumber1(data) }}</small></a
+              >
+              <a
+                class="d-block text-decoration-none"
+                v-if="data.mobileNumber2"
+                :href="data.mobileNumber2"
+                ><span v-if="data.mobileNumber2 != 'tel:+91'">☎️</span
+                ><small> {{ prepareNumber2(data) }}</small></a
+              >
+            </div>
             <span class="d-block fw-bold text-primary">
               {{ data.villageName }} {{ data.shopAddress }}</span
             >
-            <span class="badge rounded-pill bg-white d-block" v-if="data.closedOn"
-              ><span 
+            <span
+              class="badge rounded-pill bg-white d-block"
+              v-if="data.closedOn"
+              ><span
                 class="text-danger"
                 v-for="day in data.closedOn"
                 :key="day"
@@ -212,7 +236,6 @@
                 <small>{{ day }} को बंद रहती है </small></span
               ></span
             >
-
 
             <p class="text-muted">
               <small>{{ data.shopInfo }}</small>
@@ -228,7 +251,7 @@
             >
             <span class="badge rounded-pill bg-dark call-btn me-3 mt-2"
               ><a
-                class="text-decoration-none text-white "
+                class="text-decoration-none text-white"
                 :href="data.mobileNumber"
               >
                 <img src="../../assets/telephone.png" alt="" srcset="" />
@@ -252,10 +275,9 @@
             <small class="d-block text-muted feedback fw-lighter mt-2"
               >फ़ोन न मिल रहा हो या किसी सुधार के लिए
               <a href="https://chat.whatsapp.com/LgCz9l1tWQKKJe6OQ5n8Zt"
-                >सम्पर्क करें  </a
-              ></small
+                >सम्पर्क करें
+              </a></small
             >
-
 
             <!-- <img
            
@@ -270,31 +292,22 @@
           /> -->
 
             <img
-           
-            
-            src="../../assets/leaf.png"
-            width="250"
-            height="200"
-            class=" leaf-img position-absolute"
-            alt=""
-            
-            srcset=""
-          />
+              src="../../assets/leaf.png"
+              width="250"
+              height="200"
+              class="leaf-img position-absolute"
+              alt=""
+              srcset=""
+            />
 
-           <img
-           
-            
-            src="../../assets/leaf2.png"
-            width="250"
-            height="200"
-            class=" leaf-img2 position-absolute"
-            alt=""
-            
-            srcset=""
-          />
-
-          
-
+            <img
+              src="../../assets/leaf2.png"
+              width="250"
+              height="200"
+              class="leaf-img2 position-absolute"
+              alt=""
+              srcset=""
+            />
           </div>
         </div>
       </div>
@@ -343,14 +356,13 @@ import ShopSharing from "../../components/shops/ShopSharing.vue";
 import axios from "axios";
 
 export default {
-  components:{
-    ShopSharing
+  components: {
+    ShopSharing,
   },
   computed: {
     getFilters() {
       return this.$store.getters.getFilters;
     },
-
   },
   data() {
     return {
@@ -366,15 +378,14 @@ export default {
 
       //searchbox
       searchedKey: "",
-      serverImgURL:null,
+      serverImgURL: null,
 
-      //img upload 
-     isUploading:false,
-     showInput:false,
-     isUploaded:false,
-     showSaveBtn:false,
-     isPhotoChanged:false
-
+      //img upload
+      isUploading: false,
+      showInput: false,
+      isUploaded: false,
+      showSaveBtn: false,
+      isPhotoChanged: false,
     };
   },
 
@@ -390,30 +401,29 @@ export default {
     window.scrollTo(0, 0);
   },
   methods: {
-    contact(){
-      alert('अगर आप फोटो बदलना चाहते हैं या फिर आपके द्वारा दी गयी जानकरी में कुछ बदलाव करना चाहते हैं तो निचे सम्पर्क करें पर क्लिक करके वेबसाइट मैनेजर से बात करके कुछ मिनट में बदलाव करवा सकते हैं वेबसाइट विजिट करने के लिए आपका बहुत बहुत धन्यवाद  ')
+    contact() {
+      alert(
+        "अगर आप फोटो बदलना चाहते हैं या फिर आपके द्वारा दी गयी जानकरी में कुछ बदलाव करना चाहते हैं तो निचे सम्पर्क करें पर क्लिक करके वेबसाइट मैनेजर से बात करके कुछ मिनट में बदलाव करवा सकते हैं वेबसाइट विजिट करने के लिए आपका बहुत बहुत धन्यवाद  "
+      );
     },
 
-           prepareNumber1(data){
-            
-           let number= data.mobileNumber.split('');
-            number = number.splice(7,10).join('')
-           return number
-          },
-          prepareNumber2(data){
-            
-            if(data.mobileNumber2!='tel:+91'){
-               let number= data.mobileNumber2.split('');
-            number = number.splice(7,10).join('')
-           return number
-            }
-            else{
-              return ''
-            }
-          },
+    prepareNumber1(data) {
+      let number = data.mobileNumber.split("");
+      number = number.splice(7, 10).join("");
+      return number;
+    },
+    prepareNumber2(data) {
+      if (data.mobileNumber2 != "tel:+91") {
+        let number = data.mobileNumber2.split("");
+        number = number.splice(7, 10).join("");
+        return number;
+      } else {
+        return "";
+      }
+    },
     filterShops() {
-      if(this.searchedKey==''){
-        alert('आप आखिर सर्च क्या करना चाहते हैं कुछ तो लिखिए')
+      if (this.searchedKey == "") {
+        alert("आप आखिर सर्च क्या करना चाहते हैं कुछ तो लिखिए");
         return;
       }
       this.allShopData = [];
@@ -491,8 +501,7 @@ export default {
 
     filterResult() {
       // alert(this.selectedFilter)
-     
-      
+
       this.updated = true;
       this.isLoading = true;
       this.showCategory = false;
@@ -503,9 +512,9 @@ export default {
         this.isLoading = false;
         return;
       }
-      
+
       let filteredData = this.preservedData.filter((val, idx) => {
-        console.log('searching for ', this.selectedFilter);
+        console.log("searching for ", this.selectedFilter);
         console.log(val.shopType);
         if (val.shopType.includes(this.selectedFilter)) {
           return val;
@@ -535,12 +544,9 @@ export default {
             this.allShopData.push(res.data[i]);
           }
 
-
-
           // console.log(  this.allShopData);
 
           for (let i in this.allShopData) {
-            
           }
 
           this.preservedData = this.allShopData.reverse();
@@ -551,9 +557,8 @@ export default {
       this.showCategory = !this.showCategory;
       window.scrollTo(100, 120);
     },
-    showInputFile(){
-      
-this.showInput=true;
+    showInputFile() {
+      this.showInput = true;
     },
 
     fileSelected(e) {
@@ -562,9 +567,8 @@ this.showInput=true;
       this.uploadImg();
     },
     uploadImg() {
-      this.isUploading=true
+      this.isUploading = true;
 
-   
       const fd = new FormData();
       fd.append("image", this.selectedFile, this.selectedFile.name);
 
@@ -574,32 +578,35 @@ this.showInput=true;
           fd
         )
         .then((res) => {
-         this.isUploading=false
-         this.isUploaded=true
-         this.showSaveBtn=true
-         this.showInput=false
-
+          this.isUploading = false;
+          this.isUploaded = true;
+          this.showSaveBtn = true;
+          this.showInput = false;
 
           this.serverImgURL = res.data.data.display_url;
         });
     },
 
-    updateProfile(shop){
-       this.isUploading=true
-      shop.ownerPhoto=this.serverImgURL
-      let key= shop.key;
-      axios.put(`https://charwan-shops-default-rtdb.firebaseio.com/charawan-shops/${key}.json`,shop)
-      .then(res=>{
-        this.isUploading=false
-        this.showSaveBtn=false
-          alert('प्रोफाइल फोटो सफलता पूर्वक बदल दी गयी है  ,दोबारा बदलने के लिए फिर से फोटो पर फिर से क्लिक करें ')
-          
-      })
-     .catch(err=>{
-         alert('सर्वर डाउन हो सकता हैं, कुछ समय बाद प्रयास करें  ')
-     })
-
-    }
+    updateProfile(shop) {
+      this.isUploading = true;
+      shop.ownerPhoto = this.serverImgURL;
+      let key = shop.key;
+      axios
+        .put(
+          `https://charwan-shops-default-rtdb.firebaseio.com/charawan-shops/${key}.json`,
+          shop
+        )
+        .then((res) => {
+          this.isUploading = false;
+          this.showSaveBtn = false;
+          alert(
+            "प्रोफाइल फोटो सफलता पूर्वक बदल दी गयी है  ,दोबारा बदलने के लिए फिर से फोटो पर फिर से क्लिक करें "
+          );
+        })
+        .catch((err) => {
+          alert("सर्वर डाउन हो सकता हैं, कुछ समय बाद प्रयास करें  ");
+        });
+    },
   },
   created() {
     this.callAPI();
@@ -623,6 +630,10 @@ this.showInput=true;
 small {
   font-weight: bold;
 }
+.radiobtn{
+  
+    text-align: left;
+}
 
 .call-btn {
   border-radius: 0px;
@@ -633,7 +644,7 @@ small {
 }
 .shop-card {
   border-radius: 10px;
-  background: linear-gradient(210deg,rgb(245, 242, 242),rgb(243, 243, 223));
+  background: linear-gradient(210deg, rgb(245, 242, 242), rgb(243, 243, 223));
   border: 0.8px solid rgb(0, 0, 0);
 
   box-shadow: 7px 7px 14px #bebebe, -7px -7px 14px #ffffff;
@@ -671,48 +682,43 @@ small {
   border-radius: 50%;
   border: 1px dotted blue;
 }
-.main-profile{
-   border-radius: 50%;
+.main-profile {
+  border-radius: 50%;
   /* border: 2px solid rgb(0, 0, 0); */
-  box-shadow: 6px 7px 14px -1px rgba(0,0,0,0.56);
--webkit-box-shadow: 6px 7px 14px -1px rgba(0,0,0,0.56);
--moz-box-shadow: 6px 7px 14px -1px rgba(0,0,0,0.56);
+  box-shadow: 6px 7px 14px -1px rgba(0, 0, 0, 0.56);
+  -webkit-box-shadow: 6px 7px 14px -1px rgba(0, 0, 0, 0.56);
+  -moz-box-shadow: 6px 7px 14px -1px rgba(0, 0, 0, 0.56);
 }
-.popItup{
+.popItup {
   animation: popup 2s linear 0s infinite alternate;
 }
-.shop-sharing{
-position: absolute;
-top: 0;
-right: 0;
-z-index: 3000;
+.shop-sharing {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 3000;
 }
-.owner-name{
+.owner-name {
   position: absolute;
   top: -120px;
   left: 0;
 }
 
-.leaf-img{
+.leaf-img {
   position: absolute;
   /* left: 0; */
   bottom: 0;
   right: 0px;
-  opacity: .1;
-  
-
+  opacity: 0.1;
 }
-.leaf-img2{
+.leaf-img2 {
   position: absolute;
   /* left: 0; */
   top: 0;
   left: 0px;
-  opacity: .1;
- 
-
-
+  opacity: 0.1;
 }
-.feedback{
+.feedback {
   position: relative;
   z-index: 2000;
 }
@@ -722,27 +728,24 @@ z-index: 3000;
   top: -200px;
 
 } */
-.numbers{
+.numbers {
   position: absolute;
-   top: 20px;
+  top: 20px;
   left: 10px;
   z-index: 1000;
-  
 }
-.numbers a small{
-  font-size: .7rem;
+.numbers a small {
+  font-size: 0.7rem;
 }
 @keyframes popup {
-  0%{
+  0% {
     transform: scale(1);
   }
-  0%{
-    transform: scale(.8);
+  0% {
+    transform: scale(0.8);
   }
-  100%{
+  100% {
     transform: scale(1);
   }
-
-
 }
 </style>
