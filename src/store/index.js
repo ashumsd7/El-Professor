@@ -126,6 +126,8 @@ export default createStore({
       { title: "फास्टफूड", value: "fastfood" },
       { title: "होटल", value: "hotel" },
       { title: "कोल्डड्रिंक", value: "coldDrink" },
+      { title: "दूध वाले ", value: "milk" },
+      { title: "डेरी         ", value: "dairy" },
       { title: "बेकरी/केक ", value: "backery" },
       { title: "सब्जी की दुकान ", value: "vegetables" },
       { title: "मोबाइल स्टोर   ", value: "mobileStore" },
@@ -188,7 +190,7 @@ export default createStore({
       { title: "पेंटर      ", value: "painter" },
       { title: "आटाचक्की       ", value: "chakki" },
       { title: "चश्मा        ", value: "chashma" },
-      { title: "डेरी         ", value: "dairy" },
+     
       { title: "लकड़हारा  ", value: "woodCutter" },
       { title: "ट्रैक्टर/ट्रॉली           ", value: "tractors" },
       { title: "अन्य               ", value: "others" },
