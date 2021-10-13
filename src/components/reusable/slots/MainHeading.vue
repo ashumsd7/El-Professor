@@ -22,7 +22,7 @@ h2{
     position: relative;
     font-weight: bolder;
 }
-h2::after{
+/* h2::after{
     content: '';
     position: absolute;
     width: 5rem;
@@ -31,5 +31,5 @@ h2::after{
     border-bottom: 4px solid green;
 
 margin-bottom: 15px;
-}
+} */
 </style>

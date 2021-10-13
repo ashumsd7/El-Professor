@@ -22,7 +22,7 @@ h4{
     text-shadow: 6px -1px 7px rgba(150, 150, 150, 1);
     position: relative;
 }
-h4::after{
+/* h4::after{
     content: '';
     position: absolute;
     width: 5rem;
@@ -31,5 +31,5 @@ h4::after{
     border-bottom: 4px solid rgb(0, 0, 0,.5);
     margin-bottom: 10px;
 
-}
+} */
 </style>

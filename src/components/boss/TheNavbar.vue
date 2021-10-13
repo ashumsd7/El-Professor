@@ -146,6 +146,7 @@ export default {
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 200000;
     background:var(--white-color);
     box-shadow:  0 0.125rem  1.7rem 0 rgba(0, 0, 0, .5);
     transition: all .5s ease-in-out 0s;

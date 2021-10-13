@@ -201,7 +201,7 @@
             <div class="owner-name-container position-relative mt-1">
               <small
                 v-if="data.owenerName"
-                class="d-block owner-name text-muted"
+                class="d-block owner-name text-muted mt-2"
               >
                 <span class="text-muted">
                   <!-- मालिक: -->
@@ -210,7 +210,7 @@
                 {{ data.owenerName }}</small
               >
             </div>
-            <div class="numbers">
+            <div class="numbers mt-2">
               <a class="d-block text-decoration-none" :href="data.mobileNumber1"
                 >☎️<small> {{ prepareNumber1(data) }}</small></a
               >
