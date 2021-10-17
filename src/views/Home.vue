@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <celebration-wall></celebration-wall>
+    <!-- <celebration-wall></celebration-wall> -->
 
     <home-glance></home-glance>
     <marquee class="text-danger fw-bolder d-none d-lg-block fs-2 ">🙏चरावां गांव की ओर से आप सभी को नवरात्री  की ढेरों   शुभकामनाएं  
@@ -133,7 +133,7 @@ import AboutGlance from "../components/HomeViews/AboutGlance";
 import AuthorityGlance from "../components/HomeViews/AuthorityGlance.vue";
 import StaticLinks from "../components/HomeViews/StaticLinks.vue";
 import ImportantLinks from "../components/HomeViews/ImportantLinks.vue";
-import CelebrationWall from "../components/HomeViews/CelebrationWall.vue";
+// import CelebrationWall from "../components/HomeViews/CelebrationWall.vue";
 
 
 import Counter from "../components/HomeViews/Counter.vue";
@@ -142,7 +142,7 @@ export default {
   name: "Home",
   components: {
     ChitChat,
-    CelebrationWall,
+    // CelebrationWall,
     
     HomeGlance,
     
