@@ -3,8 +3,7 @@
     <!-- <celebration-wall></celebration-wall> -->
 
     <home-glance></home-glance>
-    <marquee class="text-danger fw-bolder d-none d-lg-block fs-2 ">🙏चरावां गांव की ओर से आप सभी को नवरात्री  की ढेरों   शुभकामनाएं  
-🙏</marquee>
+
    
 
     <important-links id="notify"></important-links>
@@ -87,7 +86,6 @@
             <p class="btn-text">
               <router-link class="text-decoration-none text-white" to="/find">
                 <img src="../assets/shopf.png" class="me-2" alt="" srcset="" />
-
                 दुकानें
               </router-link>
             </p>
@@ -163,7 +161,7 @@ export default {
   mounted() {
     window.scrollTo(0, 0);
     window.addEventListener("scroll", function () {
-      // alert(window.scrollY)
+    
       if (window.scrollY > 300) {
         this.hideAllcontact = false;
       }
